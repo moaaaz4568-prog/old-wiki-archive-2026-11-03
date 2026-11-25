@@ -1,0 +1,37 @@
+# WB_E22 — حزمة الاستخراج المعلّقة (E22)
+# المصدر الأصلي (plan): /root/r/NB2/.nexus_work/plan/bundle_E22.txt
+# جذر المسارات المحلية: /root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain
+# عدد ملفات هذا الملف: 29
+# عدد كلمات هذا الملف: 83,808
+# حجم هذا الملف من المصادر: 456,460 بايت
+# الصيغة: <الكلمات>	<مسارabsolut>
+##############################################################################
+3391	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/6 Social Media Trends That Will Define 2026.txt
+3554	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/I Made 367 Videos and Here's What I Discovered.txt
+3489	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/personal brands have changed, THIS no longer works.txt
+3400	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Course Sellers Are Struggling…Here’s Why.txt
+3273	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/I built a $10k MRR web-design agency.txt
+3360	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Social Media Is Now On 'Easy Mode' (Anyone Can Blow Up in 2025).txt
+2459	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Document_Merged_(1)_(١)_PDF_to_Text_448_861.txt
+3304	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/$11,684 a day selling courses at 22 (Sam Milsap).txt
+3119	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How We Generated $8.61M on the Backend Using Demand-Based Marketing.txt
+3076	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/7 Storytelling Mistakes That Are KILLING Small Creators.txt
+3132	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How Dan Koe makes $5,000,000year writing 2 hrday (Copy him).txt
+2937	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Freelancers have a job.  Agency owners have a business..txt
+2978	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/The Info Industry Is About to Get a Lot Harder — Most Creators Aren’t Ready.txt
+2880	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Do THIS To Blow Up Your Brand in 2025 (SuperUGC Strategy).txt
+2814	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/AI is About to Change Social Media Forever. Be Prepared..txt
+2898	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Why 99.9% of Education Brands Will Never Hit $10MYear.txt
+2841	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Step by Step How I'd make $50k per month (Profit) Coaching Business.txt
+2852	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Why VSLs Don’t Work Anymore (And What’s Replacing Them in 2026).txt
+2871	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How To Make Money As A Creator From Day 1.txt
+2857	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/I Cracked The Social Media Algorithm (Full Formula Explained).txt
+2738	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Everything you know about content is (probably) wrong.txt
+2649	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Marketer Do this NOW to survive AI.txt
+2722	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to use psychology to hack viewers brains (& make more money).txt
+2613	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How To Become A Master Storyteller.txt
+2554	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/The Best Funnel for Info Products in 2026.txt
+2499	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How Shelby Sapp makes $577,480 every month (it's easy).txt
+2110	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Money In.txt
+2350	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Business is hard until you build systems like this .txt
+2088	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to get better outputs from Claude.txt

@@ -1,0 +1,10 @@
+# WB_E9 — حزمة الاستخراج المعلّقة (E9)
+# المصدر الأصلي (plan): /root/r/NB2/.nexus_work/plan/bundle_E9.txt
+# جذر المسارات المحلية: /root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain
+# عدد ملفات هذا الملف: 2
+# عدد كلمات هذا الملف: 81,428
+# حجم هذا الملف من المصادر: 434,619 بايت
+# الصيغة: <الكلمات>	<مسارabsolut>
+##############################################################################
+44053	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/transcript_full_1.txt
+37375	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/The 3 Stages of Your Personal Brand (Full Course).txt

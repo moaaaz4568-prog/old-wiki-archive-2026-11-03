@@ -1,0 +1,24 @@
+rank,sector,atoms_mapped,concepts_quintuple,master_exists,covered,uncovered,score_A_uncovered,score_B_volume,score_C_commercial,score_total,agents_at_22.5,dependencies,status,master_file
+1,02_sales_calls,1554,500,yes,181,319,5,4,5,4.7,14.2,"03_offers_pricing;10_funnels;21_persuasion_psych",partial-closure,NB2/03_MASTERS/02_sales_calls/Master_Sales_Call_Architecture.md
+2,09_agencies_clients,645,80,no,0,80,4,3,5,3.95,3.6,"17_ai_automation;22_systems_workflow(atoms)",not-started,
+3,11_marketing_ads,463,63,no,0,63,4,3,5,3.95,2.8,"15_platforms_algo;17_ai_automation",not-started,
+4,03_offers_pricing,1018,166,yes,109,57,3,4,5,3.8,2.5,"21_persuasion_psych;16_business_models",partial-closure,NB2/03_MASTERS/03_offers_pricing/Master_Offer_Construction_Pricing.md
+5,04_content_strategy,565,60,no,0,60,4,3,4,3.7,2.7,"13_storytelling;14_copywriting",not-started,
+6,17_ai_automation,984,47,no,0,47,3,4,4,3.55,2.1,"(none)",not-started,
+7,10_funnels,503,41,no,0,41,3,3,5,3.5,1.8,"03_offers_pricing",not-started,
+8,12_growth,463,59,no,0,59,3,3,4,3.25,2.6,"16_growth_frameworks(atoms);17_ai_automation",not-started,
+9,01_outreach,4521,133,yes,124,9,1,5,5,3.2,0.4,"09_agencies_clients;15_platforms_algo",partial-closure,NB2/03_MASTERS/01_outreach/Master_Outreach_Mechanics.md
+10,06_hooks_retention,340,70,no,0,70,4,2,3,3.15,3.1,"21_persuasion_psych;15_platforms_algo",not-started,
+11,05_content_production,109,93,no,0,93,4,1,4,3.1,4.1,"19_operations_teams;23_design_visual(atoms)",not-started,
+12,99_uncategorized,10064,25,no,0,25,2,5,2,2.9,1.1,"(triage gate: blocks all)",not-started,
+13,07_branding,350,175,yes,141,34,3,2,3,2.7,1.5,"13_storytelling;18_trust_authority",partial-closure,NB2/03_MASTERS/07_branding/Master_Personal_Brand_Architecture.md
+14,15_platforms_algo,289,18,no,0,18,2,2,4,2.5,0.8,"17_ai_automation",not-started,
+15,20_productivity_learning,371,34,no,0,34,3,2,2,2.45,1.5,"19_operations_teams",not-started,
+16,19_operations_teams,371,33,no,0,33,3,2,2,2.45,1.5,"20_productivity_learning;22_systems_workflow(atoms)",not-started,
+17,14_copywriting,1245,7,no,0,7,1,4,3,2.4,0.3,"21_persuasion_psych;13_storytelling",not-started,
+18,13_storytelling,344,11,no,0,11,2,2,3,2.25,0.5,"21_persuasion_psych",not-started,
+19,08_mindset,218,200,yes,142,58,3,2,1,2.2,2.6,"22_systems_workflow(atoms);19_operations_teams",partial-closure,NB2/03_MASTERS/08_mindset/Master_Founder_Operating_Mindset.md
+20,16_business_models,126,12,no,0,12,2,1,4,2.2,0.5,"22_finance_legal",not-started,
+21,22_finance_legal,468,4,no,0,4,1,3,3,2.1,0.2,"16_business_models;21_metrics(atoms)",not-started,
+22,21_persuasion_psych,174,3,no,0,3,1,2,3,1.8,0.1,"10_psychology_influence(atoms)",not-started,
+23,18_trust_authority,324,2,no,0,2,1,2,2,1.55,0.1,"21_persuasion_psych;12_trust_authority(atoms)",not-started,

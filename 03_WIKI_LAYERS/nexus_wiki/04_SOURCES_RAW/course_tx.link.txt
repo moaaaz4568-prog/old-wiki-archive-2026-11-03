@@ -1,0 +1,4 @@
+POINTER (symlink)
+name: course_tx
+target: /root/r/COURSE_TX
+live_symlink: /root/r/nexus_wiki_links/04_SOURCES_RAW/course_tx

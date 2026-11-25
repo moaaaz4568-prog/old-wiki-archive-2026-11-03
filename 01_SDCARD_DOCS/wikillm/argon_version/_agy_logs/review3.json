@@ -1,0 +1,16 @@
+{
+  "role": "review",
+  "ok": false,
+  "attempts": [
+    {
+      "model": "claude-opus-4-6-thinking",
+      "code": 1,
+      "quota": false,
+      "empty": false,
+      "err": "error: Error: empty prompt. Usage: agy --print \"your prompt here\"\n"
+    }
+  ],
+  "workDir": "/tmp/agy-director/review-2026-10-25T09-11-55-929Z",
+  "stdoutPath": "/tmp/agy-director/review-2026-10-25T09-11-55-929Z/stdout.md",
+  "stderrPath": "/tmp/agy-director/review-2026-10-25T09-11-55-929Z/stderr.log"
+}

@@ -1,0 +1,10 @@
+# WB_E10 — حزمة الاستخراج المعلّقة (E10)
+# المصدر الأصلي (plan): /root/r/NB2/.nexus_work/plan/bundle_E10.txt
+# جذر المسارات المحلية: /root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain
+# عدد ملفات هذا الملف: 2
+# عدد كلمات هذا الملف: 51,088
+# حجم هذا الملف من المصادر: 348,504 بايت
+# الصيغة: <الكلمات>	<مسارabsolut>
+##############################################################################
+22212	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Document_Merged_(1)_(١)_PDF_to_Text_565_489.txt
+28876	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How We Built My Personal Brand to 265,000 Followers in 1 Year.txt

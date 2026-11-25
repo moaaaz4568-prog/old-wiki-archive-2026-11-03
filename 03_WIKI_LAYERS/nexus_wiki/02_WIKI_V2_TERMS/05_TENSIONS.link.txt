@@ -1,0 +1,4 @@
+POINTER (symlink)
+name: 05_TENSIONS
+target: /root/r/NB2/05_TENSIONS
+live_symlink: /root/r/nexus_wiki_links/02_WIKI_V2_TERMS/05_TENSIONS

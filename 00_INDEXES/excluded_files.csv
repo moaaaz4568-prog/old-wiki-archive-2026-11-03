@@ -1,0 +1,9 @@
+source_path,estimated_size_mb,reason,pointer_reference
+/sdcard/nexus_wiki/03_WIKI_V3_NEW/04_SEARCH/index.json.gz,17.0,Duplicate heavy compressed search index,03_WIKI_LAYERS/BIG_FILE_POINTERS.csv
+/sdcard/wiki/03_WIKI_V3_STRUCTURED/04_SEARCH/index.json.gz,17.0,Duplicate heavy compressed search index,03_WIKI_LAYERS/BIG_FILE_POINTERS.csv
+/sdcard/NEXUS_LLM_WIKI/raw/,53.0,Raw unstructured crawl and video transcript inputs,04_NEXUS_LLM_WIKI_CORE/BIG_FILE_POINTERS.csv
+/sdcard/NEXUS_LLM_WIKI/collections/sales/full_evidence_ledger.jsonl,5.7,Full raw evidence ledger - reconstructible,04_NEXUS_LLM_WIKI_CORE/BIG_FILE_POINTERS.csv
+/sdcard/Nexus_Brain (full directory),385.0,Full brain vault - captured essential wiki docs only,01_SDCARD_DOCS/nexus_brain_wiki_docs/
+/root/r/nexus_enrichment (full directory),209.0,Enrichment pipeline runs - captured control and routing only,07_ENRICHMENT_CORE/
+/root/.local/share/opencode/opencode.db (full binary),914.8,Full DB binary prohibited - extracted 52 sessions cleanly,05_CONVERSATIONS/opencode/
+/root/.local/share/omnirush/opencode.db (full binary),425.6,Full DB binary prohibited - extracted 340 clean wiki parts,05_CONVERSATIONS/omnirush/db_extracted/

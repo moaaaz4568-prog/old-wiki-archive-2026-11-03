@@ -1,0 +1,22 @@
+# WB_E17 — حزمة الاستخراج المعلّقة (E17)
+# المصدر الأصلي (plan): /root/r/NB2/.nexus_work/plan/bundle_E17.txt
+# جذر المسارات المحلية: /root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain
+# عدد ملفات هذا الملف: 14
+# عدد كلمات هذا الملف: 84,388
+# حجم هذا الملف من المصادر: 452,363 بايت
+# الصيغة: <الكلمات>	<مسارabsolut>
+##############################################################################
+6211	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Why Your Offer Isn’t Selling. How to Fix It. ($62M+ w This Process).txt
+6098	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Social Media Has an AI Problem.txt
+6368	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to Blow Up on Social Media (even if you don’t have time).txt
+6181	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/I Tested 100+ AI Tools, These 9 Will Blow Up Your Content.txt
+6056	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/I Studied 10,000+ Videos, These Mistakes Are Killing Your Content.txt
+6255	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/$1,097,794month selling courses at 20 (Brez Scales).txt
+6109	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How We Scaled from $0 to $1MMonth in 90 Days.txt
+5904	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How I Grew from 0 to 100K Subscribers in 5 Months (Nobody Teaches This).txt
+5986	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/You’re Not Ready for the Next Phase of Social Media.txt
+5909	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/The Science-Based Method To Create Irresistible Ideas.txt
+5652	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to Build a Cult-Like Personal Brand on Social Media.txt
+5730	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to Reprogram Your Brain to Stop Overthinking.txt
+5948	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How We Generated $171k In Sales In 24 Hours for a Client.txt
+5981	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/This 3-Phase System Generated $1M+ For Our Clients.txt

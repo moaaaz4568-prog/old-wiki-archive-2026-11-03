@@ -1,0 +1,36 @@
+# WB_C23 — حزمة الاستخراج المعلّقة (C23)
+# المصدر الأصلي (plan): /root/r/NB2/.nexus_work/plan/bundle_C23.txt
+# جذر المسارات المحلية: /root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain
+# عدد ملفات هذا الملف: 28
+# عدد كلمات هذا الملف: 8,212
+# حجم هذا الملف من المصادر: 75,550 بايت
+# الصيغة: <الكلمات>	<مسارabsolut>
+##############################################################################
+536	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Copy of Don't Tell your Parents.txt
+454	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/ما هي الهوية البصرية؟  هوية العلامة التجارية البصرية.txt
+469	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/تصميم شعار وهوية بصرية كاملة  كوفي.txt
+459	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/طريقتين فقط لتحصل على عدد لانهائي من العملاء الجدد.txt
+460	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Copy of Sales Funnel vs Website.txt
+446	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/اولي الخطوات قبل بيع منتجك اونلاين في 2023.txt
+435	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/متعاملش عملائك كأنهم أصحابك - محدش هيشتري منك 💵..txt
+382	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Copy of Time - Energy = Money.txt
+390	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Lesson 1- Mindset (1).txt
+337	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/الخطوات التي اتبعها لتصميم شعارات عالـمية في 2026.txt
+310	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/القواعد السرية لتصميم الشعارات العالمية  إحفظها لنفسك.txt
+341	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/إستخدمت الذكاء الإصطناعي في مشروع حقيقي  DeepSeek Ai.txt
+297	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/كيف تخـتار نـوع الشعـار الـمناسب لشركتك؟ ( شرح عملي ).txt
+269	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/لكل مدير جديد دي 5 دروس تعلمتها هتفرق معاك في سنة اولي ادارة.txt
+282	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/WhatsApp Audio 2025-07-11 at 22.42.48_85cd2e7c.waptt.txt
+252	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/في دقيقتين و4 خطوات سأزيد مبيعاتك بنسبة %33.txt
+267	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/-الزبون دايماً علي حق- .txt
+199	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Put a Sale On Anything.txt
+196	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/VID_20250922_081716_289 (1).txt
+167	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/كيف صممت شعار وهوية بصرية لـمتجر أخطبـوطات.txt
+163	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/افضل اونلاين بزنس للمبتدئين في 2023(بدون راس مال).txt
+220	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/WhatsApp Audio 2025-08-02 at 16.41.58_fb289d36.txt
+144	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/افضل اونلاين بزنس للمبتدئين في 2024( 4 خطوات للحصول علي اول عميل )+فريلانسر.txt
+161	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/VID-20250318-WA0041.txt
+152	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/أشياء لا تعرفها عن شعار بلبن.txt
+128	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/VID-20250316-WA0038.txt
+223	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/VID_20250309_161311_379.txt
+73	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/الربح من الانترنت  اخيرا اول ربح من افضل اونلاين بزنس للمبتدئين في 2024.txt

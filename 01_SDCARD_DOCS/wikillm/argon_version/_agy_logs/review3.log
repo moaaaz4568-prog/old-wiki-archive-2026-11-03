@@ -1,0 +1,4 @@
+✗ فشل AGY على كل الموديلات المتاحة.
+   claude-opus-4-6-thinking → code=1 quota=false error: Error: empty prompt. Usage: agy --print "your prompt here"
+
+result.json : /sdcard/wikillm/argon_version/_agy_logs/review3.json

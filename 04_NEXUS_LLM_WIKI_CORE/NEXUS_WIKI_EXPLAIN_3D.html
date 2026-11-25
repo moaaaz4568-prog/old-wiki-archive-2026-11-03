@@ -1,0 +1,1340 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="شرح بصري موثق لبنية Nexus LLM Wiki ودورة المصدر والبوابات والحالة الحالية.">
+  <title>Nexus LLM Wiki — من الملفات إلى عقل قابل للتتبع</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #eef6ff;
+      --muted: #a9b9cc;
+      --subtle: #71849b;
+      --navy-0: #030711;
+      --navy-1: #071120;
+      --navy-2: #0b1a2d;
+      --panel: rgba(12, 28, 47, .76);
+      --panel-strong: rgba(10, 24, 42, .95);
+      --line: rgba(150, 193, 226, .17);
+      --line-strong: rgba(150, 193, 226, .35);
+      --mint: #74f2c2;
+      --mint-soft: rgba(116, 242, 194, .14);
+      --amber: #f7c873;
+      --amber-soft: rgba(247, 200, 115, .14);
+      --blue: #80b8ff;
+      --blue-soft: rgba(128, 184, 255, .14);
+      --rose: #ff9eaa;
+      --shadow: 0 28px 90px rgba(0, 0, 0, .35);
+      --radius-lg: 28px;
+      --radius-md: 18px;
+      --radius-sm: 12px;
+      --space-1: .45rem;
+      --space-2: .75rem;
+      --space-3: 1rem;
+      --space-4: 1.5rem;
+      --space-5: 2rem;
+      --space-6: 3rem;
+      --space-7: 5rem;
+      --max: 1240px;
+      --ease: cubic-bezier(.2, .75, .25, 1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; background: var(--navy-0); }
+    body {
+      margin: 0;
+      min-width: 320px;
+      overflow-x: hidden;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 72% 4%, rgba(55, 126, 169, .16), transparent 30rem),
+        radial-gradient(circle at 19% 22%, rgba(27, 125, 112, .11), transparent 34rem),
+        linear-gradient(180deg, var(--navy-0), #06101d 42%, #040915 100%);
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+    body::before {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      content: "";
+      opacity: .19;
+      background-image: linear-gradient(rgba(150, 193, 226, .05) 1px, transparent 1px), linear-gradient(90deg, rgba(150, 193, 226, .05) 1px, transparent 1px);
+      background-size: 56px 56px;
+      mask-image: linear-gradient(to bottom, black, transparent 68%);
+    }
+    ::selection { color: var(--navy-0); background: var(--mint); }
+    a { color: var(--mint); text-decoration-color: rgba(116, 242, 194, .42); text-underline-offset: .22em; }
+    a:hover { color: #c8ffe9; text-decoration-color: var(--mint); }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button {
+      color: inherit;
+      font: inherit;
+    }
+    :focus-visible {
+      outline: 3px solid var(--amber);
+      outline-offset: 4px;
+      border-radius: 8px;
+    }
+    .skip-link {
+      position: fixed;
+      top: 12px;
+      right: 12px;
+      z-index: 100;
+      padding: .55rem .9rem;
+      color: var(--navy-0);
+      background: var(--mint);
+      border-radius: 8px;
+      transform: translateY(-150%);
+      transition: transform .2s ease;
+    }
+    .skip-link:focus { transform: translateY(0); }
+    .page-progress {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 80;
+      height: 3px;
+      background: rgba(255, 255, 255, .05);
+    }
+    .page-progress-bar {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--blue), var(--mint), var(--amber));
+      transform: scaleX(0);
+      transform-origin: right center;
+    }
+    .site-header {
+      position: sticky;
+      top: 3px;
+      z-index: 70;
+      border-bottom: 1px solid rgba(150, 193, 226, .09);
+      background: rgba(3, 7, 17, .76);
+      backdrop-filter: blur(18px) saturate(130%);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-3);
+      width: min(var(--max), calc(100% - 2rem));
+      min-height: 66px;
+      margin: auto;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--ink);
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 31px;
+      height: 31px;
+      color: var(--navy-0);
+      background: conic-gradient(from 140deg, var(--mint), var(--blue), var(--amber), var(--mint));
+      border-radius: 50%;
+      box-shadow: 0 0 28px rgba(116, 242, 194, .26);
+      font-size: .72rem;
+      font-weight: 900;
+    }
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: .85rem;
+      max-width: 70%;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .main-nav::-webkit-scrollbar { display: none; }
+    .main-nav a {
+      padding: .3rem .1rem;
+      color: var(--muted);
+      font-size: .84rem;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .main-nav a:hover { color: var(--ink); }
+    .motion-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      min-height: 42px;
+      padding: .45rem .8rem;
+      color: var(--ink);
+      cursor: pointer;
+      background: rgba(128, 184, 255, .08);
+      border: 1px solid rgba(128, 184, 255, .25);
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+    .motion-toggle:hover { border-color: var(--blue); background: var(--blue-soft); }
+    .toggle-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--mint);
+      box-shadow: 0 0 12px var(--mint);
+    }
+    .motion-paused .toggle-dot { background: var(--amber); box-shadow: 0 0 12px var(--amber); }
+    main { isolation: isolate; }
+    .wrap { width: min(var(--max), calc(100% - 2rem)); margin-inline: auto; }
+    .hero {
+      position: relative;
+      min-height: min(920px, calc(100svh - 70px));
+      padding: clamp(4rem, 9vw, 8rem) 0 var(--space-7);
+      display: grid;
+      align-items: center;
+    }
+    .hero::after {
+      position: absolute;
+      right: -18rem;
+      bottom: -22rem;
+      z-index: -1;
+      width: 50rem;
+      height: 50rem;
+      content: "";
+      border: 1px solid rgba(128, 184, 255, .1);
+      border-radius: 50%;
+      box-shadow: 0 0 0 50px rgba(128, 184, 255, .022), 0 0 0 110px rgba(128, 184, 255, .018);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(280px, .8fr) minmax(420px, 1.2fr);
+      gap: clamp(2rem, 5vw, 5rem);
+      align-items: center;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      margin: 0 0 1.15rem;
+      color: var(--mint);
+      font-size: .82rem;
+      font-weight: 800;
+      letter-spacing: .05em;
+    }
+    .eyebrow::before {
+      display: inline-block;
+      width: 28px;
+      height: 1px;
+      content: "";
+      background: var(--mint);
+      box-shadow: 0 0 12px var(--mint);
+    }
+    h1, h2, h3, h4 { margin: 0; line-height: 1.16; text-wrap: balance; }
+    h1 {
+      max-width: 760px;
+      margin-bottom: 1.35rem;
+      font-size: clamp(3rem, 6vw, 6.25rem);
+      letter-spacing: -.055em;
+    }
+    h1 span { color: var(--mint); text-shadow: 0 0 28px rgba(116, 242, 194, .2); }
+    .hero-copy > p:not(.eyebrow) {
+      max-width: 650px;
+      margin: 0 0 1.65rem;
+      color: var(--muted);
+      font-size: clamp(1.04rem, 1.5vw, 1.24rem);
+    }
+    .hero-note {
+      display: flex;
+      align-items: flex-start;
+      gap: .7rem;
+      max-width: 620px;
+      padding: .85rem 1rem;
+      color: #d9e5f1;
+      background: rgba(247, 200, 115, .07);
+      border: 1px solid rgba(247, 200, 115, .23);
+      border-radius: var(--radius-sm);
+      font-size: .94rem;
+    }
+    .hero-note strong { color: var(--amber); }
+    .status-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: .7rem;
+      margin-top: 1.65rem;
+    }
+    .status-card {
+      min-height: 104px;
+      padding: .85rem .9rem;
+      background: rgba(9, 22, 39, .68);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+    }
+    .status-card small { display: block; color: var(--subtle); font-size: .75rem; }
+    .status-card strong { display: block; margin-top: .28rem; color: var(--ink); font-size: .92rem; line-height: 1.45; }
+    .status-card.active { border-color: rgba(116, 242, 194, .42); box-shadow: inset 0 0 25px rgba(116, 242, 194, .05); }
+    .status-card.active strong { color: var(--mint); }
+    .status-card.pending { border-color: rgba(247, 200, 115, .3); }
+    .status-card.pending strong { color: var(--amber); }
+    .status-card.warning { border-color: rgba(255, 158, 170, .35); }
+    .status-card.warning strong { color: #ffc2c9; }
+    .source-link {
+      display: inline-block;
+      margin-top: .45rem;
+      color: var(--blue);
+      font-size: .73rem;
+    }
+    .scene-card {
+      position: relative;
+      min-height: 590px;
+      overflow: hidden;
+      perspective: 1200px;
+      perspective-origin: 50% 42%;
+      background:
+        radial-gradient(circle at 52% 45%, rgba(128, 184, 255, .13), transparent 32%),
+        linear-gradient(145deg, rgba(13, 31, 52, .94), rgba(4, 10, 20, .92));
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow), inset 0 1px 0 rgba(255, 255, 255, .05);
+    }
+    .scene-card::before, .scene-card::after {
+      position: absolute;
+      z-index: 0;
+      content: "";
+      pointer-events: none;
+      border: 1px solid rgba(116, 242, 194, .11);
+      border-radius: 50%;
+    }
+    .scene-card::before { inset: 10%; transform: rotate(18deg) scaleX(1.35); }
+    .scene-card::after { inset: 19%; transform: rotate(-26deg) scaleX(1.42); border-color: rgba(128, 184, 255, .11); }
+    .scene-head {
+      position: absolute;
+      inset: 1rem 1.1rem auto;
+      z-index: 8;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: .8rem;
+    }
+    .scene-kicker { color: var(--muted); font-size: .78rem; }
+    .engine-status {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      padding: .3rem .6rem;
+      color: var(--amber);
+      background: rgba(247, 200, 115, .08);
+      border: 1px solid rgba(247, 200, 115, .23);
+      border-radius: 999px;
+      font-size: .72rem;
+    }
+    .engine-status::before { width: 6px; height: 6px; content: ""; border-radius: 50%; background: currentColor; }
+    .pipeline-fallback {
+      position: absolute;
+      inset: 22% 1.1rem 21%;
+      z-index: 4;
+      display: grid;
+      grid-template-columns: repeat(7, minmax(66px, 1fr));
+      align-items: center;
+      gap: .35rem;
+      direction: ltr;
+      transform: rotateX(11deg) rotateY(-9deg) translateZ(0);
+      transform-style: preserve-3d;
+      animation: pipeline-float 8s ease-in-out infinite;
+    }
+    .fallback-node {
+      position: relative;
+      display: grid;
+      justify-items: center;
+      gap: .38rem;
+      min-width: 0;
+      padding: .3rem 0;
+      color: var(--ink);
+      cursor: pointer;
+      background: transparent;
+      border: 0;
+      border-radius: 14px;
+      direction: rtl;
+      text-align: center;
+      transform-style: preserve-3d;
+      transition: transform .3s var(--ease);
+    }
+    .fallback-node:not(:last-child)::after {
+      position: absolute;
+      top: 26px;
+      left: calc(50% + 22px);
+      width: calc(100% - 5px);
+      height: 1px;
+      content: "";
+      background: linear-gradient(90deg, rgba(128, 184, 255, .65), rgba(116, 242, 194, .16));
+      direction: ltr;
+    }
+    .node-orb {
+      position: relative;
+      display: grid;
+      place-items: center;
+      width: 52px;
+      height: 52px;
+      color: var(--navy-0);
+      background: linear-gradient(145deg, var(--blue), #3a6ea8);
+      border: 1px solid rgba(255, 255, 255, .38);
+      border-radius: 50%;
+      box-shadow: 0 0 0 7px rgba(128, 184, 255, .06), 0 0 28px rgba(128, 184, 255, .2);
+      font-size: .66rem;
+      font-weight: 900;
+      transform: translateZ(22px);
+      transform-style: preserve-3d;
+      transition: transform .3s var(--ease), box-shadow .3s var(--ease), background .3s ease;
+    }
+    .fallback-node:nth-child(1) .node-orb, .fallback-node:nth-child(3) .node-orb, .fallback-node:nth-child(5) .node-orb { background: linear-gradient(145deg, var(--mint), #308d80); box-shadow: 0 0 0 7px rgba(116, 242, 194, .06), 0 0 28px rgba(116, 242, 194, .19); }
+    .fallback-node:nth-child(6) .node-orb { background: linear-gradient(145deg, var(--amber), #aa6f32); box-shadow: 0 0 0 7px rgba(247, 200, 115, .06), 0 0 28px rgba(247, 200, 115, .19); }
+    .fallback-node:hover, .fallback-node[aria-pressed="true"] { transform: translateZ(22px); }
+    .fallback-node:hover .node-orb, .fallback-node[aria-pressed="true"] .node-orb { transform: translateZ(28px) scale(1.08); box-shadow: 0 0 0 10px rgba(116, 242, 194, .09), 0 0 38px rgba(116, 242, 194, .42); }
+    .fallback-node[aria-pressed="true"] .node-orb { background: linear-gradient(145deg, #d5ffef, var(--mint)); }
+    .node-label { max-width: 78px; color: #dbe9f7; font-size: .7rem; font-weight: 700; line-height: 1.25; }
+    .css-particle {
+      position: absolute;
+      top: calc(50% - 4px);
+      left: 7%;
+      z-index: 5;
+      width: 8px;
+      height: 8px;
+      pointer-events: none;
+      background: var(--mint);
+      border-radius: 50%;
+      box-shadow: 0 0 15px var(--mint);
+      animation: travel 6.5s linear infinite;
+    }
+    .css-particle.p2 { animation-delay: -2.1s; background: var(--amber); box-shadow: 0 0 15px var(--amber); }
+    .css-particle.p3 { animation-delay: -4.2s; background: var(--blue); box-shadow: 0 0 15px var(--blue); }
+    @keyframes pipeline-float {
+      0%, 100% { transform: rotateX(11deg) rotateY(-9deg) translateZ(0); }
+      50% { transform: rotateX(15deg) rotateY(-5deg) translateZ(14px); }
+    }
+    @keyframes travel { to { transform: translateX(920%); } }
+    .scene-caption {
+      position: absolute;
+      right: 1.1rem;
+      bottom: 1rem;
+      left: 1.1rem;
+      z-index: 8;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-top: .75rem;
+      border-top: 1px solid rgba(150, 193, 226, .12);
+      color: var(--subtle);
+      font-size: .78rem;
+    }
+    .scene-caption strong { color: var(--muted); }
+    .detail-panel {
+      position: absolute;
+      right: 1rem;
+      bottom: 4.6rem;
+      left: 1rem;
+      z-index: 9;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: .75rem 1rem;
+      padding: .8rem 1rem;
+      background: rgba(3, 10, 19, .83);
+      border: 1px solid rgba(150, 193, 226, .19);
+      border-radius: var(--radius-sm);
+      backdrop-filter: blur(12px);
+    }
+    .detail-title { grid-column: 1 / -1; color: var(--mint); font-size: .92rem; font-weight: 800; }
+    .detail-key { color: var(--subtle); font-size: .76rem; }
+    .detail-value { color: #dce8f3; font-size: .78rem; line-height: 1.45; }
+    .detail-value.limit { color: #f7d6a0; }
+    .detail-source { grid-column: 1 / -1; margin-top: -.15rem; }
+    .scroll-cue {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      margin-top: 1.25rem;
+      color: var(--subtle);
+      font-size: .78rem;
+    }
+    .scroll-cue::before { width: 26px; height: 1px; content: ""; background: var(--subtle); }
+    .section {
+      position: relative;
+      padding: var(--space-7) 0;
+      scroll-margin-top: 90px;
+    }
+    .section-header {
+      display: grid;
+      grid-template-columns: minmax(220px, .52fr) minmax(300px, 1fr);
+      gap: 2rem;
+      align-items: end;
+      margin-bottom: 2.4rem;
+    }
+    .section-kicker { margin-bottom: .75rem; color: var(--mint); font-size: .76rem; font-weight: 900; letter-spacing: .1em; }
+    h2 { font-size: clamp(2rem, 4vw, 3.65rem); letter-spacing: -.045em; }
+    .section-intro { max-width: 700px; margin: 0; color: var(--muted); }
+    .section-intro strong { color: var(--ink); }
+    .glass {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      box-shadow: 0 18px 50px rgba(0, 0, 0, .16), inset 0 1px 0 rgba(255, 255, 255, .025);
+      backdrop-filter: blur(12px) saturate(125%);
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: .85rem;
+    }
+    .metric-card {
+      position: relative;
+      min-height: 165px;
+      padding: 1.15rem;
+      overflow: hidden;
+    }
+    .metric-card::after {
+      position: absolute;
+      right: -20px;
+      bottom: -30px;
+      width: 90px;
+      height: 90px;
+      content: "";
+      border: 1px solid rgba(116, 242, 194, .2);
+      border-radius: 50%;
+    }
+    .metric-card[data-tone="amber"]::after { border-color: rgba(247, 200, 115, .2); }
+    .metric-card[data-tone="blue"]::after { border-color: rgba(128, 184, 255, .2); }
+    .metric-label { color: var(--muted); font-size: .82rem; }
+    .metric-value { margin: .3rem 0 .05rem; color: var(--mint); font-size: clamp(2.1rem, 4vw, 3.25rem); font-weight: 900; letter-spacing: -.06em; line-height: 1; }
+    .metric-card[data-tone="amber"] .metric-value { color: var(--amber); }
+    .metric-card[data-tone="blue"] .metric-value { color: var(--blue); }
+    .metric-card[data-tone="rose"] .metric-value { color: var(--rose); }
+    .metric-context { color: var(--subtle); font-size: .74rem; }
+    .metric-source { position: relative; z-index: 2; }
+    .quality-panel {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 1rem;
+      margin-top: 1rem;
+      padding: 1.2rem;
+    }
+    .quality-copy h3 { margin-bottom: .45rem; font-size: 1.2rem; }
+    .quality-copy p { margin: 0; color: var(--muted); font-size: .9rem; }
+    .quality-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .55rem; }
+    .quality-item { padding: .65rem; background: rgba(3, 10, 19, .36); border: 1px solid var(--line); border-radius: var(--radius-sm); }
+    .quality-item strong { display: block; color: var(--blue); font-size: 1.25rem; line-height: 1.2; }
+    .quality-item span { color: var(--subtle); font-size: .7rem; }
+    .two-col { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .card-pad { padding: clamp(1.25rem, 2vw, 2rem); }
+    .card-pad h3 { margin-bottom: .7rem; font-size: 1.35rem; }
+    .card-pad p { margin: 0; color: var(--muted); }
+    .layer-list { display: grid; gap: .65rem; margin: 1.25rem 0 0; padding: 0; list-style: none; }
+    .layer-list li { display: grid; grid-template-columns: 88px 1fr; gap: .75rem; align-items: start; padding: .7rem 0; border-top: 1px solid rgba(150, 193, 226, .12); }
+    .layer-list code, code { color: var(--mint); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .78em; direction: ltr; unicode-bidi: isolate; }
+    .layer-list span { color: var(--muted); font-size: .86rem; line-height: 1.5; }
+    .pill-row { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+    .pill { display: inline-flex; align-items: center; gap: .35rem; padding: .35rem .6rem; color: var(--muted); background: rgba(128, 184, 255, .07); border: 1px solid rgba(128, 184, 255, .19); border-radius: 999px; font-size: .76rem; }
+    .pill::before { width: 5px; height: 5px; content: ""; border-radius: 50%; background: var(--blue); }
+    .callout { margin-top: 1.2rem; padding: .8rem 1rem; color: #dce8f3; background: var(--mint-soft); border-right: 2px solid var(--mint); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; font-size: .88rem; }
+    .why-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .85rem; }
+    .why-card { min-height: 205px; padding: 1.25rem; }
+    .why-number { display: inline-grid; place-items: center; width: 31px; height: 31px; margin-bottom: 1rem; color: var(--navy-0); background: var(--mint); border-radius: 50%; font-size: .76rem; font-weight: 900; }
+    .why-card:nth-child(2n) .why-number { background: var(--amber); }
+    .why-card:nth-child(3n) .why-number { background: var(--blue); }
+    .why-card h3 { margin-bottom: .5rem; font-size: 1.04rem; }
+    .why-card p { margin: 0; color: var(--muted); font-size: .86rem; }
+    .compare-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .compare-card { min-height: 340px; padding: 1.5rem; }
+    .compare-card.done { border-color: rgba(116, 242, 194, .24); }
+    .compare-card.open { border-color: rgba(255, 158, 170, .23); }
+    .compare-title { display: flex; align-items: center; gap: .65rem; margin-bottom: 1rem; }
+    .state-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--mint); box-shadow: 0 0 14px var(--mint); }
+    .open .state-dot { background: var(--rose); box-shadow: 0 0 14px var(--rose); }
+    .compare-title h3 { font-size: 1.3rem; }
+    .check-list { display: grid; gap: .7rem; margin: 0; padding: 0; list-style: none; }
+    .check-list li { position: relative; padding-inline-start: 1.55rem; color: var(--muted); font-size: .88rem; }
+    .check-list li::before { position: absolute; right: 0; top: .52em; width: .62rem; height: .62rem; content: ""; border: 1px solid var(--mint); border-radius: 50%; box-shadow: inset 0 0 0 2px var(--navy-2); background: var(--mint); }
+    .open .check-list li::before { border-color: var(--rose); background: transparent; }
+    .review-strip { display: flex; align-items: flex-start; gap: .8rem; margin-top: 1rem; padding: 1rem 1.15rem; color: var(--muted); background: rgba(255, 158, 170, .06); border: 1px solid rgba(255, 158, 170, .22); border-radius: var(--radius-md); font-size: .88rem; }
+    .review-strip strong { color: #ffc2c9; }
+    .file-map { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; }
+    .file-card { display: block; min-height: 142px; padding: 1rem; color: var(--ink); text-decoration: none; transition: transform .25s var(--ease), border-color .25s ease, background .25s ease; }
+    .file-card:hover { color: var(--ink); transform: translateY(-4px); background: rgba(16, 39, 64, .85); border-color: rgba(116, 242, 194, .38); }
+    .file-path { display: block; margin-bottom: .55rem; color: var(--mint); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .77rem; direction: ltr; text-align: left; unicode-bidi: plaintext; }
+    .file-card p { margin: 0; color: var(--muted); font-size: .83rem; }
+    .lifecycle-layout { display: grid; grid-template-columns: minmax(0, .8fr) minmax(300px, 1.2fr); gap: 1rem; align-items: start; }
+    .lifecycle-tabs { display: grid; gap: .5rem; }
+    .life-tab { display: grid; grid-template-columns: 39px 1fr auto; gap: .75rem; align-items: center; padding: .85rem .95rem; color: var(--muted); cursor: pointer; text-align: right; background: rgba(9, 22, 39, .6); border: 1px solid var(--line); border-radius: var(--radius-sm); transition: border-color .2s ease, background .2s ease, transform .2s var(--ease); }
+    .life-tab:hover { transform: translateX(-4px); border-color: var(--line-strong); }
+    .life-tab[aria-selected="true"] { color: var(--ink); background: var(--mint-soft); border-color: rgba(116, 242, 194, .42); }
+    .life-index { display: grid; place-items: center; width: 32px; height: 32px; color: var(--navy-0); background: var(--blue); border-radius: 50%; font-size: .7rem; font-weight: 900; }
+    .life-tab[aria-selected="true"] .life-index { background: var(--mint); }
+    .life-name { font-weight: 800; font-size: .92rem; direction: ltr; text-align: right; }
+    .life-short { display: block; color: var(--subtle); font-size: .73rem; font-weight: 400; }
+    .life-arrow { color: var(--subtle); font-size: 1.2rem; }
+    .lifecycle-detail { min-height: 345px; padding: clamp(1.3rem, 3vw, 2.2rem); }
+    .lifecycle-detail h3 { margin-bottom: .75rem; color: var(--mint); font-size: 1.6rem; direction: ltr; text-align: right; }
+    .lifecycle-detail p { margin: 0 0 1.1rem; color: var(--muted); }
+    .life-fact { display: grid; grid-template-columns: 100px 1fr; gap: .55rem; padding: .75rem 0; border-top: 1px solid rgba(150, 193, 226, .13); }
+    .life-fact strong { color: var(--subtle); font-size: .78rem; }
+    .life-fact span { color: #dce8f3; font-size: .86rem; }
+    .domains { overflow: hidden; }
+    .domain-rail { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; padding: 1.8rem 1rem 1.3rem; direction: ltr; }
+    .domain-rail::before { position: absolute; top: 43px; right: 12%; left: 12%; height: 1px; content: ""; background: linear-gradient(90deg, var(--mint), var(--amber), rgba(128, 184, 255, .2)); }
+    .domain-step { position: relative; z-index: 2; display: grid; justify-items: center; gap: .55rem; min-width: 0; text-align: center; direction: rtl; }
+    .domain-orb { display: grid; place-items: center; width: 53px; height: 53px; color: var(--navy-0); background: var(--amber); border: 5px solid #0a1a2c; border-radius: 50%; box-shadow: 0 0 0 1px rgba(247, 200, 115, .45), 0 0 24px rgba(247, 200, 115, .14); font-size: .7rem; font-weight: 900; }
+    .domain-step.active .domain-orb { background: var(--mint); box-shadow: 0 0 0 1px rgba(116, 242, 194, .6), 0 0 28px rgba(116, 242, 194, .3); }
+    .domain-name { max-width: 145px; font-size: .86rem; font-weight: 800; }
+    .domain-status { color: var(--subtle); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .68rem; direction: ltr; }
+    .lock-note { margin: 0 1rem 1rem; padding: .8rem 1rem; color: var(--muted); background: rgba(247, 200, 115, .06); border: 1px solid rgba(247, 200, 115, .19); border-radius: var(--radius-sm); font-size: .84rem; }
+    .role-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; }
+    .role-card { min-height: 180px; padding: 1.1rem; }
+    .role-symbol { display: inline-grid; place-items: center; width: 34px; height: 34px; margin-bottom: .7rem; color: var(--navy-0); background: var(--blue); border-radius: 10px; font-size: .7rem; font-weight: 900; }
+    .role-card:nth-child(2n) .role-symbol { background: var(--mint); }
+    .role-card:nth-child(3n) .role-symbol { background: var(--amber); }
+    .role-card h3 { margin-bottom: .45rem; font-size: 1rem; }
+    .role-card p { margin: 0; color: var(--muted); font-size: .8rem; line-height: 1.55; }
+    .master-layout { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr); gap: 1rem; }
+    .master-steps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .65rem; }
+    .master-step { display: grid; grid-template-columns: 35px 1fr; gap: .7rem; align-items: start; padding: .85rem; background: rgba(3, 10, 19, .3); border: 1px solid var(--line); border-radius: var(--radius-sm); }
+    .master-step b { display: grid; place-items: center; width: 29px; height: 29px; color: var(--navy-0); background: var(--mint); border-radius: 50%; font-size: .7rem; }
+    .master-step:nth-child(2n) b { background: var(--blue); }
+    .master-step:nth-child(3n) b { background: var(--amber); }
+    .master-step h3 { margin-bottom: .25rem; font-size: .9rem; }
+    .master-step p { margin: 0; color: var(--subtle); font-size: .76rem; line-height: 1.5; }
+    .master-contract { padding: 1.4rem; }
+    .contract-count { display: flex; align-items: baseline; gap: .55rem; margin-bottom: .7rem; }
+    .contract-count strong { color: var(--amber); font-size: 3.5rem; line-height: 1; }
+    .contract-count span { color: var(--muted); }
+    .master-contract p { margin: 0; color: var(--muted); font-size: .88rem; }
+    .master-contract .callout { margin-top: 1rem; }
+    .source-truth { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; }
+    .truth-card { min-height: 205px; padding: 1.25rem; }
+    .truth-card h3 { margin-bottom: .55rem; font-size: 1.05rem; }
+    .truth-card p { margin: 0; color: var(--muted); font-size: .84rem; }
+    .truth-card strong { color: var(--mint); }
+    .truth-card.current strong { color: var(--amber); }
+    .guide-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .guide-list { display: grid; gap: .7rem; margin: 0; padding: 0; list-style: none; counter-reset: guide; }
+    .guide-list li { display: grid; grid-template-columns: 34px 1fr; gap: .7rem; align-items: start; color: var(--muted); font-size: .88rem; counter-increment: guide; }
+    .guide-list li::before { display: grid; place-items: center; width: 29px; height: 29px; content: counter(guide); color: var(--navy-0); background: var(--blue); border-radius: 50%; font-size: .7rem; font-weight: 900; }
+    .guide-list strong { color: var(--ink); }
+    .faq-list { display: grid; gap: .55rem; }
+    details { overflow: hidden; background: rgba(9, 22, 39, .62); border: 1px solid var(--line); border-radius: var(--radius-sm); }
+    summary { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 1.1rem; color: var(--ink); cursor: pointer; font-weight: 800; list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { color: var(--mint); content: "+"; font-size: 1.3rem; font-weight: 400; }
+    details[open] summary::after { content: "−"; }
+    details p { margin: 0; padding: 0 1.1rem 1.1rem; color: var(--muted); font-size: .87rem; }
+    .source-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .6rem; }
+    .source-grid a { padding: .7rem .8rem; color: var(--muted); background: rgba(9, 22, 39, .55); border: 1px solid var(--line); border-radius: var(--radius-sm); font-size: .77rem; text-decoration: none; direction: ltr; text-align: left; overflow-wrap: anywhere; }
+    .source-grid a:hover { color: var(--ink); border-color: rgba(116, 242, 194, .36); }
+    .footer { padding: 2rem 0 3.5rem; border-top: 1px solid rgba(150, 193, 226, .11); color: var(--subtle); font-size: .78rem; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 1rem; }
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity .75s var(--ease), transform .75s var(--ease); }
+    .reveal.is-visible { opacity: 1; transform: none; }
+    .motion-paused *, .motion-paused *::before, .motion-paused *::after { animation-play-state: paused !important; transition-duration: 0ms !important; }
+    html[data-reduced-motion="true"] { scroll-behavior: auto; }
+    html[data-reduced-motion="true"] .reveal { opacity: 1; transform: none; transition: none; }
+    html[data-reduced-motion="true"] .css-particle { display: none; }
+    html[data-reduced-motion="true"] .pipeline-fallback { animation: none; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+      .pipeline-fallback { animation: none !important; transform: none !important; }
+    }
+    @media (max-width: 1040px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-copy { max-width: 820px; }
+      .scene-card { min-height: 560px; }
+      .role-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .file-map { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .header-inner { width: min(var(--max), calc(100% - 1rem)); }
+      .main-nav { display: none; }
+      .hero { padding-top: 3rem; }
+      .status-grid, .stats-grid, .two-col, .compare-grid, .quality-panel, .lifecycle-layout, .master-layout, .guide-grid { grid-template-columns: 1fr; }
+      .quality-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .why-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .source-truth { grid-template-columns: 1fr; }
+      .scene-card { min-height: 640px; }
+      .pipeline-fallback { inset-inline: .4rem; inset-block: 24% 27%; grid-template-columns: repeat(7, minmax(58px, 1fr)); gap: 0; }
+      .node-orb { width: 43px; height: 43px; }
+      .fallback-node:not(:last-child)::after { top: 22px; left: calc(50% + 18px); }
+      .node-label { max-width: 58px; font-size: .62rem; }
+      .detail-panel { bottom: 5.3rem; grid-template-columns: 84px 1fr; }
+      .domain-rail { overflow-x: auto; grid-template-columns: repeat(4, minmax(150px, 1fr)); padding-inline: 1.3rem; }
+      .domain-rail::before { right: 14%; left: 14%; }
+      .source-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .footer-inner { flex-direction: column; }
+    }
+    @media (max-width: 500px) {
+      body { font-size: 15px; }
+      .wrap { width: min(var(--max), calc(100% - 1rem)); }
+      h1 { font-size: clamp(2.65rem, 15vw, 4.5rem); }
+      .section { padding: 4rem 0; }
+      .section-header { grid-template-columns: 1fr; gap: .8rem; }
+      .why-grid, .role-grid, .file-map, .source-grid { grid-template-columns: 1fr; }
+      .scene-card { min-height: 730px; }
+      .pipeline-fallback { inset-block: 19% 41%; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .25rem 1.4rem; }
+      .fallback-node::after { display: none; }
+      .fallback-node:nth-child(1)::before, .fallback-node:nth-child(2)::before, .fallback-node:nth-child(3)::before, .fallback-node:nth-child(4)::before, .fallback-node:nth-child(5)::before, .fallback-node:nth-child(6)::before { position: absolute; top: 50%; left: calc(100% + .7rem); width: 1.4rem; height: 1px; content: ""; background: rgba(128, 184, 255, .45); }
+      .fallback-node:nth-child(2)::before, .fallback-node:nth-child(4)::before, .fallback-node:nth-child(6)::before { display: none; }
+      .fallback-node:nth-child(7) { grid-column: 1 / -1; }
+      .detail-panel { bottom: 5.4rem; }
+      .scene-caption { font-size: .7rem; }
+      .master-steps { grid-template-columns: 1fr; }
+    }
+    @media (pointer: coarse) {
+      .fallback-node { min-height: 62px; }
+      .motion-toggle { min-height: 46px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#content">تجاوز إلى المحتوى</a>
+  <div class="page-progress" aria-hidden="true"><div class="page-progress-bar" id="pageProgress"></div></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="العودة إلى بداية شرح الويكي">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span>Nexus Wiki / Explain</span>
+      </a>
+      <nav class="main-nav" aria-label="تنقل الصفحة">
+        <a href="#architecture">المعمارية</a>
+        <a href="#lifecycle">دورة المصدر</a>
+        <a href="#domains">قفل المجالات</a>
+        <a href="#master">Master</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <button class="motion-toggle" id="motionToggle" type="button" aria-pressed="false">
+        <span class="toggle-dot" aria-hidden="true"></span>
+        <span id="motionLabel">إيقاف الحركة</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">شرح بصري موثّق · snapshot 2026-10-11</p>
+          <h1 id="hero-title">من الملفات إلى عقل <span>قابل للتتبع</span></h1>
+          <p>هذه الصفحة تفكك الويكي إلى رحلة يمكن رؤيتها: أصل خام ثابت، توجيه قابل للمراجعة، قراءة دلالية كاملة، ثم مصطلحات وClaims وConcepts وMasters لا تتجاوز الدليل.</p>
+          <div class="hero-note">
+            <span aria-hidden="true">◆</span>
+            <span><strong>تنبيه حالة:</strong> الويكي ليست مكتملة. الترتيب الحالي هو عمل معرفة متسلسل، وليس إعلانًا عن اكتمال corpus أو صلاحية كل مخرج.</span>
+          </div>
+          <div class="status-grid" aria-label="حالة المجالات الحالية">
+            <div class="status-card active">
+              <small>المجال النشط</small>
+              <strong><a href="config/processing_order.json">sales=in_progress</a></strong>
+              <a class="source-link" href="config/processing_order.json">المصدر: الحالة الوحيدة</a>
+            </div>
+            <div class="status-card pending">
+              <small>المجالات المنتظرة</small>
+              <strong><a href="config/processing_order.json">outreach/pricing_offers/content_strategy=pending</a></strong>
+              <a class="source-link" href="config/domain_catalog.json">المصدر: الكتالوج</a>
+            </div>
+            <div class="status-card warning">
+              <small>الحكم الصريح</small>
+              <strong>لا T كاملة، لا domain_done، ولا Master canonical حاليًا</strong>
+              <a class="source-link" href="reports/sales-proof/sales-batch-2026-10-11-001.md">القيود: تقرير الدفعة</a>
+            </div>
+          </div>
+          <span class="scroll-cue">مرّر لتتبع الدليل لا لتجاوز مراحله</span>
+        </div>
+
+        <figure class="scene-card reveal" id="pipelineScene" aria-labelledby="scene-title">
+          <div class="scene-head">
+            <span class="scene-kicker" id="scene-title">خريطة pipeline · اضغط عقدة لقراءة حدودها</span>
+            <span class="engine-status" id="sceneStatus" role="status" aria-live="polite">CSS fallback جاهز</span>
+          </div>
+          <div class="pipeline-fallback" aria-label="مراحل تحويل المصدر">
+            <button class="fallback-node" type="button" data-node="raw" aria-pressed="true" aria-label="raw: الدليل الخام">
+              <span class="node-orb" aria-hidden="true">RAW</span><span class="node-label">raw<br>الأصل</span>
+            </button>
+            <button class="fallback-node" type="button" data-node="route" aria-pressed="false" aria-label="route: التوجيه">
+              <span class="node-orb" aria-hidden="true">ROUTE</span><span class="node-label">route<br>التوجيه</span>
+            </button>
+            <button class="fallback-node" type="button" data-node="terms" aria-pressed="false" aria-label="terms: المصطلحات">
+              <span class="node-orb" aria-hidden="true">TERMS</span><span class="node-label">terms<br>المصطلحات</span>
+            </button>
+            <button class="fallback-node" type="button" data-node="claims" aria-pressed="false" aria-label="claims: الادعاءات">
+              <span class="node-orb" aria-hidden="true">CLAIMS</span><span class="node-label">claims<br>الادعاءات</span>
+            </button>
+            <button class="fallback-node" type="button" data-node="concepts" aria-pressed="false" aria-label="concepts: المفاهيم">
+              <span class="node-orb" aria-hidden="true">CONCEPTS</span><span class="node-label">concepts<br>المفاهيم</span>
+            </button>
+            <button class="fallback-node" type="button" data-node="masters" aria-pressed="false" aria-label="masters: الكتب المعرفية">
+              <span class="node-orb" aria-hidden="true">MASTERS</span><span class="node-label">masters<br>الكتب</span>
+            </button>
+            <button class="fallback-node" type="button" data-node="qa" aria-pressed="false" aria-label="QA: التدقيق">
+              <span class="node-orb" aria-hidden="true">QA</span><span class="node-label">QA<br>التدقيق</span>
+            </button>
+          </div>
+          <span class="css-particle p1" aria-hidden="true"></span>
+          <span class="css-particle p2" aria-hidden="true"></span>
+          <span class="css-particle p3" aria-hidden="true"></span>
+          <div class="detail-panel" aria-live="polite">
+            <div class="detail-title" id="detailTitle">raw · الدليل الخام</div>
+            <strong class="detail-key">وظيفته</strong><span class="detail-value" id="detailRole">يحفظ الأصل الذي تُبنى عليه الهوية والبصمة والمواضع.</span>
+            <strong class="detail-key">ما تم</strong><span class="detail-value" id="detailDone">سياسة raw immutable موثقة؛ القراءة والحساب والإشارة مسموحة بلا تعديل.</span>
+            <strong class="detail-key">لا يثبته</strong><span class="detail-value limit" id="detailLimit">وجود hash أو EOF لا يثبت الفهم الدلالي أو اكتمال الاستخراج.</span>
+            <a class="source-link detail-source" id="detailSource" href="AGENTS.md">المصدر: AGENTS.md</a>
+          </div>
+          <figcaption class="scene-caption">
+            <span><strong>المعنى:</strong> حركة النقاط تمثل انتقال الدليل بين طبقات لا تُدمج في حالة واحدة.</span>
+            <a href="systems/13_MULTI_DOMAIN_ARCHITECTURE.md">عقد المعمارية</a>
+          </figcaption>
+          <noscript>
+            <p class="scene-caption">JavaScript غير متاح؛ خريطة CSS أعلاه تعرض المراحل، والمحتوى التفصيلي في بقية الصفحة.</p>
+          </noscript>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="architecture" aria-labelledby="architecture-title">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <div><p class="section-kicker">01 / القياس قبل الانطباع</p><h2 id="architecture-title">ماذا أُنجز فعلًا؟</h2></div>
+          <p class="section-intro">الواجهة لا تعيد تفسير الحالة من شكل المجلدات. الأرقام التالية من سجلات الفحص والدفعة، وكل بطاقة تربطك بمسار الدليل الذي أنتجها.</p>
+        </div>
+        <div class="stats-grid">
+          <article class="metric-card glass reveal" data-tone="blue"><span class="metric-label">اختبارات workflow</span><div class="metric-value" data-count="33">0</div><span class="metric-context">إجمالي الاختبارات</span><a class="source-link metric-source" href="reports/sales-proof/workflow-test-result.md">31 نجح · 0 فشل · 2 تخطى</a></article>
+          <article class="metric-card glass reveal" data-tone="blue"><span class="metric-label">مصادر دفعة sales</span><div class="metric-value" data-count="3">0</div><span class="metric-context">strong sources مختارة</span><a class="source-link metric-source" href="collections/sales/reading/SALES_BATCH_2026-10-11_001.json">المصدر: batch JSON</a></article>
+          <article class="metric-card glass reveal" data-tone="amber"><span class="metric-label">قراءات حتى EOF</span><div class="metric-value" data-count="3">0</div><span class="metric-context">من أصل المصادر المختارة</span><a class="source-link metric-source" href="reports/sales-proof/sales-batch-2026-10-11-001.md">3/3 · full EOF</a></article>
+          <article class="metric-card glass reveal" data-tone="mint"><span class="metric-label">semantic segments</span><div class="metric-value" data-count="9">0</div><span class="metric-context">متصلة بلا فجوات</span><a class="source-link metric-source" href="checkpoints/SALES_BATCH_2026-10-11_001.md">المصدر: checkpoint</a></article>
+          <article class="metric-card glass reveal" data-tone="mint"><span class="metric-label">candidate terms</span><div class="metric-value" data-count="9">0</div><span class="metric-context">مرشحة وليست مقبولة</span><a class="source-link metric-source" href="collections/sales/reading/SALES_BATCH_2026-10-11_001.json">المصدر: candidate_terms</a></article>
+          <article class="metric-card glass reveal" data-tone="amber"><span class="metric-label">candidate claims</span><div class="metric-value" data-count="12">0</div><span class="metric-context">مع اقتباسات وحدود</span><a class="source-link metric-source" href="collections/sales/reading/SALES_BATCH_2026-10-11_001.json">المصدر: candidate_claims</a></article>
+          <article class="metric-card glass reveal" data-tone="rose"><span class="metric-label">exact quote checks</span><div class="metric-value" data-count="12">0</div><span class="metric-context">كلها PASS في verifier الدفعة</span><a class="source-link metric-source" href="reports/sales-proof/sales-batch-2026-10-11-001.md">المصدر: § فحوص منفذة</a></article>
+          <article class="metric-card glass reveal" data-tone="blue"><span class="metric-label">done copies للدفعة</span><div class="metric-value">لا</div><span class="metric-context">لم يُنفذ publish</span><a class="source-link metric-source" href="checkpoints/SALES_BATCH_2026-10-11_001.md">المصدر: حدود الدفعة</a></article>
+        </div>
+         <div class="quality-panel glass reveal">
+           <div class="quality-copy"><h3>حدود الفحص المساعد</h3><p>تظهر الصفحة نتيجة فحوصها المحدودة من دون تحويلها إلى شهادة معرفة: <code>wiki_quality.py</code> فحص بنيوي مساعد، واختبار workflow مستقل عن اكتمال المجال.</p><a class="source-link" href="reports/EXPLAIN_3D_SNAPSHOT_2026-10-11.json">المصدر: snapshot الصفحة</a></div>
+           <div class="quality-list" aria-label="حدود الفحوص الحالية">
+             <div class="quality-item"><strong>ok=true</strong><span>wiki_quality</span></div>
+             <div class="quality-item"><strong>errors=[]</strong><span>فحص مساعد</span></div>
+             <div class="quality-item"><strong>candidate</strong><span>دفعة sales</span></div>
+             <div class="quality-item"><strong>غير مغلق</strong><span>domain gate</span></div>
+           </div>
+         </div>
+        <div class="two-col" style="margin-top:1rem">
+          <article class="glass card-pad reveal">
+            <h3>البنية والعقود</h3>
+            <p>وُثقت طبقات الويكي، الكتالوج، ترتيب المجالات، قفل المجال الواحد، route metadata، بوابات R/T/C/K/M/QA، إعادة المعالجة، وفصل Index عن Master. العقود تشرح ما يجب أن يحدث؛ لا تعلن وحدها أنه حدث.</p>
+            <div class="pill-row"><a class="pill" href="systems/13_MULTI_DOMAIN_ARCHITECTURE.md">Architecture</a><a class="pill" href="systems/14_SOURCE_ROUTING_AND_DONE_TREE.md">Routing</a><a class="pill" href="systems/15_DOMAIN_COMPLETION_GATES.md">Gates</a><a class="pill" href="systems/16_SEQUENTIAL_AGENT_ORCHESTRATION.md">Agents</a></div>
+          </article>
+          <article class="glass card-pad reveal">
+            <h3>ما الذي تقيسه الدفعة؟</h3>
+            <p>ثلاثة مصادر في snapshot من نوع <code>batch</code>، full EOF لكل مصدر، تغطية Unicode متصلة، مصطلحات وClaims مرشحة، وفحص quote/hash دقيق. هذا إنجاز قراءة وإثبات موضعي، لا تحويلًا تلقائيًا إلى معرفة مقبولة.</p>
+            <div class="callout">الحالة المحفوظة: <strong>candidate_only</strong>؛ لا T ولا source_done ولا domain_done ولا Concepts/Masters جديدة لهذه الدفعة.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why" aria-labelledby="why-title">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <div><p class="section-kicker">02 / لماذا لا تكفي المعاينة؟</p><h2 id="why-title">لماذا يأخذ الأمر وقتًا؟</h2></div>
+          <p class="section-intro">لأن المنتج ليس نصًا ملخصًا؛ المنتج سلسلة إثبات. كل اختصار غير معلن قد يغيّر المقام، يطمس خلافًا، أو يجعل Claim بلا موضع.</p>
+        </div>
+        <div class="why-grid">
+          <article class="glass why-card reveal"><span class="why-number">01</span><h3>قراءة دلالية كاملة</h3><p>الوصول إلى EOF وسلامة البايتات يثبتان IO فقط. القراءة المعرفية تحتاج segments متصلة، سياقًا، ومصيرًا لكل وحدة محتوى.</p><a class="source-link" href="systems/14_SOURCE_ROUTING_AND_DONE_TREE.md">عقد القراءة</a></article>
+          <article class="glass why-card reveal"><span class="why-number">02</span><h3>hash وdedup</h3><p>الاسم لا يثبت الهوية. تُحسب SHA-256 من كل البايتات، وتُفصل النسخة المطابقة عن مصدر مستقل كي لا يتضخم الدليل.</p><a class="source-link" href="systems/14_SOURCE_ROUTING_AND_DONE_TREE.md">عقد الهوية</a></article>
+          <article class="glass why-card reveal"><span class="why-number">03</span><h3>تغطية متصلة</h3><p>لا تكفي أول فقرة أو أول 400 حرف. كل gap أو overlap في حدود Unicode يبقي التغطية مفتوحة، حتى لو كانت البصمة سليمة.</p><a class="source-link" href="SCHEMA.md">read_coverage</a></article>
+          <article class="glass why-card reveal"><span class="why-number">04</span><h3>provenance لا زخرفة</h3><p>كل Claim يحتاج اقتباسًا وlocator ونوع دليل ونطاقًا وما لا يثبته. الرقم المبلغ عنه لا يتحول إلى benchmark من تلقاء نفسه.</p><a class="source-link" href="SCHEMA.md">حقول Claim</a></article>
+          <article class="glass why-card reveal"><span class="why-number">05</span><h3>مراجعة وخلافات</h3><p>المثال يبقى مثالًا، والاستنتاج يوسم كاستنتاج، والخلاف المدعوم يُحفظ بدل تسويته قسرًا. الجمع ليس هو القبول.</p><a class="source-link" href="MULTI_DOMAIN_WIKI_OPERATING_CHARTER_2026-10-09.md">قاعدة الدليل</a></article>
+          <article class="glass why-card reveal"><span class="why-number">06</span><h3>قفل المجال والوكلاء</h3><p>Intake العام يمكنه التوجيه للمجالات المنتظرة، لكن صناعة Terms/Claims/Concepts/Masters محصورة في مجال نشط. retries والتسليم وQA المستقل تزيد زمنًا مقصودًا.</p><a class="source-link" href="systems/16_SEQUENTIAL_AGENT_ORCHESTRATION.md">عقد التشغيل</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="done" aria-labelledby="done-title">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <div><p class="section-kicker">03 / حدود الإنجاز</p><h2 id="done-title">تمّ شيء حقيقي، لكنه ليس النهاية</h2></div>
+          <p class="section-intro">نحافظ هنا على الفرق بين بنية تشغيلية مهيأة، وإثبات دفعة محدودة، وإغلاق مجال كامل. هذا الفرق هو الذي يمنع الصفحة من بيع وهم الجاهزية.</p>
+        </div>
+        <div class="compare-grid">
+          <article class="compare-card glass done reveal">
+            <div class="compare-title"><span class="state-dot" aria-hidden="true"></span><h3>ما تم فعليًا</h3></div>
+            <ul class="check-list">
+              <li>بنية الويكي والعقود العامة والكتالوج والفهارس موثقة وقابلة للملاحة.</li>
+              <li>workflow test موثق: <strong>31 pass / 0 fail / 2 skip</strong> من إجمالي <strong>33</strong>.</li>
+              <li>دفعة sales: <strong>3 مصادر</strong>، full EOF لكلها، <strong>9 segments</strong>، <strong>9 candidate terms</strong>، <strong>12 candidate claims</strong>.</li>
+              <li>الاقتباسات والـhash في الدفعة اجتازت الفحص الدقيق؛ بقيت الحالات candidate ومحدودة النطاق.</li>
+              <li>السياسات تشرح أدوار Orchestrator وIntake وTerms وClaims وConcepts وMaster وQA.</li>
+            </ul>
+            <a class="source-link" href="reports/sales-proof/sales-batch-2026-10-11-001.md">تقرير الدفعة والقيود</a>
+          </article>
+          <article class="compare-card glass open reveal">
+            <div class="compare-title"><span class="state-dot" aria-hidden="true"></span><h3>ما لم يتم</h3></div>
+            <ul class="check-list">
+              <li><strong>sales ليست done</strong>؛ الحالة الحالية <code>in_progress</code> ولا توجد completion claim.</li>
+              <li>لا <code>domain_terms_complete</code> (بوابة T) لكل snapshot المجال.</li>
+              <li>لا Master canonical؛ الـMaster الموروث الظاهر في الفهرس يبقى <code>draft / partial</code>.</li>
+              <li>لا إغلاق للمجالات الأربعة ولا full corpus semantic coverage.</li>
+              <li>لا Concepts أو Masters أو publish أو done copies أنشأتها دفعة sales الحالية.</li>
+            </ul>
+            <a class="source-link" href="config/processing_order.json">مصدر الحالة والبوابات</a>
+          </article>
+        </div>
+        <div class="review-strip reveal"><span aria-hidden="true">!</span><span><strong>مراجعة التكامل السابقة كانت RETURN.</strong> جرى علاج جزء من بنية المسارات في العقود والأداة، لكن المراجعة نفسها تسجل فجوات route metadata، النسخة المادية، والتغطية التشغيلية. لا نخفي هذه القيود ولا نعيد تسميتها PASS.</span><a class="source-link" href="reports/sales-proof/MULTIDOMAIN_INTEGRATION_REVIEW_2026-10-10.md">اقرأ RETURN</a></div>
+      </div>
+    </section>
+
+    <section class="section" id="map" aria-labelledby="map-title">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <div><p class="section-kicker">04 / خريطة الملفات</p><h2 id="map-title">أين يعيش كل شيء؟</h2></div>
+          <p class="section-intro">اضغط أي طبقة للعودة إلى فهرسها أو أداة تشغيلها. المسار المعروض داخل البطاقة هو مسار الويكي النسبي، لا مسارًا خارج مساحة المشروع.</p>
+        </div>
+        <div class="file-map">
+          <a class="file-card glass reveal" href="new/INDEX.md"><span class="file-path">new/</span><p>صندوق الاستقبال. يبقى الأصل قبل التوجيه، مع جرد وبصمة بلا حذف ضمن هذا التشغيل.</p></a>
+          <a class="file-card glass reveal" href="raw/SOURCE_MANIFEST.tsv"><span class="file-path">raw/</span><p>الدليل الخام immutable؛ يُقرأ ويُحسب hash ويُشار إليه، ولا يُعدّل أو يُنقل أو يُستبدل.</p></a>
+          <a class="file-card glass reveal" href="done/INDEX.md"><span class="file-path">done/&lt;domain&gt;/&lt;subdomain&gt;/</span><p>المسار المباشر لنسخة source byte-exact بعد route ناجح، مع REF وROUTE وINDEX.</p></a>
+          <a class="file-card glass reveal" href="sources/INDEX.md"><span class="file-path">sources/</span><p>سجلات هوية Source والمسار والبصمة والحالات الأساسية، لا بديل عن النص الخام.</p></a>
+          <a class="file-card glass reveal" href="collections/INDEX.md"><span class="file-path">collections/</span><p>Snapshots وmanifests وقراءة التغطية ودفعات المجال؛ هنا يظهر الفرق بين batch وdomain snapshot.</p></a>
+          <a class="file-card glass reveal" href="claims/INDEX.md"><span class="file-path">claims/</span><p>Claims ذرية مرتبطة بموضع دليل، ونوع evidence، والثقة، والمراجعة والحدود.</p></a>
+          <a class="file-card glass reveal" href="concepts/INDEX.md"><span class="file-path">concepts/</span><p>توليف يشرح الجوهر والآلية والشروط والحدود والخلافات، مبني على Claims مراجعة.</p></a>
+          <a class="file-card glass reveal" href="masters/INDEX.md"><span class="file-path">masters/</span><p>كتب قرار تبدأ بعد T الشاملة وبحاجة استرجاع مثبتة؛ الفهرس نفسه ليس Master.</p></a>
+          <a class="file-card glass reveal" href="systems/INDEX.md"><span class="file-path">systems/</span><p>العقود العامة 13–19 ومسارات التشغيل والبوابات والأدوار وإعادة المعالجة.</p></a>
+          <a class="file-card glass reveal" href="config/INDEX.md"><span class="file-path">config/</span><p>catalog يملك الحدود، وprocessing_order يملك الحالة والترتيب والقفل؛ لا state منافسة.</p></a>
+          <a class="file-card glass reveal" href="reports/INDEX.md"><span class="file-path">reports/</span><p>التقارير والقياسات والقرارات؛ التقرير مشتق ولا يرفع حالة المجال وحده.</p></a>
+          <a class="file-card glass reveal" href="checkpoints/SALES_BATCH_2026-10-11_001.md"><span class="file-path">checkpoints/</span><p>آخر نقطة تسليم قابلة للاستئناف: batch، أرقامها، حدودها، وأوامر فحصها.</p></a>
+          <a class="file-card glass reveal" href="tools/wiki_workflow.py"><span class="file-path">tools/</span><p>أدوات القراءة أولًا والفحص والـdry-run؛ لا تجعل نجاحها وحده شهادة دلالية.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="lifecycle" aria-labelledby="lifecycle-title">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <div><p class="section-kicker">05 / حالات لا تختزل</p><h2 id="lifecycle-title">دورة المصدر تفاعليًا</h2></div>
+          <p class="section-intro">اختر حالة من اليسار. ستظهر وظيفة الحالة وما لا تسمح به. وجود كلمة <code>done</code> في مسار لا يكفي لرفع أي بوابة معرفية.</p>
+        </div>
+        <div class="lifecycle-layout">
+          <div class="lifecycle-tabs" role="tablist" aria-label="حالات دورة المصدر">
+            <button class="life-tab" type="button" role="tab" aria-selected="true" data-life="route_done"><span class="life-index">01</span><span class="life-name">route_done<span class="life-short">التوجيه والنسخة</span></span><span class="life-arrow" aria-hidden="true">←</span></button>
+            <button class="life-tab" type="button" role="tab" aria-selected="false" data-life="source_done"><span class="life-index">02</span><span class="life-name">source_done<span class="life-short">كل وحدات المصدر</span></span><span class="life-arrow" aria-hidden="true">←</span></button>
+            <button class="life-tab" type="button" role="tab" aria-selected="false" data-life="source_domain_extraction_complete"><span class="life-index">03</span><span class="life-name">source_domain_extraction_complete<span class="life-short">مساهمة مجال محدد</span></span><span class="life-arrow" aria-hidden="true">←</span></button>
+            <button class="life-tab" type="button" role="tab" aria-selected="false" data-life="domain_terms_complete"><span class="life-index">04</span><span class="life-name">domain_terms_complete<span class="life-short">بوابة T الشاملة</span></span><span class="life-arrow" aria-hidden="true">←</span></button>
+            <button class="life-tab" type="button" role="tab" aria-selected="false" data-life="domain_done"><span class="life-index">05</span><span class="life-name">domain_done<span class="life-short">إغلاق المجال</span></span><span class="life-arrow" aria-hidden="true">←</span></button>
+          </div>
+          <article class="lifecycle-detail glass reveal" role="tabpanel" aria-live="polite">
+            <h3 id="lifeTitle">route_done</h3>
+            <p id="lifeMeaning">اكتمل التوجيه والنسخة وmetadata، فأصبح للمصدر مسار أساسي يمكن الرجوع إليه.</p>
+            <div class="life-fact"><strong>يتطلب</strong><span id="lifeRequires">قراءة التصنيف، primary route واحد، نسخة مستقلة byte-exact، ومراجعة metadata.</span></div>
+            <div class="life-fact"><strong>لا يعني</strong><span id="lifeDoesNot">لا يعني source_done، ولا يصرح باستخراج Terms/Claims لمجال pending، ولا يساوي domain_done.</span></div>
+            <a class="source-link" id="lifeSource" href="AGENTS.md">المصدر: AGENTS.md</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="domains" aria-labelledby="domains-title">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <div><p class="section-kicker">06 / القفل التسلسلي</p><h2 id="domains-title">أربعة مجالات، باب واحد مفتوح</h2></div>
+          <p class="section-intro">التسلسل يخص صناعة المعرفة فقط. يمكن للـglobal intake أن يوجه مصدرًا لمجال منتظر، لكن لا يبني له Terms أو Claims أو Concepts أو Masters قبل دوره.</p>
+        </div>
+        <div class="domains glass reveal">
+          <div class="domain-rail" aria-label="ترتيب المجالات الأربعة">
+            <div class="domain-step active"><span class="domain-orb">01</span><span class="domain-name">sales</span><span class="domain-status">in_progress</span></div>
+            <div class="domain-step"><span class="domain-orb">02</span><span class="domain-name">outreach</span><span class="domain-status">pending</span></div>
+            <div class="domain-step"><span class="domain-orb">03</span><span class="domain-name">pricing_offers</span><span class="domain-status">pending</span></div>
+            <div class="domain-step"><span class="domain-orb">04</span><span class="domain-name">content_strategy</span><span class="domain-status">pending</span></div>
+          </div>
+          <p class="lock-note"><strong>القفل:</strong> لا ينتقل الباب من sales إلى outreach إلا بعد <code>domain_done</code> مع R/T/C/K/M/QA، snapshot مغلقة، فهارس محدثة، retrieval tests، ومراجعة delta. <a href="config/processing_order.json">اقرأ الحالة الوحيدة</a>.</p>
+        </div>
+        <div class="two-col" style="margin-top:1rem">
+          <article class="glass card-pad reveal"><h3>التصنيف العام ليس فتحًا معرفيًا</h3><p>route لمصدر outreach أثناء نشاط sales مسموح كـintake ونسخة وفهرسة، لكنه يبقى pending معرفيًا. pending ليست quarantine، والغموض ليس دعوة للتخمين.</p><a class="source-link" href="systems/18_DOMAIN_CATALOG_AND_PROCESSING_ORDER.md">حدود الكتالوج</a></article>
+          <article class="glass card-pad reveal"><h3>الوصول الجديد يطلق delta</h3><p>مصدر جديد أو تصحيح أو تغيير catalog لا يمحو snapshot القديمة؛ يجعل التغطية المتأثرة stale حتى يُراجع الأثر ويُبنى snapshot جديدة. لا reopen صامت ولا مجالان نشطان.</p><a class="source-link" href="systems/19_NEW_SOURCE_REPROCESSING.md">عقد delta</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="agents" aria-labelledby="agents-title">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <div><p class="section-kicker">07 / من يفعل ماذا؟</p><h2 id="agents-title">دور الـAgents بلا سحر</h2></div>
+          <p class="section-intro">الأدوار تقسيم مسؤوليات وتسليمات، وليست تصريحًا تلقائيًا بالقبول. الـQA مستقل عن مؤلف المخرج، والمنسق وحده يغير الحالة بعد التحقق.</p>
+        </div>
+        <div class="role-grid">
+          <article class="role-card glass reveal"><span class="role-symbol">O</span><h3>Orchestrator</h3><p>يثبت المجال الحالي، يوزع المهام، يحمي القفل، ويعرض البوابات. لا يعتمد معرفة بلا دليل.</p></article>
+          <article class="role-card glass reveal"><span class="role-symbol">I</span><h3>Intake / Classify</h3><p>يجرد المصدر، يقرأ للتصنيف، يحسب الهوية، يكشف التكرار، ويثبت primary/secondary والنسخة.</p></article>
+          <article class="role-card glass reveal"><span class="role-symbol">T</span><h3>Reader / Terms</h3><p>يجمع candidate terms وcandidate Claims معًا أثناء القراءة، مع مواضع وسياق، لا بعد اختزال النص.</p></article>
+          <article class="role-card glass reveal"><span class="role-symbol">C</span><h3>Claims Reviewer</h3><p>يفحص الاقتباس والنوع والثقة والنطاق وما لا يثبته الدليل، ويحفظ الخلافات بدل حذفها.</p></article>
+          <article class="role-card glass reveal"><span class="role-symbol">K</span><h3>Concepts</h3><p>يربط المصطلحات والClaims في آلية ذات شروط وحدود وعلاقات؛ لا يبني من تشابه الكلمات وحده.</p></article>
+          <article class="role-card glass reveal"><span class="role-symbol">M</span><h3>Master</h3><p>يركب المعرفة المقبولة في كتاب يجيب عن سؤال قرار واحد، بعد T الشاملة واختبارات الحاجة.</p></article>
+          <article class="role-card glass reveal"><span class="role-symbol">Q</span><h3>QA / Index</h3><p>يفحص الأدلة والروابط والفهارس والاسترجاع بصورة مستقلة، ثم يقرر hold/pass دون توسيع الصلاحيات.</p></article>
+          <article class="role-card glass reveal"><span class="role-symbol">↺</span><h3>التسليم والاستئناف</h3><p>كل تسليم يذكر ما قُرئ، آخر segment، المخرجات، الفحوص، الفجوات، وrevision/token؛ EOF ليس إغلاقًا.</p></article>
+        </div>
+        <div class="callout reveal">في هذه الصفحة تحديدًا: لا subagents، لا Codex، ولا كتابة في raw أو طبقات المعرفة. المخرج تفسير موثق للحالة القائمة فقط. <a href="reports/sales-proof/agent-gateway-status.md">حالة بوابة الوكلاء</a></div>
+      </div>
+    </section>
+
+    <section class="section" id="master" aria-labelledby="master-title">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <div><p class="section-kicker">08 / من Concepts إلى كتاب قرار</p><h2 id="master-title">كيف يُبنى Master؟</h2></div>
+          <p class="section-intro">الـMaster ليس تجميعًا لكل الملفات، والفهرس ليس كتابًا. الهدف هو إضافة تركيب قابل للقياس فوق Concepts، مع إبقاء المصدر والحدود والفجوات مرئية.</p>
+        </div>
+        <div class="master-layout">
+          <article class="glass card-pad reveal">
+            <div class="master-steps">
+              <div class="master-step"><b>01</b><div><h3>T الشاملة أولًا</h3><p>كل مصادر وأقسام snapshot المجال، مع المصائر والمرشحين غير المحسومين ظاهرين.</p></div></div>
+              <div class="master-step"><b>02</b><div><h3>Claims وConcepts reviewed</h3><p>لا تُبنى خريطة قرار من candidate evidence أو من تشابه لفظي.</p></div></div>
+              <div class="master-step"><b>03</b><div><h3>اختبار الحاجة الاسترجاعية</h3><p>يثبت أن Concepts المفردة لا تجيب عن سؤال مركب أو تجعل التوجيه مكلفًا.</p></div></div>
+              <div class="master-step"><b>04</b><div><h3>عقد الأقسام</h3><p>يُكتب الكتاب بعناوين الأقسام المطلوبة وبعمق تدعمه المادة، لا بحصص حشو.</p></div></div>
+              <div class="master-step"><b>05</b><div><h3>Evidence & provenance</h3><p>كل قرار ورقم ومثال مربوط بالمصدر والموضع ونوع الدليل وحدوده.</p></div></div>
+              <div class="master-step"><b>06</b><div><h3>QA مستقل</h3><p>تغطية، روابط، خلافات، فهارس، retrieval، ثم قرار اعتماد صريح إن استحق.</p></div></div>
+            </div>
+          </article>
+           <aside class="glass master-contract reveal">
+             <div class="contract-count"><strong>Gate</strong><span>شرط بدء Master جديد</span></div>
+             <p>يبدأ العقد من تعريف السؤال والنطاق، ويمر بالآليات والأدلة والأرقام والخلافات والقيود والنماذج والأسئلة والروابط. عمق الأقسام يتبع المادة ولا يبرر حشوًا أو اعتمادًا بلا تتبع.</p>
+             <div class="callout">الـIndex / Navigation يجيب: «أين الملف المناسب؟». الـMaster يجيب عن سؤال قرار ويضيف تركيبًا. لا يوجد <code>M_SALES_NAVIGATION</code> ككتاب.</div>
+             <a class="source-link" href="masters/MASTER_ARCHITECTURE.md">عقد Master</a>
+           </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="source" aria-labelledby="source-title">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <div><p class="section-kicker">09 / حقيقة المصدر</p><h2 id="source-title">الأصل لا يختفي خلف الميتاداتا</h2></div>
+          <p class="section-intro">المسار المادي والهوية والدليل ثلاث طبقات مرتبطة، لا بدائل متنافسة. هذه النقطة تمنع أن يتحول REF أو source_refs إلى وهم مصدر مستقل.</p>
+        </div>
+        <div class="source-truth">
+          <article class="truth-card glass reveal"><h3>raw يبقى الأصل</h3><p>الأصل في <code>raw/</code> immutable. يسمح النظام بالقراءة والحساب والإشارة، ويمنع التعديل والنقل والاستبدال والحذف.</p><a class="source-link" href="AGENTS.md">قاعدة المصدر</a></article>
+          <article class="truth-card glass reveal"><h3>done = نسخة مباشرة عند route</h3><p>عند نجاح route تُنشأ نسخة regular file مستقلة byte-exact في <code>done/&lt;domain&gt;/&lt;subdomain&gt;/</code> مع REF وROUTE وINDEX. هذا لا يعني source_done.</p><a class="source-link" href="systems/14_SOURCE_ROUTING_AND_DONE_TREE.md">شجرة done</a></article>
+          <article class="truth-card glass current reveal"><h3>الدفعة الحالية لم تنشر</h3><p><strong>SALES_BATCH_2026-10-11_001</strong> candidate_only؛ تقريرها يصرح بأنه لم تُنشأ done copies أو publish. لذلك لا نخلط سياسة النسخة مع تنفيذ هذه الدفعة.</p><a class="source-link" href="reports/sales-proof/sales-batch-2026-10-11-001.md">حقيقة الدفعة</a></article>
+        </div>
+        <div class="callout reveal">و<strong>source_refs</strong>؟ هو فهرس legacy ومراجع للملاحة فقط، وليس مخزنًا canonical ثانيًا ولا بديلًا عن النسخة المباشرة. <a href="config/domain_catalog.json">سياسة النسخ</a></div>
+      </div>
+    </section>
+
+    <section class="section" id="guide" aria-labelledby="guide-title">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <div><p class="section-kicker">10 / مسار القارئ</p><h2 id="guide-title">كيف تقرأ هذه الصفحة؟</h2></div>
+          <p class="section-intro">لا تبدأ من الرقم الأكبر. ابدأ من مصدر الحالة، ثم اتبع طبقة الدليل حتى تعرف ما الذي يثبت وما الذي ما زال وعدًا تشغيليًا.</p>
+        </div>
+        <div class="guide-grid">
+          <article class="glass card-pad reveal">
+            <ol class="guide-list">
+              <li><span><strong>ثبّت الحالة:</strong> افتح <a href="config/processing_order.json">processing_order.json</a> لتعرف المجال النشط والقفل؛ لا تعتمد على تقرير قديم وحده.</span></li>
+              <li><span><strong>افهم الطبقات:</strong> استخدم خريطة pipeline لتفريق raw وroute وTerms وClaims وConcepts وMasters وQA.</span></li>
+              <li><span><strong>اسأل عن النطاق:</strong> هل الرقم من batch أم snapshot مجال؟ هل Claim candidate أم reviewed؟ هل المصدر direct copy أم raw فقط؟</span></li>
+              <li><span><strong>ارجع للموضع:</strong> افتح JSON القراءة وتحقق من source_id والـlocator والاقتباس والحدود؛ لا تكتف بملخص التقرير.</span></li>
+              <li><span><strong>اقرأ القيود:</strong> الامتناع الصحيح جزء من المنتج. غياب T أو QA يبقى ظاهرًا بدل لغة اكتمال مريحة.</span></li>
+            </ol>
+          </article>
+          <article class="glass card-pad reveal">
+            <h3>اختصارات مفيدة</h3>
+            <p>للتشغيل البنيوي:</p>
+            <div class="layer-list">
+              <li><code>route_done</code><span>التوجيه والنسخة وmetadata؛ لا استخراجًا.</span></li>
+              <li><code>source_done</code><span>كل وحدات المصدر ومراجعتها؛ لا يحتاج Master.</span></li>
+              <li><code>domain_terms_complete</code><span>T شاملة للمجال؛ شرط بدء Master.</span></li>
+              <li><code>domain_done</code><span>إغلاق R/T/C/K/M/QA؛ شرط فتح المجال التالي.</span></li>
+            </div>
+            <a class="source-link" href="SCHEMA.md">قاموس الحالات في SCHEMA</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <div><p class="section-kicker">11 / أسئلة لا تختصرها الواجهة</p><h2 id="faq-title">FAQ</h2></div>
+          <p class="section-intro">إجابات قصيرة، وكل إجابة تقود إلى العقد الذي يملك التفاصيل.</p>
+        </div>
+        <div class="faq-list">
+          <details class="reveal"><summary>هل route_done يعني أن المصدر اكتمل؟</summary><p>لا. هو نجاح التوجيه والنسخة وmetadata فقط. <code>source_done</code> يحتاج استخراج كل وحدات المصدر ومراجعتها، و<code>domain_done</code> حكم أوسع للمجال. <a href="AGENTS.md">تعريف الحالات</a>.</p></details>
+          <details class="reveal"><summary>هل 3 مصادر sales تعني أن sales مكتملة؟</summary><p>لا. هذه دفعة batch محدودة، و<code>inventory_complete=false</code> و<code>candidate_only=true</code>. الأرقام تثبت هذه الدفعة فقط ولا ترفع T أو domain_done. <a href="collections/sales/reading/SALES_BATCH_2026-10-11_001.json">سجل الدفعة</a>.</p></details>
+          <details class="reveal"><summary>لماذا نجمع Terms وClaims قبل بوابة T؟</summary><p>التوقيت يخص الجمع، لا القبول. القارئ يسجل المرشح مع موضعه أثناء القراءة حتى لا تضيع الوحدة، ثم تأتي المراجعة وT الشاملة قبل Master. <a href="systems/13_MULTI_DOMAIN_ARCHITECTURE.md">المعمارية</a>.</p></details>
+           <details class="reveal"><summary>هل يمكن بناء Master صغير لقسم مكتمل فقط؟</summary><p>لا، ليس قبل <code>domain_terms_complete</code> للمجال كله، حتى لو كان الموضوع صغيرًا. بعد ذلك يثبت retrieval أن التوليف يحتاج كتابًا، ويُستخدم عقد Master بعمق متناسب مع الدليل. <a href="masters/MASTER_ARCHITECTURE.md">بنية Master</a>.</p></details>
+          <details class="reveal"><summary>ما الفرق بين Master وIndex؟</summary><p>Index/Navigation يحدد مكان الملف ووظيفته وحالته وسؤال الاسترجاع. Master كتاب يجيب عن سؤال قرار ويربط Concepts وClaims ويعرض الأدلة والحدود. لا يتحول الفهرس إلى كتاب بتغيير العنوان. <a href="masters/INDEX.md">فهرس Masters</a>.</p></details>
+          <details class="reveal"><summary>هل wiki_quality.py يثبت الجاهزية؟</summary><p>لا. هو فحص بنيوي مساعد؛ نتيجته الحالية <code>ok=true</code> و<code>errors=[]</code>، لكنه لا يثبت semantic reading أو quote offsets أو T/C/K/M/QA. <a href="tools/wiki_quality.py">الأداة</a> و<a href="reports/sales-proof/MULTIDOMAIN_INTEGRATION_REVIEW_2026-10-10.md">مراجعة الحدود</a>.</p></details>
+          <details class="reveal"><summary>ماذا يحدث عند وصول مصدر جديد؟</summary><p>يسجل Delta، وتصبح التغطية المتأثرة stale إلى أن يُراجع الأثر. لا تُعدل snapshot القديمة ولا يحدث reopen صامت، ولا يبدأ extraction في مجال pending. <a href="systems/19_NEW_SOURCE_REPROCESSING.md">عقد الوصول الجديد</a>.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sources" aria-labelledby="sources-title">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <div><p class="section-kicker">12 / provenance الصفحة</p><h2 id="sources-title">مصادر القراءة</h2></div>
+          <p class="section-intro">هذه القائمة تجعل الصفحة قابلة للتدقيق. روابطها نسبية إلى جذر الويكي، وتفصل العقود عن القياسات وعن دفعة sales.</p>
+        </div>
+        <div class="source-grid">
+          <a class="reveal" href="AGENTS.md">AGENTS.md</a>
+          <a class="reveal" href="README.md">README.md</a>
+          <a class="reveal" href="SCHEMA.md">SCHEMA.md</a>
+          <a class="reveal" href="PROJECT_OUTPUT_LOCATION_2026-10-10.md">PROJECT_OUTPUT_LOCATION_2026-10-10.md</a>
+          <a class="reveal" href="MULTI_DOMAIN_WIKI_OPERATING_CHARTER_2026-10-09.md">MULTI_DOMAIN_WIKI_OPERATING_CHARTER_2026-10-09.md</a>
+          <a class="reveal" href="systems/13_MULTI_DOMAIN_ARCHITECTURE.md">systems/13_MULTI_DOMAIN_ARCHITECTURE.md</a>
+          <a class="reveal" href="systems/14_SOURCE_ROUTING_AND_DONE_TREE.md">systems/14_SOURCE_ROUTING_AND_DONE_TREE.md</a>
+          <a class="reveal" href="systems/15_DOMAIN_COMPLETION_GATES.md">systems/15_DOMAIN_COMPLETION_GATES.md</a>
+          <a class="reveal" href="systems/16_SEQUENTIAL_AGENT_ORCHESTRATION.md">systems/16_SEQUENTIAL_AGENT_ORCHESTRATION.md</a>
+          <a class="reveal" href="systems/17_FOLDER_INDEX_CONTRACT.md">systems/17_FOLDER_INDEX_CONTRACT.md</a>
+          <a class="reveal" href="systems/18_DOMAIN_CATALOG_AND_PROCESSING_ORDER.md">systems/18_DOMAIN_CATALOG_AND_PROCESSING_ORDER.md</a>
+          <a class="reveal" href="systems/19_NEW_SOURCE_REPROCESSING.md">systems/19_NEW_SOURCE_REPROCESSING.md</a>
+          <a class="reveal" href="config/domain_catalog.json">config/domain_catalog.json</a>
+          <a class="reveal" href="config/processing_order.json">config/processing_order.json</a>
+          <a class="reveal" href="reports/sales-proof/workflow-test-result.md">reports/sales-proof/workflow-test-result.md</a>
+          <a class="reveal" href="reports/sales-proof/MULTIDOMAIN_INTEGRATION_REVIEW_2026-10-10.md">reports/sales-proof/MULTIDOMAIN_INTEGRATION_REVIEW_2026-10-10.md</a>
+          <a class="reveal" href="reports/sales-proof/sales-batch-2026-10-11-001.md">reports/sales-proof/sales-batch-2026-10-11-001.md</a>
+          <a class="reveal" href="collections/sales/reading/SALES_BATCH_2026-10-11_001.json">collections/sales/reading/SALES_BATCH_2026-10-11_001.json</a>
+          <a class="reveal" href="tools/wiki_workflow.py">tools/wiki_workflow.py</a>
+          <a class="reveal" href="reports/sales-proof/agent-gateway-status.md">reports/sales-proof/agent-gateway-status.md</a>
+          <a class="reveal" href="reports/EXPLAIN_3D_SNAPSHOT_2026-10-11.json">reports/EXPLAIN_3D_SNAPSHOT_2026-10-11.json</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>Nexus LLM Wiki · صفحة تفسيرية لا شهادة إغلاق</span>
+      <span><a href="reports/EXPLAIN_3D_SNAPSHOT_2026-10-11.json">افتح snapshot الصفحة</a> · <a href="#top">العودة إلى البداية</a></span>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      "use strict";
+
+      const root = document.documentElement;
+      const body = document.body;
+      const motionToggle = document.getElementById("motionToggle");
+      const motionLabel = document.getElementById("motionLabel");
+      const reducedQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+      let reducedMotion = reducedQuery.matches;
+      let motionPaused = reducedMotion;
+
+      function updateMotionUI() {
+        body.classList.toggle("motion-paused", motionPaused);
+        motionToggle.setAttribute("aria-pressed", String(motionPaused));
+        motionLabel.textContent = motionPaused ? "تشغيل الحركة" : "إيقاف الحركة";
+        root.dataset.reducedMotion = reducedMotion ? "true" : "false";
+      }
+
+      motionToggle.addEventListener("click", () => {
+        motionPaused = !motionPaused;
+        updateMotionUI();
+      });
+      if (typeof reducedQuery.addEventListener === "function") {
+        reducedQuery.addEventListener("change", (event) => {
+          reducedMotion = event.matches;
+          if (reducedMotion) motionPaused = true;
+          updateMotionUI();
+        });
+      }
+      updateMotionUI();
+
+      const revealItems = document.querySelectorAll(".reveal");
+      if ("IntersectionObserver" in window && !reducedMotion) {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: .12, rootMargin: "0px 0px -8% 0px" });
+        revealItems.forEach((item) => revealObserver.observe(item));
+      } else {
+        revealItems.forEach((item) => item.classList.add("is-visible"));
+      }
+
+      const progressBar = document.getElementById("pageProgress");
+      let progressTick = false;
+      function updateProgress() {
+        const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+        const ratio = Math.min(1, Math.max(0, window.scrollY / max));
+        progressBar.style.transform = `scaleX(${ratio})`;
+        progressTick = false;
+      }
+      window.addEventListener("scroll", () => {
+        if (!progressTick) {
+          progressTick = true;
+          window.requestAnimationFrame(updateProgress);
+        }
+      }, { passive: true });
+      window.addEventListener("resize", updateProgress, { passive: true });
+      updateProgress();
+
+      const counters = document.querySelectorAll("[data-count]");
+      function animateCount(element) {
+        const target = Number(element.dataset.count || 0);
+        if (motionPaused || reducedMotion) {
+          element.textContent = String(target);
+          return;
+        }
+        const duration = 950;
+        const started = performance.now();
+        function frame(now) {
+          const progress = Math.min(1, (now - started) / duration);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          element.textContent = String(Math.round(target * eased));
+          if (progress < 1 && !motionPaused) window.requestAnimationFrame(frame);
+          else if (motionPaused) element.textContent = String(target);
+        }
+        window.requestAnimationFrame(frame);
+      }
+      if ("IntersectionObserver" in window && !reducedMotion) {
+        const counterObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animateCount(entry.target);
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: .45 });
+        counters.forEach((counter) => counterObserver.observe(counter));
+      } else counters.forEach((counter) => animateCount(counter));
+
+      const nodeDetails = {
+        raw: {
+          title: "raw · الدليل الخام",
+          role: "يحفظ الأصل الذي تُبنى عليه الهوية والبصمة والمواضع.",
+          done: "سياسة raw immutable موثقة؛ القراءة والحساب والإشارة مسموحة بلا تعديل.",
+          limit: "وجود hash أو EOF لا يثبت الفهم الدلالي أو اكتمال الاستخراج.",
+          source: "AGENTS.md"
+        },
+        route: {
+          title: "route · التوجيه",
+          role: "يثبت هوية المصدر، dedup، primary route، والنسخة المباشرة وmetadata.",
+          done: "عقد المسار والنسخة المستقلة وفحوص الأداة موثقة؛ دفعة sales تحمل routes مرشحة.",
+          limit: "route_done لا يعني source_done، ولا يفتح extraction لمجال pending، ولا يثبت domain_done.",
+          source: "systems/14_SOURCE_ROUTING_AND_DONE_TREE.md"
+        },
+        terms: {
+          title: "terms · المصطلحات",
+          role: "يستخرج ألفاظ المصدر وتعريفاتها المحتملة ونطاقها ومواضع ظهورها.",
+          done: "دفعة sales تسجل 9 candidate terms، وكلها ما زالت بحاجة إلى مراجعة ومصير.",
+          limit: "candidate term ليس canonical label، ولا يكفي لإغلاق بوابة T.",
+          source: "collections/sales/reading/SALES_BATCH_2026-10-11_001.json"
+        },
+        claims: {
+          title: "claims · الادعاءات",
+          role: "يحوّل الوحدات إلى Claims ذرية مع اقتباس وlocator ونوع دليل وحدود.",
+          done: "دفعة sales تسجل 12 candidate claims مع exact quotes وwhat_it_does_not_prove.",
+          limit: "المرشح ليس reviewed أو accepted، ولا يثبت الرقم أو السببية أو التعميم.",
+          source: "reports/sales-proof/sales-batch-2026-10-11-001.md"
+        },
+           concepts: {
+           title: "concepts · المفاهيم",
+           role: "يربط Claims المراجعة في آلية ذات شروط وحدود وتوترات وتطبيقات.",
+           done: "فهرس طبقة Concepts موجود؛ لم تُنشأ Concepts من دفعة sales الحالية.",
+           limit: "وجود Concept files لا يثبت اكتمال المجال ولا يعوض مراجعة Claims الجديدة.",
+           source: "concepts/INDEX.md"
+        },
+           masters: {
+           title: "masters · الكتب المعرفية",
+           role: "يركب Concepts في كتاب يجيب عن سؤال قرار بعد T الشاملة واختبارات الحاجة.",
+           done: "فهرس Masters وعقدها موثقان؛ لا تُنشأ نسخة جديدة قبل بوابة T الشاملة.",
+           limit: "لا Master canonical حاليًا، ولا يبدأ Master جديد قبل domain_terms_complete.",
+           source: "masters/MASTER_ARCHITECTURE.md"
+        },
+        qa: {
+          title: "QA · التدقيق",
+          role: "يفحص التتبع، التغطية، الروابط، الفهارس، الخلافات، والاسترجاع باستقلال عن المؤلف.",
+          done: "اختبار workflow موثق: إجمالي 33، منها 31 pass و0 fail و2 skip؛ wiki_quality عاد ok=true.",
+          limit: "هذه فحوص مساعدة؛ لا تثبت وحدها full corpus semantic coverage أو domain_done.",
+          source: "reports/sales-proof/workflow-test-result.md"
+        }
+      };
+      const detailTitle = document.getElementById("detailTitle");
+      const detailRole = document.getElementById("detailRole");
+      const detailDone = document.getElementById("detailDone");
+      const detailLimit = document.getElementById("detailLimit");
+      const detailSource = document.getElementById("detailSource");
+      function selectNode(id) {
+        const data = nodeDetails[id] || nodeDetails.raw;
+        detailTitle.textContent = data.title;
+        detailRole.textContent = data.role;
+        detailDone.textContent = data.done;
+        detailLimit.textContent = data.limit;
+        detailSource.href = data.source;
+        detailSource.textContent = `المصدر: ${data.source}`;
+        document.querySelectorAll(".fallback-node").forEach((button) => {
+          button.setAttribute("aria-pressed", String(button.dataset.node === id));
+        });
+      }
+      document.querySelectorAll(".fallback-node").forEach((button) => {
+        button.addEventListener("click", () => selectNode(button.dataset.node));
+      });
+
+      const lifeDetails = {
+        route_done: {
+          title: "route_done",
+          meaning: "اكتمل التوجيه والنسخة وmetadata، فأصبح للمصدر مسار أساسي يمكن الرجوع إليه.",
+          requires: "قراءة التصنيف، primary route واحد، نسخة مستقلة byte-exact، ومراجعة metadata.",
+          doesNot: "لا يعني source_done، ولا يصرح باستخراج Terms/Claims لمجال pending، ولا يساوي domain_done.",
+          source: "AGENTS.md"
+        },
+        source_done: {
+          title: "source_done",
+          meaning: "اكتملت كل وحدات محتوى المصدر Terms/Claims ومراجعتها ومصائرها ضمن نطاق المصدر الكلي.",
+          requires: "تغطية كل الوحدات بمواضعها، مراجعة terms وClaims، وحفظ ما هو مكرر أو غير معرفي أو محال.",
+          doesNot: "لا يحتاج Concept أو Master، ولا يغلق المجال تلقائيًا؛ مساهمة مجال واحدة لا تكفي للمصدر المختلط كله.",
+          source: "SCHEMA.md"
+        },
+        source_domain_extraction_complete: {
+          title: "source_domain_extraction_complete",
+          meaning: "اسم صريح لمساهمة مصدر مكتملة أو جزئية داخل مجال/قسم محدد في snapshot.",
+          requires: "نطاق domain/subdomain وsnapshot وread coverage وunit refs ومراجعة المساهمة.",
+          doesNot: "لا يرفع المصدر إلى source_done الكلي ولا يساوي domain_done أو يفتح Master وحده.",
+          source: "SCHEMA.md"
+        },
+        domain_terms_complete: {
+          title: "domain_terms_complete",
+          meaning: "بوابة T: كل مصطلحات كل مصادر وأقسام snapshot المجال الشاملة لها مصير وتعريف ومرجع قابل للمراجعة.",
+          requires: "snapshot شاملة، كل المرشحين ومصائرهم ظاهرون، لا فجوة coverage أو unresolved مؤثرة، ومراجعة كل subdomains.",
+          doesNot: "لا تعني نجاح Claims أو Concepts أو Masters أو QA؛ هي شرط قبل بدء Master فقط.",
+          source: "systems/15_DOMAIN_COMPLETION_GATES.md"
+        },
+        domain_done: {
+          title: "domain_done",
+          meaning: "إغلاق مجال مربوط بلقطة: R/T/C/K/M/QA، فهارس، retrieval tests، delta review، وسجل قرار مستقل.",
+          requires: "إكمال مساهمات كل subdomains، T الشاملة، الأدلة المراجعة، Master المناسب، وQA مستقل.",
+          doesNot: "لا ينتج من عدد الملفات أو route_done أو دفعة batch؛ الحالة الحالية للمبيعات لم تصل إليه.",
+          source: "config/processing_order.json"
+        }
+      };
+      const lifeTitle = document.getElementById("lifeTitle");
+      const lifeMeaning = document.getElementById("lifeMeaning");
+      const lifeRequires = document.getElementById("lifeRequires");
+      const lifeDoesNot = document.getElementById("lifeDoesNot");
+      const lifeSource = document.getElementById("lifeSource");
+      function selectLife(id) {
+        const data = lifeDetails[id] || lifeDetails.route_done;
+        lifeTitle.textContent = data.title;
+        lifeMeaning.textContent = data.meaning;
+        lifeRequires.textContent = data.requires;
+        lifeDoesNot.textContent = data.doesNot;
+        lifeSource.href = data.source;
+        lifeSource.textContent = `المصدر: ${data.source}`;
+        document.querySelectorAll(".life-tab").forEach((tab) => tab.setAttribute("aria-selected", String(tab.dataset.life === id)));
+      }
+      document.querySelectorAll(".life-tab").forEach((tab, index, tabs) => {
+        tab.addEventListener("click", () => selectLife(tab.dataset.life));
+        tab.addEventListener("keydown", (event) => {
+          if (event.key !== "ArrowDown" && event.key !== "ArrowUp") return;
+          event.preventDefault();
+          const next = event.key === "ArrowDown" ? (index + 1) % tabs.length : (index - 1 + tabs.length) % tabs.length;
+          tabs[next].focus();
+          selectLife(tabs[next].dataset.life);
+        });
+      });
+
+       document.getElementById("sceneStatus").textContent = "CSS 3D جاهز · بلا تحميل خارجي";
+    })();
+  </script>
+</body>
+</html>

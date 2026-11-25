@@ -1,0 +1,414 @@
+{
+  "measuredAt": "2026-10-07T22:19:20.701685+00:00",
+  "rawNewFiles": 1776,
+  "rawNewBytes": 43757343,
+  "uniqueHashes": 1768,
+  "duplicateFiles": 8,
+  "counts": {
+    "sources": {
+      "files": 1781,
+      "statuses": {
+        "quarantined": 9,
+        "processed": 1772
+      }
+    },
+    "claims": {
+      "files": 1771,
+      "statuses": {
+        "reviewed": 87,
+        "candidate": 1684
+      }
+    },
+    "concepts": {
+      "files": 30,
+      "statuses": {
+        "reviewed": 23,
+        "draft": 7
+      }
+    },
+    "masters": {
+      "files": 0,
+      "statuses": {}
+    }
+  },
+  "sourcesWithAnyClaim": 1673,
+  "sourcesWithReviewedClaim": 43,
+  "sourcesLinkedToConcept": 82,
+  "sourcesWithoutClaim": 103,
+  "claimRefsInConcepts": 126,
+  "firstFixedSnippetClaims": 1176,
+  "conceptWordsMedian": 202.5,
+  "conceptWordsMin": 151,
+  "conceptWordsMax": 364,
+  "completeSourceSemanticPassesProven": 0,
+  "completionNote": "لا يوجد سجل يثبت استخراج جميع الأفكار من أي مصدر ثم اعتماد اكتماله؛ وجود Claim أو حالة processed لا يثبت ذلك.",
+  "relocationMatches": [
+    {
+      "source_id": "SRC_20261006_becontent_client_retention",
+      "old_path": "raw/legacy/brain/processed/النقاط الـ 5 الأساسية التي جعلتنا نُحافظ على عميل واحد لأكثر من 11 شهر !! - بودكاست BeContent.txt",
+      "matching_new_paths": [
+        "raw/new/النقاط الـ 5 الأساسية التي جعلتنا نُحافظ على عميل واحد لأكثر من 11 شهر !! - بودكاست BeContent.txt"
+      ]
+    },
+    {
+      "source_id": "SRC_20261006_client_without_persuasion",
+      "old_path": "raw/legacy/brain/processed/كيف تبيع عملاء بدون ما تحاول تقنعهم.txt",
+      "matching_new_paths": [
+        "raw/new/كيف تبيع عملاء بدون ما تحاول تقنعهم.txt"
+      ]
+    },
+    {
+      "source_id": "SRC_20261006_coach_sales_script",
+      "old_path": "raw/legacy/brain/processed/هل لازم يكون عندك سكريبت للبيع كمدرب؟.txt",
+      "matching_new_paths": [
+        "raw/new/هل لازم يكون عندك سكريبت للبيع كمدرب؟.txt"
+      ]
+    },
+    {
+      "source_id": "SRC_20261006_premium_service_sales_2026",
+      "old_path": "raw/legacy/brain/processed/كيف تبيع خدماتك الغالية كمستشاراو مدرب في 2026.txt",
+      "matching_new_paths": [
+        "raw/new/كيف تبيع خدماتك الغالية كمستشاراو مدرب في 2026.txt"
+      ]
+    },
+    {
+      "source_id": "SRC_20261006_sales_email_script",
+      "old_path": "raw/legacy/brain/processed/ازاي تكتب اقوي ايميل مبيعات يقنع اي عميل بالخدمات بتاعتك.txt",
+      "matching_new_paths": [
+        "raw/new/ازاي تكتب اقوي ايميل مبيعات يقنع اي عميل بالخدمات بتاعتك.txt"
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "CPT_CURATED_CONTENT_BRAND_FOUNDATION",
+      "title": "أساس البراند: السمعة المرغوبة والأفعال التي تمثلها",
+      "status": "reviewed",
+      "group": "المحتوى والبراند",
+      "claimCount": 2,
+      "sourceCount": 2,
+      "words": 357,
+      "lines": 46,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_CONTENT_BRAND_FOUNDATION.md"
+    },
+    {
+      "id": "CPT_CURATED_CONTENT_DISTRIBUTION",
+      "title": "توزيع المحتوى: تنويع الاعتماد وإعادة استخدام المادة",
+      "status": "reviewed",
+      "group": "المحتوى والبراند",
+      "claimCount": 2,
+      "sourceCount": 2,
+      "words": 364,
+      "lines": 46,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_CONTENT_DISTRIBUTION.md"
+    },
+    {
+      "id": "CPT_CURATED_CONTENT_HOOK_CLARITY",
+      "title": "وضوح الهوك: معنى موجز ونص مكتوب قابل للفهم",
+      "status": "reviewed",
+      "group": "المحتوى والبراند",
+      "claimCount": 2,
+      "sourceCount": 2,
+      "words": 324,
+      "lines": 46,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_CONTENT_HOOK_CLARITY.md"
+    },
+    {
+      "id": "CPT_CURATED_CONTENT_PACKAGING",
+      "title": "تغليف المحتوى: اتفاق العنوان والصورة والهوك مع الفكرة",
+      "status": "reviewed",
+      "group": "المحتوى والبراند",
+      "claimCount": 2,
+      "sourceCount": 2,
+      "words": 343,
+      "lines": 46,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_CONTENT_PACKAGING.md"
+    },
+    {
+      "id": "CPT_CURATED_CONTENT_POSITIONING",
+      "title": "تموضع المحتوى حول جمهور محدد وسياقه",
+      "status": "reviewed",
+      "group": "المحتوى والبراند",
+      "claimCount": 2,
+      "sourceCount": 2,
+      "words": 354,
+      "lines": 46,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_CONTENT_POSITIONING.md"
+    },
+    {
+      "id": "CPT_CURATED_CONTENT_PRODUCTION_WORKFLOW",
+      "title": "سير الإنتاج: فصل الفكرة ومادتها وتسليم الأصول",
+      "status": "reviewed",
+      "group": "المحتوى والبراند",
+      "claimCount": 2,
+      "sourceCount": 2,
+      "words": 360,
+      "lines": 46,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_CONTENT_PRODUCTION_WORKFLOW.md"
+    },
+    {
+      "id": "CPT_CURATED_CONTENT_STORY_STRUCTURE",
+      "title": "بنية القصة: سياق الحدث وتناوب التوتر والإفراج",
+      "status": "reviewed",
+      "group": "المحتوى والبراند",
+      "claimCount": 2,
+      "sourceCount": 2,
+      "words": 348,
+      "lines": 46,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_CONTENT_STORY_STRUCTURE.md"
+    },
+    {
+      "id": "CPT_CURATED_CONTENT_VIDEO_EDITING",
+      "title": "تحرير الفيديو لخدمة المعنى دون إغراق الشاشة",
+      "status": "reviewed",
+      "group": "المحتوى والبراند",
+      "claimCount": 2,
+      "sourceCount": 2,
+      "words": 342,
+      "lines": 46,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_CONTENT_VIDEO_EDITING.md"
+    },
+    {
+      "id": "CPT_CURATED_OUTBOUND_FOLLOWUP",
+      "title": "عدد المتابعات قرار مشروط لا وصفة ثابتة",
+      "status": "reviewed",
+      "group": "البريد والتشغيل",
+      "claimCount": 3,
+      "sourceCount": 2,
+      "words": 173,
+      "lines": 30,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_OUTBOUND_FOLLOWUP.md"
+    },
+    {
+      "id": "CPT_CURATED_OUTBOUND_INFRASTRUCTURE",
+      "title": "بنية الإرسال التي تسبق تحسين النسخة",
+      "status": "reviewed",
+      "group": "البريد والتشغيل",
+      "claimCount": 3,
+      "sourceCount": 1,
+      "words": 218,
+      "lines": 34,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_OUTBOUND_INFRASTRUCTURE.md"
+    },
+    {
+      "id": "CPT_CURATED_OUTBOUND_METRICS",
+      "title": "من open إلى close: طبقات القياس التي لا يجوز خلطها",
+      "status": "reviewed",
+      "group": "البريد والتشغيل",
+      "claimCount": 3,
+      "sourceCount": 3,
+      "words": 170,
+      "lines": 30,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_OUTBOUND_METRICS.md"
+    },
+    {
+      "id": "CPT_CURATED_OUTBOUND_MULTICHANNEL",
+      "title": "المتابعة متعددة القنوات بعد الإشارة",
+      "status": "reviewed",
+      "group": "البريد والتشغيل",
+      "claimCount": 2,
+      "sourceCount": 1,
+      "words": 151,
+      "lines": 29,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_OUTBOUND_MULTICHANNEL.md"
+    },
+    {
+      "id": "CPT_CURATED_OUTBOUND_OPS",
+      "title": "تشغيل عدة حملات دون خلط العملاء أو المسؤوليات",
+      "status": "reviewed",
+      "group": "البريد والتشغيل",
+      "claimCount": 3,
+      "sourceCount": 1,
+      "words": 163,
+      "lines": 30,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_OUTBOUND_OPS.md"
+    },
+    {
+      "id": "CPT_CURATED_OUTBOUND_POSTREPLY",
+      "title": "فجوة ما بعد الرد: تحويل الاهتمام إلى مسار قابل للقياس",
+      "status": "reviewed",
+      "group": "البريد والتشغيل",
+      "claimCount": 3,
+      "sourceCount": 1,
+      "words": 153,
+      "lines": 30,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_OUTBOUND_POSTREPLY.md"
+    },
+    {
+      "id": "CPT_CURATED_OUTBOUND_TARGETING",
+      "title": "الاستهداف بإشارة ملاءمة قابلة للشرح",
+      "status": "reviewed",
+      "group": "البريد والتشغيل",
+      "claimCount": 3,
+      "sourceCount": 2,
+      "words": 185,
+      "lines": 30,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_OUTBOUND_TARGETING.md"
+    },
+    {
+      "id": "CPT_CURATED_OUTBOUND_WARMUP",
+      "title": "التدفئة كإعداد معلن لا كرقم موحّد",
+      "status": "reviewed",
+      "group": "البريد والتشغيل",
+      "claimCount": 3,
+      "sourceCount": 3,
+      "words": 216,
+      "lines": 33,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_OUTBOUND_WARMUP.md"
+    },
+    {
+      "id": "CPT_CURATED_SALES_CONSULTATIVE_CLOSING",
+      "title": "الإغلاق الاستشاري من الحاجة إلى اختيار مناسب",
+      "status": "reviewed",
+      "group": "المبيعات والعروض",
+      "claimCount": 2,
+      "sourceCount": 2,
+      "words": 192,
+      "lines": 47,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_SALES_CONSULTATIVE_CLOSING.md"
+    },
+    {
+      "id": "CPT_CURATED_SALES_OFFER_CLARITY",
+      "title": "وضوح العرض كألم وآلية ونتيجة",
+      "status": "reviewed",
+      "group": "المبيعات والعروض",
+      "claimCount": 2,
+      "sourceCount": 2,
+      "words": 188,
+      "lines": 47,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_SALES_OFFER_CLARITY.md"
+    },
+    {
+      "id": "CPT_CURATED_SALES_OUTCOME_POSITIONING",
+      "title": "التموضع حول نتيجة العميل لا حول التسليم",
+      "status": "reviewed",
+      "group": "المبيعات والعروض",
+      "claimCount": 2,
+      "sourceCount": 2,
+      "words": 198,
+      "lines": 47,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_SALES_OUTCOME_POSITIONING.md"
+    },
+    {
+      "id": "CPT_CURATED_SALES_PROBLEM_DIAGNOSIS",
+      "title": "تشخيص الألم قبل وصف العرض",
+      "status": "reviewed",
+      "group": "المبيعات والعروض",
+      "claimCount": 2,
+      "sourceCount": 2,
+      "words": 195,
+      "lines": 47,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_SALES_PROBLEM_DIAGNOSIS.md"
+    },
+    {
+      "id": "CPT_CURATED_SALES_RETENTION_FOLLOWUP",
+      "title": "المتابعة والاحتفاظ عبر قيمة مستمرة",
+      "status": "reviewed",
+      "group": "المبيعات والعروض",
+      "claimCount": 2,
+      "sourceCount": 2,
+      "words": 198,
+      "lines": 47,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_SALES_RETENTION_FOLLOWUP.md"
+    },
+    {
+      "id": "CPT_CURATED_SALES_URGENCY_TRUST",
+      "title": "استعجال الشراء المقيد بالصدق",
+      "status": "reviewed",
+      "group": "المبيعات والعروض",
+      "claimCount": 2,
+      "sourceCount": 2,
+      "words": 190,
+      "lines": 47,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_SALES_URGENCY_TRUST.md"
+    },
+    {
+      "id": "CPT_CURATED_SALES_VALUE_PRICING",
+      "title": "تسعير القيمة بعد إظهار النتيجة",
+      "status": "reviewed",
+      "group": "المبيعات والعروض",
+      "claimCount": 2,
+      "sourceCount": 2,
+      "words": 207,
+      "lines": 47,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_CURATED_SALES_VALUE_PRICING.md"
+    },
+    {
+      "id": "CPT_NEW_CONTENT_BRAND_DISTRIBUTION",
+      "title": "منظومة المحتوى والبراند والتوزيع",
+      "status": "draft",
+      "group": "المحتوى والبراند",
+      "claimCount": 19,
+      "sourceCount": 0,
+      "words": 153,
+      "lines": 34,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_NEW_CONTENT_BRAND_DISTRIBUTION.md"
+    },
+    {
+      "id": "CPT_NEW_OFFER_SALES_ARCHITECTURE",
+      "title": "هندسة العرض والبيع من المشكلة إلى الإغلاق",
+      "status": "draft",
+      "group": "المبيعات والعروض",
+      "claimCount": 20,
+      "sourceCount": 0,
+      "words": 163,
+      "lines": 34,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_NEW_OFFER_SALES_ARCHITECTURE.md"
+    },
+    {
+      "id": "CPT_NEW_OUTBOUND_COLD_EMAIL_SYSTEM",
+      "title": "نظام البريد البارد من البنية إلى الرد والإيراد",
+      "status": "draft",
+      "group": "البريد والتشغيل",
+      "claimCount": 19,
+      "sourceCount": 0,
+      "words": 187,
+      "lines": 34,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_NEW_OUTBOUND_COLD_EMAIL_SYSTEM.md"
+    },
+    {
+      "id": "CPT_sales_buyer_journey_nurture",
+      "title": "رحلة شراء الخدمة وبناء الجاهزية قبل التحويل",
+      "status": "draft",
+      "group": "مسودات أولية",
+      "claimCount": 4,
+      "sourceCount": 1,
+      "words": 254,
+      "lines": 48,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_sales_buyer_journey_nurture.md"
+    },
+    {
+      "id": "CPT_sales_consultative_context",
+      "title": "بناء السياق قبل مناقشة سعر الخدمة",
+      "status": "draft",
+      "group": "مسودات أولية",
+      "claimCount": 4,
+      "sourceCount": 2,
+      "words": 270,
+      "lines": 48,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_sales_consultative_context.md"
+    },
+    {
+      "id": "CPT_sales_message_and_script",
+      "title": "السكريبت كدعامة مرنة لا كنص قراءة حرفية",
+      "status": "draft",
+      "group": "مسودات أولية",
+      "claimCount": 6,
+      "sourceCount": 2,
+      "words": 266,
+      "lines": 48,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_sales_message_and_script.md"
+    },
+    {
+      "id": "CPT_sales_retention_operations",
+      "title": "الاحتفاظ بالعميل كمنظومة قيمة وتسليم وتواصل",
+      "status": "draft",
+      "group": "مسودات أولية",
+      "claimCount": 3,
+      "sourceCount": 1,
+      "words": 247,
+      "lines": 48,
+      "path": "NEXUS_LLM_WIKI/concepts/CPT_sales_retention_operations.md"
+    }
+  ]
+}

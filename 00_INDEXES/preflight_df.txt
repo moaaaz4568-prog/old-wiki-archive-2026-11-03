@@ -1,0 +1,2 @@
+Filesystem      Size  Used Avail Use% Mounted on
+-                48G   47G  767M  99% /mnt/sdcard

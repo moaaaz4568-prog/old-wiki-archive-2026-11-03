@@ -1,0 +1,123 @@
+⚠ claude-opus-4-6-thinking: نفدت الحصة (429) → جاري التبديل…
+⚠ claude-sonnet-4-6: نفدت الحصة (429) → جاري التبديل…
+=== AGY implement [gemini-3.8-flash-high] exit=0 896.6s ===
+## ─── القسم 5: بروتوكول التفكير قبل التنفيذ ───
+
+1. **تفسير المهمة بجملة واحدة:**
+   بناء المعمارية الهيكلية والقوالب القياسية الحاكمة لمجالات الويكي الخمسة وأقسامها الفرعية الـ15 في `domains/` مع برمجة وتشغيل أداة النشر الآلي `generate_templates.py` وفق العقد الـ18 قسماً من [FORMAT_MASTER.md](file:///root/r/V3/00_CHARTER/FORMAT_MASTER.md) وقواعد [BUILD_PROTOCOL.md](file:///sdcard/wikillm/BUILD_PROTOCOL.md).
+
+2. **الخطة خطوة بخطوة وسبب كل خطوة:**
+   - **الخطوة 1:** التحقق من وجود مصدر الاقتباس الحقيقي على القرص عبر `test -e` لتأصيل النماذج التوجيهية وتفادي الأمثلة الافتراضية المكسورة (درس V3).
+   - **الخطوة 2:** صياغة العقد الحاكم للبلايبوك يدوياً في [`sales/01_discovery_qualification/PLAYBOOK_TEMPLATE.md`](file:///sdcard/wikillm/argon_version/wiki_ver2/domains/sales/01_discovery_qualification/PLAYBOOK_TEMPLATE.md) بـ 18 قسماً إلزامياً (§1-§18)، متضمناً في كل قسم سطر «ماذا يُكتب:» والضوابط الصارمة، مع خلوه التام من المحتوى المعرفي المسبق.
+   - **الخطوة 3:** كتابة [`TERMS_TEMPLATE.md`](file:///sdcard/wikillm/argon_version/wiki_ver2/domains/sales/01_discovery_qualification/TERMS_TEMPLATE.md) (التعريف، المصدر `path:line`، التعميق 7 خطوات، حدّ الفناء ≥40 كلمة، aka) لضبط بناء الذرات الاصطلاحية قبل الماستر.
+   - **الخطوة 4:** كتابة [`CONTINGENCY_MATRIX_TEMPLATE.md`](file:///sdcard/wikillm/argon_version/wiki_ver2/domains/sales/01_discovery_qualification/CONTINGENCY_MATRIX_TEMPLATE.md) بتصنيف الحالات الست وقاعدة التناقض لحفظ التعددية السياقية ومنع فلترة آراء الخبراء.
+   - **الخطوة 5:** كتابة [`INDEX.md`](file:///sdcard/wikillm/argon_version/wiki_ver2/domains/sales/01_discovery_qualification/INDEX.md) للقسم الفرعي بحقول `retrieval_questions` و `limitations` وحالة `pending`.
+   - **الخطوة 6:** كتابة الفهرس العام [`domains/INDEX.md`](file:///sdcard/wikillm/argon_version/wiki_ver2/domains/INDEX.md) موضحاً الخريطة الاستراتيجية للمجالات الخمسة ووظيفة كل منها.
+   - **الخطوة 7:** كتابة وتشغيل [`tools/generate_templates.py`](file:///sdcard/wikillm/argon_version/wiki_ver2/tools/generate_templates.py) لإنشاء الأقسام الفرعية الـ15 ونشر القوالب وفهارس المجالات والأقسام آلياً مع استثناء القسم المكتوب يدوياً.
+   - **الخطوة 8:** تشغيل أوامر القياس والتحقق النهائي الصارم ومطابقة البوابات (G1 إلى G6).
+
+3. **ما الذي قد يفشل وكيف تم تفاديه:**
+   - **الانزلاق لخطأ الآيس بريك أو وضع محتوى معرفي:** فُصلت التوجيهات تماماً وظلت القوالب فارغة من أي محتوى تنفيذي، مع الاكتفاء بنموذج إجرائي واحد موثق بمصدر حقيقي.
+   - **مسارات مكسورة:** جرى فحص كل مسار مذكور في المتن والتأكد من إرجاع أمر الفحص لـ `EXISTS`.
+   - **تلوث لغوي (محارف CJK):** تم الفحص الآلي بحساب محارف المجال (`\u4e00-\u9fff`) والتأكد من النقاء العربي الفصيح 100% (صفر محارف غريبة).
+   - **انزلاق عدد الأقسام:** الالتزام الصارم بالعقد الحاكم (18 قسماً من FORMAT_MASTER وليس 10).
+
+4. **معايير القبول المقاسة:**
+   - `grep -c "ماذا يُكتب" PLAYBOOK_TEMPLATE.md` ≥ 18
+   - `grep -cE '^#{2,3} §' PLAYBOOK_TEMPLATE.md` = 18
+   - فهارس `INDEX.md` تغطي كافة المجلدات بنسبة 100% (البوابة G3).
+   - خلو كامل من `TODO` أو `TBD`.
+
+---
+
+## ─── ما تم إنجازه ───
+
+1. **القالب النمطي الواحد المكتوب يدوياً ([`sales/01_discovery_qualification/PLAYBOOK_TEMPLATE.md`](file:///sdcard/wikillm/argon_version/wiki_ver2/domains/sales/01_discovery_qualification/PLAYBOOK_TEMPLATE.md)):**
+   - استيفاء الأقسام الثمانية عشر كاملة: **§1 TL;DR · §2 الفلسفة · §3 التعريفات (جدول ثلاثي) · §4 الأنظمة والعمليات · §5 الأرقام ⚠️ · §6 الأخطاء الشائعة · §7 المتغيرات · §8 الجواهر (اقتباسات) · §9 التوترات · §10 نماذج جاهزة · §11 Checklist · §12 سيناريوهات · §13 الأدوات · §14 KPIs · §15 التحليل المستقل · §16 أسئلة وأجوبة · §17 روابط · §18 جدول المفاهيم**.
+   - تضمين سطر **«ماذا يُكتب:»** داخل كل قسم بتعليمات دقيقة (المحتوى الإلزامي، الشروط والضوابط، المصادر، وحكم «لا ينطبق» واستثناءاته).
+   - نموذج توضيحي معياري موثق بـ `path:line` من المصدر الحقيقي المتحقق على القرص:
+     [`aaronxshepherd__21 Cold Email Hacks To Book More Sales Calls INSTANTLY__i7vdM5SZsmk.txt:1`](file:///sdcard/Nexus_Brain/Nexus_Brain/brain/aaronxshepherd__21%20Cold%20Email%20Hacks%20To%20Book%20More%20Sales%20Calls%20INSTANTLY__i7vdM5SZsmk.txt#L1).
+
+2. **قالب بطاقة المصطلح ([`sales/01_discovery_qualification/TERMS_TEMPLATE.md`](file:///sdcard/wikillm/argon_version/wiki_ver2/domains/sales/01_discovery_qualification/TERMS_TEMPLATE.md)):**
+   - الحقول الإلزامية: التعريف التشغيلي، المصدر التوثيقي المباشر (`path:line`)، التعميق السببي عبر 7 خطوات (الآلية ≥40 كلمة)، حدّ الفناء الحاسم (≥40 كلمة وفق D05)، وحقل المرادفات `aka:`.
+
+3. **مصفوفة سياق الآراء ([`sales/01_discovery_qualification/CONTINGENCY_MATRIX_TEMPLATE.md`](file:///sdcard/wikillm/argon_version/wiki_ver2/domains/sales/01_discovery_qualification/CONTINGENCY_MATRIX_TEMPLATE.md)):**
+   - جدول أعمدة التحكيم السياقي: [المعرف | الرأي | المصدر | السياق المستهدف | الآلية | الشروط | الشروط المضادة وحد الفناء | القابلية للنقل | الحالة].
+   - الحالات التصنيفية الست: (مشروط / تجريبي / فرضية / متعارض / مستبعد / هبد خارج المجال).
+   - صياغة **قاعدة التناقض الصارمة** (منع الحذف والدمج القسري، وصياغة توصيتين مشروطتين).
+
+4. **فهرس القسم الفرعي الأساسي ([`sales/01_discovery_qualification/INDEX.md`](file:///sdcard/wikillm/argon_version/wiki_ver2/domains/sales/01_discovery_qualification/INDEX.md)):**
+   - حقول الاسترجاع `retrieval_questions`، والقيود والموانع `limitations`، والحالة الصريحة `pending`، ومسار التغذية المعكوس.
+
+5. **فهرس خريطة المجالات الخمسة ([`domains/INDEX.md`](file:///sdcard/wikillm/argon_version/wiki_ver2/domains/INDEX.md)):**
+   - تفصيل وظيفة كل مجال من المجالات الخمسة: المبيعات (`sales`)، الاستقطاب (`outreach`)، التسعير والعروض (`pricing_offers`)، المحتوى (`content_strategy`)، ومعمارية البيزنس والعمليات (`business_architecture`).
+   - خريطة الأقسام الفرعية الـ15 وحالة النظام.
+
+6. **أداة التوليد والنشر المعماري ([`tools/generate_templates.py`](file:///sdcard/wikillm/argon_version/wiki_ver2/tools/generate_templates.py)):**
+   - سكريبت Python مستقل ينشئ كافة المجلدات، وينسخ القوالب الثلاثية مع مواءمة البيانات، ويولد فهارس المجالات والأقسام الفرعية بأسئلة استرجاع وقيود دقيقة باللغة العربية الفصحى، وتخطي القسم الأساسي المكتوب يدوياً. تم تشغيله بنجاح.
+
+---
+
+## ─── مخرجات التحقق النهائي الحرفية ───
+
+### 1. الأوامر المطلوبة ومخرجاتها الحرفية:
+
+```bash
+$ find /sdcard/wikillm/argon_version/wiki_ver2/domains -name INDEX.md | wc -l
+21
+```
+
+```bash
+$ find /sdcard/wikillm/argon_version/wiki_ver2/domains -name PLAYBOOK_TEMPLATE.md | wc -l
+15
+```
+
+```bash
+$ grep -c "ماذا يُكتب" /sdcard/wikillm/argon_version/wiki_ver2/domains/sales/01_discovery_qualification/PLAYBOOK_TEMPLATE.md
+18
+```
+
+---
+
+### 2. نتائج بوابات الجودة الإضافية:
+
+- **فحص العقد الـ18 قسماً (G4):**
+  `find /sdcard/wikillm/argon_version/wiki_ver2/domains -name PLAYBOOK_TEMPLATE.md -exec grep -cE '^#{2,3} §' {} +`
+  ⇒ **18 قسماً بالضبط في كل ملف من الملفات الـ15**.
+- **فحص تغطية الفهارس (G3):**
+  `find /sdcard/wikillm/argon_version/wiki_ver2/domains -type d | while read d; do test -f "$d/INDEX.md" || echo "MISSING: $d"; done | wc -l`
+  ⇒ **0 (تغطية 100% — لا يوجد أي مجلد بدون INDEX.md)**.
+- **فحص النقاء اللغوي (G1):**
+  `python3 -c "import pathlib; print(sum(1 for p in pathlib.Path('/sdcard/wikillm/argon_version/wiki_ver2/domains').rglob('*.md') for c in p.read_text(errors='ignore') if '\u4e00' <= c <= '\u9fff'))"`
+  ⇒ **0 محارف CJK**.
+- **فحص المسارات المكسورة (G6):**
+  `grep -rhoE "/[a-zA-Z0-9_./-]+\.(md|txt|py|json)" /sdcard/wikillm/argon_version/wiki_ver2/domains/ | sort -u | while read f; do test -e "$f" || echo "BROKEN: $f"; done | wc -l`
+  ⇒ **0 مسارات مكسورة (كل المسارات موجودة ومتحققة بـ test -e)**.
+- **فحص وسوم الكسل:**
+  `grep -rnE "TODO|TBD" /sdcard/wikillm/argon_version/wiki_ver2/domains | wc -l`
+  ⇒ **0**.
+--- meta ---
+conversationId: 83d26349-9d13-4a1e-9f08-8b7ac0419588
+result.json   : /sdcard/wikillm/argon_version/_agy_logs/wave4.json
+stdout        : /tmp/agy-director/implement-2026-10-25T08-04-58-604Z/stdout.md
+artifacts (60):
+   tools/audit.py  (9994B)
+   COUNTS.json  (768B)
+   tools/count.py  (7836B)
+   domains/business_architecture/03_metrics/INDEX.md  (3510B)
+   domains/business_architecture/03_metrics/CONTINGENCY_MATRIX_TEMPLATE.md  (4239B)
+   domains/business_architecture/03_metrics/TERMS_TEMPLATE.md  (6211B)
+   domains/business_architecture/03_metrics/PLAYBOOK_TEMPLATE.md  (28673B)
+   domains/business_architecture/02_hiring/INDEX.md  (3588B)
+   domains/business_architecture/02_hiring/CONTINGENCY_MATRIX_TEMPLATE.md  (4235B)
+   domains/business_architecture/02_hiring/TERMS_TEMPLATE.md  (6207B)
+   domains/business_architecture/02_hiring/PLAYBOOK_TEMPLATE.md  (28669B)
+   domains/business_architecture/01_systems_ops/INDEX.md  (3586B)
+   domains/business_architecture/01_systems_ops/CONTINGENCY_MATRIX_TEMPLATE.md  (4251B)
+   domains/business_architecture/01_systems_ops/TERMS_TEMPLATE.md  (6223B)
+   domains/business_architecture/01_systems_ops/PLAYBOOK_TEMPLATE.md  (28685B)
+   domains/business_architecture/INDEX.md  (3583B)
+   domains/content_strategy/03_repurposing/INDEX.md  (3684B)
+   domains/content_strategy/03_repurposing/CONTINGENCY_MATRIX_TEMPLATE.md  (4235B)
+   domains/content_strategy/03_repurposing/TERMS_TEMPLATE.md  (6207B)
+   domains/content_strategy/03_repurposing/PLAYBOOK_TEMPLATE.md  (28669B)

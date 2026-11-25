@@ -1,0 +1,58 @@
+{
+  "snapshot_id": "EXPLAIN_3D_SNAPSHOT_2026-10-11",
+  "artifact": "NEXUS_WIKI_EXPLAIN_3D.html",
+  "artifact_scope": "explanatory_visualization_only",
+  "not_completion_claim": true,
+  "status": {
+    "source": "config/processing_order.json",
+    "current_domain": "sales",
+    "current_domain_status": "in_progress",
+    "states": {
+      "sales": "in_progress",
+      "outreach": "pending",
+      "pricing_offers": "pending",
+      "content_strategy": "pending"
+    },
+    "wiki_complete": false
+  },
+  "batch": {
+    "batch_id": "SALES_BATCH_2026-10-11_001",
+    "domain": "sales",
+    "selected_sources": 3,
+    "semantic_segments": 9,
+    "candidate_terms": 9,
+    "candidate_claims": 12,
+    "candidate_only": true,
+    "inventory_complete": false,
+    "refs": {
+      "reading": "collections/sales/reading/SALES_BATCH_2026-10-11_001.json",
+      "report": "reports/sales-proof/sales-batch-2026-10-11-001.md",
+      "checkpoint": "checkpoints/SALES_BATCH_2026-10-11_001.md"
+    }
+  },
+  "tests": {
+    "workflow": {
+      "total": 33,
+      "pass": 31,
+      "fail": 0,
+      "skip": 2,
+      "result": "OK",
+      "ref": "reports/sales-proof/workflow-test-result.md"
+    }
+  },
+  "references": {
+    "plan": "reports/sales-proof/agent-multidomain-plan.md",
+    "agents": "AGENTS.md",
+    "schema": "SCHEMA.md",
+    "catalog": "config/domain_catalog.json",
+    "processing_order": "config/processing_order.json",
+    "architecture": "systems/13_MULTI_DOMAIN_ARCHITECTURE.md",
+    "gates": "systems/15_DOMAIN_COMPLETION_GATES.md",
+    "integration_review": "reports/sales-proof/MULTIDOMAIN_INTEGRATION_REVIEW_2026-10-10.md"
+  },
+  "limitations": [
+    "الدفعة ليست domain snapshot شاملة؛ لا T ولا source_done ولا domain_done.",
+    "لم تُنشأ Concepts أو Masters أو publish أو done copies للدفعة الحالية.",
+    "هذه الصفحة شرح محلي فقط؛ لا تنشئ معرفة جديدة ولا تغيّر raw أو config."
+  ]
+}

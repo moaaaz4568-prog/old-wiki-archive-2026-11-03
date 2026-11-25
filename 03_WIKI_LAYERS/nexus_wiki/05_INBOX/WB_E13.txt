@@ -1,0 +1,17 @@
+# WB_E13 — حزمة الاستخراج المعلّقة (E13)
+# المصدر الأصلي (plan): /root/r/NB2/.nexus_work/plan/bundle_E13.txt
+# جذر المسارات المحلية: /root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain
+# عدد ملفات هذا الملف: 9
+# عدد كلمات هذا الملف: 79,034
+# حجم هذا الملف من المصادر: 424,221 بايت
+# الصيغة: <الكلمات>	<مسارabsolut>
+##############################################################################
+9732	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/1,000 Hours of studying the Best Marketing Funnels in 42 Minutes.txt
+9455	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to Speedrun Social Media.txt
+9183	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to Become Disgustingly Good At Personal Branding.txt
+8827	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/In 47 Minutes, I’ll Rewire How You Think About Content.txt
+8768	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/fck it. exposing how Spencer Kozej made $690,427 last month.txt
+8092	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Game Theory Is The Cheat Code to Social Media.txt
+8088	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/44 Tricks To Instantly Get More Views on Social Media.txt
+8664	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Agency Owner We Need To Learn AI, FAST.txt
+8225	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to Create Any Content 10x Faster With AI.txt

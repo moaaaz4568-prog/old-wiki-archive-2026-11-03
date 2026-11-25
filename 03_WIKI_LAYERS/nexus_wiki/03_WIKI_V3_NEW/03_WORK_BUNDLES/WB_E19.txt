@@ -1,0 +1,25 @@
+# WB_E19 — حزمة الاستخراج المعلّقة (E19)
+# المصدر الأصلي (plan): /root/r/NB2/.nexus_work/plan/bundle_E19.txt
+# جذر المسارات المحلية: /root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain
+# عدد ملفات هذا الملف: 17
+# عدد كلمات هذا الملف: 82,481
+# حجم هذا الملف من المصادر: 443,804 بايت
+# الصيغة: <الكلمات>	<مسارabsolut>
+##############################################################################
+5039	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Freelancers are getting rich..txt
+4891	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/The Easiest Way to Make Viral Content (For Any Business).txt
+5093	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/The art of building high ticket offers (step by step).txt
+4922	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Speaking Like This Gives You an Unfair Advantage on Social Media.txt
+4927	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How I Grew from 0 to 250,000 Subscribers in 1 Year (Nobody Teaches This).txt
+4921	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to ACTUALLY Grow on Social Media in 2025 (Evidence-Based).txt
+4826	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/I Failed at Social Media, Until I Understood This.txt
+4770	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/The Neuroscience of Addictive Storytelling (And How to Master It).txt
+4944	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/I Studied 100 Viral Hooks, These 6 Will Make You Go Viral.txt
+4796	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How We Made $770k in 30 Days With Only 2 Sales Reps.txt
+4910	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How Steven Bartlett Built a Content Machine That Makes $25MYear.txt
+4574	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How ‘Regular’ People Are Making Millions From Social Media.txt
+4725	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/i copied hormozi's sales funnel and booked 73 calls (in 8 weeks).txt
+5089	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to Edit VIRAL Short-Form Videos (Step by Step).txt
+4641	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/The NEW Way to Win On Social Media in 2025.txt
+4733	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How To Write A Killer Script That Keeps Viewers Hooked.txt
+4680	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Exposing Nero Knowledge's $3M youtube funnel (so simple).txt

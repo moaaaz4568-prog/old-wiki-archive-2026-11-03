@@ -1,0 +1,4 @@
+POINTER (symlink)
+name: 06_GLOSSARY
+target: /root/r/NB2/06_GLOSSARY
+live_symlink: /root/r/nexus_wiki_links/02_WIKI_V2_TERMS/06_GLOSSARY

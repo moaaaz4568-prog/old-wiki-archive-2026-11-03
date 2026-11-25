@@ -1,0 +1,54 @@
+{
+  "dirs": {
+    "concepts": {
+      "exists": false
+    },
+    "indexes": {
+      "exists": false
+    },
+    "masters": {
+      "exists": false
+    },
+    "sources": {
+      "exists": false
+    },
+    "systems": {
+      "exists": true,
+      "files": 16,
+      "md_lines": 892
+    },
+    "terms": {
+      "exists": false
+    },
+    "tools": {
+      "exists": true,
+      "files": 4
+    }
+  },
+  "generator": "tools/count.py",
+  "root": "/mnt/sdcard/wikillm/glm_version/wiki_ver2",
+  "schema": 1,
+  "systems_lines": {
+    "SYS_01_الميثاق.md": 66,
+    "SYS_02_التسمية.md": 61,
+    "SYS_03_الشجرة.md": 70,
+    "SYS_04_محرك_التفكير.md": 76,
+    "SYS_05_الاستيعاب.md": 74,
+    "SYS_06_المصطلحات_والتعميق.md": 55,
+    "SYS_07_تشريح_الماستر.md": 58,
+    "SYS_08_تعددية_الآراء.md": 60,
+    "SYS_09_التوليف_التراكمي.md": 65,
+    "SYS_10_الفهارس.md": 67,
+    "SYS_11_تنفيذ_البيزنس.md": 40,
+    "SYS_12_التدقيق.md": 40,
+    "SYS_13_التفويض.md": 40,
+    "SYS_14_الأنماط_المضادة.md": 40,
+    "SYS_15_التوسع_الديناميكي.md": 40,
+    "total": 852
+  },
+  "total": {
+    "bytes": 418276,
+    "exists": true,
+    "files": 82
+  }
+}

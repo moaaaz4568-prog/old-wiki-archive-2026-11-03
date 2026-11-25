@@ -1,0 +1,4 @@
+POINTER (symlink)
+name: 00_SYSTEMS
+target: /root/r/NB2/00_SYSTEMS
+live_symlink: /root/r/nexus_wiki_links/02_WIKI_V2_TERMS/00_SYSTEMS

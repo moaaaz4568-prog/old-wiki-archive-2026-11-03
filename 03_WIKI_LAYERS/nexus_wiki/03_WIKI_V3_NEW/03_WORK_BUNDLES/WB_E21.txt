@@ -1,0 +1,30 @@
+# WB_E21 — حزمة الاستخراج المعلّقة (E21)
+# المصدر الأصلي (plan): /root/r/NB2/.nexus_work/plan/bundle_E21.txt
+# جذر المسارات المحلية: /root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain
+# عدد ملفات هذا الملف: 22
+# عدد كلمات هذا الملف: 84,056
+# حجم هذا الملف من المصادر: 451,430 بايت
+# الصيغة: <الكلمات>	<مسارabsolut>
+##############################################################################
+3904	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/If You Don't Understand Psychology, You Don't Understand Social Media.txt
+3920	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Storytelling Tactics Top Creators Use To Hook You.txt
+4131	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How Uzma and Leena make $237,500mo selling Airbnb Coaching.txt
+4115	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/I Made $1MDay For a Coaching Business Using This Boring Strategy.txt
+4102	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/exposing Davie Fogarty how he scaled his coaching to $1Mmo.txt
+4113	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Building landing page funnels with Claude (cancel GHL).txt
+3882	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/THIS is how social media will change in 2025.txt
+3871	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Pick your service offering (beginner guide).txt
+3945	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to Create Irresistible Hooks (and blow up your content).txt
+3921	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/8 Things I Wish I Knew in 2022 (Annual Review).txt
+3872	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/The ONLY 6 Words You Need to Hook ANY Viewer.txt
+3720	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to write a script so good viewers can’t stop watching.txt
+3832	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/What I Learned After 1 Year Of Being A Full-Time Creator.txt
+3709	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How Social Media Algorithms Actually Work (And How to Beat Them).txt
+3669	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/6 Levels of Storytelling Every Creator MUST Master.txt
+3789	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/This System Made Us $62M+ Without Getting More Views.txt
+3587	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Give me 15 mins, and I'll make your hooks impossible to skip.txt
+3559	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to Make Addictive Videos (and blow up your social media).txt
+3570	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Copy This Hook, It'll Blow Up Your Social Media.txt
+3687	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/This genius Pre-call flow makes them $1,220,570mo (copy this).txt
+3743	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Brez Scales $370kmo funnel breakdown (genius but weird).txt
+3415	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/The ‘Viral’ Trap, Explained.txt

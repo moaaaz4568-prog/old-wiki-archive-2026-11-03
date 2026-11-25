@@ -1,0 +1,23 @@
+# WB_E23 — حزمة الاستخراج المعلّقة (E23)
+# المصدر الأصلي (plan): /root/r/NB2/.nexus_work/plan/bundle_E23.txt
+# جذر المسارات المحلية: /root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain
+# عدد ملفات هذا الملف: 15
+# عدد كلمات هذا الملف: 22,358
+# حجم هذا الملف من المصادر: 122,253 بايت
+# الصيغة: <الكلمات>	<مسارabsolut>
+##############################################################################
+2084	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Selling Courses Won't Work Anymore. Here's What Will.txt
+1999	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/3 reasons....txt
+2050	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/This Claude report CRUSHES it with sales prospects.txt
+2008	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/For complete beginners....txt
+2098	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/This super simple YouTube funnel book 50 calls every month..txt
+1895	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/If you struggle with making content, please watch this..txt
+1871	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/The 1st Agency Birth meetup!.txt
+1844	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Claude automated my boring sales tasks.txt
+1717	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Facebook Ads attribution reporting with Claude.txt
+1542	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Automating link building with Claude.txt
+1054	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/if you’re struggling as a creative, watch this.txt
+928	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Claude will wipe out 90% of agencies.txt
+622	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/niche.txt
+369	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Advice All Creators Need to Hear Right Now (Including Myself).txt
+277	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/give me 90 seconds, i’ll delete your fear of posting content.txt

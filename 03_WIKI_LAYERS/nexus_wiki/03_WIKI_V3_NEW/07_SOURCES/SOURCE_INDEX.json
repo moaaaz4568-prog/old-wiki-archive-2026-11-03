@@ -1,0 +1,1294 @@
+{
+  "schema": 1,
+  "generator": "V3/11_INDEX/tools/build_source_index.py",
+  "brain_root": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain",
+  "bundle_dir": "/root/r/V3/03_WORK_BUNDLES",
+  "channel_rules": {
+    "channel_dir": "مجلد داخل brain/processed/",
+    "loose_root": "ملف في جذر brain/ — القناة = البادئة قبل أول __",
+    "loose_processed": "ملف منقول داخل processed/ — القناة = البادئة أو _unfiled",
+    "duplicates": "brain/duplicates/"
+  },
+  "unextracted_rule": "ملف غير مدرج في أي V3/03_WORK_BUNDLES/WB_*.txt ⇒ لم يدخل الاستخراج",
+  "inventory_full_json": "غير موجود — الفهرس من مسح مباشر للقرص",
+  "bundled_entries_in_bundles": 287,
+  "bundled_distinct_paths": 259,
+  "totals": {
+    "channels": 141,
+    "files": 5126,
+    "bytes": 46438609,
+    "bundled": 259,
+    "unextracted": 4867
+  },
+  "channels": {
+    "10feetstudios": {
+      "channel": "10feetstudios",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/10feetstudios/DI_-n6lNWe-.txt",
+      "files": 21,
+      "bytes": 25039,
+      "bundled": 0,
+      "unextracted": 21
+    },
+    "[Arabic (auto-generated)] كيف تجذب الجمهور وتصنع ملايين المشاهدات ؟ الدليل الكامل لرواية القصص ": {
+      "channel": "[Arabic (auto-generated)] كيف تجذب الجمهور وتصنع ملايين المشاهدات ؟ الدليل الكامل لرواية القصص ",
+      "kind": "loose_processed",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/[Arabic (auto-generated)] كيف تجذب الجمهور وتصنع ملايين المشاهدات ؟ الدليل الكامل لرواية القصص __ الجزء الاول [DownSub.com].txt",
+      "files": 1,
+      "bytes": 42500,
+      "bundled": 0,
+      "unextracted": 1
+    },
+    "_fadygeorge": {
+      "channel": "_fadygeorge",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/_fadygeorge/DakV4Msqyy_.txt",
+      "files": 18,
+      "bytes": 27652,
+      "bundled": 0,
+      "unextracted": 18
+    },
+    "_root_unfiled": {
+      "channel": "_root_unfiled",
+      "kind": "loose_root",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/01-setup-commands.md",
+      "files": 6,
+      "bytes": 86647,
+      "bundled": 0,
+      "unextracted": 6
+    },
+    "_unfiled": {
+      "channel": "_unfiled",
+      "kind": "loose_processed",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/ Speed in Momentum.txt",
+      "files": 549,
+      "bytes": 19173758,
+      "bundled": 249,
+      "unextracted": 300
+    },
+    "a.aliraza1": {
+      "channel": "a.aliraza1",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/a.aliraza1/DJpX4Q8I6SB.txt",
+      "files": 14,
+      "bytes": 15537,
+      "bundled": 0,
+      "unextracted": 14
+    },
+    "aaronxshepherd": {
+      "channel": "aaronxshepherd",
+      "kind": "loose_root",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/aaronxshepherd__1,000 hours of studying the best cold email strategies in 21 minutes__zW_3wJUB-d0.txt",
+      "files": 68,
+      "bytes": 1628878,
+      "bundled": 0,
+      "unextracted": 68
+    },
+    "aashna_kumar": {
+      "channel": "aashna_kumar",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/aashna_kumar/DQ31HiLDKsX.txt",
+      "files": 15,
+      "bytes": 34593,
+      "bundled": 0,
+      "unextracted": 15
+    },
+    "adamdelduca": {
+      "channel": "adamdelduca",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/adamdelduca/DFQEq3sPSUc.txt",
+      "files": 16,
+      "bytes": 33343,
+      "bundled": 0,
+      "unextracted": 16
+    },
+    "adrien.ninet": {
+      "channel": "adrien.ninet",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/adrien.ninet/DXfN1mdCMgL.txt",
+      "files": 33,
+      "bytes": 37722,
+      "bundled": 0,
+      "unextracted": 33
+    },
+    "agencysupply.co": {
+      "channel": "agencysupply.co",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/agencysupply.co/DRvnj15AReh.txt",
+      "files": 29,
+      "bytes": 21448,
+      "bundled": 0,
+      "unextracted": 29
+    },
+    "ahmedrsaddique": {
+      "channel": "ahmedrsaddique",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/ahmedrsaddique/C2oICPhuKN1.txt",
+      "files": 9,
+      "bytes": 5803,
+      "bundled": 0,
+      "unextracted": 9
+    },
+    "airesearcherguy": {
+      "channel": "airesearcherguy",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/airesearcherguy/DZ0EnvaD0cb.txt",
+      "files": 29,
+      "bytes": 10132,
+      "bundled": 0,
+      "unextracted": 29
+    },
+    "akshatsadhu.web": {
+      "channel": "akshatsadhu.web",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/akshatsadhu.web/DS7TabLEXuc.txt",
+      "files": 82,
+      "bytes": 77567,
+      "bundled": 0,
+      "unextracted": 82
+    },
+    "alek.octopus": {
+      "channel": "alek.octopus",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/alek.octopus/C9cFlKki-FA.txt",
+      "files": 14,
+      "bytes": 25179,
+      "bundled": 0,
+      "unextracted": 14
+    },
+    "amir.scales": {
+      "channel": "amir.scales",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/amir.scales/DJ-ItTAIjg2.txt",
+      "files": 38,
+      "bytes": 12648,
+      "bundled": 0,
+      "unextracted": 38
+    },
+    "anasnbcsales": {
+      "channel": "anasnbcsales",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/anasnbcsales/DGgxPSfx2ED.txt",
+      "files": 35,
+      "bytes": 15579,
+      "bundled": 0,
+      "unextracted": 35
+    },
+    "artgrowthclub": {
+      "channel": "artgrowthclub",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/artgrowthclub/DEmLvwyqHRo.txt",
+      "files": 51,
+      "bytes": 34960,
+      "bundled": 0,
+      "unextracted": 51
+    },
+    "asli_creates": {
+      "channel": "asli_creates",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/asli_creates/DWMScC0DwIG.txt",
+      "files": 22,
+      "bytes": 14595,
+      "bundled": 0,
+      "unextracted": 22
+    },
+    "atishayhyperke": {
+      "channel": "atishayhyperke",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/atishayhyperke/DWlVJOxEV-a.txt",
+      "files": 10,
+      "bytes": 10803,
+      "bundled": 0,
+      "unextracted": 10
+    },
+    "avayuergens": {
+      "channel": "avayuergens",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/avayuergens/DGk9YExNf8I.txt",
+      "files": 28,
+      "bytes": 12848,
+      "bundled": 0,
+      "unextracted": 28
+    },
+    "beau_norton": {
+      "channel": "beau_norton",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/beau_norton/Da-rC3CMhqy.txt",
+      "files": 41,
+      "bytes": 19155,
+      "bundled": 0,
+      "unextracted": 41
+    },
+    "bmarkfit": {
+      "channel": "bmarkfit",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/bmarkfit/DRnV6rTEgAr.txt",
+      "files": 21,
+      "bytes": 11728,
+      "bundled": 0,
+      "unextracted": 21
+    },
+    "brettfully": {
+      "channel": "brettfully",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/brettfully/DJUWrtQvnLP.txt",
+      "files": 37,
+      "bytes": 16724,
+      "bundled": 0,
+      "unextracted": 37
+    },
+    "build.withcrystal": {
+      "channel": "build.withcrystal",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/build.withcrystal/BC6lK3hMy1Z.txt",
+      "files": 10,
+      "bytes": 21922,
+      "bundled": 0,
+      "unextracted": 10
+    },
+    "buildwithabdullah": {
+      "channel": "buildwithabdullah",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/buildwithabdullah/DGdlqtdtyMF.txt",
+      "files": 3,
+      "bytes": 1411,
+      "bundled": 0,
+      "unextracted": 3
+    },
+    "business.framwork": {
+      "channel": "business.framwork",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/business.framwork/DY2EQ6Ggc3q.txt",
+      "files": 61,
+      "bytes": 28390,
+      "bundled": 0,
+      "unextracted": 61
+    },
+    "bwa.marketing": {
+      "channel": "bwa.marketing",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/bwa.marketing/DQhARUIETlo.txt",
+      "files": 66,
+      "bytes": 80120,
+      "bundled": 0,
+      "unextracted": 66
+    },
+    "bymoussari": {
+      "channel": "bymoussari",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/bymoussari/DWFCJnxjSVB.txt",
+      "files": 31,
+      "bytes": 14967,
+      "bundled": 0,
+      "unextracted": 31
+    },
+    "bytommypark": {
+      "channel": "bytommypark",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/bytommypark/DX0sLTxuhAt.txt",
+      "files": 56,
+      "bytes": 18811,
+      "bundled": 0,
+      "unextracted": 56
+    },
+    "calebsellsleads": {
+      "channel": "calebsellsleads",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/calebsellsleads/DYoVqVcyvxr.txt",
+      "files": 17,
+      "bytes": 18228,
+      "bundled": 0,
+      "unextracted": 17
+    },
+    "cnasser_sameh": {
+      "channel": "cnasser_sameh",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/cnasser_sameh/Dc_b_46EU3I.txt",
+      "files": 3,
+      "bytes": 2876,
+      "bundled": 0,
+      "unextracted": 3
+    },
+    "conner.bluhm": {
+      "channel": "conner.bluhm",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/conner.bluhm/Db74ZLWJgh5.txt",
+      "files": 32,
+      "bytes": 9743,
+      "bundled": 0,
+      "unextracted": 32
+    },
+    "createcontent.club": {
+      "channel": "createcontent.club",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/createcontent.club/C-lcSSriQiX.txt",
+      "files": 45,
+      "bytes": 28194,
+      "bundled": 0,
+      "unextracted": 45
+    },
+    "creatorworld.io": {
+      "channel": "creatorworld.io",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/creatorworld.io/DQ9TqqqjNFE.txt",
+      "files": 6,
+      "bytes": 6975,
+      "bundled": 0,
+      "unextracted": 6
+    },
+    "creatorzone.io": {
+      "channel": "creatorzone.io",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/creatorzone.io/Dc-jZQSSot-.txt",
+      "files": 15,
+      "bytes": 13041,
+      "bundled": 0,
+      "unextracted": 15
+    },
+    "danieldiazbiz": {
+      "channel": "danieldiazbiz",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/danieldiazbiz/DCdLf44NSlP.txt",
+      "files": 10,
+      "bytes": 9718,
+      "bundled": 0,
+      "unextracted": 10
+    },
+    "danieldoesbiz": {
+      "channel": "danieldoesbiz",
+      "kind": "loose_root",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/danieldoesbiz__$15km copywriter live cold email examples to get dream clients (day 390)__cQRAkdtbrH8.txt",
+      "files": 86,
+      "bytes": 829294,
+      "bundled": 0,
+      "unextracted": 86
+    },
+    "danielsmyth_": {
+      "channel": "danielsmyth_",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/danielsmyth_/DScpAhTDGNG.txt",
+      "files": 9,
+      "bytes": 10125,
+      "bundled": 0,
+      "unextracted": 9
+    },
+    "dankhanlegacy": {
+      "channel": "dankhanlegacy",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/dankhanlegacy/DIpCwPZhuG9.txt",
+      "files": 13,
+      "bytes": 19618,
+      "bundled": 0,
+      "unextracted": 13
+    },
+    "devinjatho": {
+      "channel": "devinjatho",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/devinjatho/C-lCXMDRl5z.txt",
+      "files": 72,
+      "bytes": 41707,
+      "bundled": 0,
+      "unextracted": 72
+    },
+    "dibratto": {
+      "channel": "dibratto",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/dibratto/Db2_uN7xZpR.txt",
+      "files": 29,
+      "bytes": 30563,
+      "bundled": 0,
+      "unextracted": 29
+    },
+    "disisjorj": {
+      "channel": "disisjorj",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/disisjorj/DQOadLQCCF0.txt",
+      "files": 33,
+      "bytes": 21348,
+      "bundled": 0,
+      "unextracted": 33
+    },
+    "divyannshisharma": {
+      "channel": "divyannshisharma",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/divyannshisharma/DYkNONFkvkc.txt",
+      "files": 7,
+      "bytes": 48256,
+      "bundled": 0,
+      "unextracted": 7
+    },
+    "duplicates": {
+      "channel": "duplicates",
+      "kind": "duplicates",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/duplicates/2025-06-03_19-09-46 (1).txt",
+      "files": 10,
+      "bytes": 384771,
+      "bundled": 10,
+      "unextracted": 0
+    },
+    "elgendyfilms": {
+      "channel": "elgendyfilms",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/elgendyfilms/DJwz5SJMcBZ.txt",
+      "files": 31,
+      "bytes": 13414,
+      "bundled": 0,
+      "unextracted": 31
+    },
+    "essamforediting": {
+      "channel": "essamforediting",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/essamforediting/C-0g1w9Ogs9.txt",
+      "files": 53,
+      "bytes": 25942,
+      "bundled": 0,
+      "unextracted": 53
+    },
+    "expandi": {
+      "channel": "expandi",
+      "kind": "loose_root",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/expandi__$250K in 3 weeks with Expandi HOW__0jp9YeGRyB4.txt",
+      "files": 95,
+      "bytes": 1084828,
+      "bundled": 0,
+      "unextracted": 95
+    },
+    "explained.marketing": {
+      "channel": "explained.marketing",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/explained.marketing/DdNh91Bmgg1.txt",
+      "files": 24,
+      "bytes": 22391,
+      "bundled": 0,
+      "unextracted": 24
+    },
+    "gary.hazeleger": {
+      "channel": "gary.hazeleger",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/gary.hazeleger/C_THAAsxhMO.txt",
+      "files": 25,
+      "bytes": 27139,
+      "bundled": 0,
+      "unextracted": 25
+    },
+    "gassanedit": {
+      "channel": "gassanedit",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/gassanedit/DV3_HBCjc1K.txt",
+      "files": 42,
+      "bytes": 40126,
+      "bundled": 0,
+      "unextracted": 42
+    },
+    "geoff_ketterer": {
+      "channel": "geoff_ketterer",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/geoff_ketterer/DX_EX7AlzK7.txt",
+      "files": 30,
+      "bytes": 19738,
+      "bundled": 0,
+      "unextracted": 30
+    },
+    "gincontent": {
+      "channel": "gincontent",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/gincontent/DTOkI5-kiqu.txt",
+      "files": 14,
+      "bytes": 7970,
+      "bundled": 0,
+      "unextracted": 14
+    },
+    "gohconsulting": {
+      "channel": "gohconsulting",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/gohconsulting/DVhMj3aDGML.txt",
+      "files": 26,
+      "bytes": 32014,
+      "bundled": 0,
+      "unextracted": 26
+    },
+    "gregoryjhickman": {
+      "channel": "gregoryjhickman",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/gregoryjhickman/DUI50Oajtu-.txt",
+      "files": 16,
+      "bytes": 13326,
+      "bundled": 0,
+      "unextracted": 16
+    },
+    "growwithanurag24": {
+      "channel": "growwithanurag24",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/growwithanurag24/DO3LK6OEc4b.txt",
+      "files": 42,
+      "bytes": 25585,
+      "bundled": 0,
+      "unextracted": 42
+    },
+    "heydominik": {
+      "channel": "heydominik",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/heydominik/DN-mZiRiOOx.txt",
+      "files": 22,
+      "bytes": 23418,
+      "bundled": 0,
+      "unextracted": 22
+    },
+    "heyharut": {
+      "channel": "heyharut",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/heyharut/DItiFnqiyGu.txt",
+      "files": 31,
+      "bytes": 13753,
+      "bundled": 0,
+      "unextracted": 31
+    },
+    "ikhalidburhan": {
+      "channel": "ikhalidburhan",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/ikhalidburhan/DGtqSBpIgMN.txt",
+      "files": 13,
+      "bytes": 13367,
+      "bundled": 0,
+      "unextracted": 13
+    },
+    "instantlyai": {
+      "channel": "instantlyai",
+      "kind": "loose_root",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/instantlyai__1,000 Hours of studying the Best Cold Emails in 15 Minutes___3JCBSXPUCM.txt",
+      "files": 378,
+      "bytes": 5609177,
+      "bundled": 0,
+      "unextracted": 378
+    },
+    "invest.with.sanad": {
+      "channel": "invest.with.sanad",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/invest.with.sanad/DdEKr0RjIZT.txt",
+      "files": 5,
+      "bytes": 9705,
+      "bundled": 0,
+      "unextracted": 5
+    },
+    "itsakkari": {
+      "channel": "itsakkari",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/itsakkari/Da0jzkvGGdR.txt",
+      "files": 34,
+      "bytes": 12036,
+      "bundled": 0,
+      "unextracted": 34
+    },
+    "itsfer.ae": {
+      "channel": "itsfer.ae",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/itsfer.ae/DRYDGa0k7Au.txt",
+      "files": 11,
+      "bytes": 9869,
+      "bundled": 0,
+      "unextracted": 11
+    },
+    "itsthienvuvo": {
+      "channel": "itsthienvuvo",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/itsthienvuvo/DKucBvzMHbK.txt",
+      "files": 11,
+      "bytes": 15884,
+      "bundled": 0,
+      "unextracted": 11
+    },
+    "jaceengland.ig": {
+      "channel": "jaceengland.ig",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/jaceengland.ig/Da8_ziYPXAd.txt",
+      "files": 35,
+      "bytes": 11557,
+      "bundled": 0,
+      "unextracted": 35
+    },
+    "jackblairofficial": {
+      "channel": "jackblairofficial",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/jackblairofficial/DdW8ZlsG59L.txt",
+      "files": 10,
+      "bytes": 41079,
+      "bundled": 0,
+      "unextracted": 10
+    },
+    "jalalkhans": {
+      "channel": "jalalkhans",
+      "kind": "loose_root",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/jalalkhans__AI is ACTUALLY doing this to recruitment (it's not too late)__GkuPwLdmXfk.txt",
+      "files": 9,
+      "bytes": 133046,
+      "bundled": 0,
+      "unextracted": 9
+    },
+    "jasoncooperson": {
+      "channel": "jasoncooperson",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/jasoncooperson/DTmC_NIjYA8.txt",
+      "files": 41,
+      "bytes": 25962,
+      "bundled": 0,
+      "unextracted": 41
+    },
+    "jaydenleilua": {
+      "channel": "jaydenleilua",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/jaydenleilua/DbbY21Ggazg.txt",
+      "files": 1,
+      "bytes": 0,
+      "bundled": 0,
+      "unextracted": 1
+    },
+    "jaydenleilua1": {
+      "channel": "jaydenleilua1",
+      "kind": "loose_root",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/jaydenleilua1__21 Cold Email Hacks I Wish I Knew Sooner__AiapUIHsfR4.txt",
+      "files": 23,
+      "bytes": 489209,
+      "bundled": 0,
+      "unextracted": 23
+    },
+    "jess.ica.lam": {
+      "channel": "jess.ica.lam",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/jess.ica.lam/C-LW8jJvTCh.txt",
+      "files": 11,
+      "bytes": 23094,
+      "bundled": 0,
+      "unextracted": 11
+    },
+    "joemein_": {
+      "channel": "joemein_",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/joemein_/DSOQw0CjqZ3.txt",
+      "files": 10,
+      "bytes": 6911,
+      "bundled": 0,
+      "unextracted": 10
+    },
+    "joseph.0liver": {
+      "channel": "joseph.0liver",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/joseph.0liver/DM4a6zoSHCE.txt",
+      "files": 10,
+      "bytes": 3390,
+      "bundled": 0,
+      "unextracted": 10
+    },
+    "kaitedit": {
+      "channel": "kaitedit",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/kaitedit/C0G1niZCsMD.txt",
+      "files": 56,
+      "bytes": 33527,
+      "bundled": 0,
+      "unextracted": 56
+    },
+    "kallawaymarketing": {
+      "channel": "kallawaymarketing",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/kallawaymarketing/DUGabFVDb0e.txt",
+      "files": 18,
+      "bytes": 41590,
+      "bundled": 0,
+      "unextracted": 18
+    },
+    "karam_almoslih_": {
+      "channel": "karam_almoslih_",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/karam_almoslih_/C__tMJBN_xJ.txt",
+      "files": 30,
+      "bytes": 12907,
+      "bundled": 0,
+      "unextracted": 30
+    },
+    "kentjandraa": {
+      "channel": "kentjandraa",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/kentjandraa/DbZWK_9Eo0t.txt",
+      "files": 13,
+      "bytes": 13663,
+      "bundled": 0,
+      "unextracted": 13
+    },
+    "khaledbranding": {
+      "channel": "khaledbranding",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/khaledbranding/DU5PcDnCXql.txt",
+      "files": 40,
+      "bytes": 23860,
+      "bundled": 0,
+      "unextracted": 40
+    },
+    "kreettanam": {
+      "channel": "kreettanam",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/kreettanam/C2C4KpJSDVT.txt",
+      "files": 33,
+      "bytes": 20265,
+      "bundled": 0,
+      "unextracted": 33
+    },
+    "leadgenman": {
+      "channel": "leadgenman",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/leadgenman/DLrDeBRNuSW.txt",
+      "files": 25,
+      "bytes": 31783,
+      "bundled": 0,
+      "unextracted": 25
+    },
+    "leoxmoore": {
+      "channel": "leoxmoore",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/leoxmoore/DFV_oYHSBhc.txt",
+      "files": 32,
+      "bytes": 16600,
+      "bundled": 0,
+      "unextracted": 32
+    },
+    "lostinayaland": {
+      "channel": "lostinayaland",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/lostinayaland/DZk44lLs-gD.txt",
+      "files": 18,
+      "bytes": 16166,
+      "bundled": 0,
+      "unextracted": 18
+    },
+    "mahmoudelbahr": {
+      "channel": "mahmoudelbahr",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/mahmoudelbahr/DGn-bqnqhWn.txt",
+      "files": 41,
+      "bytes": 40962,
+      "bundled": 0,
+      "unextracted": 41
+    },
+    "mahmoudismailtv": {
+      "channel": "mahmoudismailtv",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/mahmoudismailtv/Db8-4SzkTz1.txt",
+      "files": 14,
+      "bytes": 4278,
+      "bundled": 0,
+      "unextracted": 14
+    },
+    "mariammahdymrk": {
+      "channel": "mariammahdymrk",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/mariammahdymrk/DBjC2eKvONg.txt",
+      "files": 50,
+      "bytes": 30467,
+      "bundled": 0,
+      "unextracted": 50
+    },
+    "marketing.with.safwat": {
+      "channel": "marketing.with.safwat",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/marketing.with.safwat/C--taamNeFr.txt",
+      "files": 46,
+      "bytes": 73979,
+      "bundled": 0,
+      "unextracted": 46
+    },
+    "marketingwithshaban": {
+      "channel": "marketingwithshaban",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/marketingwithshaban/DY0B4zbCrFO.txt",
+      "files": 45,
+      "bytes": 32777,
+      "bundled": 0,
+      "unextracted": 45
+    },
+    "maroonmoussallem": {
+      "channel": "maroonmoussallem",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/maroonmoussallem/DN525kdiJ4F.txt",
+      "files": 9,
+      "bytes": 15949,
+      "bundled": 0,
+      "unextracted": 9
+    },
+    "marvin_kehr": {
+      "channel": "marvin_kehr",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/marvin_kehr/DB6r209othX.txt",
+      "files": 14,
+      "bytes": 16518,
+      "bundled": 0,
+      "unextracted": 14
+    },
+    "mat_aleixo": {
+      "channel": "mat_aleixo",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/mat_aleixo/DIqHRubP_KG.txt",
+      "files": 12,
+      "bytes": 20685,
+      "bundled": 0,
+      "unextracted": 12
+    },
+    "matthewlucero": {
+      "channel": "matthewlucero",
+      "kind": "loose_root",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/matthewlucero__10 Proven Cold Email Scripts (178 Calls Booked In 1 Month)__zpPyGAydbmE.txt",
+      "files": 126,
+      "bytes": 3929387,
+      "bundled": 0,
+      "unextracted": 126
+    },
+    "mattyr_ecom": {
+      "channel": "mattyr_ecom",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/mattyr_ecom/C_W7ZwYJDyM.txt",
+      "files": 50,
+      "bytes": 22512,
+      "bundled": 0,
+      "unextracted": 50
+    },
+    "maxxinhouse": {
+      "channel": "maxxinhouse",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/maxxinhouse/DKsdsLizpDz.txt",
+      "files": 5,
+      "bytes": 3147,
+      "bundled": 0,
+      "unextracted": 5
+    },
+    "minolee.mp4": {
+      "channel": "minolee.mp4",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/minolee.mp4/C8QFlapP9YW.txt",
+      "files": 10,
+      "bytes": 9946,
+      "bundled": 0,
+      "unextracted": 10
+    },
+    "mkaddour_editior": {
+      "channel": "mkaddour_editior",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/mkaddour_editior/Czg_ikfN9WK.txt",
+      "files": 34,
+      "bytes": 16984,
+      "bundled": 0,
+      "unextracted": 34
+    },
+    "moataz.esssam": {
+      "channel": "moataz.esssam",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/moataz.esssam/DT5mr5kCQwq.txt",
+      "files": 41,
+      "bytes": 30222,
+      "bundled": 0,
+      "unextracted": 41
+    },
+    "mohamad.al.droubi": {
+      "channel": "mohamad.al.droubi",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/mohamad.al.droubi/DJTyDG8S8JX.txt",
+      "files": 26,
+      "bytes": 29810,
+      "bundled": 0,
+      "unextracted": 26
+    },
+    "moxowais": {
+      "channel": "moxowais",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/moxowais/C-P5xPTyupZ.txt",
+      "files": 22,
+      "bytes": 18227,
+      "bundled": 0,
+      "unextracted": 22
+    },
+    "nemanjatrvc": {
+      "channel": "nemanjatrvc",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/nemanjatrvc/DV1OUXwgpZG.txt",
+      "files": 50,
+      "bytes": 22672,
+      "bundled": 0,
+      "unextracted": 50
+    },
+    "nicktarmo": {
+      "channel": "nicktarmo",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/nicktarmo/DPhbFEkkU41.txt",
+      "files": 26,
+      "bytes": 19239,
+      "bundled": 0,
+      "unextracted": 26
+    },
+    "nicola.ai": {
+      "channel": "nicola.ai",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/nicola.ai/DVeQLj9kgAf.txt",
+      "files": 45,
+      "bytes": 19788,
+      "bundled": 0,
+      "unextracted": 45
+    },
+    "nicolasboucherfinance": {
+      "channel": "nicolasboucherfinance",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/nicolasboucherfinance/DPCHUj_Ei84.txt",
+      "files": 19,
+      "bytes": 40555,
+      "bundled": 0,
+      "unextracted": 19
+    },
+    "niksetting": {
+      "channel": "niksetting",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/niksetting/DKtxeeFCDwR.txt",
+      "files": 8,
+      "bytes": 6850,
+      "bundled": 0,
+      "unextracted": 8
+    },
+    "olli.rasmussen": {
+      "channel": "olli.rasmussen",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/olli.rasmussen/DQwBSGSDdaB.txt",
+      "files": 14,
+      "bytes": 16424,
+      "bundled": 0,
+      "unextracted": 14
+    },
+    "omarasolimann": {
+      "channel": "omarasolimann",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/omarasolimann/Db1czEbPOJk.txt",
+      "files": 32,
+      "bytes": 34909,
+      "bundled": 0,
+      "unextracted": 32
+    },
+    "onlyzita": {
+      "channel": "onlyzita",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/onlyzita/DOtHsv_DbZh.txt",
+      "files": 40,
+      "bytes": 33404,
+      "bundled": 0,
+      "unextracted": 40
+    },
+    "optimizedjake": {
+      "channel": "optimizedjake",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/optimizedjake/DZsTQDZDGbY.txt",
+      "files": 2,
+      "bytes": 7884,
+      "bundled": 0,
+      "unextracted": 2
+    },
+    "personalbrandlaunch": {
+      "channel": "personalbrandlaunch",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/personalbrandlaunch/DGdV2i6NRtS.txt",
+      "files": 37,
+      "bytes": 15551,
+      "bundled": 0,
+      "unextracted": 37
+    },
+    "peter.visuals": {
+      "channel": "peter.visuals",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/peter.visuals/Db-8HaZPEoT.txt",
+      "files": 33,
+      "bytes": 30903,
+      "bundled": 0,
+      "unextracted": 33
+    },
+    "promptedbyamber": {
+      "channel": "promptedbyamber",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/promptedbyamber/DX8xX4svPoO.txt",
+      "files": 35,
+      "bytes": 18692,
+      "bundled": 0,
+      "unextracted": 35
+    },
+    "raed.nhari": {
+      "channel": "raed.nhari",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/raed.nhari/DU_hxnOiJ2l.txt",
+      "files": 32,
+      "bytes": 30520,
+      "bundled": 0,
+      "unextracted": 32
+    },
+    "sabonagy": {
+      "channel": "sabonagy",
+      "kind": "loose_root",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/sabonagy__$15 Per Booked Call with cold email, Here's the Full System__oOxiF1Cuvbo.txt",
+      "files": 113,
+      "bytes": 1736541,
+      "bundled": 0,
+      "unextracted": 113
+    },
+    "scalewithjika": {
+      "channel": "scalewithjika",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/scalewithjika/DV8dtf2l1W9.txt",
+      "files": 8,
+      "bytes": 7288,
+      "bundled": 0,
+      "unextracted": 8
+    },
+    "scalewithmando": {
+      "channel": "scalewithmando",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/scalewithmando/DMfuPteRuFZ.txt",
+      "files": 11,
+      "bytes": 4390,
+      "bundled": 0,
+      "unextracted": 11
+    },
+    "scottmaximal": {
+      "channel": "scottmaximal",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/scottmaximal/DS-BJrTk6_M.txt",
+      "files": 36,
+      "bytes": 14877,
+      "bundled": 0,
+      "unextracted": 36
+    },
+    "seanrcallagy": {
+      "channel": "seanrcallagy",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/seanrcallagy/DRDQOvnibOp.txt",
+      "files": 33,
+      "bytes": 23141,
+      "bundled": 0,
+      "unextracted": 33
+    },
+    "seb.ai": {
+      "channel": "seb.ai",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/seb.ai/Da6C_ajgZ2B.txt",
+      "files": 14,
+      "bytes": 65884,
+      "bundled": 0,
+      "unextracted": 14
+    },
+    "smartleadai": {
+      "channel": "smartleadai",
+      "kind": "loose_root",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/smartleadai__#1 Understanding the Reporting List Page for Maximum Deliverability  SmartDelivery__Hikw_8kTaLA.txt",
+      "files": 309,
+      "bytes": 8580433,
+      "bundled": 0,
+      "unextracted": 309
+    },
+    "spiderx_media": {
+      "channel": "spiderx_media",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/spiderx_media/DIgVAdFqmfi.txt",
+      "files": 18,
+      "bytes": 23282,
+      "bundled": 0,
+      "unextracted": 18
+    },
+    "startupstealth": {
+      "channel": "startupstealth",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/startupstealth/DXbbCj6CFnd.txt",
+      "files": 12,
+      "bytes": 18596,
+      "bundled": 0,
+      "unextracted": 12
+    },
+    "suprava.builds": {
+      "channel": "suprava.builds",
+      "kind": "loose_root",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/suprava.builds__How To Personalize 100s Of Cold Emails Using Claude (Full Workflow)__9ovH4IwdImw.txt",
+      "files": 3,
+      "bytes": 48874,
+      "bundled": 0,
+      "unextracted": 3
+    },
+    "the.jeffery": {
+      "channel": "the.jeffery",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/the.jeffery/DVBkFCIkQMe.txt",
+      "files": 24,
+      "bytes": 18766,
+      "bundled": 0,
+      "unextracted": 24
+    },
+    "theaustinschneider": {
+      "channel": "theaustinschneider",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/theaustinschneider/DQVN21lDUwZ.txt",
+      "files": 34,
+      "bytes": 43422,
+      "bundled": 0,
+      "unextracted": 34
+    },
+    "thebenbranding": {
+      "channel": "thebenbranding",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/thebenbranding/DN2rfxyZBAw.txt",
+      "files": 16,
+      "bytes": 5381,
+      "bundled": 0,
+      "unextracted": 16
+    },
+    "thebranding.ai": {
+      "channel": "thebranding.ai",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/thebranding.ai/DY16ydnpZch.txt",
+      "files": 59,
+      "bytes": 23465,
+      "bundled": 0,
+      "unextracted": 59
+    },
+    "thechrisrigoudis": {
+      "channel": "thechrisrigoudis",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/thechrisrigoudis/C0Gh3kuNeou.txt",
+      "files": 44,
+      "bytes": 14789,
+      "bundled": 0,
+      "unextracted": 44
+    },
+    "thepostprotocol": {
+      "channel": "thepostprotocol",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/thepostprotocol/Dc-X7vLgmSG.txt",
+      "files": 37,
+      "bytes": 27032,
+      "bundled": 0,
+      "unextracted": 37
+    },
+    "thetravisstephenson": {
+      "channel": "thetravisstephenson",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/thetravisstephenson/DbMFcifyH3Q.txt",
+      "files": 10,
+      "bytes": 15934,
+      "bundled": 0,
+      "unextracted": 10
+    },
+    "thomassmedia": {
+      "channel": "thomassmedia",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/thomassmedia/DByXUZSsr09.txt",
+      "files": 36,
+      "bytes": 14225,
+      "bundled": 0,
+      "unextracted": 36
+    },
+    "timdanilovhi": {
+      "channel": "timdanilovhi",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/timdanilovhi/DDWwDufN2zt.txt",
+      "files": 9,
+      "bytes": 13688,
+      "bundled": 0,
+      "unextracted": 9
+    },
+    "torsten.roscoe": {
+      "channel": "torsten.roscoe",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/torsten.roscoe/Da07Ia2KwfJ.txt",
+      "files": 21,
+      "bytes": 11909,
+      "bundled": 0,
+      "unextracted": 21
+    },
+    "toyancloses": {
+      "channel": "toyancloses",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/toyancloses/DYPu1cwpK9J.txt",
+      "files": 36,
+      "bytes": 20145,
+      "bundled": 0,
+      "unextracted": 36
+    },
+    "tristansteckler": {
+      "channel": "tristansteckler",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/tristansteckler/DFYzYKmuhhH.txt",
+      "files": 24,
+      "bytes": 10632,
+      "bundled": 0,
+      "unextracted": 24
+    },
+    "vasyl._.pavliuk": {
+      "channel": "vasyl._.pavliuk",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/vasyl._.pavliuk/DY1GEMRqk0Y.txt",
+      "files": 45,
+      "bytes": 15335,
+      "bundled": 0,
+      "unextracted": 45
+    },
+    "victoria.shearing": {
+      "channel": "victoria.shearing",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/victoria.shearing/DQUZNabDRYE.txt",
+      "files": 13,
+      "bytes": 6502,
+      "bundled": 0,
+      "unextracted": 13
+    },
+    "viralvideo.club": {
+      "channel": "viralvideo.club",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/viralvideo.club/C3NTO7nIl1O.txt",
+      "files": 12,
+      "bytes": 9497,
+      "bundled": 0,
+      "unextracted": 12
+    },
+    "vvdworldbuilding": {
+      "channel": "vvdworldbuilding",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/vvdworldbuilding/Db4lIBqsTJv.txt",
+      "files": 18,
+      "bytes": 23563,
+      "bundled": 0,
+      "unextracted": 18
+    },
+    "whytaym": {
+      "channel": "whytaym",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/whytaym/DZ-LkWQIIH0.txt",
+      "files": 36,
+      "bytes": 11704,
+      "bundled": 0,
+      "unextracted": 36
+    },
+    "yasinbmammeri": {
+      "channel": "yasinbmammeri",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/yasinbmammeri/Db-4QL_DPg4.txt",
+      "files": 7,
+      "bytes": 7933,
+      "bundled": 0,
+      "unextracted": 7
+    },
+    "yassinmedia": {
+      "channel": "yassinmedia",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/yassinmedia/DWd1VLhChN2.txt",
+      "files": 17,
+      "bytes": 6418,
+      "bundled": 0,
+      "unextracted": 17
+    },
+    "yehiahaikal": {
+      "channel": "yehiahaikal",
+      "kind": "channel_dir",
+      "path": "/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/yehiahaikal/DO6jALcDAog.txt",
+      "files": 34,
+      "bytes": 22515,
+      "bundled": 0,
+      "unextracted": 34
+    }
+  }
+}

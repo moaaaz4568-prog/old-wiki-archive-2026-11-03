@@ -1,0 +1,4 @@
+POINTER (symlink)
+name: brain
+target: /root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain
+live_symlink: /root/r/nexus_wiki_links/04_SOURCES_RAW/brain

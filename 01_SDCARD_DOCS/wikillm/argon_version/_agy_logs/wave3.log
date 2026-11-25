@@ -1,0 +1,118 @@
+⚠ claude-opus-4-6-thinking: نفدت الحصة (429) → جاري التبديل…
+⚠ claude-sonnet-4-6: نفدت الحصة (429) → جاري التبديل…
+=== AGY implement [gemini-3.8-flash-high] exit=0 1269.9s ===
+تم تنفيذ **الموجة 3** بنجاح واكتمال تام وفق جميع متطلبات [BUILD_PROTOCOL.md](file:///sdcard/wikillm/BUILD_PROTOCOL.md) ومواثيق V3 ومحاكاة المستقبل، مع الالتزام الصارم باللغة العربية الفصحى 100%، وصفر محارف صينية، وتحقيق كافة معايير القبول الرقمية.
+
+---
+
+### أ) الأنظمة الخمسة المنجزة في [`systems/`](file:///sdcard/wikillm/argon_version/wiki_ver2/systems/):
+
+1. **[`SYS_11_BUSINESS_EXECUTION.md`](file:///sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_11_BUSINESS_EXECUTION.md)** (73 سطراً):
+   - تنفيذ البيزنس: بناء خطة العمل التنفيذية، عرض القيمة وهندسة التسعير، وسكريبت المبيعات والإغلاق.
+   - المسار الحاكم: «اقرأ الماستر التخصصي مباشرة» وحظر قراءة آلاف الملفات المجهرية أو الاعتماد على معرفة عامة مسبقة.
+   - منع الهلوسة ومكافحة السيناريو 3.4 (إجابة مقنعة بلا مصدر): كل رقم في المخرجات بلا معرف `SRC` حقيقي على القرص = هلوسة مطلقة.
+   - **معيار القبول:** تكرار كلمة «ماستر» = **7** (المطلوب ≥ 3).
+
+2. **[`SYS_12_AUDIT.md`](file:///sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_12_AUDIT.md)** (104 أسطر):
+   - التدقيق وضمان الجودة عبر 10 بوابات قياس بأوامر shell حرفية.
+   - تصنيف CASTRO الثلاثي: (حاجب = رفض / عالٍ = قبول بتحذير / متوسط = تسجيل).
+   - قاعدة `sima_yi`: «الرقم الذي لا يقابله أمر shell يُلغى» — والمصدر الوحيد هو `COUNTS.json`.
+   - ضبط المقامات بدقة رياضية (ملف ≠ مفهوم ≠ مصدر مستقل) وعلاج درس مغالطة 99.99%.
+   - مبدأ «البوابات حارسة لا حاجزة» وفاحص التلوث CJK البرمجي.
+   - **معيار القبول:** أوامر shell الحرفية (`grep|find|wc|awk`) = **10** (المطلوب ≥ 8).
+
+3. **[`SYS_13_DELEGATION.md`](file:///sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_13_DELEGATION.md)** (78 سطراً):
+   - تفويض الوكلاء: عناصر البريف التنفيذي الكامل والمراجعة الرباعية الإلزامية للمراجع.
+   - قاعدة التحجيم الحرج: حزمة **20-25 وحدة** كحد أقصى للوكيل (درس موت 10/12 وكيلاً في NB2).
+   - شطر المهام ثلاثياً عند تجاوز الحجم >700KB، وسقف توازي بذروة 6 وكلاء.
+   - بروتوكول الإلحاق الفوري (Immediate Append) والإصلاح اللحظي (Immediate FIX).
+   - التحقق بمعرف فريد من القرص لا من تقارير الوكلاء أو جداول CHECKPOINT (درس سقوط 103 قنوات).
+   - **معيار القبول:** ذكر قاعدة 20-25 وحدة = **2** (المطلوب ≥ 1).
+
+4. **[`SYS_14_ANTI_PATTERNS.md`](file:///sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_14_ANTI_PATTERNS.md)** (120 سطراً):
+   - سجل الأنماط المضادة والمخاطر المحظورة، وتفكيك خطأ الآيس بريك (تحويل مثال لقاعدة).
+   - أخطر 10 سيناريوهات فشل من محاكاة المستقبل (النجاح الكاذب، تحويل مثال لقاعدة، ماسترز فرعية بلا حاكم، بوابات حاجزة، موت الوكلاء بحزم كبيرة، التلوث الصيني، الملفات المجهرية، مجلدات فوق 1000 ملف، تضارب الأرقام، هلوسة المصادر).
+   - توثيق كل سيناريو وفق هيكل ثلاثي: ماذا يحدث + الاكتشاف المبكر بأمر shell + الحماية المعمارية.
+   - **معيار القبول:** ذكر «سيناريو / خطأ الآيس بريك» = **13** (المطلوب ≥ 5).
+
+5. **[`SYS_15_DYNAMIC_EXPANSION.md`](file:///sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_15_DYNAMIC_EXPANSION.md)** (85 سطراً):
+   - التوسع المعرفي عند 100K مدخل: علاج درس سيناريو T10 (انهيار الاسترجاع بوجود 500 ماستر متساوٍ بلا حاكم).
+   - المعمارية الهرمية الثلاثية: Master Index (جدول النطاق والحدود) ← Master Parent (توليف 10-20 سطراً) ← Master Sub (العقد الكامل 18 قسماً).
+   - معيار التقسيم: وفق مجال اتخاذ القرار والآلية التشغيلية لا عدد الملفات عشوائياً.
+   - بروتوكول الاسترجاع ثلاثي الخطوات ومسار التوليد الديناميكي لأنظمة جديدة عند الحاجة.
+   - **معيار القبول:** ذكر «Master Index / ماسترز فرعية» = **5** (المطلوب ≥ 2).
+
+---
+
+### ب) أدوات Python الثلاث العاملة في [`tools/`](file:///sdcard/wikillm/argon_version/wiki_ver2/tools/):
+
+1. **[`tools/nexus_rag.py`](file:///sdcard/wikillm/argon_version/wiki_ver2/tools/nexus_rag.py):** استرجاع معرفي ذكي (stdlib فقط) يبحث في الويكي وفي مجلد المادة الخام في [/sdcard/Nexus_Brain/Nexus_Brain/brain/](file:///sdcard/Nexus_Brain/Nexus_Brain/brain/) ويعيد المسار ورقم السطر والمقطع السياقي ودرجة التطابق.
+2. **[`tools/count.py`](file:///sdcard/wikillm/argon_version/wiki_ver2/tools/count.py):** نظام الأرقام الفعلي وقاعدة `sima_yi`؛ يجمع إحصائيات القرص الحقيقية، وينشئ ويحدّث [`COUNTS.json`](file:///sdcard/wikillm/argon_version/wiki_ver2/COUNTS.json)، ويدعم وضع `--check` لمقارنة أرقام القرص الحية بالمسجل.
+3. **[`tools/audit.py`](file:///sdcard/wikillm/argon_version/wiki_ver2/tools/audit.py):** فاحص الجودة الآلي والبوابات الرقمية؛ يقيس النقاء اللغوي (0 CJK)، سقف المجلدات (≤900 ملف)، اكتمال أقسام القوالب (§1-§18)، نظافة الوثائق (0 TODO/TBD/XXX)، وصحة الروابط والمسارات الواقعية، ويخرج تقريراً موزوناً (100/100 نقطة PASSED).
+
+---
+
+### ج) المخرجات الحرفية لأمر التحقق النهائي:
+
+```bash
+cd /sdcard/wikillm/argon_version/wiki_ver2 && python3 tools/nexus_rag.py "cold email" | head -5 && python3 tools/count.py --check && python3 tools/audit.py /sdcard/wikillm/argon_version/wiki_ver2/ && for f in systems/SYS_1[1-5]*.md; do wc -l "$f"; done
+```
+
+```text
+[1] /sdcard/wikillm/argon_version/wiki_ver2/domains/business_architecture/01_systems_ops/PLAYBOOK_TEMPLATE.md:51 (درجة: 20)
+    ### نموذج توضيحي معياري للتوثيق الإجرائي (مثال توجيهي من مصدر حقيقي): - **المصدر المعتمد والمتحقق على القرص:** `/sdcard/Nexus_Brain/Nexus_Brain/brain/aaronxshepherd__21 Cold Email Hacks To Book More Sales Calls INSTANTLY__i7vdM5SZsmk.txt` (السطر 1 — صيغة الإحالة: `/sdcard/Nexu...
+[2] /sdcard/wikillm/argon_version/wiki_ver2/domains/business_architecture/01_systems_ops/TERMS_TEMPLATE.md:33 (درجة: 20)
+    - **الشروط والضوابط:** يجب التحقق المسبق من وجود ملف المصدر على القرص باستخدام أمر الفحص (`test -e`). يُحظر وضع روابط عامة أو مسارات افتراضية أو غير مؤكدة. - **المثال الإرشادي المعتمد:** - **مسار الملف المتحقق على القرص:** `/sdcard/Nexus_Brain/Nexus_Brain/brain/aaronxshepherd_...
+[3] /sdcard/wikillm/argon_version/wiki_ver2/domains/business_architecture/02_hiring/PLAYBOOK_TEMPLATE.md:51 (درجة: 20)
+=== فحص مطابقة الارقام مع القرص (قاعدة sima_yi) ===
+  [OK] اجمالي الملفات: 90
+  [OK] عدد الانظمة التشغيلية: 15
+  [OK] عدد القوالب المعتمدة: 45
+  [OK] عدد فهارس المجالات: 21
+  [OK] التلوث اللغوي CJK: 0
+
+CHECK OK: جميع الارقام مطابقة للقرص بنسبة 100% — قاعدة sima_yi محققة.
+================================================================================
+تقرير التدقيق وضمان الجودة المعماري · المسار: /sdcard/wikillm/argon_version/wiki_ver2
+================================================================================
+البوابة | اسم الفحص                        | الوزن  | النقاط | الحالة | التفاصيل
+-------|----------------------------------|--------|--------|--------|-------------------------
+G1     | النقاء اللغوي (صفر محارف CJK)    | 25     | 25     | PASS   | صفر محارف صينية (تم رصد: 0)
+G2     | سقف حجم المجلدات (<= 900 ملف)    | 20     | 20     | PASS   | كافة المجلدات دون سقف 900 ملف
+G3     | اكتمال القوالب (§1-§18)          | 20     | 20     | PASS   | جميع القوالب (15) مستوفية لكامل الاقسام الـ 18 (§1-§18)
+G4     | نظافة الوثائق (صفر TODO/TBD)     | 20     | 20     | PASS   | صفر وسوم TODO/TBD/XXX حقيقية
+G5     | صحة الروابط والمسارات الواقعية   | 15     | 15     | PASS   | تم فحص 169 مسارا وكلها مثبتة على القرص بنسبة 100%
+================================================================================
+النتيجة الاجمالية: PASSED (100/100 نقطة)
+================================================================================
+73 systems/SYS_11_BUSINESS_EXECUTION.md
+104 systems/SYS_12_AUDIT.md
+78 systems/SYS_13_DELEGATION.md
+120 systems/SYS_14_ANTI_PATTERNS.md
+85 systems/SYS_15_DYNAMIC_EXPANSION.md
+```
+--- meta ---
+conversationId: 83d26349-9d13-4a1e-9f08-8b7ac0419588
+result.json   : /sdcard/wikillm/argon_version/_agy_logs/wave3.json
+stdout        : /tmp/agy-director/implement-2026-10-25T08-04-58-607Z/stdout.md
+artifacts (60):
+   COUNTS.json  (768B)
+   tools/audit.py  (10658B)
+   tools/count.py  (7836B)
+   domains/business_architecture/03_metrics/INDEX.md  (3510B)
+   domains/business_architecture/03_metrics/CONTINGENCY_MATRIX_TEMPLATE.md  (4239B)
+   domains/business_architecture/03_metrics/TERMS_TEMPLATE.md  (6211B)
+   domains/business_architecture/03_metrics/PLAYBOOK_TEMPLATE.md  (28673B)
+   domains/business_architecture/02_hiring/INDEX.md  (3588B)
+   domains/business_architecture/02_hiring/CONTINGENCY_MATRIX_TEMPLATE.md  (4235B)
+   domains/business_architecture/02_hiring/TERMS_TEMPLATE.md  (6207B)
+   domains/business_architecture/02_hiring/PLAYBOOK_TEMPLATE.md  (28669B)
+   domains/business_architecture/01_systems_ops/INDEX.md  (3586B)
+   domains/business_architecture/01_systems_ops/CONTINGENCY_MATRIX_TEMPLATE.md  (4251B)
+   domains/business_architecture/01_systems_ops/TERMS_TEMPLATE.md  (6223B)
+   domains/business_architecture/01_systems_ops/PLAYBOOK_TEMPLATE.md  (28685B)
+   domains/business_architecture/INDEX.md  (3583B)
+   domains/content_strategy/03_repurposing/INDEX.md  (3684B)
+   domains/content_strategy/03_repurposing/CONTINGENCY_MATRIX_TEMPLATE.md  (4235B)
+   domains/content_strategy/03_repurposing/TERMS_TEMPLATE.md  (6207B)
+   domains/content_strategy/03_repurposing/PLAYBOOK_TEMPLATE.md  (28669B)

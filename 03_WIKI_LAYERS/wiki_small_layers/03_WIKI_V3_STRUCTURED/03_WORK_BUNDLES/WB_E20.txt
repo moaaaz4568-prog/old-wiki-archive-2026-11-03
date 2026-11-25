@@ -1,0 +1,27 @@
+# WB_E20 — حزمة الاستخراج المعلّقة (E20)
+# المصدر الأصلي (plan): /root/r/NB2/.nexus_work/plan/bundle_E20.txt
+# جذر المسارات المحلية: /root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain
+# عدد ملفات هذا الملف: 19
+# عدد كلمات هذا الملف: 82,245
+# حجم هذا الملف من المصادر: 445,264 بايت
+# الصيغة: <الكلمات>	<مسارabsolut>
+##############################################################################
+4609	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to Get Rich on Social Media (Without Luck, Time, or Being a Genius).txt
+4663	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How William Brown makes $487k every month posting stupid videos.txt
+4499	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Why Your Content Isn’t Getting Views (and how to fix it).txt
+4656	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to Master the Art of Speaking (and blow up your content).txt
+4532	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/DEMO Steal our SEO + GEO proposal Claude Agent.txt
+4318	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Social Media Isn’t Hard. It’s Misunderstood..txt
+4580	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Linkedin Shorts Is A Cheat Code For Fast Growth & More Leads.txt
+4331	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Say This in Your Videos, It’ll Improve Your Storytelling by 10x.txt
+4426	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/how Emily McDonald (emonthebrain) makes $417,291mo from Instagram.txt
+4233	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/The NEW Era of Personal Brands is Here (and you’re not ready).txt
+4473	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Stop Playing Social Media on ‘Hard Mode’ (6 Cheat Codes to Win in 2025).txt
+4117	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Social Media Is Evolving.txt
+4205	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Give me 18 minutes, and I’ll improve your video by 193%.txt
+4160	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/$83M of Info Marketing Strategy in 23 Minutes.txt
+4160	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Why Most High-Ticket Launches Fail (And How We Built a $3M One).txt
+4219	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Exposing How Nero Knowledge makes $211,000mo (it's easy lol).txt
+3944	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How To Build a Personal Brand That’s Magnetic As Fck.txt
+4142	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Watch me CLOSE a $4,000 client from Youtube (with 371 views ONLY).txt
+3978	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/If I Started Social Media From Scratch in 2026, I’d Do This.txt

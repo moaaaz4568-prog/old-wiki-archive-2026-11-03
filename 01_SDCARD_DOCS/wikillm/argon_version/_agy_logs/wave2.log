@@ -1,0 +1,128 @@
+⚠ claude-opus-4-6-thinking: نفدت الحصة (429) → جاري التبديل…
+⚠ claude-sonnet-4-6: نفدت الحصة (429) → جاري التبديل…
+=== AGY implement [gemini-3.8-flash-high] exit=0 627.4s ===
+### بروتوكول التفكير قبل التنفيذ (وفق القسم 5 من BUILD_PROTOCOL):
+
+1. **تفسير المهمة بجملة واحدة:**
+   بناء الأنظمة الخمسة للموجة الثانية (`SYS_06` إلى `SYS_10`) في `/sdcard/wikillm/argon_version/wiki_ver2/systems/` لتنظيم التعميق الإدراكي للمصطلحات، تشريح الماستر بالعقد الـ18 الحاكم، مصفوفة تعددية الآراء وحوكمة التناقضات، التوليف التراكمي الموضعي، وعقد الفهارس والملاحة العكسية للأدلة.
+
+2. **الخطة خطوة بخطوة وسبب كل خطوة:**
+   - **قراءة المرجعيات الحاكمة:** قراءة `BUILD_PROTOCOL.md` (الأقسام 2 و3)، `21_wikis_analysis.md`، `FORMAT_MASTER.md`، و`GATES_11.md` لضمان مطابقة القواعد التشغيلية والبوابات الرقمية ونوايا المالك الحرفية.
+   - **صياغة الأنظمة الخمسة كاملة المحتوى:** كتابة الأنظمة بتفصيل إجرائي كامل دون اختزال وبأمثلة من مصادر حقيقية متحققة على القرص (`/sdcard/Nexus_Brain/Nexus_Brain/brain/processed/1. The Biggest Problem in Sales (1).txt`).
+   - **التحقق الآلي والقياس من القرص:** فحص أعداد الأسطر، تشغيل أوامر `grep` لمعايير القبول، والتأكد من نقاء النص من أي محارف صينية (0 CJK) وخلوه من وسوم `TODO/TBD`.
+
+3. **ما الذي قد يفشل وكيف تم تفاديه:**
+   - *الانزلاق لتعميق سطحي (درس 15.7%):* تم تفصيله ببروتوكول الـ 7 خطوات وبوابتي D05/D06 (الحد الأدنى 40 كلمة للآلية وحد الفناء لمنع اجتياز grep بالأسطر الصورية).
+   - *كتابة ماستر مبكر دون اكتمال مصطلحات النطاق:* تم تضمين شرط المالك الحرفي `domain_terms_complete` كحاجز حاسم يسبق أي ماستر.
+   - *الدمج القسري للآراء أو تفضيل رأي:* اعتماد مصفوفة السياق وقاعدة "توصيتان مشروطتان" عند اختلاف الأبعاد.
+   - *تكرار الأقسام (كارثة الـ 36 قسماً):* اعتماد التحديث التراكمي الموضعي في المكان وفحص تفريغ العناوين المكررة.
+   - *الفهارس الراكدة:* إدراج فاحص الانتعاش الحرفي `find . -newer INDEX.md -type f`.
+
+4. **معايير القبول المستهدفة:**
+   - `SYS_06`: `grep -c "7 خطوات\|سبع خطوات"` ≥ 1 وسطور ≥ 60.
+   - `SYS_07`: `grep -c "domain_terms_complete\|اكتمال مصطلحات"` ≥ 2 وذكر الأقسام §1-§18 كلها وسطور ≥ 70.
+   - `SYS_08`: `grep -c "counterconditions\|توصيتان مشروطتان"` ≥ 2 وسطور ≥ 60.
+   - `SYS_09`: `grep -c "تراكمي"` ≥ 2 وسطور ≥ 60.
+   - `SYS_10`: `grep -c "retrieval_questions"` ≥ 2 وسطور ≥ 60.
+   - النقاء اللغوي: صفر حرف صيني، وصحة كافة المسارات بـ `test -e`.
+
+---
+
+### الأنظمة المنجزة في الموجة 2 (`/sdcard/wikillm/argon_version/wiki_ver2/systems/`):
+
+1. **[SYS_06_TERMS_DEEPENING.md](file:///sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_06_TERMS_DEEPENING.md):**
+   - تحويل الكلام لمصطلح تشغيلي وسلوكي مسحوب بموضعه من المصدر.
+   - تفصيل **منهجية التعميق عبر 7 خطوات** (التعريف والآلية، المحاكاة الميدانية، استكشاف البدائل، التوقع وتناقص العوائد، التقاطع والتوترات، التفكير النقدي وتفكيك التحيزات، والتفعيل الإجرائي).
+   - تفعيل بوابتي D05 (حد الفناء ≥ 40 كلمة) وD06 (الآلية السببية ≥ 40 كلمة) من GATES_11، وتفسير وجودهما معاً لأن السطر الواحد يجتاز `grep` ويُسقطه `awk`.
+   - توثيق درس الويكي القديمة (15.7% فقط من المفاهيم معمقة).
+   - مثال تطبيقي من مصدر حقيقي على القرص: `1. The Biggest Problem in Sales (1).txt`.
+
+2. **[SYS_07_MASTER_ANATOMY.md](file:///sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_07_MASTER_ANATOMY.md):**
+   - **العقد الحاكم الـ 18 قسمياً (§1 إلى §18)** بالترتيب والتفصيل والحدود من `FORMAT_MASTER.md` (الموجز التنفيذي، الفلسفة، جدول التعريفات الثلاثي، الأنظمة والعمليات ≥40%، الأرقام الموسومة ⚠️، الأخطاء وعلاجها، المتغيرات، الجواهر 15-25 اقتباس، التوترات وشرط التمييز، النماذج الجاهزة، قائمة التحقق، السيناريوهات 4-5 ≥200 كلمة وتكلفة كل خيار، الأدوات بتاريخ تقادم، KPIs بخيط سببي، التحليل المستقل ≥1,800 كلمة، الأسئلة التشغيلية، روابط الماسترات فقط، وجدول كافة مفاهيم القطاع بروابط `[[C_Slug]]` حقيقية 100%).
+   - إدراج **شرط اكتمال مصطلحات المجلد قبل الماستر (`domain_terms_complete`)** بنص المالك الحرفي الصريح.
+   - إقرار أن العقد وظيفي لا كمي (الماستر الصغير يجوز فيه "لا ينطبق" بالسبب وإظهار الفجوة المعرفية بأمانة).
+
+3. **[SYS_08_PLURALISM.md](file:///sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_08_PLURALISM.md):**
+   - مصفوفة سياق لكل رأي بحقول: `context`, `target`, `mechanism`, `conditions`, `counterconditions`, `transferability`.
+   - حظر إصدار أحكام صح/خطأ على الخبراء وتطبيق رؤية المالك الحرفية.
+   - مصفوفة القرار السداسية: (مرتبط ومدعوم = مشروط · خبرة مصدرية = تجريبي · بلا دليل = فرضية · متعارض = جدول مقارنة للشروط لا دمج · غير مرتبط = استبعاد مسجل · هبد = استبعاد تام من طبقة الاسترجاع).
+   - **قاعدة التناقض:** اختلاف الجمهور أو المرحلة أو السعر أو القناة يعني **توصيتان مشروطتان** لا تناقضاً منطقياً ولا دمجاً قسرياً في "متوسط زائف".
+
+4. **[SYS_09_CUMULATIVE_SYNTHESIS.md](file:///sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_09_CUMULATIVE_SYNTHESIS.md):**
+   - التوليف التراكمي الفوري للماستر من كل مصدر جديد وتفادي فخ بوابات التعليق في GPT-6 (التي عطلت المعالجة عند 3 ملفات من أصل 2,541).
+   - قاعدة **التحديث في المكان لا الإلحاق** مستخلصة من درس ماستر الهوية ذي الـ 36 قسماً في V3 (تكرار 53.5% من الكلمات).
+   - التأكيد على أن كل قسم يحمل معلومة لا يحملها غيره، مع أمر فحص تكرار العناوين: `grep '^## §' "$f" | sed 's/^## §[0-9]*[: ]*//' | sort | uniq -d` (فارغ).
+
+5. **[SYS_10_INDEXES.md](file:///sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_10_INDEXES.md):**
+   - عقد `INDEX.md` لكل مجلد بحقول `retrieval_questions` (لماذا يفتح الوكيل هذا الملف)، `limitations`، والحالات الصريحة (`pending`, `partial`, `stale`, `complete`) دون تجميل لفظي.
+   - درس T2 وفاحص الفهرس الراكد بالأمر: `find . -newer INDEX.md -type f | wc -l`.
+   - تفصيل **المسار العكسي للأدلة**: Master ← Concept ← Claim ← source_id ← موضع الأصل الحرفي (سطر/توقيت).
+   - التمييز الصارم بين عدد المسارات، عدد البصمات الفريدة، والمصادر المستقلة أدلياً.
+
+---
+
+### التحقق النهائي من القرص:
+
+#### 1. مخرجات أمر التحقق من عدد الأسطر:
+```bash
+$ for f in /sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_0[6-9]*.md /sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_10*.md; do wc -l "$f"; done
+141 /sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_06_TERMS_DEEPENING.md
+183 /sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_07_MASTER_ANATOMY.md
+137 /sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_08_PLURALISM.md
+113 /sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_09_CUMULATIVE_SYNTHESIS.md
+139 /sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_10_INDEXES.md
+```
+
+#### 2. مخرجات قياس معايير القبول الحرفية:
+```bash
+$ cd /sdcard/wikillm/argon_version/wiki_ver2/systems/
+$ grep -cE "7 خطوات|سبع خطوات" SYS_06_TERMS_DEEPENING.md
+3
+$ grep -cE "domain_terms_complete|اكتمال مصطلحات" SYS_07_MASTER_ANATOMY.md
+4
+$ grep -cE "counterconditions|توصيتان مشروطتان" SYS_08_PLURALISM.md
+8
+$ grep -c "تراكمي" SYS_09_CUMULATIVE_SYNTHESIS.md
+10
+$ grep -c "retrieval_questions" SYS_10_INDEXES.md
+4
+```
+
+#### 3. مخرجات فحص النقاء اللغوي (0 CJK):
+```bash
+$ python3 -c "import pathlib; print('CJK count:', sum(1 for p in pathlib.Path('/sdcard/wikillm/argon_version/wiki_ver2/systems/').rglob('*.md') for c in p.read_text(errors='ignore') if '\u4e00' <= c <= '\u9fff'))"
+CJK count: 0
+```
+
+#### 4. مخرجات فحص النظافة (0 TODO / TBD):
+```bash
+$ grep -rnE "TODO|TBD|XXX" /sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_0[6-9]*.md /sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_10*.md | wc -l
+0
+```
+
+كافة الملفات تم بناؤها والتحقق منها وهي جاهزة تماماً للانتقال إلى الموجة التالية.
+--- meta ---
+conversationId: 83d26349-9d13-4a1e-9f08-8b7ac0419588
+result.json   : /sdcard/wikillm/argon_version/_agy_logs/wave2.json
+stdout        : /tmp/agy-director/implement-2026-10-25T08-04-58-623Z/stdout.md
+artifacts (60):
+   _BUILD_REPORT.md  (6108B)
+   domains/business_architecture/03_metrics/INDEX.md  (3510B)
+   domains/business_architecture/03_metrics/CONTINGENCY_MATRIX_TEMPLATE.md  (4239B)
+   domains/business_architecture/03_metrics/TERMS_TEMPLATE.md  (5995B)
+   domains/business_architecture/03_metrics/PLAYBOOK_TEMPLATE.md  (28461B)
+   domains/business_architecture/02_hiring/INDEX.md  (3588B)
+   domains/business_architecture/02_hiring/CONTINGENCY_MATRIX_TEMPLATE.md  (4235B)
+   domains/business_architecture/02_hiring/TERMS_TEMPLATE.md  (5991B)
+   domains/business_architecture/02_hiring/PLAYBOOK_TEMPLATE.md  (28457B)
+   domains/business_architecture/01_systems_ops/INDEX.md  (3586B)
+   domains/business_architecture/01_systems_ops/CONTINGENCY_MATRIX_TEMPLATE.md  (4251B)
+   domains/business_architecture/01_systems_ops/TERMS_TEMPLATE.md  (6007B)
+   domains/business_architecture/01_systems_ops/PLAYBOOK_TEMPLATE.md  (28473B)
+   domains/business_architecture/INDEX.md  (3379B)
+   domains/content_strategy/03_repurposing/INDEX.md  (3684B)
+   domains/content_strategy/03_repurposing/CONTINGENCY_MATRIX_TEMPLATE.md  (4235B)
+   domains/content_strategy/03_repurposing/TERMS_TEMPLATE.md  (5991B)
+   domains/content_strategy/03_repurposing/PLAYBOOK_TEMPLATE.md  (28457B)
+   domains/content_strategy/02_distribution/INDEX.md  (3558B)
+   domains/content_strategy/02_distribution/CONTINGENCY_MATRIX_TEMPLATE.md  (4232B)

@@ -1,0 +1,341 @@
+{
+  "role": "implement",
+  "model": "gemini-3.8-flash-high",
+  "modelRequested": "auto",
+  "mode": "accept-edits",
+  "cwd": "/sdcard/wikillm/argon_version/wiki_ver2",
+  "brief": "/tmp/agy-director/implement-2026-10-25T08-04-58-607Z/brief.md",
+  "conversationId": "83d26349-9d13-4a1e-9f08-8b7ac0419588",
+  "exitCode": 0,
+  "elapsedSec": 1269.9,
+  "stdoutPath": "/tmp/agy-director/implement-2026-10-25T08-04-58-607Z/stdout.md",
+  "stderrPath": "/tmp/agy-director/implement-2026-10-25T08-04-58-607Z/stderr.log",
+  "stdoutPreview": "تم تنفيذ **الموجة 3** بنجاح واكتمال تام وفق جميع متطلبات [BUILD_PROTOCOL.md](file:///sdcard/wikillm/BUILD_PROTOCOL.md) ومواثيق V3 ومحاكاة المستقبل، مع الالتزام الصارم باللغة العربية الفصحى 100%، وصفر محارف صينية، وتحقيق كافة معايير القبول الرقمية.\n\n---\n\n### أ) الأنظمة الخمسة المنجزة في [`systems/`](file:///sdcard/wikillm/argon_version/wiki_ver2/systems/):\n\n1. **[`SYS_11_BUSINESS_EXECUTION.md`](file:///sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_11_BUSINESS_EXECUTION.md)** (73 سطراً):\n   - تنفيذ البيزنس: بناء خطة العمل التنفيذية، عرض القيمة وهندسة التسعير، وسكريبت المبيعات والإغلاق.\n   - المسار الحاكم: «اقرأ الماستر التخصصي مباشرة» وحظر قراءة آلاف الملفات المجهرية أو الاعتماد على معرفة عامة مسبقة.\n   - منع الهلوسة ومكافحة السيناريو 3.4 (إجابة مقنعة بلا مصدر): كل رقم في المخرجات بلا معرف `SRC` حقيقي على القرص = هلوسة مطلقة.\n   - **معيار القبول:** تكرار كلمة «ماستر» = **7** (المطلوب ≥ 3).\n\n2. **[`SYS_12_AUDIT.md`](file:///sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_12_AUDIT.md)** (104 أسطر):\n   - التدقيق وضمان الجودة عبر 10 بوابات قياس بأوامر shell حرفية.\n   - تصنيف CASTRO الثلاثي: (حاجب = رفض / عالٍ = قبول بتحذير / متوسط = تسجيل).\n   - قاعدة `sima_yi`: «الرقم الذي لا يقابله أمر shell يُلغى» — والمصدر الوحيد هو `COUNTS.json`.\n   - ضبط المقامات بدقة رياضية (ملف ≠ مفهوم ≠ مصدر مستقل) وعلاج درس مغالطة 99.99%.\n   - مبدأ «البوابات حارسة لا حاجزة» وفاحص التلوث CJK البرمجي.\n   - **معيار القبول:** أوامر shell الحرفية (`grep|find|wc|awk`) = **10** (المطلوب ≥ 8).\n\n3. **[`SYS_13_DELEGATION.md`](file:///sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_13_DELEGATION.md)** (78 سطراً):\n   - تفويض الوكلاء: عناصر البريف التنفيذي الكامل والمراجعة الرباعية الإلزامية للمراجع.\n   - قاعدة التحجيم الحرج: حزمة **20-25 وحدة** كحد أقصى للوكيل (درس موت 10/12 وكيلاً في NB2).\n   - شطر المهام ثلاثياً عند تجاوز الحجم >700KB، وسقف توازي بذروة 6 وكلاء.\n   - بروتوكول الإلحاق الفوري (Immediate Append) والإصلاح اللحظي (Immediate FIX).\n   - التحقق بمعرف فريد من القرص لا من تقارير الوكلاء أو جداول CHECKPOINT (درس سقوط 103 قنوات).\n   - **معيار القبول:** ذكر قاعدة 20-25 وحدة = **2** (المطلوب ≥ 1).\n\n4. **[`SYS_14_ANTI_PATTERNS.md`](file:///sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_14_ANTI_PATTERNS.md)** (120 سطراً):\n   - سجل الأنماط المضادة والمخاطر المحظورة، وتفكيك خطأ الآيس بريك (تحويل مثال لقاعدة).\n   - أخطر 10 سيناريوهات فشل من محاكاة المستقبل (النجاح الكاذب، تحويل مثال لقاعدة، ماسترز فرعية بلا حاكم، بوابات حاجزة، موت الوكلاء بحزم كبيرة، التلوث الصيني، الملفات المجهرية، مجلدات فوق 1000 ملف، تضارب الأرقام، هلوسة المصادر).\n   - توثيق كل سيناريو وفق هيكل ثلاثي: ماذا يحدث + الاكتشاف المبكر بأمر shell + الحماية المعمارية.\n   - **معيار القبول:** ذكر «سيناريو / خطأ الآيس بريك» = **13** (المطلوب ≥ 5).\n\n5. **[`SYS_15_DYNAMIC_EXPANSION.md`](file:///sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_15_DYNAMIC_EXPANSION.md)** (85 سطراً):\n   - التوسع المعرفي عند 100K مدخل: علاج درس سيناريو T10 (انهيار الاسترجاع بوجود 500 ماستر متساوٍ بلا حاكم).\n   - المعمارية الهرمية الثلاثية: Master Index (جدول النطاق والحدود) ← Master Parent (توليف 10-20 سطراً) ← Master Sub (العقد الكامل 18 قسماً).\n   - معيار التقسيم: وفق مجال اتخاذ القرار والآلية التشغيلية لا عدد الملفات عشوائياً.\n   - بروتوكول الاسترجاع ثلاثي الخطوات ومسار التوليد الديناميكي لأنظمة جديدة عند الحاجة.\n   - **معيار القبول:** ذكر «Master Index / ماسترز فرعية» = **5** (المطلوب ≥ 2).\n\n---\n\n### ب) أدوات Python الثلاث العاملة في [`tools/`](file:///sdcard/wikillm/argon_version/wiki_ver2/tools/):\n\n1. **[`tools/nexus_rag.py`](file:///sdcard/wikillm/argon_version/wiki_ver2/tools/nexus_rag.py):** استرجاع معرفي ذكي (stdlib فقط) يبحث في الويكي وفي مجلد المادة الخام في [/sdcard/Nexus_Brain/Nexus_Brain/brain/](file:///sdcard/Nexus_Brain/Nexus_Brain/brain/) ويعيد المسار ورقم السطر والمقطع السياقي ودرجة التطابق.\n2. **[`tools/count.py`](file:///sdcard/wikillm/argon_version/wiki_ver2/tools/count.py):** نظام الأرقام الفعلي وقاعدة `sima_yi`؛ يجمع إحصائيات القرص الحقيقية، وينشئ ويحدّث [`COUNTS.json`](file:///sdcard/wikillm/argon_version/wiki_ver2/COUNTS.json)، ويدعم وضع `--check` لمقارنة أرقام القرص الحية بالمسجل.\n3. **[`tools/audit.py`](file:///sdcard/wikillm/argon_version/wiki_ver2/tools/audit.py):** فاحص الجودة الآلي والبوابات الرقمية؛ يقيس النقاء اللغوي (0 CJK)، سقف المجلدات (≤900 ملف)، اكتمال أقسام القوالب (§1-§18)، نظافة الوثائق (0 TODO/TBD/XXX)، وصحة الروابط والمسارات الواقعية، ويخرج تقريراً موزوناً (100/100 نقطة PASSED).\n\n---\n\n### ج) المخرجات الحرفية لأمر التحقق النهائي:\n\n```bash\ncd /sdcard/wikillm/argon_version/wiki_ver2 && python3 tools/nexus_rag.py \"cold email\" | head -5 && python3 tools/count.py --check && python3 tools/audit.py /sdcard/wikillm/argon_version/wiki_ver2/ && for f in systems/SYS_1[1-5]*.md; do wc -l \"$f\"; done\n```\n\n```text\n[1] /sdcard/wikillm/argon_version/wiki_ver2/domains/business_architecture/01_systems_ops/PLAYBOOK_TEMPLATE.md:51 (درجة: 20)\n    ### نموذج توضيحي معياري للتوثيق الإجرائي (مثال توجيهي من مصدر حقيقي): - **المصدر المعتمد والمتحقق على القرص:** `/sdcard/Nexus_Brain/Nexus_Brain/brain/aaronxshepherd__21 Cold Email Hacks To Book More Sales Calls INSTANTLY__i7vdM5SZsmk.txt` (السطر 1 — صيغة الإحالة: `/sdcard/Nexu...\n[2] /sdcard/wikillm/argon_version/wiki_ver2/domains/business_architecture/01_systems_ops/TERMS_TEMPLATE.md:33 (درجة: 20)\n    - **الشروط والضوابط:** يجب التحقق المسبق من وجود ملف المصدر على القرص باستخدام أمر الفحص (`test -e`). يُحظر وضع روابط عامة أو مسارات افتراضية أو غير مؤكدة. - **المثال الإرشادي المعتمد:** - **مسار الملف المتحقق على القرص:** `/sdcard/Nexus_Brain/Nexus_Brain/brain/aaronxshepherd_...\n[3] /sdcard/wikillm/argon_version/wiki_ver2/domains/business_architecture/02_hiring/PLAYBOOK_TEMPLATE.md:51 (درجة: 20)\n=== فحص مطابقة الارقام مع القرص (قاعدة sima_yi) ===\n  [OK] اجمالي الملفات: 90\n  [OK] عدد الانظمة التشغيلية: 15\n  [OK] عدد القوالب المعتمدة: 45\n  [OK] عدد فهارس المجالات: 21\n  [OK] التلوث اللغوي CJK: 0\n\nCHECK OK: جميع الارقام مطابقة للقرص بنسبة 100% — قاعدة sima_yi محققة.\n=====================================================",
+  "stderrTail": "",
+  "attempts": [
+    {
+      "model": "claude-opus-4-6-thinking",
+      "code": 3,
+      "quota": true,
+      "empty": false,
+      "err": " your subscription to increase your limits. Resets in 79h0m6s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"error_code\":429,\"code_kind\":\"http\",\"retryable\":true,\"error_id\":\"73f16e05-9709-4508-a547-9b168832b46d-8\"}\n"
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "code": 3,
+      "quota": true,
+      "empty": false,
+      "err": "our subscription to increase your limits. Resets in 78h59m50s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"error_code\":429,\"code_kind\":\"http\",\"retryable\":true,\"error_id\":\"71942040-f6af-4832-846f-fcb636d0c591-1\"}\n"
+    },
+    {
+      "model": "gemini-3.8-flash-high",
+      "code": 0,
+      "quota": false,
+      "empty": false,
+      "err": ""
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "COUNTS.json",
+      "bytes": 768,
+      "mtime": 1792916709909.1301
+    },
+    {
+      "path": "tools/audit.py",
+      "bytes": 10658,
+      "mtime": 1792916553126.6758
+    },
+    {
+      "path": "tools/count.py",
+      "bytes": 7836,
+      "mtime": 1792916265861.157
+    },
+    {
+      "path": "domains/business_architecture/03_metrics/INDEX.md",
+      "bytes": 3510,
+      "mtime": 1792916235605.1304
+    },
+    {
+      "path": "domains/business_architecture/03_metrics/CONTINGENCY_MATRIX_TEMPLATE.md",
+      "bytes": 4239,
+      "mtime": 1792916235597.1304
+    },
+    {
+      "path": "domains/business_architecture/03_metrics/TERMS_TEMPLATE.md",
+      "bytes": 6211,
+      "mtime": 1792916235585.1304
+    },
+    {
+      "path": "domains/business_architecture/03_metrics/PLAYBOOK_TEMPLATE.md",
+      "bytes": 28673,
+      "mtime": 1792916235577.1304
+    },
+    {
+      "path": "domains/business_architecture/02_hiring/INDEX.md",
+      "bytes": 3588,
+      "mtime": 1792916235569.1304
+    },
+    {
+      "path": "domains/business_architecture/02_hiring/CONTINGENCY_MATRIX_TEMPLATE.md",
+      "bytes": 4235,
+      "mtime": 1792916235561.1304
+    },
+    {
+      "path": "domains/business_architecture/02_hiring/TERMS_TEMPLATE.md",
+      "bytes": 6207,
+      "mtime": 1792916235553.1304
+    },
+    {
+      "path": "domains/business_architecture/02_hiring/PLAYBOOK_TEMPLATE.md",
+      "bytes": 28669,
+      "mtime": 1792916235545.1304
+    },
+    {
+      "path": "domains/business_architecture/01_systems_ops/INDEX.md",
+      "bytes": 3586,
+      "mtime": 1792916235537.1304
+    },
+    {
+      "path": "domains/business_architecture/01_systems_ops/CONTINGENCY_MATRIX_TEMPLATE.md",
+      "bytes": 4251,
+      "mtime": 1792916235525.1304
+    },
+    {
+      "path": "domains/business_architecture/01_systems_ops/TERMS_TEMPLATE.md",
+      "bytes": 6223,
+      "mtime": 1792916235509.1304
+    },
+    {
+      "path": "domains/business_architecture/01_systems_ops/PLAYBOOK_TEMPLATE.md",
+      "bytes": 28685,
+      "mtime": 1792916235501.1304
+    },
+    {
+      "path": "domains/business_architecture/INDEX.md",
+      "bytes": 3583,
+      "mtime": 1792916235489.1304
+    },
+    {
+      "path": "domains/content_strategy/03_repurposing/INDEX.md",
+      "bytes": 3684,
+      "mtime": 1792916235481.1304
+    },
+    {
+      "path": "domains/content_strategy/03_repurposing/CONTINGENCY_MATRIX_TEMPLATE.md",
+      "bytes": 4235,
+      "mtime": 1792916235473.1304
+    },
+    {
+      "path": "domains/content_strategy/03_repurposing/TERMS_TEMPLATE.md",
+      "bytes": 6207,
+      "mtime": 1792916235465.1304
+    },
+    {
+      "path": "domains/content_strategy/03_repurposing/PLAYBOOK_TEMPLATE.md",
+      "bytes": 28669,
+      "mtime": 1792916235457.1304
+    },
+    {
+      "path": "domains/content_strategy/02_distribution/INDEX.md",
+      "bytes": 3558,
+      "mtime": 1792916235445.1304
+    },
+    {
+      "path": "domains/content_strategy/02_distribution/CONTINGENCY_MATRIX_TEMPLATE.md",
+      "bytes": 4232,
+      "mtime": 1792916235433.1304
+    },
+    {
+      "path": "domains/content_strategy/02_distribution/TERMS_TEMPLATE.md",
+      "bytes": 6204,
+      "mtime": 1792916235425.1304
+    },
+    {
+      "path": "domains/content_strategy/02_distribution/PLAYBOOK_TEMPLATE.md",
+      "bytes": 28666,
+      "mtime": 1792916235417.1304
+    },
+    {
+      "path": "domains/content_strategy/01_content_pillars/INDEX.md",
+      "bytes": 3612,
+      "mtime": 1792916235409.1304
+    },
+    {
+      "path": "domains/content_strategy/01_content_pillars/CONTINGENCY_MATRIX_TEMPLATE.md",
+      "bytes": 4249,
+      "mtime": 1792916235401.1304
+    },
+    {
+      "path": "domains/content_strategy/01_content_pillars/TERMS_TEMPLATE.md",
+      "bytes": 6221,
+      "mtime": 1792916235389.1304
+    },
+    {
+      "path": "domains/content_strategy/01_content_pillars/PLAYBOOK_TEMPLATE.md",
+      "bytes": 28683,
+      "mtime": 1792916235377.1304
+    },
+    {
+      "path": "domains/content_strategy/INDEX.md",
+      "bytes": 3658,
+      "mtime": 1792916235349.1304
+    },
+    {
+      "path": "domains/pricing_offers/03_guarantees/INDEX.md",
+      "bytes": 3424,
+      "mtime": 1792916234045.0688
+    },
+    {
+      "path": "domains/pricing_offers/03_guarantees/CONTINGENCY_MATRIX_TEMPLATE.md",
+      "bytes": 4216,
+      "mtime": 1792916234041.0688
+    },
+    {
+      "path": "domains/pricing_offers/03_guarantees/TERMS_TEMPLATE.md",
+      "bytes": 6188,
+      "mtime": 1792916234033.0688
+    },
+    {
+      "path": "domains/pricing_offers/03_guarantees/PLAYBOOK_TEMPLATE.md",
+      "bytes": 28650,
+      "mtime": 1792916234025.0688
+    },
+    {
+      "path": "domains/pricing_offers/02_offer_design/INDEX.md",
+      "bytes": 3420,
+      "mtime": 1792916234017.0688
+    },
+    {
+      "path": "domains/pricing_offers/02_offer_design/CONTINGENCY_MATRIX_TEMPLATE.md",
+      "bytes": 4212,
+      "mtime": 1792916234009.0688
+    },
+    {
+      "path": "domains/pricing_offers/02_offer_design/TERMS_TEMPLATE.md",
+      "bytes": 6184,
+      "mtime": 1792916234001.0688
+    },
+    {
+      "path": "domains/pricing_offers/02_offer_design/PLAYBOOK_TEMPLATE.md",
+      "bytes": 28646,
+      "mtime": 1792916233993.0688
+    },
+    {
+      "path": "domains/pricing_offers/01_pricing_tiers/INDEX.md",
+      "bytes": 3436,
+      "mtime": 1792916233985.0688
+    },
+    {
+      "path": "domains/pricing_offers/01_pricing_tiers/CONTINGENCY_MATRIX_TEMPLATE.md",
+      "bytes": 4220,
+      "mtime": 1792916233981.0688
+    },
+    {
+      "path": "domains/pricing_offers/01_pricing_tiers/TERMS_TEMPLATE.md",
+      "bytes": 6192,
+      "mtime": 1792916233969.0688
+    },
+    {
+      "path": "domains/pricing_offers/01_pricing_tiers/PLAYBOOK_TEMPLATE.md",
+      "bytes": 28654,
+      "mtime": 1792916233961.0688
+    },
+    {
+      "path": "domains/pricing_offers/INDEX.md",
+      "bytes": 3550,
+      "mtime": 1792916233953.0688
+    },
+    {
+      "path": "domains/outreach/03_followup_sequences/INDEX.md",
+      "bytes": 3482,
+      "mtime": 1792916233941.0688
+    },
+    {
+      "path": "domains/outreach/03_followup_sequences/CONTINGENCY_MATRIX_TEMPLATE.md",
+      "bytes": 4241,
+      "mtime": 1792916233933.0688
+    },
+    {
+      "path": "domains/outreach/03_followup_sequences/TERMS_TEMPLATE.md",
+      "bytes": 6213,
+      "mtime": 1792916233929.0688
+    },
+    {
+      "path": "domains/outreach/03_followup_sequences/PLAYBOOK_TEMPLATE.md",
+      "bytes": 28675,
+      "mtime": 1792916233921.0688
+    },
+    {
+      "path": "domains/outreach/02_linkedin_dm/INDEX.md",
+      "bytes": 3516,
+      "mtime": 1792916233909.0688
+    },
+    {
+      "path": "domains/outreach/02_linkedin_dm/CONTINGENCY_MATRIX_TEMPLATE.md",
+      "bytes": 4227,
+      "mtime": 1792916233905.0688
+    },
+    {
+      "path": "domains/outreach/02_linkedin_dm/TERMS_TEMPLATE.md",
+      "bytes": 6199,
+      "mtime": 1792916233897.0688
+    },
+    {
+      "path": "domains/outreach/02_linkedin_dm/PLAYBOOK_TEMPLATE.md",
+      "bytes": 28661,
+      "mtime": 1792916233889.0688
+    },
+    {
+      "path": "domains/outreach/01_cold_email/INDEX.md",
+      "bytes": 3462,
+      "mtime": 1792916233877.0688
+    },
+    {
+      "path": "domains/outreach/01_cold_email/CONTINGENCY_MATRIX_TEMPLATE.md",
+      "bytes": 4216,
+      "mtime": 1792916233869.0688
+    },
+    {
+      "path": "domains/outreach/01_cold_email/TERMS_TEMPLATE.md",
+      "bytes": 6188,
+      "mtime": 1792916233865.0688
+    },
+    {
+      "path": "domains/outreach/01_cold_email/PLAYBOOK_TEMPLATE.md",
+      "bytes": 28650,
+      "mtime": 1792916233857.0688
+    },
+    {
+      "path": "domains/outreach/INDEX.md",
+      "bytes": 3586,
+      "mtime": 1792916233845.0688
+    },
+    {
+      "path": "domains/sales/03_objection_handling/INDEX.md",
+      "bytes": 3446,
+      "mtime": 1792916233837.0688
+    },
+    {
+      "path": "domains/sales/03_objection_handling/CONTINGENCY_MATRIX_TEMPLATE.md",
+      "bytes": 4192,
+      "mtime": 1792916233833.0688
+    },
+    {
+      "path": "domains/sales/03_objection_handling/TERMS_TEMPLATE.md",
+      "bytes": 6164,
+      "mtime": 1792916233829.0688
+    },
+    {
+      "path": "domains/sales/03_objection_handling/PLAYBOOK_TEMPLATE.md",
+      "bytes": 28626,
+      "mtime": 1792916233821.0688
+    },
+    {
+      "path": "domains/sales/02_closing/INDEX.md",
+      "bytes": 3402,
+      "mtime": 1792916233809.0688
+    }
+  ],
+  "ok": true
+}

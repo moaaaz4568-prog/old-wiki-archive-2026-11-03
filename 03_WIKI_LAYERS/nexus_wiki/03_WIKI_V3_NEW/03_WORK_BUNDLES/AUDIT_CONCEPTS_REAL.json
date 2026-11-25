@@ -1,0 +1,833 @@
+{
+  "tool": "V3/03_WORK_BUNDLES/audit_scoped.py",
+  "version": "1.0.0-scoped.1",
+  "root": "/root/r/NB2",
+  "generated_at": "2026-10-02T03:14:39+0000",
+  "elapsed_seconds": 68.48,
+  "scope": {
+    "scope": "concepts",
+    "description": "02_CONCEPTS/<قطاعات NN_*> فقط — بلا terms_26k و _REPORTS",
+    "root_prefix": "02_CONCEPTS",
+    "files_in_scope": 1836,
+    "files_dropped": 35262,
+    "cap": 0,
+    "unbounded": true
+  },
+  "scanned": {
+    "files": 1836,
+    "dirs": 24,
+    "md_files": 1836,
+    "concepts": 1836,
+    "masters": 0,
+    "files_read": 1841,
+    "bytes_read": 9958804,
+    "walk_seconds": 43.843,
+    "read_seconds": 16.578,
+    "jobs": 8,
+    "excludes": [
+      ".git"
+    ],
+    "top_dirs": [
+      {
+        "dir": "02_CONCEPTS",
+        "files": 1836,
+        "bytes": 8921097
+      }
+    ]
+  },
+  "totals": {
+    "findings": 5999,
+    "checkers_run": 28,
+    "checker_errors": [],
+    "max_severity_hit": 9
+  },
+  "max_examples_per_checker": 4,
+  "weight_sum": 100,
+  "checkers": [
+    {
+      "id": "C01",
+      "name": "روابط [[ ]] معلّقة",
+      "severity": 8,
+      "weight": 7,
+      "threshold": "0",
+      "count": 0,
+      "stored": 0,
+      "notes": [
+        "لا روابط معلّقة"
+      ],
+      "error": null,
+      "seconds": 0.069,
+      "findings": []
+    },
+    {
+      "id": "C02",
+      "name": "كعبات <300 بايت",
+      "severity": 6,
+      "weight": 5,
+      "threshold": "0",
+      "count": 0,
+      "stored": 0,
+      "notes": [
+        "لا كعبات"
+      ],
+      "error": null,
+      "seconds": 0.001,
+      "findings": []
+    },
+    {
+      "id": "C03",
+      "name": "تكرار حرفي بين concept",
+      "severity": 7,
+      "weight": 5,
+      "threshold": "0",
+      "count": 0,
+      "stored": 0,
+      "notes": [
+        "لا تكرار حرفي"
+      ],
+      "error": null,
+      "seconds": 0.662,
+      "findings": []
+    },
+    {
+      "id": "C04",
+      "name": "concept بلا اقتباس/مصدر",
+      "severity": 8,
+      "weight": 6,
+      "threshold": "0",
+      "count": 1,
+      "stored": 1,
+      "notes": [],
+      "error": null,
+      "seconds": 0.012,
+      "findings": [
+        {
+          "id": "C04#1",
+          "checker": "C04",
+          "path": "02_CONCEPTS/08_mindset/Concept_VictimMentalityGrowthBlock.md",
+          "bytes": 1627,
+          "evidence": "لا '## الدليل' ولا backtick ولا 'channel:'",
+          "severity": 8
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "name": "concept بلا «حدود الفناء»",
+      "severity": 8,
+      "weight": 6,
+      "threshold": "0",
+      "count": 5,
+      "stored": 5,
+      "notes": [],
+      "error": null,
+      "seconds": 0.011,
+      "findings": [
+        {
+          "id": "C05#1",
+          "checker": "C05",
+          "path": "02_CONCEPTS/02_sales_calls/Concept_PrecisionLanguaging.md",
+          "bytes": 2971,
+          "evidence": "لا يوجد: حدود الفناء / متى لا يعمل / الفناء",
+          "severity": 8
+        },
+        {
+          "id": "C05#2",
+          "checker": "C05",
+          "path": "02_CONCEPTS/02_sales_calls/Concept_Pattern_Interrupt.md",
+          "bytes": 1136,
+          "evidence": "لا يوجد: حدود الفناء / متى لا يعمل / الفناء",
+          "severity": 8
+        },
+        {
+          "id": "C05#3",
+          "checker": "C05",
+          "path": "02_CONCEPTS/06_hooks_retention/Concept_Borrowed_Familiarity.md",
+          "bytes": 776,
+          "evidence": "لا يوجد: حدود الفناء / متى لا يعمل / الفناء",
+          "severity": 8
+        },
+        {
+          "id": "C05#4",
+          "checker": "C05",
+          "path": "02_CONCEPTS/06_hooks_retention/Concept_Curiosity_Gap.md",
+          "bytes": 734,
+          "evidence": "لا يوجد: حدود الفناء / متى لا يعمل / الفناء",
+          "severity": 8
+        }
+      ]
+    },
+    {
+      "id": "C06",
+      "name": "concept بلا «الآلية»",
+      "severity": 7,
+      "weight": 6,
+      "threshold": "0",
+      "count": 2,
+      "stored": 2,
+      "notes": [],
+      "error": null,
+      "seconds": 0.009,
+      "findings": [
+        {
+          "id": "C06#1",
+          "checker": "C06",
+          "path": "02_CONCEPTS/02_sales_calls/Concept_Pattern_Interrupt.md",
+          "bytes": 1136,
+          "evidence": "لا يوجد: الآلية / آلية العمل",
+          "severity": 7
+        },
+        {
+          "id": "C06#2",
+          "checker": "C06",
+          "path": "02_CONCEPTS/06_hooks_retention/Concept_Curiosity_Gap.md",
+          "bytes": 734,
+          "evidence": "لا يوجد: الآلية / آلية العمل",
+          "severity": 7
+        }
+      ]
+    },
+    {
+      "id": "C07",
+      "name": "ماستر بأقسام <18",
+      "severity": 8,
+      "weight": 4,
+      "threshold": "0",
+      "count": 0,
+      "stored": 0,
+      "notes": [
+        "لا ماسترات في هذا الجذر"
+      ],
+      "error": null,
+      "seconds": 0.0,
+      "findings": []
+    },
+    {
+      "id": "C08",
+      "name": "concept مكرر الاسم",
+      "severity": 5,
+      "weight": 3,
+      "threshold": "0",
+      "count": 0,
+      "stored": 0,
+      "notes": [
+        "لا أسماء مكررة"
+      ],
+      "error": null,
+      "seconds": 0.022,
+      "findings": []
+    },
+    {
+      "id": "C09",
+      "name": "قطاع بلا ماستر",
+      "severity": 6,
+      "weight": 3,
+      "threshold": "0",
+      "count": 17,
+      "stored": 17,
+      "notes": [
+        "قطاعات: 22 · مغطّاة: 5 · بلا ماستر: 17"
+      ],
+      "error": null,
+      "seconds": 0.072,
+      "findings": [
+        {
+          "id": "C09#1",
+          "checker": "C09",
+          "path": "04_content_strategy",
+          "bytes": 0,
+          "evidence": "قطاع '04_content_strategy' (60 ملف) بلا ماستر — الماسترات المتاحة: ['01_outreach', '02_sales_calls', '03_offers_pricing', '07_branding', '08_mindset']",
+          "severity": 6
+        },
+        {
+          "id": "C09#2",
+          "checker": "C09",
+          "path": "05_content_production",
+          "bytes": 0,
+          "evidence": "قطاع '05_content_production' (93 ملف) بلا ماستر — الماسترات المتاحة: ['01_outreach', '02_sales_calls', '03_offers_pricing', '07_branding', '08_mindset']",
+          "severity": 6
+        },
+        {
+          "id": "C09#3",
+          "checker": "C09",
+          "path": "06_hooks_retention",
+          "bytes": 0,
+          "evidence": "قطاع '06_hooks_retention' (70 ملف) بلا ماستر — الماسترات المتاحة: ['01_outreach', '02_sales_calls', '03_offers_pricing', '07_branding', '08_mindset']",
+          "severity": 6
+        },
+        {
+          "id": "C09#4",
+          "checker": "C09",
+          "path": "09_agencies_clients",
+          "bytes": 0,
+          "evidence": "قطاع '09_agencies_clients' (80 ملف) بلا ماستر — الماسترات المتاحة: ['01_outreach', '02_sales_calls', '03_offers_pricing', '07_branding', '08_mindset']",
+          "severity": 6
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "name": "شرط §18 (صفوف الجدول = concepts القطاع)",
+      "severity": 8,
+      "weight": 4,
+      "threshold": "0",
+      "count": 0,
+      "stored": 0,
+      "notes": [
+        "لا ماسترات في هذا الجذر (تخطّي)"
+      ],
+      "error": null,
+      "seconds": 0.0,
+      "findings": []
+    },
+    {
+      "id": "C11",
+      "name": "رقم بلا ⚠️ ولا مصدر",
+      "severity": 6,
+      "weight": 4,
+      "threshold": "0",
+      "count": 4,
+      "stored": 4,
+      "notes": [],
+      "error": null,
+      "seconds": 0.711,
+      "findings": [
+        {
+          "id": "C11#1",
+          "checker": "C11",
+          "path": "02_CONCEPTS/02_sales_calls/Concept_Pattern_Interrupt.md",
+          "bytes": 1136,
+          "evidence": "رقم بلا تنبيه/مصدر، مثال: 'ttern Interrupt\\ncreated: 2026-09-26\\ntags: [08]\\nmention'",
+          "severity": 6
+        },
+        {
+          "id": "C11#2",
+          "checker": "C11",
+          "path": "02_CONCEPTS/06_hooks_retention/Concept_Borrowed_Familiarity.md",
+          "bytes": 776,
+          "evidence": "رقم بلا تنبيه/مصدر، مثال: 'wed Familiarity\\ncreated: 2026-09-26\\ntags: [99]\\nmention'",
+          "severity": 6
+        },
+        {
+          "id": "C11#3",
+          "checker": "C11",
+          "path": "02_CONCEPTS/06_hooks_retention/Concept_Curiosity_Gap.md",
+          "bytes": 734,
+          "evidence": "رقم بلا تنبيه/مصدر، مثال: ': Curiosity Gap\\ncreated: 2026-09-26\\ntags: [10]\\nmention'",
+          "severity": 6
+        },
+        {
+          "id": "C11#4",
+          "checker": "C11",
+          "path": "02_CONCEPTS/08_mindset/Concept_VictimMentalityGrowthBlock.md",
+          "bytes": 1627,
+          "evidence": "رقم بلا تنبيه/مصدر، مثال: '** شوهد في ملف واحد (لدي 34,000 متابع) — «السم الخام'",
+          "severity": 6
+        }
+      ]
+    },
+    {
+      "id": "C12",
+      "name": "فهرس البحث stale",
+      "severity": 4,
+      "weight": 2,
+      "threshold": "0",
+      "count": 0,
+      "stored": 0,
+      "notes": [
+        "لا ملف فهرس (04_SEARCH/index.json.gz) — تخطّي"
+      ],
+      "error": null,
+      "seconds": 0.001,
+      "findings": []
+    },
+    {
+      "id": "C13",
+      "name": "concept بلا wikilink",
+      "severity": 5,
+      "weight": 3,
+      "threshold": "0",
+      "count": 1836,
+      "stored": 1836,
+      "notes": [],
+      "error": null,
+      "seconds": 0.032,
+      "findings": [
+        {
+          "id": "C13#1",
+          "checker": "C13",
+          "path": "02_CONCEPTS/01_outreach/Concept_AIOnboardingTriad.md",
+          "bytes": 3939,
+          "evidence": "صفر روابط [[ ]]",
+          "severity": 5
+        },
+        {
+          "id": "C13#2",
+          "checker": "C13",
+          "path": "02_CONCEPTS/01_outreach/Concept_AttributionReframeOutreach.md",
+          "bytes": 4677,
+          "evidence": "صفر روابط [[ ]]",
+          "severity": 5
+        },
+        {
+          "id": "C13#3",
+          "checker": "C13",
+          "path": "02_CONCEPTS/01_outreach/Concept_AuthorityCommentPipeline.md",
+          "bytes": 6094,
+          "evidence": "صفر روابط [[ ]]",
+          "severity": 5
+        },
+        {
+          "id": "C13#4",
+          "checker": "C13",
+          "path": "02_CONCEPTS/01_outreach/Concept_AuthorityCommenting.md",
+          "bytes": 5668,
+          "evidence": "صفر روابط [[ ]]",
+          "severity": 5
+        }
+      ]
+    },
+    {
+      "id": "C14",
+      "name": "concept بلا الأقسام الستة كاملة",
+      "severity": 9,
+      "weight": 7,
+      "threshold": "0",
+      "count": 1835,
+      "stored": 1835,
+      "notes": [],
+      "error": null,
+      "seconds": 0.463,
+      "findings": [
+        {
+          "id": "C14#1",
+          "checker": "C14",
+          "path": "02_CONCEPTS/01_outreach/Concept_AIOnboardingTriad.md",
+          "bytes": 3939,
+          "evidence": "أقسام ناقصة: التعريف",
+          "severity": 9
+        },
+        {
+          "id": "C14#2",
+          "checker": "C14",
+          "path": "02_CONCEPTS/01_outreach/Concept_AttributionReframeOutreach.md",
+          "bytes": 4677,
+          "evidence": "أقسام ناقصة: التعريف",
+          "severity": 9
+        },
+        {
+          "id": "C14#3",
+          "checker": "C14",
+          "path": "02_CONCEPTS/01_outreach/Concept_AuthorityCommentPipeline.md",
+          "bytes": 6094,
+          "evidence": "أقسام ناقصة: التعريف",
+          "severity": 9
+        },
+        {
+          "id": "C14#4",
+          "checker": "C14",
+          "path": "02_CONCEPTS/01_outreach/Concept_AuthorityCommenting.md",
+          "bytes": 5668,
+          "evidence": "أقسام ناقصة: التعريف",
+          "severity": 9
+        }
+      ]
+    },
+    {
+      "id": "C15",
+      "name": "أسماء مولّدة آلياً",
+      "severity": 4,
+      "weight": 2,
+      "threshold": "0",
+      "count": 0,
+      "stored": 0,
+      "notes": [
+        "لا أسماء مولّدة آلياً"
+      ],
+      "error": null,
+      "seconds": 0.009,
+      "findings": []
+    },
+    {
+      "id": "C16",
+      "name": "حشو / Ukrainian",
+      "severity": 5,
+      "weight": 2,
+      "threshold": "0",
+      "count": 4,
+      "stored": 4,
+      "notes": [],
+      "error": null,
+      "seconds": 2.366,
+      "findings": [
+        {
+          "id": "C16#1",
+          "checker": "C16",
+          "path": "02_CONCEPTS/01_outreach/Concept_PersonalizationAtScale.md",
+          "bytes": 5214,
+          "evidence": "نص سيريليكي (Ukrainian): р — 3 رسالات متتابعة بم расстояل 2–3 أيام تعالج فئة \"المقتنع ال…",
+          "severity": 5
+        },
+        {
+          "id": "C16#2",
+          "checker": "C16",
+          "path": "02_CONCEPTS/02_sales_calls/Concept_Identity_Elevation.md",
+          "bytes": 6603,
+          "evidence": "نص سيريليكي (Ukrainian): с — و هوية لا يقبلها في себя («كن القائد» لعائدٍ كارثي مع قائد …",
+          "severity": 5
+        },
+        {
+          "id": "C16#3",
+          "checker": "C16",
+          "path": "02_CONCEPTS/03_offers_pricing/Concept_SpecialistGptSwarm.md",
+          "bytes": 5458,
+          "evidence": "نص سيريليكي (Ukrainian): е — ار نمط «طقم GPTs» كمез تسويقي، يتشبع الجمهور ويتحول من عامل…",
+          "severity": 5
+        },
+        {
+          "id": "C16#4",
+          "checker": "C16",
+          "path": "02_CONCEPTS/03_offers_pricing/Concept_SingleOfferCompounding.md",
+          "bytes": 5088,
+          "evidence": "نص سيريليكي (Ukrainian): п — ؤسس؛ خدمة قابلة للت повтор عبر عملاء متشابهين؛ سوق يكفي لتغ…",
+          "severity": 5
+        }
+      ]
+    },
+    {
+      "id": "C17",
+      "name": "ماستر بلا حدود فناء",
+      "severity": 7,
+      "weight": 3,
+      "threshold": "0",
+      "count": 0,
+      "stored": 0,
+      "notes": [
+        "لا ماسترات في هذا الجذر (تخطّي)"
+      ],
+      "error": null,
+      "seconds": 0.0,
+      "findings": []
+    },
+    {
+      "id": "C18",
+      "name": "بوابات Master SPEC",
+      "severity": 9,
+      "weight": 4,
+      "threshold": "4 sub-gates",
+      "count": 0,
+      "stored": 0,
+      "notes": [
+        "لا ماسترات في هذا الجذر (تخطّي)"
+      ],
+      "error": null,
+      "seconds": 0.0,
+      "findings": []
+    },
+    {
+      "id": "C19",
+      "name": "YAML ناقص (---/type/version/sections)",
+      "severity": 6,
+      "weight": 3,
+      "threshold": "0",
+      "count": 0,
+      "stored": 0,
+      "notes": [
+        "لا ماسترات في هذا الجذر (تخطّي)"
+      ],
+      "error": null,
+      "seconds": 0.0,
+      "findings": []
+    },
+    {
+      "id": "C20",
+      "name": "نسخة مطابقة بين مجلدين (تراجع)",
+      "severity": 7,
+      "weight": 3,
+      "threshold": "0",
+      "count": 0,
+      "stored": 0,
+      "notes": [
+        "لا نسخ متطابقة بين مجلدين"
+      ],
+      "error": null,
+      "seconds": 0.077,
+      "findings": []
+    },
+    {
+      "id": "C21",
+      "name": "مجلد >1000 ملف",
+      "severity": 3,
+      "weight": 2,
+      "threshold": "0",
+      "count": 0,
+      "stored": 0,
+      "notes": [
+        "لا مجلد يتجاوز 1000 ملف"
+      ],
+      "error": null,
+      "seconds": 0.023,
+      "findings": []
+    },
+    {
+      "id": "C22",
+      "name": "حجم 99_misc ≤3% من 02_CONCEPTS",
+      "severity": 5,
+      "weight": 2,
+      "threshold": "≤3%",
+      "count": 0,
+      "stored": 0,
+      "notes": [
+        "99_misc = 1.34% (ضمن 3%)"
+      ],
+      "error": null,
+      "seconds": 0.011,
+      "findings": []
+    },
+    {
+      "id": "C23",
+      "name": "concept بلا أقسام توتر (تقرير فقط)",
+      "severity": 0,
+      "weight": 0,
+      "threshold": "—",
+      "count": 4,
+      "stored": 4,
+      "notes": [],
+      "error": null,
+      "seconds": 0.019,
+      "findings": [
+        {
+          "id": "C23#1",
+          "checker": "C23",
+          "path": "02_CONCEPTS/02_sales_calls/Concept_Pattern_Interrupt.md",
+          "bytes": 1136,
+          "evidence": "لا قسم توترات/تعارضات",
+          "severity": 0
+        },
+        {
+          "id": "C23#2",
+          "checker": "C23",
+          "path": "02_CONCEPTS/06_hooks_retention/Concept_Borrowed_Familiarity.md",
+          "bytes": 776,
+          "evidence": "لا قسم توترات/تعارضات",
+          "severity": 0
+        },
+        {
+          "id": "C23#3",
+          "checker": "C23",
+          "path": "02_CONCEPTS/06_hooks_retention/Concept_Curiosity_Gap.md",
+          "bytes": 734,
+          "evidence": "لا قسم توترات/تعارضات",
+          "severity": 0
+        },
+        {
+          "id": "C23#4",
+          "checker": "C23",
+          "path": "02_CONCEPTS/08_mindset/Concept_VictimMentalityGrowthBlock.md",
+          "bytes": 1627,
+          "evidence": "لا قسم توترات/تعارضات",
+          "severity": 0
+        }
+      ]
+    },
+    {
+      "id": "C24",
+      "name": "concept <250 كلمة",
+      "severity": 6,
+      "weight": 4,
+      "threshold": "0",
+      "count": 5,
+      "stored": 5,
+      "notes": [],
+      "error": null,
+      "seconds": 0.319,
+      "findings": [
+        {
+          "id": "C24#1",
+          "checker": "C24",
+          "path": "02_CONCEPTS/02_sales_calls/Concept_ClientVoicedDifferentiator.md",
+          "bytes": 2312,
+          "evidence": "238 كلمة < 250",
+          "severity": 6
+        },
+        {
+          "id": "C24#2",
+          "checker": "C24",
+          "path": "02_CONCEPTS/02_sales_calls/Concept_Pattern_Interrupt.md",
+          "bytes": 1136,
+          "evidence": "114 كلمة < 250",
+          "severity": 6
+        },
+        {
+          "id": "C24#3",
+          "checker": "C24",
+          "path": "02_CONCEPTS/06_hooks_retention/Concept_Borrowed_Familiarity.md",
+          "bytes": 776,
+          "evidence": "61 كلمة < 250",
+          "severity": 6
+        },
+        {
+          "id": "C24#4",
+          "checker": "C24",
+          "path": "02_CONCEPTS/06_hooks_retention/Concept_Curiosity_Gap.md",
+          "bytes": 734,
+          "evidence": "72 كلمة < 250",
+          "severity": 6
+        }
+      ]
+    },
+    {
+      "id": "C25",
+      "name": "concept >600 كلمة (≤3%)",
+      "severity": 4,
+      "weight": 2,
+      "threshold": "≤3%",
+      "count": 449,
+      "stored": 449,
+      "notes": [],
+      "error": null,
+      "seconds": 0.425,
+      "findings": [
+        {
+          "id": "C25#1",
+          "checker": "C25",
+          "path": "02_CONCEPTS/05_content_production/Concept_PatternInterrupt.md",
+          "bytes": 12227,
+          "evidence": "1442 كلمة > 600",
+          "severity": 4
+        },
+        {
+          "id": "C25#2",
+          "checker": "C25",
+          "path": "02_CONCEPTS/01_outreach/Concept_CommentKeywordDMFunnel.md",
+          "bytes": 10678,
+          "evidence": "1198 كلمة > 600",
+          "severity": 4
+        },
+        {
+          "id": "C25#3",
+          "checker": "C25",
+          "path": "02_CONCEPTS/08_mindset/Concept_BinaryPositionalityRelease.md",
+          "bytes": 10013,
+          "evidence": "990 كلمة > 600",
+          "severity": 4
+        },
+        {
+          "id": "C25#4",
+          "checker": "C25",
+          "path": "02_CONCEPTS/01_outreach/Concept_CommentGatedLeadDelivery.md",
+          "bytes": 9564,
+          "evidence": "1109 كلمة > 600",
+          "severity": 4
+        }
+      ]
+    },
+    {
+      "id": "C26",
+      "name": "concept بلا «## المصدرية»",
+      "severity": 7,
+      "weight": 4,
+      "threshold": "0",
+      "count": 4,
+      "stored": 4,
+      "notes": [],
+      "error": null,
+      "seconds": 0.015,
+      "findings": [
+        {
+          "id": "C26#1",
+          "checker": "C26",
+          "path": "02_CONCEPTS/02_sales_calls/Concept_Pattern_Interrupt.md",
+          "bytes": 1136,
+          "evidence": "لا '## المصدرية' ولا '## المصادر' ولا '## المراجع'",
+          "severity": 7
+        },
+        {
+          "id": "C26#2",
+          "checker": "C26",
+          "path": "02_CONCEPTS/06_hooks_retention/Concept_Borrowed_Familiarity.md",
+          "bytes": 776,
+          "evidence": "لا '## المصدرية' ولا '## المصادر' ولا '## المراجع'",
+          "severity": 7
+        },
+        {
+          "id": "C26#3",
+          "checker": "C26",
+          "path": "02_CONCEPTS/06_hooks_retention/Concept_Curiosity_Gap.md",
+          "bytes": 734,
+          "evidence": "لا '## المصدرية' ولا '## المصادر' ولا '## المراجع'",
+          "severity": 7
+        },
+        {
+          "id": "C26#4",
+          "checker": "C26",
+          "path": "02_CONCEPTS/08_mindset/Concept_VictimMentalityGrowthBlock.md",
+          "bytes": 1627,
+          "evidence": "لا '## المصدرية' ولا '## المصادر' ولا '## المراجع'",
+          "severity": 7
+        }
+      ]
+    },
+    {
+      "id": "C27",
+      "name": "placeholders (TODO/TBD/XXX)",
+      "severity": 5,
+      "weight": 2,
+      "threshold": "0",
+      "count": 0,
+      "stored": 0,
+      "notes": [
+        "لا placeholders"
+      ],
+      "error": null,
+      "seconds": 2.302,
+      "findings": []
+    },
+    {
+      "id": "C28",
+      "name": "concepts بلا sources غير فارغ",
+      "severity": 7,
+      "weight": 2,
+      "threshold": "0",
+      "count": 1833,
+      "stored": 1833,
+      "notes": [],
+      "error": null,
+      "seconds": 0.025,
+      "findings": [
+        {
+          "id": "C28#1",
+          "checker": "C28",
+          "path": "02_CONCEPTS/01_outreach/Concept_AIOnboardingTriad.md",
+          "bytes": 3939,
+          "evidence": "لا frontmatter ⇒ لا sources",
+          "severity": 7
+        },
+        {
+          "id": "C28#2",
+          "checker": "C28",
+          "path": "02_CONCEPTS/01_outreach/Concept_AttributionReframeOutreach.md",
+          "bytes": 4677,
+          "evidence": "لا frontmatter ⇒ لا sources",
+          "severity": 7
+        },
+        {
+          "id": "C28#3",
+          "checker": "C28",
+          "path": "02_CONCEPTS/01_outreach/Concept_AuthorityCommentPipeline.md",
+          "bytes": 6094,
+          "evidence": "لا frontmatter ⇒ لا sources",
+          "severity": 7
+        },
+        {
+          "id": "C28#4",
+          "checker": "C28",
+          "path": "02_CONCEPTS/01_outreach/Concept_AuthorityCommenting.md",
+          "bytes": 5668,
+          "evidence": "لا frontmatter ⇒ لا sources",
+          "severity": 7
+        }
+      ]
+    }
+  ]
+}

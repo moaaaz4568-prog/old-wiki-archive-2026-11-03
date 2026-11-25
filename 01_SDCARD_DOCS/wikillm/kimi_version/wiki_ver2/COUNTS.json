@@ -1,0 +1,12 @@
+{
+  "version": "v1.0",
+  "generated_at": "2026-11-01",
+  "domains": 5,
+  "systems": 15,
+  "files_total": 44,
+  "playbooks": 5,
+  "concepts": 0,
+  "templates": 10,
+  "reports": 2,
+  "notes": "أرقام دقيقة لمرحلة الهيكل (صيان: README.md, START_HERE.md, AGENTS.md, COUNTS.json, BUILD_REPORT.md, tombstone.md = 6; systems = 15; tools = 3; domains = 20). أعد تشغيل tools/count.py للحصول على العدد الفعلي."
+}

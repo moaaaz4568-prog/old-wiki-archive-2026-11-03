@@ -1,0 +1,28 @@
+{
+  "root": "/mnt/sdcard/wikillm/argon_version/wiki_ver2",
+  "total_files": 90,
+  "md_files": 85,
+  "total_lines_md": 6811,
+  "systems_count": 15,
+  "systems_lines": {
+    "SYS_01_CHARTER.md": 66,
+    "SYS_02_NAMING.md": 65,
+    "SYS_03_TREE.md": 73,
+    "SYS_04_THINKING_ENGINE.md": 63,
+    "SYS_05_INGESTION.md": 57,
+    "SYS_06_TERMS_DEEPENING.md": 141,
+    "SYS_07_MASTER_ANATOMY.md": 183,
+    "SYS_08_PLURALISM.md": 137,
+    "SYS_09_CUMULATIVE_SYNTHESIS.md": 113,
+    "SYS_10_INDEXES.md": 139,
+    "SYS_11_BUSINESS_EXECUTION.md": 62,
+    "SYS_12_AUDIT.md": 71,
+    "SYS_13_DELEGATION.md": 79,
+    "SYS_14_ANTI_PATTERNS.md": 82,
+    "SYS_15_DYNAMIC_EXPANSION.md": 73
+  },
+  "templates_count": 45,
+  "index_files_count": 21,
+  "tools_count": 4,
+  "cjk_count": 0
+}

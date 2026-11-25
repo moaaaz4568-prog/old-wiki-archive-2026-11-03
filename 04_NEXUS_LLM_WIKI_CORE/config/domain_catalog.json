@@ -1,0 +1,569 @@
+{
+  "schema_version": "3.0",
+  "workflow_contract_version": "2026-10-10",
+  "catalog_id": "first_wave_domain_catalog",
+  "generated_on": "2026-10-10",
+  "scope": "catalog_and_state_tree_only",
+  "governing_evidence": [
+    {
+      "path": "/sdcard/NEXUS_LLM_WIKI/reports/sales-proof/MULTIDOMAIN_ALIGNMENT_2026-10-10.md",
+      "locator": "sections 1-7",
+      "role": "latest_alignment_with_current_user_quarantine_clarification"
+    },
+    {
+      "path": "/sdcard/NEXUS_LLM_WIKI/reports/sales-proof/USER_MESSAGES_SESSION_EF22.md",
+      "locator": "current_conversation: expansion_request_after_EF22",
+      "role": "latest_user_intent_direct_source_folders_and_domain_wide_terms_gate"
+    },
+    {
+      "path": "/sdcard/NEXUS_LLM_WIKI/reports/sales-proof/agent-domain-selection.md",
+      "locator": "L5-L21, L60-L68, L92-L100, L119-L127, L146-L155",
+      "role": "first_wave_order_and_provisional_subdomains"
+    },
+    {
+      "path": "/sdcard/NEXUS_LLM_WIKI/MULTI_DOMAIN_WIKI_OPERATING_CHARTER_2026-10-09.md",
+      "locator": "sections 3-9",
+      "role": "historical_charter_superseded_where_alignment_or_current_request_differs"
+    }
+  ],
+  "state_authority": "config/processing_order.json",
+  "status_mirror_policy": "Domain status here mirrors processing_order.json; a disagreement blocks transitions and requires Commander review.",
+  "wave_rationale": "This order schedules knowledge work only. It is not a business dependency, a requirement to sell or validate an offer first, or a claim that writing knowledge generates customers.",
+  "route_path_template": "done/<domain>/<subdomain>/",
+  "global_intake_routing": {
+    "allowed": true,
+    "pending_domains_allowed": true,
+    "allowed_domains": ["sales", "outreach", "pricing_offers", "content_strategy"],
+    "scope": ["semantic_intake_reading", "classification", "independent_source_copy", "route_metadata", "route_verification"],
+    "does_not_authorize": ["terms_extraction_for_pending_domain", "claims_extraction_for_pending_domain", "concepts_for_pending_domain", "masters_for_pending_domain"]
+  },
+  "source_copy_policy": {
+    "mode": "independent_byte_exact",
+    "preserve_raw": true,
+    "symlinks_allowed": false,
+    "hardlinks_allowed": false,
+    "single_primary_copy": true,
+    "verify_both_sha256": true,
+    "overwrite_existing": false,
+    "copy_path_template": "done/<domain>/<subdomain>/<safe_source_id>.<original_extension>",
+    "metadata_path_template": "done/<domain>/<subdomain>/<safe_source_id>.route.json",
+    "metadata_required_fields": ["workflow_contract_version", "source_id", "original_path", "copy_path", "original_size_bytes", "copy_size_bytes", "original_sha256", "copy_sha256", "copy_independence_check", "primary_domain", "primary_subdomain", "routing_reason", "body_locator", "structure_locator", "purpose_locator", "read_coverage", "secondary_references", "route_status", "source_status", "domain_snapshot_id", "reviewer", "verified_at"],
+    "route_done_requires": ["semantic_classification_reading", "resolved_primary_route", "independent_regular_copy", "equal_bytes_and_sha256", "reviewed_route_metadata"],
+    "safe_names": "Use a traversal-free stable source id mapped to the original id; never overwrite an existing file, index, or different source. Record collisions and reuse verified identity instead of making duplicate evidence.",
+    "legacy_source_refs": "Index and links only; no raw copies or second canonical source store.",
+    "execution_in_this_revision": false
+  },
+  "vault_reference_policy": {
+    "role": "structure_only",
+    "routing_authority": "raw_content",
+    "knowledge_acceptance_prerequisite": false,
+    "note": "canonical_evidence_paths retains its v2 key for structural navigation only. Neither acceptance of old canonical knowledge nor its taxonomy decides new source classification. Raw body, structure and purpose with locators decide."
+  },
+  "catalog_change": {
+    "retained_subdomain_count": 21,
+    "added_subdomains": ["sales/negotiation"],
+    "current_subdomain_count": 22,
+    "note": "All v2 identifiers are retained. Negotiation is a provisional organizational section explicitly requested by the latest user message, not extracted raw knowledge."
+  },
+  "execution_snapshot": {
+    "scope": "this_worker_revision_only",
+    "raw_semantic_reads_this_revision": 0,
+    "sources_classified_this_revision": 0,
+    "source_copies_this_revision": 0,
+    "knowledge_outputs_this_revision": 0,
+    "domain_coverage_assessed": false
+  },
+  "classification_policy": {
+    "status": "provisional",
+    "execution_in_this_task": false,
+    "method": "Review the source body, its structure, and its principal purpose together. Filenames, isolated keywords, and frequency scores alone are not sufficient.",
+    "required_review_fields": ["source_id", "raw_path", "content_hash", "read_coverage", "body_locator", "structure_locator", "purpose_locator", "primary_domain", "primary_subdomain", "secondary_references", "reason", "review_status"],
+    "primary_ownership": "One reviewed primary route and one independent byte-exact copy per source. Secondary references point to the same source id and bounded raw evidence, not repeated copies or independent evidence counts.",
+    "uncertainty": "Ambiguity is uncertain or cross_domain_review, not quarantine. Pending means awaiting knowledge work, not a source defect. Preserve unresolved candidates visibly in the intake ledger.",
+    "serial_lock": "Global intake may read and route any domain, including pending domains. Only knowledge manufacture is serial; route_done never opens extraction in a pending domain.",
+    "secondary_canonical_status": "Old Vault references are structural hints only, never classification evidence or a prerequisite for accepting new raw evidence.",
+    "archive_policy": "The old Vault _archive/ is not an active evidence source."
+  },
+  "source_policy": {
+    "raw_inbox": "/sdcard/NEXUS_LLM_WIKI/raw/new/",
+    "raw_inbox_immutable": true,
+    "manifest": "/sdcard/NEXUS_LLM_WIKI/raw/SOURCE_MANIFEST.tsv",
+    "raw_new_inventory": {
+      "files_checked": 1776,
+      "measurement_origin": "v2_filesystem_inventory_not_recounted_in_v3",
+      "check_type": "filesystem_inventory_only",
+      "source_bodies_reviewed_by_this_worker": 0,
+      "extension_counts": {
+        "txt": 1772,
+        "md": 3,
+        "srt": 1
+      },
+      "classification_status": "not_classified_in_this_task",
+      "manifest_rows_with_raw_new_prefix": 0,
+      "manifest_hash_comparison": "not_possible_no_matching_rows",
+      "note": "Historical v2 observation: this manifest had no raw/new rows. Not a new inventory or a semantic-read claim. It does not imply the absence of other source records; raw remains immutable."
+    }
+  },
+  "domains": [
+    {
+      "domain_id": "sales",
+      "title": "Sales and Closing — المبيعات والإغلاق",
+      "status": "in_progress",
+      "completion_claim": false,
+      "canonical_cluster": "02_sales_closing",
+      "canonical_evidence_paths": [
+        "/sdcard/Nexus_Brain/nexus_vault/BRAIN_INDEX.md",
+        "/sdcard/Nexus_Brain/nexus_vault/02_sales_closing/_index.md",
+        "/sdcard/Nexus_Brain/nexus_vault/02_sales_closing/Master_Sales_Conversation.md",
+        "/sdcard/Nexus_Brain/nexus_vault/02_sales_closing/Master_High_Ticket_Closing.md",
+        "/sdcard/Nexus_Brain/nexus_vault/02_sales_closing/Master_Lead_Qualification.md",
+        "/sdcard/Nexus_Brain/nexus_vault/02_sales_closing/Master_Objection_Handling.md"
+      ],
+      "canonical_coverage_snapshot": {
+        "scope": "historical_v2_vault_structure_only_not_raw_coverage",
+        "active_master_count": 4,
+        "indexed_concept_count": 186,
+        "evidence_status": "observed_in_canonical_indexes",
+        "does_not_mean_domain_complete": true
+      },
+      "subdomains": [
+        {
+          "subdomain_id": "discovery_and_sales_conversations",
+          "title": "Discovery and sales conversations",
+          "status": "provisional",
+          "basis": "Retained v2 organizing proposal: discovery, framing, questions, diagnosis, and solution presentation; source classification awaits raw reading."
+        },
+        {
+          "subdomain_id": "lead_qualification",
+          "title": "Lead qualification",
+          "status": "provisional",
+          "basis": "Retained v2 organizing proposal: ICP, fit criteria, and pre-call qualification; not an accepted source classification."
+        },
+        {
+          "subdomain_id": "objection_handling",
+          "title": "Objection handling",
+          "status": "provisional",
+          "basis": "Retained v2 proposal; objections are also explicitly mentioned in the latest user expansion request. Raw passages must still establish ownership."
+        },
+        {
+          "subdomain_id": "high_ticket_closing",
+          "title": "High-ticket closing",
+          "status": "provisional",
+          "basis": "Retained v2 organizing proposal: premium positioning, trust, and high-ticket decisions; raw evidence decides inclusion."
+        },
+        {
+          "subdomain_id": "proposal_follow_up_pipeline",
+          "title": "Proposal, follow-up, and pipeline",
+          "status": "provisional",
+          "basis": "Proposal, follow-up, and pipeline signals are an initial organizing boundary; the source review must confirm the final boundary."
+        },
+        {
+          "subdomain_id": "negotiation",
+          "title": "Negotiation — التفاوض",
+          "status": "provisional",
+          "basis": "The user explicitly requested a negotiation section; no negotiation knowledge or raw classification is asserted here.",
+          "evidence": {
+            "path": "/sdcard/NEXUS_LLM_WIKI/reports/sales-proof/USER_MESSAGES_SESSION_EF22.md",
+            "locator": "current_conversation: expansion_request_after_EF22",
+            "quote": "قسم للتفاوض قسم للاعتراضات"
+          }
+        }
+      ],
+      "body_signals": [
+        "Candidate passages discuss diagnosis, fit, negotiation, objections, proposals, closing, or sales follow-up; retain exact locators, not filename-only inference.",
+        "These are provisional routing signals, not findings from semantic reading of raw in this task."
+      ],
+      "structure_signals": [
+        "A call transcript, question-to-diagnosis flow, objection/response analysis, or proposal-to-decision workflow is a candidate structural signal, not a classification verdict.",
+        "Negotiation dialogue, option/trade-off comparisons, and documented decision stages are proposed structural signals."
+      ],
+      "purpose_signals": [
+        "The source primarily explains a sales conversation, qualification decision, negotiation, objection, or closing process.",
+        "Purpose is inferred from raw evidence with locators; knowledge-wave order is not a business dependency."
+      ],
+      "secondary_references": {
+        "allowed": [
+          "/sdcard/NEXUS_LLM_WIKI/raw/new/",
+          "/sdcard/NEXUS_LLM_WIKI/raw/SOURCE_MANIFEST.tsv",
+          "/sdcard/Nexus_Brain/nexus_vault/"
+        ],
+        "precedence": "Raw body, structure and purpose decide the route. Vault paths are structural references only; their acceptance status is unrelated to routing.",
+        "requirements": [
+          "Record the exact raw path, source identifier, byte hash, and evidence locator.",
+          "Keep direct quotes separate from inference, reported result, example, and unresolved interpretation.",
+          "Link the same source identity and its single primary copy; do not count a secondary reference as independent evidence.",
+          "Use cross_domain_review only for unresolved ownership, not merely because another domain is pending."
+        ],
+        "disallowed": [
+          "Unattributed summaries treated as canonical evidence.",
+          "Claims promoted from a secondary reference without a source locator.",
+          "Moving, renaming, normalizing, or deleting raw evidence."
+        ]
+      },
+      "quarantine": {
+        "status": "logical_only",
+        "pending_record_root": "new/",
+        "triggers": [
+          "missing", "corrupt", "unreadable"
+        ],
+        "handling": "Record a verified source-integrity defect and reason without editing raw. Ambiguity goes to uncertain/cross_domain_review; pending work is deferred, not quarantined.",
+        "physical_directory_created": false
+      },
+      "cross_domain_review": {
+        "status": "policy_only_no_items_created",
+        "pending_record_root": "new/",
+        "ambiguity_state": "uncertain",
+        "sequential_lock": "Routing review is allowed globally; knowledge extraction still obeys the single-domain lock.",
+        "required_when": [
+          "A source materially covers more than one first-wave domain.",
+          "The boundary between sales discovery/qualification and outreach lead sourcing or messaging is unclear.",
+          "The boundary between sales price objections and pricing_offers design is unclear.",
+          "The boundary between sales language and content_strategy ideation is unclear."
+        ],
+        "primary_owner": "sales",
+        "downstream_reviewers": ["outreach", "pricing_offers", "content_strategy"],
+        "completed_review_index": "done/sales/reports/INDEX.md",
+        "decision_rule": "Resolve one primary source route from raw evidence, with bounded secondary refs. Unresolved ownership remains uncertain, never quarantined solely for ambiguity."
+      }
+    },
+    {
+      "domain_id": "outreach",
+      "title": "Outreach and lead generation — الوصول وتوليد الفرص",
+      "status": "pending",
+      "completion_claim": false,
+      "canonical_cluster": "01_outreach",
+      "canonical_evidence_paths": [
+        "/sdcard/Nexus_Brain/nexus_vault/BRAIN_INDEX.md",
+        "/sdcard/Nexus_Brain/nexus_vault/01_outreach/_index.md",
+        "/sdcard/Nexus_Brain/nexus_vault/01_outreach/Master_Cold_Email_System.md",
+        "/sdcard/Nexus_Brain/nexus_vault/01_outreach/Master_Email_Deliverability.md",
+        "/sdcard/Nexus_Brain/nexus_vault/01_outreach/Master_Lead_Generation.md",
+        "/sdcard/Nexus_Brain/nexus_vault/01_outreach/Master_Outreach_Mechanics.md"
+      ],
+      "canonical_coverage_snapshot": {
+        "scope": "historical_v2_vault_structure_only_not_raw_coverage",
+        "active_master_count": 4,
+        "indexed_concept_count": 150,
+        "evidence_status": "observed_in_canonical_indexes",
+        "does_not_mean_domain_complete": true
+      },
+      "subdomains": [
+        {
+          "subdomain_id": "lead_generation_and_prospect_research",
+          "title": "Lead generation and prospect research",
+          "status": "provisional",
+          "basis": "Account targeting, list building, data, and prospect research."
+        },
+        {
+          "subdomain_id": "cold_email_and_message_systems",
+          "title": "Cold email and message systems",
+          "status": "provisional",
+          "basis": "Cold email structure, messaging, personalization, calls to action, and sequences."
+        },
+        {
+          "subdomain_id": "outreach_mechanics_and_follow_up",
+          "title": "Outreach mechanics and follow-up",
+          "status": "provisional",
+          "basis": "Personalization, value-first outreach, channel mechanics, and follow-up."
+        },
+        {
+          "subdomain_id": "email_deliverability_infrastructure",
+          "title": "Email deliverability infrastructure",
+          "status": "provisional",
+          "basis": "SPF/DKIM/DMARC, warm-up, reputation, infrastructure, and list hygiene."
+        },
+        {
+          "subdomain_id": "outreach_measurement_and_scaling",
+          "title": "Outreach measurement and scaling",
+          "status": "provisional",
+          "basis": "Reply, meeting, close, experiment, and scaling signals."
+        }
+      ],
+      "body_signals": [
+        "Source passages explain prospect lists, outbound targeting, cold messages, sending infrastructure, deliverability, sequences, or converting a reply into a booked conversation.",
+        "These are provisional routing signals, not new raw-reading findings. Pending knowledge status does not block intake classification."
+      ],
+      "structure_signals": [
+        "A list-to-message-to-reply-to-meeting workflow, outreach sequence, campaign experiment, or DNS/inbox setup procedure is a candidate structural signal.",
+        "Separate sourcing, message systems, follow-up mechanics, infrastructure, and measurement when the raw structure supports that distinction."
+      ],
+      "purpose_signals": [
+        "The source primarily explains outbound contact, prospect research, message delivery, or response handling.",
+        "This describes source purpose, not a promise that authoring the wiki generates opportunities or a prerequisite to pricing knowledge."
+      ],
+      "secondary_references": {
+        "allowed": [
+          "/sdcard/NEXUS_LLM_WIKI/raw/new/",
+          "/sdcard/NEXUS_LLM_WIKI/raw/SOURCE_MANIFEST.tsv",
+          "/sdcard/Nexus_Brain/nexus_vault/"
+        ],
+        "precedence": "Raw body, structure and purpose decide routing, even while outreach is pending. Old Vault references are structural hints only.",
+        "requirements": [
+          "Use one source id and primary copy; bounded secondary references are not independent evidence.",
+          "Record source path, source identifier, hash, locator, scope, and evidence type.",
+          "Keep deliverability claims distinct from response, meeting, and closing claims.",
+          "Send offer, pricing, or sales-conversation ownership questions to cross_domain_review."
+        ],
+        "disallowed": [
+          "Extracting knowledge in this domain before sales reaches domain_done; global intake routing is allowed.",
+          "Treating outreach volume, reply, or meeting counts as sales completion.",
+          "Changing raw evidence or importing untraceable benchmarks."
+        ]
+      },
+      "quarantine": {
+        "status": "logical_only",
+        "pending_record_root": "new/",
+        "triggers": [
+          "missing", "corrupt", "unreadable"
+        ],
+        "handling": "Integrity defects only. Pending is deferred knowledge work; ambiguous routing is uncertain/cross_domain_review, not quarantine.",
+        "physical_directory_created": false
+      },
+      "cross_domain_review": {
+        "status": "policy_only_no_items_created",
+        "pending_record_root": "new/",
+        "ambiguity_state": "uncertain",
+        "sequential_lock": "Active for global intake routing now; it does not authorize knowledge extraction in outreach while pending.",
+        "required_when": [
+          "Targeting overlaps with sales qualification.",
+          "Follow-up after a sales call overlaps with the sales pipeline.",
+          "A message or response depends on pricing, offer, or content positioning."
+        ],
+        "primary_owner": "outreach",
+        "related_prior_wave_domains": ["sales"],
+        "downstream_reviewers": ["pricing_offers", "content_strategy"],
+        "completed_review_index": "done/outreach/reports/INDEX.md",
+        "decision_rule": "Outreach owns the channel and lead-generation mechanism; sales owns discovery, qualification, objections, and closing."
+      }
+    },
+    {
+      "domain_id": "pricing_offers",
+      "title": "Pricing and offer design — التسعير وتصميم العروض",
+      "status": "pending",
+      "completion_claim": false,
+      "canonical_cluster": "03_pricing_offers",
+      "canonical_evidence_paths": [
+        "/sdcard/Nexus_Brain/nexus_vault/BRAIN_INDEX.md",
+        "/sdcard/Nexus_Brain/nexus_vault/03_pricing_offers/_index.md",
+        "/sdcard/Nexus_Brain/nexus_vault/03_pricing_offers/Master_Pricing_And_Offer_Design.md"
+      ],
+      "canonical_coverage_snapshot": {
+        "scope": "historical_v2_vault_structure_only_not_raw_coverage",
+        "active_master_count": 1,
+        "indexed_concept_count": 131,
+        "indexed_section_count": 51,
+        "evidence_status": "observed_in_canonical_indexes",
+        "does_not_mean_domain_complete": true
+      },
+      "subdomains": [
+        {
+          "subdomain_id": "offer_design_and_transformation",
+          "title": "Offer design and transformation",
+          "status": "provisional",
+          "basis": "Customer, promise, outcome, and unique mechanism."
+        },
+        {
+          "subdomain_id": "value_ladder_and_packaging",
+          "title": "Value ladder and packaging",
+          "status": "provisional",
+          "basis": "Free, low-, mid-, and high-ticket levels and movement between them."
+        },
+        {
+          "subdomain_id": "pricing_architecture_and_tiers",
+          "title": "Pricing architecture and tiers",
+          "status": "provisional",
+          "basis": "Pricing models, packages, retainers, performance, and custom pricing."
+        },
+        {
+          "subdomain_id": "value_stack_and_anchoring",
+          "title": "Value stack and anchoring",
+          "status": "provisional",
+          "basis": "Value aggregation, comparison, anchors, and decoys."
+        },
+        {
+          "subdomain_id": "guarantees_risk_reversal_and_price_objections",
+          "title": "Guarantees, risk reversal, and price objections",
+          "status": "provisional",
+          "basis": "Guarantees, risk reduction, and price-objection treatment."
+        }
+      ],
+      "body_signals": [
+        "Source passages explain what is sold, promised transformation, value, packaging, tiers, pricing models, anchoring, guarantees, or risk allocation, rather than only handling a live sales objection.",
+        "These provisional signs require raw reading; no completed sales practice, outreach campaign, or accepted old master is a routing prerequisite."
+      ],
+      "structure_signals": [
+        "An offer-design workflow, package comparison, value ladder, pricing calculation, or guarantee-conditions analysis is a candidate structural signal.",
+        "Offer, value, packaging, tiers, guarantees, and price objections remain provisional boundaries decided from raw evidence."
+      ],
+      "purpose_signals": [
+        "The source primarily explains offer composition, value, price architecture, packaging, or guarantee conditions.",
+        "Wave scheduling is not a requirement to validate or sell an actual offer before constructing knowledge."
+      ],
+      "secondary_references": {
+        "allowed": [
+          "/sdcard/NEXUS_LLM_WIKI/raw/new/",
+          "/sdcard/NEXUS_LLM_WIKI/raw/SOURCE_MANIFEST.tsv",
+          "/sdcard/Nexus_Brain/nexus_vault/"
+        ],
+        "precedence": "The raw source determines classification. Vault paths inform possible structure only, regardless of old knowledge acceptance.",
+        "requirements": [
+          "Use one primary source copy and scoped secondary references; shared evidence is counted once.",
+          "Record whether a price or result is a recommendation, example, reported result, or measured observation.",
+          "State market, audience, currency, time, and denominator whenever the source provides them.",
+          "Send objections and conversation ownership questions to cross_domain_review with sales."
+        ],
+        "disallowed": [
+          "Extracting knowledge in this domain before outreach reaches domain_done; global intake routing is allowed.",
+          "Presenting a provisional price or guarantee as a validated recommendation.",
+          "Using uncited market benchmarks or editing raw evidence."
+        ]
+      },
+      "quarantine": {
+        "status": "logical_only",
+        "pending_record_root": "new/",
+        "triggers": [
+          "missing", "corrupt", "unreadable"
+        ],
+        "handling": "Integrity defects only. Deferred knowledge is pending; incomplete routing evidence or conflicting ownership is uncertain/cross_domain_review.",
+        "physical_directory_created": false
+      },
+      "cross_domain_review": {
+        "status": "policy_only_no_items_created",
+        "pending_record_root": "new/",
+        "ambiguity_state": "uncertain",
+        "sequential_lock": "Global routing is allowed now; knowledge extraction waits for the preceding domain_done.",
+        "required_when": [
+          "An objection is a sales conversation issue rather than a package-design issue.",
+          "A value proposition depends on outreach response or customer-fit evidence.",
+          "An offer message is intended for content distribution rather than a sales asset."
+        ],
+        "primary_owner": "pricing_offers",
+        "related_prior_wave_domains": ["sales", "outreach"],
+        "downstream_reviewers": ["content_strategy"],
+        "completed_review_index": "done/pricing_offers/reports/INDEX.md",
+        "decision_rule": "Pricing_offers owns offer, packaging, value, and price architecture; sales retains live objection and closing context."
+      }
+    },
+    {
+      "domain_id": "content_strategy",
+      "title": "Content strategy — استراتيجية المحتوى",
+      "status": "pending",
+      "completion_claim": false,
+      "canonical_cluster": "04_content_strategy",
+      "canonical_evidence_paths": [
+        "/sdcard/Nexus_Brain/nexus_vault/BRAIN_INDEX.md",
+        "/sdcard/Nexus_Brain/nexus_vault/04_content_strategy/_index.md",
+        "/sdcard/Nexus_Brain/nexus_vault/04_content_strategy/Master_Content_Strategy.md"
+      ],
+      "canonical_coverage_snapshot": {
+        "scope": "historical_v2_vault_structure_only_not_raw_coverage",
+        "active_master_count": 1,
+        "indexed_concept_count": 161,
+        "indexed_section_count": 30,
+        "evidence_status": "observed_in_canonical_indexes",
+        "does_not_mean_domain_complete": true
+      },
+      "subdomains": [
+        {
+          "subdomain_id": "audience_positioning_and_content_manifesto",
+          "title": "Audience, positioning, and content manifesto",
+          "status": "provisional",
+          "basis": "Audience, positioning, voice, and explicit content boundaries."
+        },
+        {
+          "subdomain_id": "content_funnel_tofu_mofu_bofu",
+          "title": "Content funnel: TOFU, MOFU, BOFU",
+          "status": "provisional",
+          "basis": "Awareness, nurture, and conversion stages."
+        },
+        {
+          "subdomain_id": "customer_voice_and_validated_ideation",
+          "title": "Customer voice and validated ideation",
+          "status": "provisional",
+          "basis": "Customer questions, objections, outcomes, problems, and tested ideas."
+        },
+        {
+          "subdomain_id": "content_formats_and_repurposing",
+          "title": "Content formats and repurposing",
+          "status": "provisional",
+          "basis": "Content forms, content Lego, batching, and reuse."
+        },
+        {
+          "subdomain_id": "distribution_calendar_and_measurement",
+          "title": "Distribution, calendar, and measurement",
+          "status": "provisional",
+          "basis": "Platforms, cadence, TVP, and commercial-signal measurement."
+        },
+        {
+          "subdomain_id": "content_monetization_and_offer_alignment",
+          "title": "Content monetization and offer alignment",
+          "status": "provisional",
+          "basis": "Connecting content to lead magnet, email sequence, offer, and revenue path."
+        }
+      ],
+      "body_signals": [
+        "Source passages explain audience, positioning, content pillars, funnel stages, ideation inputs, distribution cadence, repurposing strategy, or the path from content to an offer.",
+        "These are proposed classification signs, not observed raw findings. Intake does not require a validated offer or completed business campaign."
+      ],
+      "structure_signals": [
+        "An audience-to-pillar-to-funnel plan, editorial calendar, distribution system, or measurement feedback loop is a candidate structural signal; an editing tutorial alone is not.",
+        "Production, hooks, storytelling, and scripts are adjacent clusters and are not silently merged into this strategy domain.",
+        "Raw evidence may challenge these provisional boundaries without requiring acceptance of old Vault knowledge."
+      ],
+      "purpose_signals": [
+        "The source primarily explains planning, audience, content distribution, or measurement rather than production instructions alone.",
+        "The order schedules knowledge work, not business execution or promised customer acquisition."
+      ],
+      "secondary_references": {
+        "allowed": [
+          "/sdcard/NEXUS_LLM_WIKI/raw/new/",
+          "/sdcard/NEXUS_LLM_WIKI/raw/SOURCE_MANIFEST.tsv",
+          "/sdcard/Nexus_Brain/nexus_vault/"
+        ],
+        "precedence": "Raw body, structure and purpose govern classification; the Vault is a structural guide only. Pending status does not prevent routing.",
+        "requirements": [
+          "Link a single source identity and primary copy; secondary references do not multiply evidence or coverage.",
+          "Separate strategy claims from production instructions and platform-specific execution.",
+          "Record whether an idea is observed, reported, inferred, or merely proposed.",
+          "Send production, hook, storytelling, or copywriting ownership questions to cross_domain_review."
+        ],
+        "disallowed": [
+          "Extracting knowledge in this domain before pricing_offers reaches domain_done; global intake routing is allowed.",
+          "Treating views or followers as commercial validation without a defined link to the funnel.",
+          "Presenting provisional content pillars as accepted strategy or modifying raw evidence."
+        ]
+      },
+      "quarantine": {
+        "status": "logical_only",
+        "pending_record_root": "new/",
+        "triggers": [
+          "missing", "corrupt", "unreadable"
+        ],
+        "handling": "Integrity defects only; out-of-scope or ambiguous routing remains uncertain/cross_domain_review, and deferred knowledge remains pending.",
+        "physical_directory_created": false
+      },
+      "cross_domain_review": {
+        "status": "policy_only_no_items_created",
+        "pending_record_root": "new/",
+        "ambiguity_state": "uncertain",
+        "sequential_lock": "Global intake review is allowed now; only knowledge manufacture waits for pricing_offers domain_done.",
+        "required_when": [
+          "Customer language belongs to sales evidence but is being proposed as content strategy.",
+          "An offer or price claim is used as a content conversion claim.",
+          "A production, hook, storytelling, platform, or copywriting source is proposed for this strategic cluster."
+        ],
+        "primary_owner": "content_strategy",
+        "related_prior_wave_domains": ["sales", "outreach", "pricing_offers"],
+        "related_clusters_not_implicitly_in_scope": [
+          "05_content_production",
+          "06_copywriting_scripts",
+          "07_storytelling",
+          "08_hooks_attention",
+          "18_platforms_algorithm"
+        ],
+        "completed_review_index": "done/content_strategy/reports/INDEX.md",
+        "decision_rule": "Content_strategy owns the strategic engine and funnel alignment; adjacent production and platform material requires explicit review."
+      }
+    }
+  ]
+}

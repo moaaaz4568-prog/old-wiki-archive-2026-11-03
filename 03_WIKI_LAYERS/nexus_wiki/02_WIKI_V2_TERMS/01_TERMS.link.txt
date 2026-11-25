@@ -1,0 +1,4 @@
+POINTER (symlink)
+name: 01_TERMS
+target: /root/r/NB2/01_TERMS
+live_symlink: /root/r/nexus_wiki_links/02_WIKI_V2_TERMS/01_TERMS

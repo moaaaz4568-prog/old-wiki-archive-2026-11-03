@@ -1,0 +1,319 @@
+{
+  "01_outreach": {
+    "atoms_count": 4521,
+    "atoms_parts": [
+      "part_01",
+      "part_02",
+      "part_03",
+      "part_04",
+      "part_05",
+      "part_06"
+    ],
+    "concepts_count": 133
+  },
+  "02_sales_calls": {
+    "atoms_count": 0,
+    "atoms_parts": [],
+    "concepts_count": 500
+  },
+  "02_sales_closing": {
+    "atoms_count": 1554,
+    "atoms_parts": [
+      "part_01",
+      "part_02"
+    ],
+    "concepts_count": 0
+  },
+  "03_offers_pricing": {
+    "atoms_count": 0,
+    "atoms_parts": [],
+    "concepts_count": 166
+  },
+  "03_pricing": {
+    "atoms_count": 1018,
+    "atoms_parts": [
+      "part_01",
+      "part_02"
+    ],
+    "concepts_count": 0
+  },
+  "04_content_strategy": {
+    "atoms_count": 565,
+    "atoms_parts": [
+      "part_01"
+    ],
+    "concepts_count": 60
+  },
+  "05_content_production": {
+    "atoms_count": 109,
+    "atoms_parts": [
+      "part_01"
+    ],
+    "concepts_count": 93
+  },
+  "06_copywriting_scripts": {
+    "atoms_count": 1245,
+    "atoms_parts": [
+      "part_01",
+      "part_02"
+    ],
+    "concepts_count": 0
+  },
+  "06_hooks_retention": {
+    "atoms_count": 0,
+    "atoms_parts": [],
+    "concepts_count": 70
+  },
+  "07_branding": {
+    "atoms_count": 0,
+    "atoms_parts": [],
+    "concepts_count": 175
+  },
+  "07_storytelling": {
+    "atoms_count": 344,
+    "atoms_parts": [
+      "part_01"
+    ],
+    "concepts_count": 0
+  },
+  "08_hooks_attention": {
+    "atoms_count": 340,
+    "atoms_parts": [
+      "part_01"
+    ],
+    "concepts_count": 0
+  },
+  "08_mindset": {
+    "atoms_count": 0,
+    "atoms_parts": [],
+    "concepts_count": 200
+  },
+  "09_agencies_clients": {
+    "atoms_count": 0,
+    "atoms_parts": [],
+    "concepts_count": 80
+  },
+  "09_personal_branding": {
+    "atoms_count": 350,
+    "atoms_parts": [
+      "part_01"
+    ],
+    "concepts_count": 0
+  },
+  "10_funnels": {
+    "atoms_count": 0,
+    "atoms_parts": [],
+    "concepts_count": 41
+  },
+  "10_psychology_influence": {
+    "atoms_count": 174,
+    "atoms_parts": [
+      "part_01"
+    ],
+    "concepts_count": 0
+  },
+  "11_marketing_ads": {
+    "atoms_count": 0,
+    "atoms_parts": [],
+    "concepts_count": 63
+  },
+  "11_mindset": {
+    "atoms_count": 218,
+    "atoms_parts": [
+      "part_01"
+    ],
+    "concepts_count": 0
+  },
+  "12_growth": {
+    "atoms_count": 0,
+    "atoms_parts": [],
+    "concepts_count": 59
+  },
+  "12_trust_authority": {
+    "atoms_count": 324,
+    "atoms_parts": [
+      "part_01"
+    ],
+    "concepts_count": 0
+  },
+  "13_agency": {
+    "atoms_count": 645,
+    "atoms_parts": [
+      "part_01"
+    ],
+    "concepts_count": 0
+  },
+  "13_storytelling": {
+    "atoms_count": 0,
+    "atoms_parts": [],
+    "concepts_count": 11
+  },
+  "14_business_models": {
+    "atoms_count": 126,
+    "atoms_parts": [
+      "part_01"
+    ],
+    "concepts_count": 0
+  },
+  "14_copywriting": {
+    "atoms_count": 0,
+    "atoms_parts": [],
+    "concepts_count": 7
+  },
+  "15_funnels_conversion": {
+    "atoms_count": 503,
+    "atoms_parts": [
+      "part_01"
+    ],
+    "concepts_count": 0
+  },
+  "15_platforms_algo": {
+    "atoms_count": 0,
+    "atoms_parts": [],
+    "concepts_count": 18
+  },
+  "16_business_models": {
+    "atoms_count": 0,
+    "atoms_parts": [],
+    "concepts_count": 12
+  },
+  "16_growth_frameworks": {
+    "atoms_count": 463,
+    "atoms_parts": [
+      "part_01"
+    ],
+    "concepts_count": 0
+  },
+  "17_ai_automation": {
+    "atoms_count": 0,
+    "atoms_parts": [],
+    "concepts_count": 47
+  },
+  "17_niche": {
+    "atoms_count": 523,
+    "atoms_parts": [
+      "part_01"
+    ],
+    "concepts_count": 0
+  },
+  "18_platforms_algorithm": {
+    "atoms_count": 289,
+    "atoms_parts": [
+      "part_01"
+    ],
+    "concepts_count": 0
+  },
+  "18_trust_authority": {
+    "atoms_count": 0,
+    "atoms_parts": [],
+    "concepts_count": 2
+  },
+  "19_operations_teams": {
+    "atoms_count": 0,
+    "atoms_parts": [],
+    "concepts_count": 33
+  },
+  "19_youtube": {
+    "atoms_count": 150,
+    "atoms_parts": [
+      "part_01"
+    ],
+    "concepts_count": 0
+  },
+  "20_ai_automation": {
+    "atoms_count": 984,
+    "atoms_parts": [
+      "part_01",
+      "part_02"
+    ],
+    "concepts_count": 0
+  },
+  "20_productivity_learning": {
+    "atoms_count": 0,
+    "atoms_parts": [],
+    "concepts_count": 34
+  },
+  "21_metrics": {
+    "atoms_count": 468,
+    "atoms_parts": [
+      "part_01"
+    ],
+    "concepts_count": 0
+  },
+  "21_persuasion_psych": {
+    "atoms_count": 0,
+    "atoms_parts": [],
+    "concepts_count": 3
+  },
+  "22_finance_legal": {
+    "atoms_count": 0,
+    "atoms_parts": [],
+    "concepts_count": 4
+  },
+  "22_systems_workflow": {
+    "atoms_count": 371,
+    "atoms_parts": [
+      "part_01"
+    ],
+    "concepts_count": 0
+  },
+  "23_design_visual": {
+    "atoms_count": 401,
+    "atoms_parts": [
+      "part_01"
+    ],
+    "concepts_count": 0
+  },
+  "24_foundation_business": {
+    "atoms_count": 368,
+    "atoms_parts": [
+      "part_01"
+    ],
+    "concepts_count": 0
+  },
+  "26_editing_montage": {
+    "atoms_count": 364,
+    "atoms_parts": [
+      "part_01"
+    ],
+    "concepts_count": 0
+  },
+  "29_instagram_growth": {
+    "atoms_count": 939,
+    "atoms_parts": [
+      "part_01",
+      "part_02"
+    ],
+    "concepts_count": 0
+  },
+  "30_leads_generation": {
+    "atoms_count": 322,
+    "atoms_parts": [
+      "part_01"
+    ],
+    "concepts_count": 0
+  },
+  "99_misc": {
+    "atoms_count": 10064,
+    "atoms_parts": [
+      "part_01",
+      "part_02",
+      "part_03",
+      "part_04",
+      "part_05",
+      "part_06",
+      "part_07",
+      "part_08",
+      "part_09",
+      "part_10",
+      "part_11",
+      "part_12"
+    ],
+    "concepts_count": 0
+  },
+  "99_uncategorized": {
+    "atoms_count": 0,
+    "atoms_parts": [],
+    "concepts_count": 25
+  }
+}

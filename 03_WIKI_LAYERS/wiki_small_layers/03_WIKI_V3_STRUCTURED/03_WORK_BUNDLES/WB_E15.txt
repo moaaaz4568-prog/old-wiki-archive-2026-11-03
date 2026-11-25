@@ -1,0 +1,20 @@
+# WB_E15 — حزمة الاستخراج المعلّقة (E15)
+# المصدر الأصلي (plan): /root/r/NB2/.nexus_work/plan/bundle_E15.txt
+# جذر المسارات المحلية: /root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain
+# عدد ملفات هذا الملف: 12
+# عدد كلمات هذا الملف: 82,505
+# حجم هذا الملف من المصادر: 443,087 بايت
+# الصيغة: <الكلمات>	<مسارabsolut>
+##############################################################################
+7167	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/It took me 1,000+ hours to learn this about content, but I’ll teach you in 31 minutes.txt
+7122	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/We Scaled to $10Myr+ Without Sales Teams. Here’s How….txt
+6666	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to WIN on Social Media as a Business Owner in 2026 (Nobody Teaches this).txt
+6933	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/this YOUTUBE FUNNEL makes $60KMonth (Using AI).txt
+6778	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Brutally Honest Truths That Give You an Unfair Advantage on Social Media.txt
+7130	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How To Make 6-Figures With Content In 2025 (Full Breakdown).txt
+6810	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/We Made $3M+ Last Month; Here's How....txt
+6705	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/The Best Model to Scale to $10M+ with Your Coaching Business ($62M+ in Sales).txt
+7089	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How I’d Build a $10M+ Coaching Business in 2025 (Step by Step Guide).txt
+6585	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to Build an Audience of Buyers (Not just empty views).txt
+6840	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Every Sales Funnel Explained in 31 Minutes (Coaching Edition).txt
+6680	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Dan Koe writes 4 hrday. makes $1,123,729 every month (FULL BREAKDOWN).txt

@@ -1,0 +1,23 @@
+# SOURCE_MANIFEST.tsv — مانيفست المصادر الخام وسياسة الحماية (Raw Sources Manifest & Protection Policy)
+# التاريخ: 2026-10-25 · النسخة: argon wiki_ver1
+# ─── سياسة الحماية (Protection Policy) ───
+# 1) المصادر الخام لا تُنقل ولا تُعدل ولا تُحذف أبداً — تبقى في مستودعها الأصلي المحمي:
+#    /sdcard/Nexus_Brain/Nexus_Brain/brain/  (5,126 ملفاً — قياس حقيقي: find /sdcard/Nexus_Brain/Nexus_Brain/brain -type f | wc -l ⇒ 5126)
+# 2) هذا الملف توثيق إحالة (Reference Manifest) فقط: كل صف يشير لمسار موجود فعلاً على القرص، يُتحقق منه بـ find قبل أي استخدام.
+# 3) النقل للمجلدات التصنيفية يتم بالقراءة والاستخراج فقط — ممنوع rm/mv (التعديل بالإضافة والتحديث فقط، النقل بـ cp عند الضرورة القصوى فقط).
+# 4) درس NEXUS_OS الموثق: 25 معرف SRC وهمي وصفر موجود = فشل. لذلك: ممنوع معرف بلا ملف موجود.
+# 5) أي ملف جديد يدخل عبر intake/ (انظر intake/README.md لدورة الحياة) ثم يُسجل هنا بإلحاق صف (append).
+# ─── بنية الصف: المسار | النوع | عدد الملفات | الوصف ───
+/sdcard/Nexus_Brain/Nexus_Brain/brain/	مجلد_جذر	5126	المستودع الخام الكامل (تفريغات فيديو، مقالات، سكريبتات)
+/sdcard/Nexus_Brain/Nexus_Brain/brain/*.txt	تفريغات_جذرية	1212	تفريغات فيديو مباشرة في الجذر (قياس: ls *.txt | wc -l)
+/sdcard/Nexus_Brain/Nexus_Brain/brain/processed/	تفريغات_معالجة	677	تفريغات مصنفة تحت مجلد processed (قياس: ls processed/ | wc -l)
+/sdcard/Nexus_Brain/Nexus_Brain/brain/duplicates/	نسخ_مكررة	10	نسخ مكررة موسومة — تُستخدم بحذر وتوثق دائماً بمسارها الكامل
+/sdcard/Nexus_Brain/Nexus_Brain/brain/01-setup-commands.md	سكريبت_إعداد	1	أوامر إعداد النظام الأصلي
+/sdcard/Nexus_Brain/Nexus_Brain/brain/02-master-prompt.md	برومبت	1	البرومبت الرئيسي الأصلي
+/sdcard/Nexus_Brain/Nexus_Brain/brain/service.md	مقال	1	محتوى خدمي/بيعي (مصدر أمثلة الإغلاق)
+# ─── أمثلة مصادر موثقة بالمسار الكامل (كلها موجودة فعلاً — تحقق بـ find) ───
+/sdcard/Nexus_Brain/Nexus_Brain/brain/aaronxshepherd__Beginner's Guide to Cold Email in 2026 (FULL SETUP)__L-E2HEtXTjc.txt	تفريغ	1	إعداد cold email من الصفر
+/sdcard/Nexus_Brain/Nexus_Brain/brain/instantlyai__Part 2 - Sales Process Overview - Cold Email Sales Masterclass___C66EGoohZ0.txt	تفريغ	1	خريطة عملية البيع + grand slam offer
+/sdcard/Nexus_Brain/Nexus_Brain/brain/expandi__How to use Video Personalization on LinkedIn to get 2x more replies__7sJ-hBd4ZaQ.txt	تفريغ	1	التخصيص وكاسرات الجليد
+/sdcard/Nexus_Brain/Nexus_Brain/brain/processed/$1,097,794month selling courses at 20 (Brez Scales).txt	تفريغ	1	بيع ندوات عالي القيمة والاعتراضات
+/sdcard/Nexus_Brain/Nexus_Brain/brain/duplicates/How to START a Personal Brand (Full Course).txt	تفريغ	1	العلامة الشخصية والخطافات وأسس الوكالة

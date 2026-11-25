@@ -1,0 +1,12 @@
+# WB_E11 — حزمة الاستخراج المعلّقة (E11)
+# المصدر الأصلي (plan): /root/r/NB2/.nexus_work/plan/bundle_E11.txt
+# جذر المسارات المحلية: /root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain
+# عدد ملفات هذا الملف: 4
+# عدد كلمات هذا الملف: 83,170
+# حجم هذا الملف من المصادر: 446,111 بايت
+# الصيغة: <الكلمات>	<مسارabsolut>
+##############################################################################
+26936	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Passive Income Expert How To Make $10k Per Month In 90 Days!.txt
+23934	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to Lead a Creative Team (Full Blueprint).txt
+17471	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Complete Content Strategy to Get Customers In 2026.txt
+14829	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Building A One Person Agency Using Claude AI.txt

@@ -1,0 +1,21 @@
+# WB_E16 — حزمة الاستخراج المعلّقة (E16)
+# المصدر الأصلي (plan): /root/r/NB2/.nexus_work/plan/bundle_E16.txt
+# جذر المسارات المحلية: /root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain
+# عدد ملفات هذا الملف: 13
+# عدد كلمات هذا الملف: 83,933
+# حجم هذا الملف من المصادر: 453,974 بايت
+# الصيغة: <الكلمات>	<مسارabsolut>
+##############################################################################
+6823	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/18 Psychology Tricks to Get Viewers Addicted to Your Videos.txt
+6630	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Why 99.9% of Coaching Businesses Never Scale to $10MYear.txt
+6727	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How We Used Email Marketing to Drive $62M+ in Sales (Full Breakdown).txt
+6445	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Storytelling Is Easier Than You Think.txt
+6545	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How We're Scaling Coaching Businesses to $10M+ in 2026 (Full Process).txt
+6259	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Social Media Is About to Change Forever (and nobody even realises).txt
+6533	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/I Made a Free 6 Hour Course on YouTube, It Backfired.txt
+6400	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How We Used Events to Make Over $10M+ In Profit (Step-By-Step).txt
+6284	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/This Video Will Change How You View Social Media.txt
+6422	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/fck it. info is broken. here's how to crack it (FULL COURSE).txt
+6416	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/[English (auto-generated)] Agency Evolution - How to go from $0 to $100k  month [DownSub.com].txt
+6166	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to Create Irresistible Thumbnails (and blow up your content).txt
+6283	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How To Never Run Out of Qualified Leads ($62M+ in Sales w This Process).txt

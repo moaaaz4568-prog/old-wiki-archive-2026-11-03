@@ -1,0 +1,23 @@
+# WB_E18 — حزمة الاستخراج المعلّقة (E18)
+# المصدر الأصلي (plan): /root/r/NB2/.nexus_work/plan/bundle_E18.txt
+# جذر المسارات المحلية: /root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain
+# عدد ملفات هذا الملف: 15
+# عدد كلمات هذا الملف: 81,531
+# حجم هذا الملف من المصادر: 437,313 بايت
+# الصيغة: <الكلمات>	<مسارabsolut>
+##############################################################################
+5831	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How Shelby Sapp makes $1,204,957month using Instagram (step by step).txt
+5614	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Why The Smartest Creators I Know Focus on Packaging, Not Content.txt
+5711	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Exposing Felix Prehn's $2,749,892month youtube funnel (genius).txt
+5700	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How Ava Yuergens makes $727,385 every month using Instagram (genius).txt
+5508	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/The Future Of Social Media Is Here.txt
+5681	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How Jun Yuh is making $270,000month without any sales team.txt
+5496	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Social Media Is A Video Game (Here Are The Cheat Codes).txt
+5498	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How I Rewired My Mind to Make $62.7M w Coaching Businesses.txt
+5408	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/steal my $2770day MICRO NICHE youtube blueprint (Full Course).txt
+5188	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/The NEW Way to WIN on Social Media in 2026.txt
+5346	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Social Media Expert Breaks Down $100M Content Strategy (Full Case Study).txt
+5070	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to Build an Audience That's Obsessed With You (The Power of Suggestion).txt
+5281	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How Afnan Khalifa made $1,147,942 in a single day using Instagram.txt
+5051	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to Become a Storytelling Genius (Dopamine Ladders).txt
+5148	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to Create a Killer Hook (Impossible to Skip).txt

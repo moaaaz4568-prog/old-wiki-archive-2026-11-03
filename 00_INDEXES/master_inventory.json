@@ -1,0 +1,3906 @@
+{
+  "generated_at": "2026-11-03T14:09:11Z",
+  "archive_target": "/sdcard/WIKI_ARCHIVE_2026-11-03",
+  "budget": {
+    "total_budget_mb": 250,
+    "allocated_mb": {
+      "00_INDEXES": 4,
+      "01_SDCARD_DOCS": 10,
+      "02_ROOT_DOCS": 6,
+      "03_WIKI_LAYERS": 12,
+      "04_NEXUS_LLM_WIKI_CORE": 32,
+      "05_CONVERSATIONS_claude": 10,
+      "05_CONVERSATIONS_opencode": 28,
+      "05_CONVERSATIONS_agy": 34,
+      "05_CONVERSATIONS_omnirush": 64,
+      "06_CODE_TOOLS": 26,
+      "07_ENRICHMENT_CORE": 8,
+      "_RESERVE": 24
+    }
+  },
+  "reports_ground_truth": [
+    "/root/r/SDCARD_WIKI_INDEX_REPORT.md",
+    "/root/r/WIKI_INDEX_REPORT.md",
+    "/root/r/WIKI_CONVERSATION_SCAN_REPORT.md",
+    "/root/r/OPencode_DB_WIKI_SCAN_REPORT.md",
+    "/root/r/AGY_WIKI_CONVERSATIONS_SCAN_REPORT.md",
+    "/root/r/OMNIRUSH_WIKI_CONVERSATIONS_SCAN_REPORT.md",
+    "/root/r/EXPLORATION_REVIEW_REPORT.md",
+    "/root/r/WIKI_ARCHIVE_EXECUTION_PLAN.md",
+    "/root/r/GAP_CLOSURE_REPORT.md",
+    "/root/r/GAP_SIZES_REPORT.md"
+  ],
+  "gaps_status": {
+    "G1": {
+      "status": "closed",
+      "evidence": "Segmented partition scan executed; /sdcard root & subdirs fully mapped in GAP_CLOSURE_REPORT"
+    },
+    "G2": {
+      "status": "closed",
+      "evidence": "/sdcard/NEXUS_PROJECT confirmed present with 10 files (176.7 KB)"
+    },
+    "G3": {
+      "status": "closed",
+      "evidence": "8 wiki skills in ~/.claude/skills confirmed with 26 files (217.5 KB)"
+    },
+    "G4": {
+      "status": "closed",
+      "evidence": "Claude backups (5), tasks (8.json), file-history (16) cataloged"
+    },
+    "G5": {
+      "status": "closed",
+      "evidence": "/root/r/conversations_backup/ 7 wiki matching files (16.4 MB) cataloged"
+    },
+    "G6": {
+      "status": "closed",
+      "evidence": "/tmp wiki working files inspected"
+    },
+    "G7": {
+      "status": "closed",
+      "evidence": "/opt inspected - no production wiki artifacts"
+    },
+    "G8": {
+      "status": "closed",
+      "evidence": "~/.config/opencode verified clean"
+    },
+    "G9": {
+      "status": "closed",
+      "evidence": "~/.gemini settings cataloged"
+    },
+    "G10": {
+      "status": "closed",
+      "evidence": "Root sdcard items + /sdcard/Download/ملف السياق... (8.72MB) cataloged"
+    },
+    "G11": {
+      "status": "closed",
+      "evidence": "AGY exact byte sizing in GAP_SIZES_REPORT: 173 matched DBs = 231.90 MB, Brain = 160.98 MB, pure core = 31.11 MB"
+    },
+    "G12": {
+      "status": "closed",
+      "evidence": "OmniRush exact byte sizing in GAP_SIZES_REPORT: 826 matched jsonl = 220.81 MB, clean wiki parts text = 0.56 MB"
+    },
+    "G13": {
+      "status": "closed",
+      "evidence": "telegram/discord skills verified distinct from core wiki"
+    },
+    "G14": {
+      "status": "closed",
+      "evidence": "master_inventory.json generated with ground truth byte counts"
+    },
+    "G15": {
+      "status": "in_progress",
+      "evidence": "READMEs being generated across all archive folders"
+    }
+  },
+  "sources": {
+    "sdcard_docs": {
+      "individual_files": [
+        {
+          "path": "/sdcard/NEW_WIKI_MASTER_PLAN.md",
+          "exists": true,
+          "size_bytes": 10911,
+          "is_dir": false
+        },
+        {
+          "path": "/sdcard/NEXUS_LLM_WIKI_REPORT.html",
+          "exists": true,
+          "size_bytes": 30518,
+          "is_dir": false
+        },
+        {
+          "path": "/sdcard/NEXUS_WIKI_EXPLAIN.html",
+          "exists": true,
+          "size_bytes": 76466,
+          "is_dir": false
+        },
+        {
+          "path": "/sdcard/IGWIKI_ALL_IN_ONE.txt",
+          "exists": true,
+          "size_bytes": 119906,
+          "is_dir": false
+        },
+        {
+          "path": "/sdcard/exploration-artifacts/WIKI_SKILLS_INSTALLATION.md",
+          "exists": true,
+          "size_bytes": 2345,
+          "is_dir": false
+        },
+        {
+          "path": "/sdcard/Download/ملف السياق الكامل المحدث لكلود.md",
+          "exists": true,
+          "size_bytes": 9144870,
+          "is_dir": false
+        },
+        {
+          "path": "/sdcard/Nexus_Brain/NEXUS_LLM_WIKI.md",
+          "exists": true,
+          "size_bytes": 29610,
+          "is_dir": false
+        },
+        {
+          "path": "/sdcard/Nexus_Brain/NEXUS_LLM_WIKI_PHASE2.md",
+          "exists": true,
+          "size_bytes": 20021,
+          "is_dir": false
+        },
+        {
+          "path": "/sdcard/Nexus_Brain/Nexus_Brain_Prompt.md",
+          "exists": true,
+          "size_bytes": 17096,
+          "is_dir": false
+        },
+        {
+          "path": "/sdcard/Nexus_Brain/nexus_vault/NEXUS_BRAIN.md",
+          "exists": true,
+          "size_bytes": 421478,
+          "is_dir": false
+        }
+      ],
+      "wikillm_tree": {
+        "path": "/sdcard/wikillm",
+        "exists": true,
+        "file_count": 443,
+        "total_bytes": 7322064,
+        "files": [
+          {
+            "path": "/sdcard/wikillm/00_source_antigravity_omnirush_planning.md",
+            "size_bytes": 67837
+          },
+          {
+            "path": "/sdcard/wikillm/01_user_messages_from_agy.md",
+            "size_bytes": 18959
+          },
+          {
+            "path": "/sdcard/wikillm/06_user_messages_claude_wiki.md",
+            "size_bytes": 839492
+          },
+          {
+            "path": "/sdcard/wikillm/08_user_messages_claude_extra.md",
+            "size_bytes": 186644
+          },
+          {
+            "path": "/sdcard/wikillm/07_user_messages_omnirush.md",
+            "size_bytes": 2866259
+          },
+          {
+            "path": "/sdcard/wikillm/06b_user_messages_claude_substantive.md",
+            "size_bytes": 31575
+          },
+          {
+            "path": "/sdcard/wikillm/07b_user_messages_omnirush_db.md",
+            "size_bytes": 435767
+          },
+          {
+            "path": "/sdcard/wikillm/07c_gpt6_session_user_messages.md",
+            "size_bytes": 39064
+          },
+          {
+            "path": "/sdcard/wikillm/10_FULL_CONTEXT.md",
+            "size_bytes": 22066
+          },
+          {
+            "path": "/sdcard/wikillm/11_USER_VISION_AND_RULES.md",
+            "size_bytes": 10364
+          },
+          {
+            "path": "/sdcard/wikillm/_architect_task.md",
+            "size_bytes": 2157
+          },
+          {
+            "path": "/sdcard/wikillm/BUILD_PROTOCOL.md",
+            "size_bytes": 32768
+          },
+          {
+            "path": "/sdcard/wikillm/12_AGY_NEXUS_OS_CRITIQUE.md",
+            "size_bytes": 8591
+          },
+          {
+            "path": "/sdcard/wikillm/20_user_intent_facts.md",
+            "size_bytes": 14882
+          },
+          {
+            "path": "/sdcard/wikillm/21_wikis_analysis.md",
+            "size_bytes": 26722
+          },
+          {
+            "path": "/sdcard/wikillm/22_future_simulation_part1.md",
+            "size_bytes": 26870
+          },
+          {
+            "path": "/sdcard/wikillm/22_future_simulation_part2.md",
+            "size_bytes": 24676
+          },
+          {
+            "path": "/sdcard/wikillm/23_protocol_review.md",
+            "size_bytes": 19291
+          },
+          {
+            "path": "/sdcard/wikillm/24_session_e8df_lessons.md",
+            "size_bytes": 6695
+          },
+          {
+            "path": "/sdcard/wikillm/_PROMPT_GLM_START.md",
+            "size_bytes": 5952
+          },
+          {
+            "path": "/sdcard/wikillm/24_session_e8df_review.md",
+            "size_bytes": 13407
+          },
+          {
+            "path": "/sdcard/wikillm/27_protocol_fixes_applied.md",
+            "size_bytes": 6986
+          },
+          {
+            "path": "/sdcard/wikillm/26_architecture_file_analysis.md",
+            "size_bytes": 27806
+          },
+          {
+            "path": "/sdcard/wikillm/29_raw_sources_map.md",
+            "size_bytes": 11882
+          },
+          {
+            "path": "/sdcard/wikillm/25_project_full_exploration.md",
+            "size_bytes": 9462
+          },
+          {
+            "path": "/sdcard/wikillm/28_charter_templates_audit.md",
+            "size_bytes": 12390
+          },
+          {
+            "path": "/sdcard/wikillm/34_protocol_charter_reconciliation.md",
+            "size_bytes": 19281
+          },
+          {
+            "path": "/sdcard/wikillm/DELIVERABLE_1_general_architecture.md",
+            "size_bytes": 61753
+          },
+          {
+            "path": "/sdcard/wikillm/DELIVERABLE_2_critique.md",
+            "size_bytes": 105966
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/tools_subagent.py",
+            "size_bytes": 1315
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/README.md",
+            "size_bytes": 5747
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/START_HERE.md",
+            "size_bytes": 3547
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/AGENTS.md",
+            "size_bytes": 4933
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/_BUILD_REPORT.md",
+            "size_bytes": 8269
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/_TOMBSTONE.md",
+            "size_bytes": 394
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/systems/SYS_01_CORE_CHARTER.md",
+            "size_bytes": 3827
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/systems/SYS_02_NAMING_AND_IDENTIFIERS.md",
+            "size_bytes": 2836
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/systems/SYS_03_DIRECTORY_TAXONOMY.md",
+            "size_bytes": 3500
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/systems/SYS_04_COGNITIVE_REASONING.md",
+            "size_bytes": 4242
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/systems/SYS_05_ZERO_LOSS_INGESTION.md",
+            "size_bytes": 3243
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/systems/SYS_06_CONCEPT_ARCHITECTURE.md",
+            "size_bytes": 4230
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/systems/SYS_07_MASTER_PLAYBOOK_ANATOMY.md",
+            "size_bytes": 4799
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/systems/SYS_08_PLURALISM_MATRIX.md",
+            "size_bytes": 3191
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/systems/SYS_09_LIVING_SYNTHESIS.md",
+            "size_bytes": 3240
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/systems/SYS_10_INDEXING_RETRIEVAL.md",
+            "size_bytes": 2816
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/systems/SYS_11_BUSINESS_EXECUTION.md",
+            "size_bytes": 3389
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/systems/SYS_12_AUDIT_QA.md",
+            "size_bytes": 3138
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/systems/SYS_13_DELEGATION_PROTOCOL.md",
+            "size_bytes": 3952
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/systems/SYS_14_ANTI_PATTERNS.md",
+            "size_bytes": 4420
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/systems/SYS_15_DYNAMIC_EXPANSION.md",
+            "size_bytes": 3687
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/systems/INDEX.md",
+            "size_bytes": 2542
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/raw/SOURCE_MANIFEST.tsv",
+            "size_bytes": 3545
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/intake/README.md",
+            "size_bytes": 3018
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/tools/nexus_rag.py",
+            "size_bytes": 5211
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/INDEX.md",
+            "size_bytes": 1991
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/sales/INDEX.md",
+            "size_bytes": 1156
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/sales/01_discovery_qualification/PLAYBOOK.md",
+            "size_bytes": 10021
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/sales/01_discovery_qualification/TERMS.md",
+            "size_bytes": 1540
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/sales/01_discovery_qualification/SOURCES_CATALOG.md",
+            "size_bytes": 1364
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/sales/01_discovery_qualification/CONTINGENCY_MATRIX.md",
+            "size_bytes": 1293
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/sales/01_discovery_qualification/INDEX.md",
+            "size_bytes": 861
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/sales/02_objection_handling/PLAYBOOK.md",
+            "size_bytes": 9747
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/sales/02_objection_handling/TERMS.md",
+            "size_bytes": 1540
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/sales/02_objection_handling/SOURCES_CATALOG.md",
+            "size_bytes": 1364
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/sales/02_objection_handling/CONTINGENCY_MATRIX.md",
+            "size_bytes": 1293
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/sales/02_objection_handling/INDEX.md",
+            "size_bytes": 849
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/sales/03_high_ticket_closing/PLAYBOOK.md",
+            "size_bytes": 8982
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/sales/03_high_ticket_closing/TERMS.md",
+            "size_bytes": 1540
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/sales/03_high_ticket_closing/SOURCES_CATALOG.md",
+            "size_bytes": 1364
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/sales/03_high_ticket_closing/CONTINGENCY_MATRIX.md",
+            "size_bytes": 1293
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/sales/03_high_ticket_closing/INDEX.md",
+            "size_bytes": 854
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/outreach/INDEX.md",
+            "size_bytes": 1057
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/outreach/01_cold_email_systems/PLAYBOOK.md",
+            "size_bytes": 8920
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/outreach/01_cold_email_systems/TERMS.md",
+            "size_bytes": 1540
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/outreach/01_cold_email_systems/SOURCES_CATALOG.md",
+            "size_bytes": 1364
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/outreach/01_cold_email_systems/CONTINGENCY_MATRIX.md",
+            "size_bytes": 1293
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/outreach/01_cold_email_systems/INDEX.md",
+            "size_bytes": 869
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/outreach/02_icebreakers_hooks/PLAYBOOK.md",
+            "size_bytes": 9418
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/outreach/02_icebreakers_hooks/TERMS.md",
+            "size_bytes": 1540
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/outreach/02_icebreakers_hooks/SOURCES_CATALOG.md",
+            "size_bytes": 1364
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/outreach/02_icebreakers_hooks/CONTINGENCY_MATRIX.md",
+            "size_bytes": 1293
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/outreach/02_icebreakers_hooks/INDEX.md",
+            "size_bytes": 875
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/pricing_offers/INDEX.md",
+            "size_bytes": 875
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/pricing_offers/01_grand_slam_offers/PLAYBOOK.md",
+            "size_bytes": 9407
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/pricing_offers/01_grand_slam_offers/TERMS.md",
+            "size_bytes": 1540
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/pricing_offers/01_grand_slam_offers/SOURCES_CATALOG.md",
+            "size_bytes": 1364
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/pricing_offers/01_grand_slam_offers/CONTINGENCY_MATRIX.md",
+            "size_bytes": 1293
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/pricing_offers/01_grand_slam_offers/INDEX.md",
+            "size_bytes": 872
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/content_strategy/INDEX.md",
+            "size_bytes": 861
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/content_strategy/01_attention_hooks/PLAYBOOK.md",
+            "size_bytes": 9717
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/content_strategy/01_attention_hooks/TERMS.md",
+            "size_bytes": 1540
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/content_strategy/01_attention_hooks/SOURCES_CATALOG.md",
+            "size_bytes": 1364
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/content_strategy/01_attention_hooks/CONTINGENCY_MATRIX.md",
+            "size_bytes": 1293
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/content_strategy/01_attention_hooks/INDEX.md",
+            "size_bytes": 880
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/business_architecture/INDEX.md",
+            "size_bytes": 878
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/business_architecture/01_agency_foundations/PLAYBOOK.md",
+            "size_bytes": 9615
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/business_architecture/01_agency_foundations/TERMS.md",
+            "size_bytes": 1540
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/business_architecture/01_agency_foundations/SOURCES_CATALOG.md",
+            "size_bytes": 1364
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/business_architecture/01_agency_foundations/CONTINGENCY_MATRIX.md",
+            "size_bytes": 1293
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver1/domains/business_architecture/01_agency_foundations/INDEX.md",
+            "size_bytes": 882
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/README.md",
+            "size_bytes": 7185
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/START_HERE.md",
+            "size_bytes": 6753
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/AGENTS.md",
+            "size_bytes": 8140
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/_BUILD_REPORT.md",
+            "size_bytes": 10524
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/COUNTS.json",
+            "size_bytes": 766
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_06_TERMS_DEEPENING.md",
+            "size_bytes": 12498
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_07_MASTER_ANATOMY.md",
+            "size_bytes": 16338
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_11_BUSINESS_EXECUTION.md",
+            "size_bytes": 6513
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_12_AUDIT.md",
+            "size_bytes": 5977
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_08_PLURALISM.md",
+            "size_bytes": 12190
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_01_CHARTER.md",
+            "size_bytes": 7355
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_09_CUMULATIVE_SYNTHESIS.md",
+            "size_bytes": 9095
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_02_NAMING.md",
+            "size_bytes": 4938
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_13_DELEGATION.md",
+            "size_bytes": 6450
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_10_INDEXES.md",
+            "size_bytes": 8962
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_03_TREE.md",
+            "size_bytes": 4976
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_14_ANTI_PATTERNS.md",
+            "size_bytes": 8654
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_04_THINKING_ENGINE.md",
+            "size_bytes": 6797
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_15_DYNAMIC_EXPANSION.md",
+            "size_bytes": 5640
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/systems/SYS_05_INGESTION.md",
+            "size_bytes": 6522
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/INDEX.md",
+            "size_bytes": 9237
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/sales/INDEX.md",
+            "size_bytes": 3422
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/sales/01_discovery_qualification/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 28627
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/sales/01_discovery_qualification/TERMS_TEMPLATE.md",
+            "size_bytes": 6165
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/sales/01_discovery_qualification/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 4193
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/sales/01_discovery_qualification/INDEX.md",
+            "size_bytes": 4430
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/sales/02_closing/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 28600
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/sales/02_closing/TERMS_TEMPLATE.md",
+            "size_bytes": 6138
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/sales/02_closing/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 4166
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/sales/02_closing/INDEX.md",
+            "size_bytes": 3402
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/sales/03_objection_handling/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 28626
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/sales/03_objection_handling/TERMS_TEMPLATE.md",
+            "size_bytes": 6164
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/sales/03_objection_handling/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 4192
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/sales/03_objection_handling/INDEX.md",
+            "size_bytes": 3446
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/outreach/INDEX.md",
+            "size_bytes": 3586
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/outreach/01_cold_email/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 28650
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/outreach/01_cold_email/TERMS_TEMPLATE.md",
+            "size_bytes": 6188
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/outreach/01_cold_email/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 4216
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/outreach/01_cold_email/INDEX.md",
+            "size_bytes": 3462
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/outreach/02_linkedin_dm/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 28661
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/outreach/02_linkedin_dm/TERMS_TEMPLATE.md",
+            "size_bytes": 6199
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/outreach/02_linkedin_dm/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 4227
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/outreach/02_linkedin_dm/INDEX.md",
+            "size_bytes": 3516
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/outreach/03_followup_sequences/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 28675
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/outreach/03_followup_sequences/TERMS_TEMPLATE.md",
+            "size_bytes": 6213
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/outreach/03_followup_sequences/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 4241
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/outreach/03_followup_sequences/INDEX.md",
+            "size_bytes": 3482
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/pricing_offers/INDEX.md",
+            "size_bytes": 3550
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/pricing_offers/01_pricing_tiers/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 28654
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/pricing_offers/01_pricing_tiers/TERMS_TEMPLATE.md",
+            "size_bytes": 6192
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/pricing_offers/01_pricing_tiers/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 4220
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/pricing_offers/01_pricing_tiers/INDEX.md",
+            "size_bytes": 3436
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/pricing_offers/02_offer_design/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 28646
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/pricing_offers/02_offer_design/TERMS_TEMPLATE.md",
+            "size_bytes": 6184
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/pricing_offers/02_offer_design/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 4212
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/pricing_offers/02_offer_design/INDEX.md",
+            "size_bytes": 3420
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/pricing_offers/03_guarantees/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 28650
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/pricing_offers/03_guarantees/TERMS_TEMPLATE.md",
+            "size_bytes": 6188
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/pricing_offers/03_guarantees/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 4216
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/pricing_offers/03_guarantees/INDEX.md",
+            "size_bytes": 3424
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/content_strategy/INDEX.md",
+            "size_bytes": 3658
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/content_strategy/01_content_pillars/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 28683
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/content_strategy/01_content_pillars/TERMS_TEMPLATE.md",
+            "size_bytes": 6221
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/content_strategy/01_content_pillars/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 4249
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/content_strategy/01_content_pillars/INDEX.md",
+            "size_bytes": 3612
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/content_strategy/02_distribution/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 28666
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/content_strategy/02_distribution/TERMS_TEMPLATE.md",
+            "size_bytes": 6204
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/content_strategy/02_distribution/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 4232
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/content_strategy/02_distribution/INDEX.md",
+            "size_bytes": 3558
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/content_strategy/03_repurposing/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 28669
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/content_strategy/03_repurposing/TERMS_TEMPLATE.md",
+            "size_bytes": 6207
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/content_strategy/03_repurposing/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 4235
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/content_strategy/03_repurposing/INDEX.md",
+            "size_bytes": 3684
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/business_architecture/INDEX.md",
+            "size_bytes": 3583
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/business_architecture/01_systems_ops/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 28685
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/business_architecture/01_systems_ops/TERMS_TEMPLATE.md",
+            "size_bytes": 6223
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/business_architecture/01_systems_ops/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 4251
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/business_architecture/01_systems_ops/INDEX.md",
+            "size_bytes": 3586
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/business_architecture/02_hiring/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 28669
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/business_architecture/02_hiring/TERMS_TEMPLATE.md",
+            "size_bytes": 6207
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/business_architecture/02_hiring/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 4235
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/business_architecture/02_hiring/INDEX.md",
+            "size_bytes": 3588
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/business_architecture/03_metrics/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 28673
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/business_architecture/03_metrics/TERMS_TEMPLATE.md",
+            "size_bytes": 6211
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/business_architecture/03_metrics/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 4239
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/domains/business_architecture/03_metrics/INDEX.md",
+            "size_bytes": 3510
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/tools/nexus_rag.py",
+            "size_bytes": 5060
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/tools/generate_templates.py",
+            "size_bytes": 34570
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/tools/count.py",
+            "size_bytes": 7836
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/tools/audit.py",
+            "size_bytes": 10658
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/wiki_ver2/tools/__pycache__/generate_templates.cpython-313.pyc",
+            "size_bytes": 31945
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_briefs/wave1.md",
+            "size_bytes": 6674
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_briefs/wave2.md",
+            "size_bytes": 6415
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_briefs/wave3.md",
+            "size_bytes": 6171
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_briefs/wave4.md",
+            "size_bytes": 4133
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_briefs/review1.md",
+            "size_bytes": 961
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_briefs/review2.md",
+            "size_bytes": 990
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_briefs/review3.md",
+            "size_bytes": 1412
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_agy_logs/wave3.log",
+            "size_bytes": 11915
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_agy_logs/wave2.log",
+            "size_bytes": 11986
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_agy_logs/wave4.log",
+            "size_bytes": 12254
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_agy_logs/wave1.log",
+            "size_bytes": 9526
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_agy_logs/wave2.json",
+            "size_bytes": 18766
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_agy_logs/wave1.json",
+            "size_bytes": 17630
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_agy_logs/wave4.json",
+            "size_bytes": 18408
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_agy_logs/wave3.json",
+            "size_bytes": 18411
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_agy_logs/review1.log",
+            "size_bytes": 1159
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_agy_logs/review2.log",
+            "size_bytes": 2521
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_agy_logs/review3.log",
+            "size_bytes": 247
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_agy_logs/review3.json",
+            "size_bytes": 484
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_agy_logs/review2.json",
+            "size_bytes": 3569
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_agy_logs/review1.json",
+            "size_bytes": 2195
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_sub/sys_review.md",
+            "size_bytes": 279
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_sub/user_review1.md",
+            "size_bytes": 655
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_sub/user_review2.md",
+            "size_bytes": 711
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_sub/user_review3.md",
+            "size_bytes": 896
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_sub/log3.txt",
+            "size_bytes": 575
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_sub/log2.txt",
+            "size_bytes": 575
+          },
+          {
+            "path": "/sdcard/wikillm/argon_version/_sub/log1.txt",
+            "size_bytes": 575
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/README.md",
+            "size_bytes": 3567
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/START_HERE.md",
+            "size_bytes": 3583
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/AGENTS.md",
+            "size_bytes": 8401
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/SYS_01_CONSTITUTION.md",
+            "size_bytes": 601
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/SYS_02_NAMING.md",
+            "size_bytes": 589
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/SYS_03_ONTOLOGY.md",
+            "size_bytes": 591
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/SYS_04_FOURFOLD_COGNITION.md",
+            "size_bytes": 622
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/_BUILD_REPORT.md",
+            "size_bytes": 22233
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/_VERIFICATION_REPORT.md",
+            "size_bytes": 2644
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/systems/SYS_01_الميثاق.md",
+            "size_bytes": 4900
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/systems/SYS_02_التسمية.md",
+            "size_bytes": 3879
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/systems/SYS_03_الشجرة.md",
+            "size_bytes": 4955
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/systems/SYS_04_محرك_التفكير.md",
+            "size_bytes": 4614
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/systems/SYS_05_الاستيعاب.md",
+            "size_bytes": 4656
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/systems/SYS_06_المصطلحات_والتعميق.md",
+            "size_bytes": 4726
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/systems/SYS_07_تشريح_الماستر.md",
+            "size_bytes": 4287
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/systems/SYS_08_تعددية_الآراء.md",
+            "size_bytes": 4548
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/systems/SYS_09_التوليف_التراكمي.md",
+            "size_bytes": 4313
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/systems/SYS_10_الفهارس.md",
+            "size_bytes": 4307
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/systems/SYS_11_تنفيذ_البيزنس.md",
+            "size_bytes": 5137
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/systems/SYS_12_التدقيق.md",
+            "size_bytes": 5042
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/systems/SYS_13_التفويض.md",
+            "size_bytes": 5754
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/systems/SYS_14_الأنماط_المضادة.md",
+            "size_bytes": 5905
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/systems/SYS_15_التوسع_الديناميكي.md",
+            "size_bytes": 6204
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/systems/INDEX.md",
+            "size_bytes": 6181
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/_archive/SYS_01_CONSTITUTION.md",
+            "size_bytes": 4890
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/_archive/SYS_02_NAMING.md",
+            "size_bytes": 3863
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/_archive/SYS_03_ONTOLOGY.md",
+            "size_bytes": 4849
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/_archive/SYS_04_FOURFOLD_COGNITION.md",
+            "size_bytes": 4509
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/tools/nexus_rag.py",
+            "size_bytes": 3177
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/tools/count.py",
+            "size_bytes": 7094
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/tools/audit.py",
+            "size_bytes": 6626
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/tools/COUNTS.json",
+            "size_bytes": 1273
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/tools/generate_templates.py",
+            "size_bytes": 21583
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/INDEX.md",
+            "size_bytes": 2213
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/sales/INDEX.md",
+            "size_bytes": 1970
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/sales/01_discovery_qualification/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 11879
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/sales/01_discovery_qualification/TERMS_TEMPLATE.md",
+            "size_bytes": 2978
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/sales/01_discovery_qualification/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 3343
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/sales/01_discovery_qualification/INDEX.md",
+            "size_bytes": 2840
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/sales/02_closing/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 11863
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/sales/02_closing/TERMS_TEMPLATE.md",
+            "size_bytes": 2930
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/sales/02_closing/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 3295
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/sales/02_closing/INDEX.md",
+            "size_bytes": 2603
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/sales/03_objections/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 11866
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/sales/03_objections/TERMS_TEMPLATE.md",
+            "size_bytes": 2939
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/sales/03_objections/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 3304
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/sales/03_objections/INDEX.md",
+            "size_bytes": 2636
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/outreach/INDEX.md",
+            "size_bytes": 1727
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/outreach/01_cold_email/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 11872
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/outreach/01_cold_email/TERMS_TEMPLATE.md",
+            "size_bytes": 2948
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/outreach/01_cold_email/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 3313
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/outreach/01_cold_email/INDEX.md",
+            "size_bytes": 2694
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/outreach/02_linkedin_dm/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 11873
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/outreach/02_linkedin_dm/TERMS_TEMPLATE.md",
+            "size_bytes": 2951
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/outreach/02_linkedin_dm/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 3316
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/outreach/02_linkedin_dm/INDEX.md",
+            "size_bytes": 2730
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/pricing_offers/INDEX.md",
+            "size_bytes": 1772
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/pricing_offers/01_offer_architecture/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 11892
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/pricing_offers/01_offer_architecture/TERMS_TEMPLATE.md",
+            "size_bytes": 2990
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/pricing_offers/01_offer_architecture/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 3355
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/pricing_offers/01_offer_architecture/INDEX.md",
+            "size_bytes": 2854
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/pricing_offers/02_pricing_psychology/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 11892
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/pricing_offers/02_pricing_psychology/TERMS_TEMPLATE.md",
+            "size_bytes": 2990
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/pricing_offers/02_pricing_psychology/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 3355
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/pricing_offers/02_pricing_psychology/INDEX.md",
+            "size_bytes": 2867
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/content_strategy/INDEX.md",
+            "size_bytes": 1743
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/content_strategy/01_content_pillars/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 11893
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/content_strategy/01_content_pillars/TERMS_TEMPLATE.md",
+            "size_bytes": 2987
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/content_strategy/01_content_pillars/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 3352
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/content_strategy/01_content_pillars/INDEX.md",
+            "size_bytes": 2843
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/content_strategy/02_distribution/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 11890
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/content_strategy/02_distribution/TERMS_TEMPLATE.md",
+            "size_bytes": 2978
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/content_strategy/02_distribution/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 3343
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/content_strategy/02_distribution/INDEX.md",
+            "size_bytes": 2788
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/business_architecture/INDEX.md",
+            "size_bytes": 1832
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/business_architecture/01_business_models/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 11903
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/business_architecture/01_business_models/TERMS_TEMPLATE.md",
+            "size_bytes": 3002
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/business_architecture/01_business_models/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 3367
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/business_architecture/01_business_models/INDEX.md",
+            "size_bytes": 2905
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/business_architecture/02_scalable_systems/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 11904
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/business_architecture/02_scalable_systems/TERMS_TEMPLATE.md",
+            "size_bytes": 3005
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/business_architecture/02_scalable_systems/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 3370
+          },
+          {
+            "path": "/sdcard/wikillm/glm_version/wiki_ver2/domains/business_architecture/02_scalable_systems/INDEX.md",
+            "size_bytes": 2935
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/README.md",
+            "size_bytes": 6589
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/START_HERE.md",
+            "size_bytes": 11398
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/AGENTS.md",
+            "size_bytes": 12959
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/COUNTS.json",
+            "size_bytes": 456
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/tombstone.md",
+            "size_bytes": 2245
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/BUILD_REPORT.md",
+            "size_bytes": 5950
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/systems/SYS_01_Mithaq.md",
+            "size_bytes": 12488
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/systems/SYS_03_الشجرة.md",
+            "size_bytes": 13823
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/systems/SYS_04_محرك_التفكير.md",
+            "size_bytes": 11582
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/systems/SYS_05_الاستيعاب.md",
+            "size_bytes": 12138
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/systems/SYS_02_Tسمية.md",
+            "size_bytes": 10569
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/systems/SYS_06_المصطلحات_والتعميق.md",
+            "size_bytes": 10014
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/systems/SYS_07_تشريح_الماستر.md",
+            "size_bytes": 13208
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/systems/SYS_08_تعددية_الآراء.md",
+            "size_bytes": 10017
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/systems/SYS_09_التوليف_التراكمي.md",
+            "size_bytes": 6869
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/systems/SYS_10_الفهارس.md",
+            "size_bytes": 6826
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/systems/SYS_11_تنفيذ_البيزنس.md",
+            "size_bytes": 4853
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/systems/SYS_12_التدقيق.md",
+            "size_bytes": 7121
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/systems/SYS_13_التفويض.md",
+            "size_bytes": 6131
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/systems/SYS_14_الأنماط_المضادة.md",
+            "size_bytes": 11664
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/systems/SYS_15_التوسع_الديناميكي.md",
+            "size_bytes": 8031
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/tools/nexus_rag.py",
+            "size_bytes": 2908
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/tools/count.py",
+            "size_bytes": 4300
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/tools/audit.py",
+            "size_bytes": 4562
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/tools/__pycache__/nexus_rag.cpython-313.pyc",
+            "size_bytes": 4845
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/tools/__pycache__/count.cpython-313.pyc",
+            "size_bytes": 7309
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/tools/__pycache__/audit.cpython-313.pyc",
+            "size_bytes": 6971
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/domains/OUTREACH/INDEX.md",
+            "size_bytes": 3431
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/domains/OUTREACH/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 11058
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/domains/OUTREACH/TERMS_TEMPLATE.md",
+            "size_bytes": 3620
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/domains/OUTREACH/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 3841
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/domains/SALES/INDEX.md",
+            "size_bytes": 3085
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/domains/SALES/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 11055
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/domains/SALES/TERMS_TEMPLATE.md",
+            "size_bytes": 3620
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/domains/SALES/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 3841
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/domains/PRICING_OFFERS/INDEX.md",
+            "size_bytes": 3242
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/domains/PRICING_OFFERS/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 11064
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/domains/PRICING_OFFERS/TERMS_TEMPLATE.md",
+            "size_bytes": 3620
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/domains/PRICING_OFFERS/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 3841
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/domains/CONTENT_STRATEGY/INDEX.md",
+            "size_bytes": 3346
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/domains/CONTENT_STRATEGY/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 11066
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/domains/CONTENT_STRATEGY/TERMS_TEMPLATE.md",
+            "size_bytes": 3620
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/domains/CONTENT_STRATEGY/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 3841
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/domains/BUSINESS_ARCHITECTURE/INDEX.md",
+            "size_bytes": 3433
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/domains/BUSINESS_ARCHITECTURE/PLAYBOOK_TEMPLATE.md",
+            "size_bytes": 11071
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/domains/BUSINESS_ARCHITECTURE/TERMS_TEMPLATE.md",
+            "size_bytes": 3620
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/domains/BUSINESS_ARCHITECTURE/CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 3841
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/_archive/domain_content_2026-11-01/BUILD_REPORT.md",
+            "size_bytes": 3927
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/_archive/domain_content_2026-11-01/TERMS_TEMPLATE.md",
+            "size_bytes": 3620
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/_archive/domain_content_2026-11-01/BUSINESS_ARCHITECTURE/INDEX.md",
+            "size_bytes": 584
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/_archive/domain_content_2026-11-01/CONTENT_STRATEGY/INDEX.md",
+            "size_bytes": 583
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/_archive/domain_content_2026-11-01/OUTREACH/INDEX.md",
+            "size_bytes": 937
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/_archive/domain_content_2026-11-01/OUTREACH/C2-CONTINGENCY_MATRIX_TEMPLATE.md",
+            "size_bytes": 665
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/_archive/domain_content_2026-11-01/OUTREACH/C2-MASTER_TEMPLATE.md",
+            "size_bytes": 1829
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/_archive/domain_content_2026-11-01/OUTREACH/TERMS/C01_Cold_Email.md",
+            "size_bytes": 1313
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/_archive/domain_content_2026-11-01/OUTREACH/TERMS/C07_ICP.md",
+            "size_bytes": 1210
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/_archive/domain_content_2026-11-01/OUTREACH/TERMS/C02_Cold_Outreach.md",
+            "size_bytes": 1354
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/_archive/domain_content_2026-11-01/OUTREACH/TERMS/C05_Lead_Qualification.md",
+            "size_bytes": 1267
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/_archive/domain_content_2026-11-01/OUTREACH/TERMS/C2-TERMS_TEMPLATE.md",
+            "size_bytes": 698
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/_archive/domain_content_2026-11-01/OUTREACH/PLAYBOOKS/C3-Phone_Outreach.md",
+            "size_bytes": 1076
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/_archive/domain_content_2026-11-01/OUTREACH/PLAYBOOKS/C1-Email_Cold_Outreach.md",
+            "size_bytes": 1334
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/_archive/domain_content_2026-11-01/OUTREACH/PLAYBOOKS/C2-LinkedIn_Outreach.md",
+            "size_bytes": 1017
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/_archive/domain_content_2026-11-01/OUTREACH/PLAYBOOKS/C6-Email_Sequences.md",
+            "size_bytes": 1160
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/_archive/domain_content_2026-11-01/OUTREACH/PLAYBOOKS/C5-ABM.md",
+            "size_bytes": 1015
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/_archive/domain_content_2026-11-01/PRICING_OFFERS/INDEX.md",
+            "size_bytes": 569
+          },
+          {
+            "path": "/sdcard/wikillm/kimi_version/wiki_ver2/_archive/domain_content_2026-11-01/SALES/INDEX.md",
+            "size_bytes": 529
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/_BUILD_REPORT.md",
+            "size_bytes": 8269
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/START_HERE.md",
+            "size_bytes": 3547
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/README.md",
+            "size_bytes": 5747
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/AGENTS.md",
+            "size_bytes": 4933
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/intake/README.md",
+            "size_bytes": 3018
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/raw/SOURCE_MANIFEST.tsv",
+            "size_bytes": 3545
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/INDEX.md",
+            "size_bytes": 1991
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/sales/INDEX.md",
+            "size_bytes": 1156
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/sales/01_discovery_qualification/PLAYBOOK.md",
+            "size_bytes": 10021
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/sales/01_discovery_qualification/CONTINGENCY_MATRIX.md",
+            "size_bytes": 1293
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/sales/01_discovery_qualification/SOURCES_CATALOG.md",
+            "size_bytes": 1364
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/sales/01_discovery_qualification/TERMS.md",
+            "size_bytes": 1540
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/sales/01_discovery_qualification/INDEX.md",
+            "size_bytes": 861
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/sales/02_objection_handling/SOURCES_CATALOG.md",
+            "size_bytes": 1364
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/sales/02_objection_handling/CONTINGENCY_MATRIX.md",
+            "size_bytes": 1293
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/sales/02_objection_handling/TERMS.md",
+            "size_bytes": 1540
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/sales/02_objection_handling/INDEX.md",
+            "size_bytes": 849
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/sales/02_objection_handling/PLAYBOOK.md",
+            "size_bytes": 9747
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/sales/03_high_ticket_closing/PLAYBOOK.md",
+            "size_bytes": 8982
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/sales/03_high_ticket_closing/SOURCES_CATALOG.md",
+            "size_bytes": 1364
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/sales/03_high_ticket_closing/TERMS.md",
+            "size_bytes": 1540
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/sales/03_high_ticket_closing/INDEX.md",
+            "size_bytes": 854
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/sales/03_high_ticket_closing/CONTINGENCY_MATRIX.md",
+            "size_bytes": 1293
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/business_architecture/INDEX.md",
+            "size_bytes": 878
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/business_architecture/01_agency_foundations/CONTINGENCY_MATRIX.md",
+            "size_bytes": 1293
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/business_architecture/01_agency_foundations/SOURCES_CATALOG.md",
+            "size_bytes": 1364
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/business_architecture/01_agency_foundations/TERMS.md",
+            "size_bytes": 1540
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/business_architecture/01_agency_foundations/PLAYBOOK.md",
+            "size_bytes": 9615
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/business_architecture/01_agency_foundations/INDEX.md",
+            "size_bytes": 882
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/pricing_offers/INDEX.md",
+            "size_bytes": 875
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/pricing_offers/01_grand_slam_offers/TERMS.md",
+            "size_bytes": 1540
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/pricing_offers/01_grand_slam_offers/PLAYBOOK.md",
+            "size_bytes": 9407
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/pricing_offers/01_grand_slam_offers/CONTINGENCY_MATRIX.md",
+            "size_bytes": 1293
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/pricing_offers/01_grand_slam_offers/INDEX.md",
+            "size_bytes": 872
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/pricing_offers/01_grand_slam_offers/SOURCES_CATALOG.md",
+            "size_bytes": 1364
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/outreach/INDEX.md",
+            "size_bytes": 1057
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/outreach/02_icebreakers_hooks/INDEX.md",
+            "size_bytes": 875
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/outreach/02_icebreakers_hooks/CONTINGENCY_MATRIX.md",
+            "size_bytes": 1293
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/outreach/02_icebreakers_hooks/SOURCES_CATALOG.md",
+            "size_bytes": 1364
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/outreach/02_icebreakers_hooks/TERMS.md",
+            "size_bytes": 1540
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/outreach/02_icebreakers_hooks/PLAYBOOK.md",
+            "size_bytes": 9418
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/outreach/01_cold_email_systems/INDEX.md",
+            "size_bytes": 869
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/outreach/01_cold_email_systems/PLAYBOOK.md",
+            "size_bytes": 8920
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/outreach/01_cold_email_systems/CONTINGENCY_MATRIX.md",
+            "size_bytes": 1293
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/outreach/01_cold_email_systems/TERMS.md",
+            "size_bytes": 1540
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/outreach/01_cold_email_systems/SOURCES_CATALOG.md",
+            "size_bytes": 1364
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/content_strategy/INDEX.md",
+            "size_bytes": 861
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/content_strategy/01_attention_hooks/CONTINGENCY_MATRIX.md",
+            "size_bytes": 1293
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/content_strategy/01_attention_hooks/SOURCES_CATALOG.md",
+            "size_bytes": 1364
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/content_strategy/01_attention_hooks/TERMS.md",
+            "size_bytes": 1540
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/content_strategy/01_attention_hooks/PLAYBOOK.md",
+            "size_bytes": 9717
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/domains/content_strategy/01_attention_hooks/INDEX.md",
+            "size_bytes": 880
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/tools/nexus_rag.py",
+            "size_bytes": 5211
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/systems/SYS_04_COGNITIVE_REASONING.md",
+            "size_bytes": 4242
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/systems/SYS_13_DELEGATION_PROTOCOL.md",
+            "size_bytes": 3952
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/systems/SYS_08_PLURALISM_MATRIX.md",
+            "size_bytes": 3191
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/systems/INDEX.md",
+            "size_bytes": 2542
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/systems/SYS_15_DYNAMIC_EXPANSION.md",
+            "size_bytes": 3687
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/systems/SYS_11_BUSINESS_EXECUTION.md",
+            "size_bytes": 3389
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/systems/SYS_02_NAMING_AND_IDENTIFIERS.md",
+            "size_bytes": 2836
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/systems/SYS_12_AUDIT_QA.md",
+            "size_bytes": 3138
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/systems/SYS_14_ANTI_PATTERNS.md",
+            "size_bytes": 4420
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/systems/SYS_07_MASTER_PLAYBOOK_ANATOMY.md",
+            "size_bytes": 4799
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/systems/SYS_03_DIRECTORY_TAXONOMY.md",
+            "size_bytes": 3500
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/systems/SYS_01_CORE_CHARTER.md",
+            "size_bytes": 3827
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/systems/SYS_05_ZERO_LOSS_INGESTION.md",
+            "size_bytes": 3243
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/systems/SYS_06_CONCEPT_ARCHITECTURE.md",
+            "size_bytes": 4230
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/systems/SYS_10_INDEXING_RETRIEVAL.md",
+            "size_bytes": 2816
+          },
+          {
+            "path": "/sdcard/wikillm/_archive/argon_v1_rejected_2026-10-25/wiki_ver1/systems/SYS_09_LIVING_SYNTHESIS.md",
+            "size_bytes": 3240
+          },
+          {
+            "path": "/sdcard/wikillm/agents/E_user_goal_research.md",
+            "size_bytes": 22415
+          },
+          {
+            "path": "/sdcard/wikillm/agents/D_standards_memory_research.md",
+            "size_bytes": 16827
+          },
+          {
+            "path": "/sdcard/wikillm/agents/A_architecture_research.md",
+            "size_bytes": 17701
+          },
+          {
+            "path": "/sdcard/wikillm/agents/C_maintenance_failure_research.md",
+            "size_bytes": 19418
+          },
+          {
+            "path": "/sdcard/wikillm/agents/B_retrieval_research.md",
+            "size_bytes": 14509
+          }
+        ]
+      },
+      "nexus_wiki_skills_tree": {
+        "path": "/sdcard/NEXUS_WIKI_SKILLS",
+        "exists": true,
+        "file_count": 13,
+        "total_bytes": 122690,
+        "files": [
+          {
+            "path": "/sdcard/NEXUS_WIKI_SKILLS/INDEX.md",
+            "size_bytes": 6940
+          },
+          {
+            "path": "/sdcard/NEXUS_WIKI_SKILLS/source-ingestion-and-dedup/SKILL.md",
+            "size_bytes": 6075
+          },
+          {
+            "path": "/sdcard/NEXUS_WIKI_SKILLS/claim-extraction-and-evidence/SKILL.md",
+            "size_bytes": 6605
+          },
+          {
+            "path": "/sdcard/NEXUS_WIKI_SKILLS/opinion-context-evaluation/SKILL.md",
+            "size_bytes": 3036
+          },
+          {
+            "path": "/sdcard/NEXUS_WIKI_SKILLS/concept-deepening/SKILL.md",
+            "size_bytes": 1819
+          },
+          {
+            "path": "/sdcard/NEXUS_WIKI_SKILLS/master-synthesis-retrieval-gate/SKILL.md",
+            "size_bytes": 10341
+          },
+          {
+            "path": "/sdcard/NEXUS_WIKI_SKILLS/evidence-driven-reasoning/SKILL.md",
+            "size_bytes": 1723
+          },
+          {
+            "path": "/sdcard/NEXUS_WIKI_SKILLS/wiki-iteration-and-risk-control/SKILL.md",
+            "size_bytes": 1666
+          },
+          {
+            "path": "/sdcard/NEXUS_WIKI_SKILLS/domain-discovery-and-routing/SKILL.md",
+            "size_bytes": 14368
+          },
+          {
+            "path": "/sdcard/NEXUS_WIKI_SKILLS/new-to-done-source-lifecycle/SKILL.md",
+            "size_bytes": 18906
+          },
+          {
+            "path": "/sdcard/NEXUS_WIKI_SKILLS/domain-term-inventory/SKILL.md",
+            "size_bytes": 16251
+          },
+          {
+            "path": "/sdcard/NEXUS_WIKI_SKILLS/sequential-domain-orchestration/SKILL.md",
+            "size_bytes": 18025
+          },
+          {
+            "path": "/sdcard/NEXUS_WIKI_SKILLS/folder-index-and-handoff/SKILL.md",
+            "size_bytes": 16935
+          }
+        ]
+      },
+      "nexus_project_tree": {
+        "path": "/sdcard/NEXUS_PROJECT",
+        "exists": true,
+        "file_count": 10,
+        "total_bytes": 176758,
+        "files": [
+          {
+            "path": "/sdcard/NEXUS_PROJECT/README.md",
+            "size_bytes": 4528
+          },
+          {
+            "path": "/sdcard/NEXUS_PROJECT/goals.md",
+            "size_bytes": 14305
+          },
+          {
+            "path": "/sdcard/NEXUS_PROJECT/memory.md",
+            "size_bytes": 20465
+          },
+          {
+            "path": "/sdcard/NEXUS_PROJECT/plan.md",
+            "size_bytes": 10792
+          },
+          {
+            "path": "/sdcard/NEXUS_PROJECT/worklog.md",
+            "size_bytes": 16290
+          },
+          {
+            "path": "/sdcard/NEXUS_PROJECT/INGEST_01_sessions.md",
+            "size_bytes": 36877
+          },
+          {
+            "path": "/sdcard/NEXUS_PROJECT/INGEST_02_numbers_contradiction.md",
+            "size_bytes": 17683
+          },
+          {
+            "path": "/sdcard/NEXUS_PROJECT/INGEST_03_drf.md",
+            "size_bytes": 19066
+          },
+          {
+            "path": "/sdcard/NEXUS_PROJECT/INGEST_04_agents_protocol.md",
+            "size_bytes": 20465
+          },
+          {
+            "path": "/sdcard/NEXUS_PROJECT/plan_v2.md",
+            "size_bytes": 16287
+          }
+        ]
+      },
+      "nexus_brain_processed_tree": {
+        "path": "/sdcard/Nexus_Brain/Nexus_Brain_Processed",
+        "exists": true,
+        "file_count": 3,
+        "total_bytes": 16263,
+        "files": [
+          {
+            "path": "/sdcard/Nexus_Brain/Nexus_Brain_Processed/AGENTS.md",
+            "size_bytes": 15236
+          },
+          {
+            "path": "/sdcard/Nexus_Brain/Nexus_Brain_Processed/CHECKPOINT_PHASE2.md",
+            "size_bytes": 694
+          },
+          {
+            "path": "/sdcard/Nexus_Brain/Nexus_Brain_Processed/LOG_PHASE2.md",
+            "size_bytes": 333
+          }
+        ]
+      }
+    },
+    "root_docs": {
+      "individual_files": [
+        {
+          "path": "/root/r/wiki.md",
+          "exists": true,
+          "size_bytes": 447910,
+          "is_dir": false
+        },
+        {
+          "path": "/root/r/الويكي.md",
+          "exists": true,
+          "size_bytes": 642262,
+          "is_dir": false
+        },
+        {
+          "path": "/root/r/wiki1.md",
+          "exists": true,
+          "size_bytes": 471350,
+          "is_dir": false
+        },
+        {
+          "path": "/root/r/wiki",
+          "exists": true,
+          "size_bytes": 447910,
+          "is_dir": false
+        },
+        {
+          "path": "/root/r/NEXUS_WIKI_SCALABLE_ARCHITECTURE.md",
+          "exists": true,
+          "size_bytes": 8478,
+          "is_dir": false
+        },
+        {
+          "path": "/root/process_wiki_loop.sh",
+          "exists": true,
+          "size_bytes": 5411,
+          "is_dir": false
+        }
+      ],
+      "v3_sys_tree": {
+        "path": "/root/r/V3_SYS",
+        "exists": true,
+        "file_count": 16,
+        "total_bytes": 457785,
+        "files": [
+          {
+            "path": "/root/r/V3_SYS/count.py",
+            "size_bytes": 31707
+          },
+          {
+            "path": "/root/r/V3_SYS/audit.py",
+            "size_bytes": 56318
+          },
+          {
+            "path": "/root/r/V3_SYS/COUNTS.json",
+            "size_bytes": 6452
+          },
+          {
+            "path": "/root/r/V3_SYS/AUDIT_NB2.json",
+            "size_bytes": 29147
+          },
+          {
+            "path": "/root/r/V3_SYS/AUDIT_NB2.md",
+            "size_bytes": 17662
+          },
+          {
+            "path": "/root/r/V3_SYS/COUNTS.md",
+            "size_bytes": 6356
+          },
+          {
+            "path": "/root/r/V3_SYS/README.md",
+            "size_bytes": 3268
+          },
+          {
+            "path": "/root/r/V3_SYS/AUDIT_V1.json",
+            "size_bytes": 31830
+          },
+          {
+            "path": "/root/r/V3_SYS/AUDIT_V1.md",
+            "size_bytes": 19728
+          },
+          {
+            "path": "/root/r/V3_SYS/AUDIT_NB2_verify.json",
+            "size_bytes": 29153
+          },
+          {
+            "path": "/root/r/V3_SYS/AUDIT_NB2_verify.md",
+            "size_bytes": 17664
+          },
+          {
+            "path": "/root/r/V3_SYS/AUDIT_V1_verify.json",
+            "size_bytes": 31829
+          },
+          {
+            "path": "/root/r/V3_SYS/AUDIT_V1_verify.md",
+            "size_bytes": 19729
+          },
+          {
+            "path": "/root/r/V3_SYS/AUDIT_NB2_j8.json",
+            "size_bytes": 29144
+          },
+          {
+            "path": "/root/r/V3_SYS/__pycache__/audit.cpython-313.pyc",
+            "size_bytes": 87087
+          },
+          {
+            "path": "/root/r/V3_SYS/__pycache__/count.cpython-313.pyc",
+            "size_bytes": 40711
+          }
+        ]
+      },
+      "wiki_hub_tree": {
+        "path": "/root/r/WIKI_HUB",
+        "exists": true,
+        "file_count": 1,
+        "total_bytes": 60973,
+        "files": [
+          {
+            "path": "/root/r/WIKI_HUB/01_WIKI_V1_ARABIC_MASTERS/_SOURCE_ROOT_README.md",
+            "size_bytes": 60973
+          }
+        ]
+      },
+      "nexus_wiki_links_tree": {
+        "path": "/root/r/nexus_wiki_links",
+        "exists": true,
+        "file_count": 0,
+        "total_bytes": 0,
+        "files": []
+      }
+    },
+    "claude_conversations": {
+      "matched_project_jsonl": [
+        {
+          "path": "/root/.claude/projects/-root-r/2f219a0b-e15a-4390-87ce-4c63a482f923.jsonl",
+          "size_bytes": 20002
+        },
+        {
+          "path": "/root/.claude/projects/-root-r/3a75fdd6-e175-405c-b690-2ed385da8e41.jsonl",
+          "size_bytes": 6491724
+        },
+        {
+          "path": "/root/.claude/projects/-root-r/0e7a4206-157c-4213-8ed2-3184e5c6c6be.jsonl",
+          "size_bytes": 134362
+        },
+        {
+          "path": "/root/.claude/projects/-root-r/27df899b-1659-445c-b121-9dedf65d3fed.jsonl",
+          "size_bytes": 21050
+        },
+        {
+          "path": "/root/.claude/projects/-root-r/72f68e8b-b5c9-4f5c-9507-ce6b34161b66.jsonl",
+          "size_bytes": 18946
+        },
+        {
+          "path": "/root/.claude/projects/-root-r/f9f0f6e4-7562-4cf0-8c2c-19da0f31a9b6.jsonl",
+          "size_bytes": 1450925
+        },
+        {
+          "path": "/root/.claude/projects/-root-r/828efe70-ad69-4a74-a88e-5bb69ea58fd5.jsonl",
+          "size_bytes": 21038
+        },
+        {
+          "path": "/root/.claude/projects/-root-r/3a75fdd6-e175-405c-b690-2ed385da8e41/subagents/agent-ad3d71c3886e6692c.jsonl",
+          "size_bytes": 123740
+        },
+        {
+          "path": "/root/.claude/projects/-root-r/3a75fdd6-e175-405c-b690-2ed385da8e41/subagents/agent-ace079adadd9aac28.jsonl",
+          "size_bytes": 158465
+        },
+        {
+          "path": "/root/.claude/projects/-root-r/3a75fdd6-e175-405c-b690-2ed385da8e41/subagents/agent-a8d4f521cda09003c.jsonl",
+          "size_bytes": 108810
+        },
+        {
+          "path": "/root/.claude/projects/-root-r/3a75fdd6-e175-405c-b690-2ed385da8e41/subagents/agent-a6d04f2404633c28e.jsonl",
+          "size_bytes": 126557
+        },
+        {
+          "path": "/root/.claude/projects/-root-r/3a75fdd6-e175-405c-b690-2ed385da8e41/subagents/agent-a1197c3f65d53d8e4.jsonl",
+          "size_bytes": 97527
+        },
+        {
+          "path": "/root/.claude/projects/-root-r/f9f0f6e4-7562-4cf0-8c2c-19da0f31a9b6/subagents/agent-acef353e75e560adf.jsonl",
+          "size_bytes": 85052
+        },
+        {
+          "path": "/root/.claude/projects/-root-r/f9f0f6e4-7562-4cf0-8c2c-19da0f31a9b6/subagents/agent-a9510b1d4d257f0dd.jsonl",
+          "size_bytes": 124376
+        }
+      ],
+      "history_file": {
+        "path": "/root/.claude/history.jsonl",
+        "exists": true,
+        "size_bytes": 450775,
+        "is_dir": false
+      },
+      "conversations_backup": {
+        "path": "/root/r/conversations_backup",
+        "exists": true,
+        "file_count": 17,
+        "total_bytes": 16722875,
+        "files": [
+          {
+            "path": "/root/r/conversations_backup/conversation_nexus_1_494b6e8f.jsonl",
+            "size_bytes": 1803336
+          },
+          {
+            "path": "/root/r/conversations_backup/conversation_opencode_2_6cfcc130.jsonl",
+            "size_bytes": 2888033
+          },
+          {
+            "path": "/root/r/conversations_backup/conversation_nexus_wiki_3_7b74c170.jsonl",
+            "size_bytes": 1555497
+          },
+          {
+            "path": "/root/r/conversations_backup/conversation_extra_e53e8484-e433-4819-92a3-5fe18ef9655a.jsonl",
+            "size_bytes": 7741854
+          },
+          {
+            "path": "/root/r/conversations_backup/conversation_extra_0d4791e8-87f9-47ff-bd42-c6eba2e5018c.jsonl",
+            "size_bytes": 792907
+          },
+          {
+            "path": "/root/r/conversations_backup/conversation_extra_8e057bb4-8a7b-4719-8400-e9a1c27b81d2.jsonl",
+            "size_bytes": 1616099
+          },
+          {
+            "path": "/root/r/conversations_backup/conversation_extra_9ade7286-58ec-48aa-864b-676805cba04e.jsonl",
+            "size_bytes": 215686
+          },
+          {
+            "path": "/root/r/conversations_backup/conversation_extra_b753cb95-48be-4ea2-b662-c28505cfdb61.jsonl",
+            "size_bytes": 90071
+          },
+          {
+            "path": "/root/r/conversations_backup/README.md",
+            "size_bytes": 1298
+          },
+          {
+            "path": "/root/r/conversations_backup/08027ba6-c80f-4da6-9c02-456ec4700fe6.jsonl",
+            "size_bytes": 1784
+          },
+          {
+            "path": "/root/r/conversations_backup/1561f659-4c9a-4966-bea3-3aa0496c1997.jsonl",
+            "size_bytes": 1840
+          },
+          {
+            "path": "/root/r/conversations_backup/2b88a5a5-f962-4b9f-94dc-7a90fe8bf84d.jsonl",
+            "size_bytes": 1834
+          },
+          {
+            "path": "/root/r/conversations_backup/7c72be0a-e299-4ef3-a480-6f7eed40a911.jsonl",
+            "size_bytes": 2062
+          },
+          {
+            "path": "/root/r/conversations_backup/8fc26f59-df8b-487d-bd92-3bfbf3619692.jsonl",
+            "size_bytes": 1984
+          },
+          {
+            "path": "/root/r/conversations_backup/b6df7ba3-d5ae-4927-a2f1-644ade8507f0.jsonl",
+            "size_bytes": 715
+          },
+          {
+            "path": "/root/r/conversations_backup/d9382222-c604-4588-acc5-756b0335f271.jsonl",
+            "size_bytes": 1984
+          },
+          {
+            "path": "/root/r/conversations_backup/e827702d-6bff-420e-a8d7-3f4a1a3bf375.jsonl",
+            "size_bytes": 5891
+          }
+        ]
+      },
+      "wiki_skills": {
+        "path": "/root/.claude/skills",
+        "exists": true,
+        "file_count": 42,
+        "total_bytes": 217572,
+        "files": [
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/SKILL.md",
+            "size_bytes": 14657
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/scripts/append_log.py",
+            "size_bytes": 4291
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/scripts/export_marp.py",
+            "size_bytes": 4561
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/scripts/graph_analyzer.py",
+            "size_bytes": 5701
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/scripts/ingest_source.py",
+            "size_bytes": 5709
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/scripts/init_vault.py",
+            "size_bytes": 7645
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/scripts/lint_wiki.py",
+            "size_bytes": 7400
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/scripts/update_index.py",
+            "size_bytes": 6580
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/scripts/wiki_search.py",
+            "size_bytes": 4771
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/assets/AGENTS.md.template",
+            "size_bytes": 4378
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/assets/CLAUDE.md.template",
+            "size_bytes": 5113
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/assets/cursorrules.template",
+            "size_bytes": 1260
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/assets/index.md.template",
+            "size_bytes": 911
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/assets/log.md.template",
+            "size_bytes": 519
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/assets/page-templates/comparison.md",
+            "size_bytes": 765
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/assets/page-templates/concept.md",
+            "size_bytes": 689
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/assets/page-templates/entity.md",
+            "size_bytes": 776
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/assets/page-templates/source-summary.md",
+            "size_bytes": 923
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/assets/page-templates/synthesis.md",
+            "size_bytes": 958
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/references/cross-tool-setup.md",
+            "size_bytes": 3658
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/references/ingest-workflow.md",
+            "size_bytes": 3926
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/references/lint-workflow.md",
+            "size_bytes": 3613
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/references/memex-principles.md",
+            "size_bytes": 4097
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/references/obsidian-setup.md",
+            "size_bytes": 2991
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/references/page-formats.md",
+            "size_bytes": 5172
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/references/query-workflow.md",
+            "size_bytes": 3129
+          },
+          {
+            "path": "/root/.claude/skills/personal-knowledge-base/references/wiki-schema.md",
+            "size_bytes": 4528
+          },
+          {
+            "path": "/root/.claude/skills/wiki-ingest/SKILL.md",
+            "size_bytes": 13419
+          },
+          {
+            "path": "/root/.claude/skills/wiki-init/codebase.md",
+            "size_bytes": 5807
+          },
+          {
+            "path": "/root/.claude/skills/wiki-init/SKILL.md",
+            "size_bytes": 22852
+          },
+          {
+            "path": "/root/.claude/skills/wiki-init/assets/bin/lint-mechanical.py",
+            "size_bytes": 11073
+          },
+          {
+            "path": "/root/.claude/skills/wiki-init/assets/bin/render-log.py",
+            "size_bytes": 2779
+          },
+          {
+            "path": "/root/.claude/skills/wiki-init/assets/bin/generate-index.py",
+            "size_bytes": 5044
+          },
+          {
+            "path": "/root/.claude/skills/wiki-init/assets/bin/check-contradictions.py",
+            "size_bytes": 3039
+          },
+          {
+            "path": "/root/.claude/skills/wiki-init/assets/bin/hooks/pre-commit",
+            "size_bytes": 470
+          },
+          {
+            "path": "/root/.claude/skills/wiki-init/config/link-style-obsidian.md",
+            "size_bytes": 1044
+          },
+          {
+            "path": "/root/.claude/skills/wiki-init/config/link-style-markdown.md",
+            "size_bytes": 2188
+          },
+          {
+            "path": "/root/.claude/skills/wiki-merge/SKILL.md",
+            "size_bytes": 7671
+          },
+          {
+            "path": "/root/.claude/skills/wiki-update/SKILL.md",
+            "size_bytes": 4992
+          },
+          {
+            "path": "/root/.claude/skills/wiki-audit/SKILL.md",
+            "size_bytes": 15515
+          },
+          {
+            "path": "/root/.claude/skills/wiki-lint/SKILL.md",
+            "size_bytes": 9406
+          },
+          {
+            "path": "/root/.claude/skills/wiki-query/SKILL.md",
+            "size_bytes": 3552
+          }
+        ]
+      }
+    },
+    "opencode_conversations": {
+      "main_db": {
+        "path": "/root/.local/share/opencode/opencode.db",
+        "exists": true,
+        "size_bytes": 970227712,
+        "is_dir": false
+      },
+      "backup_db": {
+        "path": "/root/r/BACKUP_OMINIRUSH_CHAT/opencode.db",
+        "exists": true,
+        "size_bytes": 109793280,
+        "is_dir": false
+      },
+      "storage_diff": {
+        "path": "/root/.local/share/opencode/storage",
+        "exists": true,
+        "file_count": 6,
+        "total_bytes": 11,
+        "files": [
+          {
+            "path": "/root/.local/share/opencode/storage/migration",
+            "size_bytes": 1
+          },
+          {
+            "path": "/root/.local/share/opencode/storage/session_diff/ses_08eef0b1affeosFR5GT5tDe9eK.json",
+            "size_bytes": 2
+          },
+          {
+            "path": "/root/.local/share/opencode/storage/session_diff/ses_f0cd73566ffe2J9DdVvdd1050N.json",
+            "size_bytes": 2
+          },
+          {
+            "path": "/root/.local/share/opencode/storage/session_diff/ses_f0c292dd0ffe766mk6TLpesYSK.json",
+            "size_bytes": 2
+          },
+          {
+            "path": "/root/.local/share/opencode/storage/session_diff/ses_efe72e1b2ffebVR1LGXX7Pw2A7.json",
+            "size_bytes": 2
+          },
+          {
+            "path": "/root/.local/share/opencode/storage/session_diff/ses_e8dff9635ffexnn3oaUCgHVgfy.json",
+            "size_bytes": 2
+          }
+        ]
+      }
+    },
+    "agy_conversations": {
+      "conversations_dir": "/root/.gemini/antigravity-cli/conversations",
+      "brain_dir": "/root/.gemini/antigravity-cli/brain",
+      "summaries_db": {
+        "path": "/root/.gemini/antigravity-cli/conversation_summaries.db",
+        "exists": true,
+        "size_bytes": 184320,
+        "is_dir": false
+      },
+      "matched_db_count": 173,
+      "matched_db_total_bytes": 243163136,
+      "core_wiki_sessions_count": 20,
+      "core_wiki_sessions_bytes": 32622216
+    },
+    "omnirush_conversations": {
+      "sessions_dir": "/root/.omnirush/agent/sessions",
+      "total_sessions": 1404,
+      "matched_sessions_count": 826,
+      "matched_sessions_bytes": 231536333,
+      "topic_sessions_count": 468,
+      "opencode_db": {
+        "path": "/root/.local/share/omnirush/opencode.db",
+        "exists": true,
+        "size_bytes": 446279680,
+        "is_dir": false
+      },
+      "clean_wiki_text_bytes": 489026
+    },
+    "code_tools": {
+      "llm_wiki_compiler": {
+        "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler",
+        "exists": true,
+        "file_count": 74,
+        "total_bytes": 16391615,
+        "files": [
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/COMPILE_PROTOCOL.md",
+            "size_bytes": 13184
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/EXPORTING.md",
+            "size_bytes": 7949
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/LICENSE",
+            "size_bytes": 1063
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/README.md",
+            "size_bytes": 33411
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/deploy-protocol.ps1",
+            "size_bytes": 7401
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/deploy-protocol.sh",
+            "size_bytes": 7873
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/description",
+            "size_bytes": 73
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/config",
+            "size_bytes": 276
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/HEAD",
+            "size_bytes": 21
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/shallow",
+            "size_bytes": 41
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/packed-refs",
+            "size_bytes": 112
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/index",
+            "size_bytes": 5070
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/hooks/commit-msg.sample",
+            "size_bytes": 896
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/hooks/fsmonitor-watchman.sample",
+            "size_bytes": 4726
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/hooks/post-update.sample",
+            "size_bytes": 189
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/hooks/pre-applypatch.sample",
+            "size_bytes": 424
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/hooks/pre-commit.sample",
+            "size_bytes": 1649
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/hooks/pre-merge-commit.sample",
+            "size_bytes": 416
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/hooks/pre-push.sample",
+            "size_bytes": 1374
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/hooks/pre-rebase.sample",
+            "size_bytes": 4898
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/hooks/pre-receive.sample",
+            "size_bytes": 544
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/hooks/prepare-commit-msg.sample",
+            "size_bytes": 1492
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/hooks/push-to-checkout.sample",
+            "size_bytes": 2783
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/hooks/sendemail-validate.sample",
+            "size_bytes": 2308
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/hooks/update.sample",
+            "size_bytes": 3650
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/hooks/applypatch-msg.sample",
+            "size_bytes": 478
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/info/exclude",
+            "size_bytes": 240
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/objects/pack/pack-39cdcd5fe7ae3f942d16ee6e48314a0ef330d26a.pack",
+            "size_bytes": 5273961
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/objects/pack/pack-39cdcd5fe7ae3f942d16ee6e48314a0ef330d26a.rev",
+            "size_bytes": 296
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/objects/pack/pack-39cdcd5fe7ae3f942d16ee6e48314a0ef330d26a.idx",
+            "size_bytes": 2780
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/refs/heads/main",
+            "size_bytes": 41
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/refs/remotes/origin/HEAD",
+            "size_bytes": 30
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/logs/HEAD",
+            "size_bytes": 195
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/logs/refs/remotes/origin/HEAD",
+            "size_bytes": 195
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.git/logs/refs/heads/main",
+            "size_bytes": 195
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.agents/plugins/marketplace.json",
+            "size_bytes": 379
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.claude-plugin/marketplace.json",
+            "size_bytes": 390
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/.github/FUNDING.yml",
+            "size_bytes": 26
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/assets/before-after.png",
+            "size_bytes": 4099158
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/assets/knowledge-graph-panel.png",
+            "size_bytes": 825944
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/assets/knowledge-graph.png",
+            "size_bytes": 515940
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/.claude-plugin/plugin.json",
+            "size_bytes": 435
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/assets/before-after.png",
+            "size_bytes": 4099158
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/assets/knowledge-graph-panel.png",
+            "size_bytes": 825944
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/assets/knowledge-graph.png",
+            "size_bytes": 515940
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/assets/logo.svg",
+            "size_bytes": 741
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/commands/fetch-bookmarks.md",
+            "size_bytes": 5472
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/commands/wiki-capture.md",
+            "size_bytes": 5084
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/commands/wiki-compile.md",
+            "size_bytes": 1584
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/commands/wiki-global-init.md",
+            "size_bytes": 1496
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/commands/wiki-ingest.md",
+            "size_bytes": 3346
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/commands/wiki-init.md",
+            "size_bytes": 11895
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/commands/wiki-lint.md",
+            "size_bytes": 2688
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/commands/wiki-migrate.md",
+            "size_bytes": 3178
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/commands/wiki-query.md",
+            "size_bytes": 1973
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/commands/wiki-search.md",
+            "size_bytes": 2370
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/commands/wiki-upgrade.md",
+            "size_bytes": 873
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/commands/wiki-visualize.md",
+            "size_bytes": 1091
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/hooks/hooks.json",
+            "size_bytes": 253
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/hooks/session-start",
+            "size_bytes": 888
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/hooks/wiki-session-context",
+            "size_bytes": 5963
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/skills/wiki-compiler/SKILL.md",
+            "size_bytes": 21045
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/skills/wiki-compiler/adapters/capture-web.md",
+            "size_bytes": 1418
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/skills/wiki-compiler/adapters/capture-x.md",
+            "size_bytes": 1710
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/skills/wiki-compiler/adapters/capture-youtube.md",
+            "size_bytes": 2111
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/skills/wiki-compiler/adapters/x.md",
+            "size_bytes": 6445
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/templates/article-template.md",
+            "size_bytes": 2618
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/templates/captured-source-template.md",
+            "size_bytes": 1034
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/templates/codebase-article-template.md",
+            "size_bytes": 2420
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/templates/global-wiki-config.json",
+            "size_bytes": 1067
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/templates/index-template.md",
+            "size_bytes": 512
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/templates/schema-template.md",
+            "size_bytes": 2204
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/visualize/index.html",
+            "size_bytes": 25246
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-compiler/plugin/visualize/server.js",
+            "size_bytes": 11342
+          }
+        ]
+      },
+      "llm_wiki_plugin": {
+        "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin",
+        "exists": true,
+        "file_count": 227,
+        "total_bytes": 4867934,
+        "files": [
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/AGENTS.md",
+            "size_bytes": 996
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/CHANGELOG.md",
+            "size_bytes": 24729
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/CONTRIBUTING.md",
+            "size_bytes": 13673
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/LICENSE",
+            "size_bytes": 1068
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/README.md",
+            "size_bytes": 22813
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/package.json",
+            "size_bytes": 705
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/pnpm-lock.yaml",
+            "size_bytes": 104348
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/.claude-plugin/marketplace.json",
+            "size_bytes": 993
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/.claude-plugin/plugin.json",
+            "size_bytes": 632
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/commands/wiki/evolve.md",
+            "size_bytes": 1974
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/commands/wiki/graph.md",
+            "size_bytes": 2345
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/commands/wiki/ingest.md",
+            "size_bytes": 2329
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/commands/wiki/init.md",
+            "size_bytes": 1921
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/commands/wiki/learn.md",
+            "size_bytes": 990
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/commands/wiki/lint.md",
+            "size_bytes": 2222
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/commands/wiki/query.md",
+            "size_bytes": 2843
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/commands/wiki/stats.md",
+            "size_bytes": 1015
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/commands/wiki/upgrade.md",
+            "size_bytes": 4641
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/docs/agents.md",
+            "size_bytes": 4906
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/docs/commands.md",
+            "size_bytes": 6876
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/docs/evolution.md",
+            "size_bytes": 20310
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/docs/getting-started.md",
+            "size_bytes": 7337
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/docs/graph.md",
+            "size_bytes": 5188
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/docs/index.md",
+            "size_bytes": 6725
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/docs/integrations.md",
+            "size_bytes": 3231
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/docs/search.md",
+            "size_bytes": 7691
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/docs/upgrade.md",
+            "size_bytes": 5113
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/docs/workflows.md",
+            "size_bytes": 8254
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/docs/.vitepress/config.ts",
+            "size_bytes": 10835
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/docs/.vitepress/theme/custom.css",
+            "size_bytes": 23091
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/docs/.vitepress/theme/index.ts",
+            "size_bytes": 1975
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/docs/public/favicon.svg",
+            "size_bytes": 270
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/docs/public/google8ab14a74328d7cc1.html",
+            "size_bytes": 54
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/docs/public/llms.txt",
+            "size_bytes": 3495
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/docs/public/robots.txt",
+            "size_bytes": 106
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/docs/public/social-card.png",
+            "size_bytes": 53795
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/docs/public/assets/llm-wiki-explained.png",
+            "size_bytes": 3089213
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/test_adapters.py",
+            "size_bytes": 12547
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/test_evolution.py",
+            "size_bytes": 10074
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/test_loop.py",
+            "size_bytes": 12113
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/pilot/config.example.json",
+            "size_bytes": 891
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/pilot/suite-v2.json",
+            "size_bytes": 10142
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/pilot/suite.json",
+            "size_bytes": 5995
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/pilot/wiki/SCHEMA.md",
+            "size_bytes": 206
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/pilot/wiki/index.md",
+            "size_bytes": 337
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/pilot/wiki/sources/launch.md",
+            "size_bytes": 417
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/pilot/wiki/sources/operations.md",
+            "size_bytes": 397
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/pilot/wiki/sources/pricing-current.md",
+            "size_bytes": 379
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/pilot/wiki/sources/pricing-old.md",
+            "size_bytes": 362
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/pilot/wiki/sources/product.md",
+            "size_bytes": 355
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/pilot/wiki/sources/sales-report.md",
+            "size_bytes": 344
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/pilot/wiki/sources/security.md",
+            "size_bytes": 405
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/project-smoke/README.md",
+            "size_bytes": 2732
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/project-smoke/live-results.json",
+            "size_bytes": 1618
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/project-smoke/suite.json",
+            "size_bytes": 2324
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/project-smoke/wiki/releases.md",
+            "size_bytes": 184
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/project-smoke/wiki/retrieval.md",
+            "size_bytes": 146
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/project-smoke/wiki/sources.md",
+            "size_bytes": 130
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/project-smoke/wiki/version-locations.md",
+            "size_bytes": 221
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/README.md",
+            "size_bytes": 11460
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/aborted-studies.json",
+            "size_bytes": 3987
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/adapter-checks.json",
+            "size_bytes": 10522
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/build_suite.py",
+            "size_bytes": 11414
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/frozen-runtime.patch",
+            "size_bytes": 1174
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/live-results.json",
+            "size_bytes": 167274
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/protocol.json",
+            "size_bytes": 2159
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/public-provenance.json",
+            "size_bytes": 758
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/source-manifest.json",
+            "size_bytes": 1315
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/suite.json",
+            "size_bytes": 18549
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/wiki/SCHEMA.md",
+            "size_bytes": 653
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/wiki/index.md",
+            "size_bytes": 382
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/wiki/log.md",
+            "size_bytes": 64
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/wiki/concepts/runtime-policy.md",
+            "size_bytes": 403
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/wiki/raw/ingestion.txt",
+            "size_bytes": 9769
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/wiki/raw/links.txt",
+            "size_bytes": 23440
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/wiki/raw/releases.txt",
+            "size_bytes": 13599
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/wiki/raw/retrieval.txt",
+            "size_bytes": 7662
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/wiki/raw/runtime.txt",
+            "size_bytes": 2610
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/wiki/raw/schema.txt",
+            "size_bytes": 7583
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/wiki/sources/ingestion.md",
+            "size_bytes": 520
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/wiki/sources/links.md",
+            "size_bytes": 441
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/wiki/sources/releases.md",
+            "size_bytes": 480
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/wiki/sources/retrieval.md",
+            "size_bytes": 510
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/wiki/sources/runtime.md",
+            "size_bytes": 482
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/evolution/workflows/wiki/sources/schema.md",
+            "size_bytes": 526
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/queries.json",
+            "size_bytes": 4976
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/run_eval.py",
+            "size_bytes": 8731
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/test_embedding_mode.py",
+            "size_bytes": 10286
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/test_search_contracts.py",
+            "size_bytes": 2218
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/test_setup.py",
+            "size_bytes": 3284
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/corpus/wiki/SCHEMA.md",
+            "size_bytes": 257
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/corpus/wiki/concepts/attention-mechanism.md",
+            "size_bytes": 1102
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/corpus/wiki/concepts/distributed-training.md",
+            "size_bytes": 2720
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/corpus/wiki/concepts/gradient-descent.md",
+            "size_bytes": 906
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/corpus/wiki/concepts/kv-cache.md",
+            "size_bytes": 1005
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/corpus/wiki/concepts/mixture-of-experts.md",
+            "size_bytes": 972
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/corpus/wiki/concepts/quantization.md",
+            "size_bytes": 991
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/corpus/wiki/concepts/tokenization.md",
+            "size_bytes": 799
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/corpus/wiki/entities/cuda.md",
+            "size_bytes": 982
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/corpus/wiki/entities/gpt-4.md",
+            "size_bytes": 895
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/corpus/wiki/entities/ilya-sutskever.md",
+            "size_bytes": 929
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/corpus/wiki/entities/openai.md",
+            "size_bytes": 790
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/corpus/wiki/entities/pytorch.md",
+            "size_bytes": 949
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/corpus/wiki/sources/adam-paper.md",
+            "size_bytes": 809
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/corpus/wiki/sources/attention-paper.md",
+            "size_bytes": 805
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/corpus/wiki/sources/chinchilla-paper.md",
+            "size_bytes": 889
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/corpus/wiki/sources/lora-paper.md",
+            "size_bytes": 871
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/corpus/wiki/sources/scaling-laws-paper.md",
+            "size_bytes": 851
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/corpus/wiki/synthesis/precision-tradeoffs.md",
+            "size_bytes": 1009
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/corpus/wiki/synthesis/training-vs-inference-cost.md",
+            "size_bytes": 1116
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/eval/retrieval/corpus/wiki/synthesis/why-transformers-won.md",
+            "size_bytes": 1013
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/FEASIBILITY.md",
+            "size_bytes": 27648
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/README.md",
+            "size_bytes": 10380
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/SPEC.md",
+            "size_bytes": 63672
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/README.md",
+            "size_bytes": 29719
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/esbuild.config.mjs",
+            "size_bytes": 1688
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/package.json",
+            "size_bytes": 1881
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/pnpm-lock.yaml",
+            "size_bytes": 120285
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tsconfig.json",
+            "size_bytes": 617
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/vitest.config.ts",
+            "size_bytes": 591
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/scripts/check-setup-snippets.mjs",
+            "size_bytes": 2991
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/scripts/prepublish-checks.mjs",
+            "size_bytes": 14185
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/manifest.ts",
+            "size_bytes": 4570
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/worker.ts",
+            "size_bytes": 25664
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/lib/bm25.ts",
+            "size_bytes": 12708
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/lib/frontmatter.ts",
+            "size_bytes": 3665
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/lib/lint.ts",
+            "size_bytes": 10933
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/lib/stats.ts",
+            "size_bytes": 7970
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/ui/ErrorBoundary.tsx",
+            "size_bytes": 1546
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/ui/HostLink.tsx",
+            "size_bytes": 1925
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/ui/WikiContextTab.tsx",
+            "size_bytes": 2465
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/ui/WikiHealthIndicator.tsx",
+            "size_bytes": 6819
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/ui/WikiMarkdown.tsx",
+            "size_bytes": 3517
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/ui/WikiPage.tsx",
+            "size_bytes": 4620
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/ui/WikiPageView.tsx",
+            "size_bytes": 1351
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/ui/WikiSidebar.tsx",
+            "size_bytes": 839
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/ui/href.ts",
+            "size_bytes": 5511
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/ui/index.tsx",
+            "size_bytes": 965
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/ui/styles.ts",
+            "size_bytes": 17162
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/ui/launcher/Launcher.tsx",
+            "size_bytes": 3225
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/ui/page/BacklinksPanel.tsx",
+            "size_bytes": 1886
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/ui/page/FolderTree.tsx",
+            "size_bytes": 7693
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/ui/page/OutlinePanel.tsx",
+            "size_bytes": 1943
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/ui/page/PropertiesPanel.tsx",
+            "size_bytes": 1797
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/ui/page/QuickSwitcher.tsx",
+            "size_bytes": 4386
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/ui/page/Reader.tsx",
+            "size_bytes": 7610
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/ui/page/Topbar.tsx",
+            "size_bytes": 3717
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/ui/setup/SetupView.tsx",
+            "size_bytes": 6758
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/src/ui/setup/snippets.ts",
+            "size_bytes": 3824
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/_setup.ts",
+            "size_bytes": 1032
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/_smoke.spec.ts",
+            "size_bytes": 1025
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/manifest.spec.ts",
+            "size_bytes": 9313
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/worker.spec.ts",
+            "size_bytes": 30666
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/fixtures/_gen_bm25_expectations.py",
+            "size_bytes": 6568
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/fixtures/bm25-expectations.json",
+            "size_bytes": 9542
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/fixtures/wiki/concepts/attention-mechanism.md",
+            "size_bytes": 761
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/fixtures/wiki/concepts/rag-pipeline.md",
+            "size_bytes": 753
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/fixtures/wiki/concepts/scaling-laws.md",
+            "size_bytes": 701
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/fixtures/wiki/entities/gpt-3.md",
+            "size_bytes": 634
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/fixtures/wiki/entities/transformer.md",
+            "size_bytes": 787
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/fixtures/wiki/raw/example.md",
+            "size_bytes": 203
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/fixtures/wiki/sources/attention-paper.md",
+            "size_bytes": 812
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/fixtures/wiki/sources/scaling-laws-paper.md",
+            "size_bytes": 800
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/fixtures/wiki/synthesis/transformer-vs-rnn.md",
+            "size_bytes": 876
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/lib/bm25.spec.ts",
+            "size_bytes": 8603
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/lib/evolution.spec.ts",
+            "size_bytes": 1049
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/lib/frontmatter.spec.ts",
+            "size_bytes": 5853
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/lib/lint.spec.ts",
+            "size_bytes": 12663
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/lib/stats.spec.ts",
+            "size_bytes": 11334
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/security/symlinks.spec.ts",
+            "size_bytes": 17732
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/ui/BacklinksPanel.spec.tsx",
+            "size_bytes": 2406
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/ui/ErrorBoundary.spec.tsx",
+            "size_bytes": 1656
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/ui/FolderTree.spec.tsx",
+            "size_bytes": 5977
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/ui/HostLink.spec.tsx",
+            "size_bytes": 3883
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/ui/Launcher.spec.tsx",
+            "size_bytes": 3016
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/ui/OutlinePanel.spec.tsx",
+            "size_bytes": 1601
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/ui/PropertiesPanel.spec.tsx",
+            "size_bytes": 2187
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/ui/QuickSwitcher.spec.tsx",
+            "size_bytes": 2671
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/ui/Reader.landing.spec.tsx",
+            "size_bytes": 1682
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/ui/Reader.spec.tsx",
+            "size_bytes": 5658
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/ui/SetupView.spec.tsx",
+            "size_bytes": 3135
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/ui/Topbar.spec.tsx",
+            "size_bytes": 3275
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/ui/WikiContextTab.spec.tsx",
+            "size_bytes": 1747
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/ui/WikiHealthSetupBanner.spec.tsx",
+            "size_bytes": 3833
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/ui/WikiMarkdown.spec.tsx",
+            "size_bytes": 2040
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/ui/WikiPageView.spec.tsx",
+            "size_bytes": 7483
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/ui/href.spec.ts",
+            "size_bytes": 5455
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/ui/slots.spec.tsx",
+            "size_bytes": 15193
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/integrations/paperclip/plugin/tests/ui/useWikiLocation.spec.tsx",
+            "size_bytes": 3665
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/research/cerebras-how-we-built-our-knowledge-base.md",
+            "size_bytes": 22068
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/SKILL.md",
+            "size_bytes": 22915
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/assets/SCHEMA.md.template",
+            "size_bytes": 7583
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/assets/evolution_README.md.template",
+            "size_bytes": 2321
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/assets/experience.json.template",
+            "size_bytes": 660
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/assets/graph_README.md.template",
+            "size_bytes": 2054
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/assets/graph_gitignore.template",
+            "size_bytes": 27
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/assets/index.md.template",
+            "size_bytes": 775
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/assets/log.md.template",
+            "size_bytes": 499
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/assets/ontology.yaml.template",
+            "size_bytes": 3320
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/assets/page.md.template",
+            "size_bytes": 805
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/assets/pattern.md.template",
+            "size_bytes": 839
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/assets/wiki-cache_gitignore.template",
+            "size_bytes": 14
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/references/agent-memory-integration.md",
+            "size_bytes": 6181
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/references/architecture.md",
+            "size_bytes": 9852
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/references/evolution-workflow.md",
+            "size_bytes": 20135
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/references/graph-workflow.md",
+            "size_bytes": 7221
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/references/ingest-workflow.md",
+            "size_bytes": 9769
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/references/lint-workflow.md",
+            "size_bytes": 7232
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/references/page-conventions.md",
+            "size_bytes": 5981
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/references/query-workflow.md",
+            "size_bytes": 7662
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/references/retrieval-setup.md",
+            "size_bytes": 4163
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/references/scaling-playbook.md",
+            "size_bytes": 7000
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/scripts/init_wiki.py",
+            "size_bytes": 9716
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/scripts/setup_wiki.py",
+            "size_bytes": 2610
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/scripts/test_link_resolution.py",
+            "size_bytes": 6361
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/scripts/wiki_evolve.py",
+            "size_bytes": 29799
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/scripts/wiki_evolve_agent.py",
+            "size_bytes": 15504
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/scripts/wiki_evolve_api.py",
+            "size_bytes": 7168
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/scripts/wiki_evolve_claude.py",
+            "size_bytes": 2411
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/scripts/wiki_evolve_loop.py",
+            "size_bytes": 44430
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/scripts/wiki_evolve_stream.py",
+            "size_bytes": 13277
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/scripts/wiki_graph_extract.py",
+            "size_bytes": 21552
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/scripts/wiki_graph_lint.py",
+            "size_bytes": 16749
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/scripts/wiki_graph_query.py",
+            "size_bytes": 9551
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/scripts/wiki_lint.py",
+            "size_bytes": 14890
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/scripts/wiki_search.py",
+            "size_bytes": 32921
+          },
+          {
+            "path": "/root/r/NEXUS_REFERENCES/llm-wiki-plugin/skills/llm-wiki/scripts/wiki_stats.py",
+            "size_bytes": 6011
+          }
+        ]
+      }
+    },
+    "enrichment_core": {
+      "control_tree": {
+        "path": "/root/r/nexus_enrichment/control",
+        "exists": true,
+        "file_count": 17,
+        "total_bytes": 428866,
+        "files": [
+          {
+            "path": "/root/r/nexus_enrichment/control/credentials.env",
+            "size_bytes": 673
+          },
+          {
+            "path": "/root/r/nexus_enrichment/control/README.md",
+            "size_bytes": 6986
+          },
+          {
+            "path": "/root/r/nexus_enrichment/control/STATUS.md",
+            "size_bytes": 9898
+          },
+          {
+            "path": "/root/r/nexus_enrichment/control/ACCOUNT_INSTRUCTION.md",
+            "size_bytes": 22966
+          },
+          {
+            "path": "/root/r/nexus_enrichment/control/CONTEXT.md",
+            "size_bytes": 11450
+          },
+          {
+            "path": "/root/r/nexus_enrichment/control/master_slots.json",
+            "size_bytes": 123260
+          },
+          {
+            "path": "/root/r/nexus_enrichment/control/MASTER_SLOTS.md",
+            "size_bytes": 123837
+          },
+          {
+            "path": "/root/r/nexus_enrichment/control/WORKFLOW.md",
+            "size_bytes": 14870
+          },
+          {
+            "path": "/root/r/nexus_enrichment/control/DECISION_concept_placement.md",
+            "size_bytes": 10543
+          },
+          {
+            "path": "/root/r/nexus_enrichment/control/WIKI_STRUCTURE.md",
+            "size_bytes": 18119
+          },
+          {
+            "path": "/root/r/nexus_enrichment/control/MAPPING_concepts_to_masters.md",
+            "size_bytes": 10144
+          },
+          {
+            "path": "/root/r/nexus_enrichment/control/RULES_FROM_ORIGIN.md",
+            "size_bytes": 15997
+          },
+          {
+            "path": "/root/r/nexus_enrichment/control/BRAIN_GOVERNANCE.md",
+            "size_bytes": 24077
+          },
+          {
+            "path": "/root/r/nexus_enrichment/control/cookies_x.txt",
+            "size_bytes": 1759
+          },
+          {
+            "path": "/root/r/nexus_enrichment/control/concept_routes.json",
+            "size_bytes": 29624
+          },
+          {
+            "path": "/root/r/nexus_enrichment/control/cookies_linkedin.txt",
+            "size_bytes": 3340
+          },
+          {
+            "path": "/root/r/nexus_enrichment/control/cookies_instagram.txt",
+            "size_bytes": 1323
+          }
+        ]
+      },
+      "wiki_routing_tree": {
+        "path": "/root/r/nexus_enrichment/wiki_routing",
+        "exists": false,
+        "file_count": 0,
+        "total_bytes": 0,
+        "files": []
+      },
+      "reports_subset": {
+        "path": "/root/r/nexus_enrichment/reports",
+        "exists": false,
+        "file_count": 0,
+        "total_bytes": 0,
+        "files": []
+      }
+    }
+  }
+}

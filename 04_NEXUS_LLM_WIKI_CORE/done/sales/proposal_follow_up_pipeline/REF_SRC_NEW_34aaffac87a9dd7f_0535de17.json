@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "workflow_contract_version": "2026-10-10",
+  "artifact_kind": "verified_source_copy_reference",
+  "route_id": "ROUTE_SRC_NEW_34aaffac87a9dd7f_0535de17",
+  "workflow_id": "WF_20261017_route_copy_proposal_follow_up",
+  "source_id": "SRC_NEW_34aaffac87a9dd7f_0535de17",
+  "candidate_id": "ITEM_SALES_BATCH_2026-10-11_001_0535de17",
+  "batch_id": "SALES_BATCH_2026-10-11_001",
+  "snapshot_id": "SNAP_SALES_BATCH_2026-10-11_001",
+  "snapshot_scope_kind": "batch",
+  "snapshot_inventory_complete": false,
+  "catalog_revision": "3.0",
+  "source_path": "raw/new/smartleadai__How to Close 500+ Sales Opps in 90 Days with David Lehnert__DhzsNovGxgM.txt",
+  "original_path": "raw/new/smartleadai__How to Close 500+ Sales Opps in 90 Days with David Lehnert__DhzsNovGxgM.txt",
+  "content_hash": "sha256:34aaffac87a9dd7fffeb9807ebd32242357364578a64d7a3565f13202d97b83d",
+  "original_size_bytes": 70159,
+  "copy_size_bytes": 70159,
+  "original_sha256": "sha256:34aaffac87a9dd7fffeb9807ebd32242357364578a64d7a3565f13202d97b83d",
+  "primary_domain": "sales",
+  "primary_subdomain": "proposal_follow_up_pipeline",
+  "routing_reason": "الغرض الغالب الذي يثبته متن الجلسة هو شرح أنظمة توليد الفرص وبناء pipeline ثم تحويل الردود إلى مكالمات ومسار عرض/CTA؛ تفاصيل cold email والأدوات والرسائل سياق داعم داخل هذا المسار وليست سببًا لنسخة ثانية.",
+  "body_locator": "chars 1452:1686 (Unicode code points, zero-based, half-open; line 1)",
+  "purpose_locator": "chars 1452:1686 (Unicode code points, zero-based, half-open; line 1)",
+  "structure_locator": "chars 13900:13932; chars 46416:46469 (Unicode code points, zero-based, half-open; line 1)",
+  "domain_snapshot_id": "SNAP_SALES_BATCH_2026-10-11_001",
+  "duplicate_of": null,
+  "domain_completion_claim": false,
+  "primary_route": {
+    "domain": "sales",
+    "subdomain": "proposal_follow_up_pipeline",
+    "confidence": "medium",
+    "rationale": "الغرض الغالب الذي يثبته متن الجلسة هو شرح أنظمة توليد الفرص وبناء pipeline ثم تحويل الردود إلى مكالمات ومسار عرض/CTA؛ تفاصيل cold email والأدوات والرسائل سياق داعم داخل هذا المسار وليست سببًا لنسخة ثانية.",
+    "body_locator": "chars 1452:1686 (Unicode code points, zero-based, half-open; line 1)",
+    "purpose_locator": "chars 1452:1686 (Unicode code points, zero-based, half-open; line 1)",
+    "structure_locator": "chars 13900:13932; chars 46416:46469 (Unicode code points, zero-based, half-open; line 1)",
+    "evidence_locators": [
+      "chars 1452:1686 (Unicode code points, zero-based, half-open; line 1)",
+      "chars 37960:38215 (Unicode code points, zero-based, half-open; line 1)",
+      "chars 13900:13932 (Unicode code points, zero-based, half-open; line 1)",
+      "chars 46416:46469 (Unicode code points, zero-based, half-open; line 1)"
+    ],
+    "evidence": [
+      {
+        "family": "purpose",
+        "quote_offset": {
+          "unit": "unicode_codepoint",
+          "start": 1452,
+          "end": 1686,
+          "bounds": "half_open"
+        },
+        "locator": "chars 1452:1686; line 1",
+        "quote": "And today's session is super interesting because David is going to break down the exact systems, copies, tools, and workflows that helped him generate 521 opportunities and a $2 million pipeline without spending on ads or hiring HDRs.",
+        "quote_sha256": "sha256:8c25729669dabd8331bc81ed4eac2ef8813aad805ef3aad9132615f262940712",
+        "note": "يحدد غرض الجلسة في توليد الفرص وبناء pipeline، مع نسبة النتيجة إلى مقدّم الجلسة لا إلى قياس مستقل."
+      },
+      {
+        "family": "actions",
+        "quote_offset": {
+          "unit": "unicode_codepoint",
+          "start": 37960,
+          "end": 38215,
+          "bounds": "half_open"
+        },
+        "locator": "chars 37960:38215; line 1",
+        "quote": "And it's sets also the stage again for the next one for the solution and for the proposal. Yeah. Right. And then we we show them the remedy. Yeah. We show them the way out of the situation that might be very painful. And then we we we have the CTA. Yeah. ",
+        "quote_sha256": "sha256:9cc4fac716c1fc2fa76a5cf0c2f45a1f7438092d8d22ce23d4b5d16f59836b83",
+        "note": "يصف تسلسلًا عمليًا من المشكلة إلى الحل والعرض ثم CTA داخل رسالة المبيعات."
+      },
+      {
+        "family": "structure",
+        "quote_offset": {
+          "unit": "unicode_codepoint",
+          "start": 13900,
+          "end": 13932,
+          "bounds": "half_open"
+        },
+        "locator": "chars 13900:13932; line 1",
+        "quote": "every table just has one purpose",
+        "quote_sha256": "sha256:a89688ad9d4b29b42d406bb7f738f378e54dcbc2b58fc6e9e2bacf104a0ab53c",
+        "note": "يظهر بنية workflow المعيارية التي تجعل كل جدول ذا غرض واحد."
+      },
+      {
+        "family": "structure",
+        "quote_offset": {
+          "unit": "unicode_codepoint",
+          "start": 46416,
+          "end": 46469,
+          "bounds": "half_open"
+        },
+        "locator": "chars 46416:46469; line 1",
+        "quote": "it's going to be hook, pain, proof, remedy, and a CTA",
+        "quote_sha256": "sha256:ed943e08687bc0d76428270328faeafb4f112dc52c6a38e6416409dbf48a5a01",
+        "note": "يصف هيكل الرسالة كما أورده المتحدث؛ لا يثبت أن الهيكل يرفع الأداء لكل سوق."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "unit": "unicode_codepoint",
+      "bounds": "half_open",
+      "start": 1452,
+      "end": 1686,
+      "locator": "chars 1452:1686; line 1",
+      "quote": "And today's session is super interesting because David is going to break down the exact systems, copies, tools, and workflows that helped him generate 521 opportunities and a $2 million pipeline without spending on ads or hiring HDRs.",
+      "quote_hash": "sha256:8c25729669dabd8331bc81ed4eac2ef8813aad805ef3aad9132615f262940712"
+    },
+    {
+      "unit": "unicode_codepoint",
+      "bounds": "half_open",
+      "start": 37960,
+      "end": 38215,
+      "locator": "chars 37960:38215; line 1",
+      "quote": "And it's sets also the stage again for the next one for the solution and for the proposal. Yeah. Right. And then we we show them the remedy. Yeah. We show them the way out of the situation that might be very painful. And then we we we have the CTA. Yeah. ",
+      "quote_hash": "sha256:9cc4fac716c1fc2fa76a5cf0c2f45a1f7438092d8d22ce23d4b5d16f59836b83"
+    },
+    {
+      "unit": "unicode_codepoint",
+      "bounds": "half_open",
+      "start": 13900,
+      "end": 13932,
+      "locator": "chars 13900:13932; line 1",
+      "quote": "every table just has one purpose",
+      "quote_hash": "sha256:a89688ad9d4b29b42d406bb7f738f378e54dcbc2b58fc6e9e2bacf104a0ab53c"
+    },
+    {
+      "unit": "unicode_codepoint",
+      "bounds": "half_open",
+      "start": 46416,
+      "end": 46469,
+      "locator": "chars 46416:46469; line 1",
+      "quote": "it's going to be hook, pain, proof, remedy, and a CTA",
+      "quote_hash": "sha256:ed943e08687bc0d76428270328faeafb4f112dc52c6a38e6416409dbf48a5a01"
+    }
+  ],
+  "secondary_references": [
+    {
+      "domain": "outreach",
+      "subdomain": "outreach_mechanics_and_follow_up",
+      "source_id": "SRC_NEW_34aaffac87a9dd7f_0535de17",
+      "primary_route_ref": "done/sales/proposal_follow_up_pipeline/REF_SRC_NEW_34aaffac87a9dd7f_0535de17.json",
+      "reference_type": "contextual",
+      "confidence": "medium",
+      "rationale": "المتن يخصص مساحة كبيرة لبناء قوائم cold email، البحث عن جهات الاتصال، الرسائل، deliverability، ومعدلات الرد؛ هذه مساهمة سياقية داعمة للمسار الأساسي ولا تنشئ نسخة أو دليلًا مستقلًا.",
+      "evidence_locators": [
+        "chars 9755:10136 (Unicode code points, zero-based, half-open; line 1)",
+        "chars 49784:49882 (Unicode code points, zero-based, half-open; line 1)"
+      ]
+    }
+  ],
+  "duplicate_check": {
+    "state": "exact_hash_references_nonindependent",
+    "duplicate_of": null,
+    "independent_evidence_count": 1,
+    "checked_scope": [
+      "collections/sales/reading/SALES_BATCH_2026-10-11_001.json",
+      "collections/sales/manifest.json",
+      "collections/sales/source_classification.json",
+      "sources/SRC_NEW_34aaffac87a9dd7f_0535de17.md",
+      "staging/manifests/raw_new_sources.jsonl",
+      "collections/corpus/manifest.jsonl",
+      "raw/SOURCE_MANIFEST.tsv",
+      "done/sales/proposal_follow_up_pipeline/"
+    ],
+    "references": [
+      {
+        "path": "collections/corpus/manifest.jsonl",
+        "locator": "line 1406",
+        "source_id": "SRC_CORPUS_raw_new_34aaffac87a9dd7f_6f8e239dbeeb",
+        "source_path": "raw_new/smartleadai__How to Close 500+ Sales Opps in 90 Days with David Lehnert__DhzsNovGxgM.txt",
+        "sha256": "sha256:34aaffac87a9dd7fffeb9807ebd32242357364578a64d7a3565f13202d97b83d",
+        "relationship": "same physical raw content registered by a separate corpus inventory; not independent evidence"
+      },
+      {
+        "path": "raw/SOURCE_MANIFEST.tsv",
+        "locator": "line 4964",
+        "source_id": null,
+        "source_path": "raw/legacy/brain/smartleadai__How to Close 500+ Sales Opps in 90 Days with David Lehnert__DhzsNovGxgM.txt",
+        "sha256": "sha256:34aaffac87a9dd7fffeb9807ebd32242357364578a64d7a3565f13202d97b83d",
+        "relationship": "stale exact-hash reference; raw/legacy/brain has no current file in the pre/post inventory"
+      }
+    ],
+    "decision": "الهوية التشغيلية المطلوبة هي المصدر الموجود فعليًا في raw/new؛ لا duplicate_of ولا نسخة ثانية مستقلة."
+  },
+  "copy_path": "done/sales/proposal_follow_up_pipeline/SRC_NEW_34aaffac87a9dd7f_0535de17.txt",
+  "copy_sha256": "sha256:34aaffac87a9dd7fffeb9807ebd32242357364578a64d7a3565f13202d97b83d",
+  "copy_policy": "verified_copy_required",
+  "verification_policy": "independent_byte_exact",
+  "copy_verification": {
+    "hashes_equal": true,
+    "bytes_equal": true,
+    "original_size_bytes": 70159,
+    "copy_size_bytes": 70159,
+    "original_sha256": "sha256:34aaffac87a9dd7fffeb9807ebd32242357364578a64d7a3565f13202d97b83d",
+    "copy_sha256": "sha256:34aaffac87a9dd7fffeb9807ebd32242357364578a64d7a3565f13202d97b83d",
+    "original_is_regular": true,
+    "copy_is_regular": true,
+    "original_is_symlink": false,
+    "copy_is_symlink": false,
+    "symlink": false,
+    "same_inode": false,
+    "hardlink": false,
+    "original_nlink": 1,
+    "copy_nlink": 1,
+    "original_unchanged": true,
+    "copy_created_without_overwrite": true
+  },
+  "copy_independence_check": {
+    "bytes_equal": true,
+    "hashes_equal": true,
+    "symlink": false,
+    "hardlink": false,
+    "same_inode": false,
+    "original_unchanged": true
+  },
+  "read_coverage_ref": "READ_ROUTE_COPY_20261017_SRC_NEW_34aaffac87a9dd7f_0535de17",
+  "reading_coverage_ref": "READ_ROUTE_COPY_20261017_SRC_NEW_34aaffac87a9dd7f_0535de17",
+  "read_coverage": {
+    "coverage_id": "READ_ROUTE_COPY_20261017_SRC_NEW_34aaffac87a9dd7f_0535de17",
+    "source_id": "SRC_NEW_34aaffac87a9dd7f_0535de17",
+    "snapshot_id": "SNAP_SALES_BATCH_2026-10-11_001",
+    "batch_id": "SALES_BATCH_2026-10-11_001",
+    "source_sha256": "sha256:34aaffac87a9dd7fffeb9807ebd32242357364578a64d7a3565f13202d97b83d",
+    "mode": "routing",
+    "io": {
+      "bytes_expected": 70159,
+      "bytes_read": 70159,
+      "eof_reached": true,
+      "stable_after_read": true,
+      "bytes_equal_on_reread": true,
+      "line_count": 1,
+      "character_count": 70159,
+      "encoding": "utf-8",
+      "decode_replacements": 0
+    },
+    "view": {
+      "unit": "unicode_codepoint",
+      "bounds": "half_open",
+      "start": 0,
+      "length": 70159,
+      "sha256": "sha256:34aaffac87a9dd7fffeb9807ebd32242357364578a64d7a3565f13202d97b83d",
+      "parser_version": "utf8-strict-codepoint-v1",
+      "source_mapping_ref": "identity_utf8_codepoint"
+    },
+    "semantic_segments": [
+      {
+        "segment_id": "SEG_ROUTE_COPY_20261017_0535de17_01",
+        "start": 0,
+        "end": 23386,
+        "unit": "unicode_codepoint",
+        "bounds": "half_open",
+        "reader": "worker",
+        "read_at": "2026-10-17T22:25:23Z",
+        "reviewer": "worker-self-check",
+        "reviewed_at": "2026-10-17T22:25:23Z",
+        "note": "الافتتاح وغرض الجلسة، نتيجة الفرص وpipeline، الأدوات، والسياق الأولي للتوليد والتأهيل.",
+        "content_unit_ids": []
+      },
+      {
+        "segment_id": "SEG_ROUTE_COPY_20261017_0535de17_02",
+        "start": 23386,
+        "end": 46772,
+        "unit": "unicode_codepoint",
+        "bounds": "half_open",
+        "reader": "worker",
+        "read_at": "2026-10-17T22:25:23Z",
+        "reviewer": "worker-self-check",
+        "reviewed_at": "2026-10-17T22:25:23Z",
+        "note": "بناء القائمة وتأهيلها، جهات الاتصال، modular workflow، بنية الرسالة، proposal، remedy، وCTA.",
+        "content_unit_ids": []
+      },
+      {
+        "segment_id": "SEG_ROUTE_COPY_20261017_0535de17_03",
+        "start": 46772,
+        "end": 70159,
+        "unit": "unicode_codepoint",
+        "bounds": "half_open",
+        "reader": "worker",
+        "read_at": "2026-10-17T22:25:23Z",
+        "reviewer": "worker-self-check",
+        "reviewed_at": "2026-10-17T22:25:23Z",
+        "note": "التخصيص والرسائل، deliverability، التتبع والردود، أسئلة الجمهور، وحدود التعميم.",
+        "content_unit_ids": []
+      }
+    ],
+    "unread_ranges": [],
+    "content_units": [],
+    "semantic_review_status": "reviewed",
+    "extraction_status": "not_started",
+    "review_note": "قراءة توجيهية كاملة وفحص ذاتي؛ ليست استخراجًا معرفيًا ولا مراجعة مستقلة لاحقة."
+  },
+  "route_status": "route_done",
+  "source_status": "new",
+  "source_status_note": "قيمة lifecycle في route artifact؛ سجل Source الموجود مسبقًا يحمل processed ولم يُعدّل هنا ولا يُعامل ذلك وحده كدليل source_done.",
+  "source_extraction_status": "not_started",
+  "reviewer": "worker-self-check",
+  "reviewer_report": "reports/route-copy-proposal-follow-up-2026-10-17.md",
+  "checkpoint_ref": "checkpoints/ROUTE_COPY_PROPOSAL_FOLLOW_UP_2026-10-17.md",
+  "verified_at": "2026-10-17T22:25:23Z",
+  "concept_refs": [],
+  "master_refs": [],
+  "knowledge_outputs_created": {
+    "terms": false,
+    "claims": false,
+    "concepts": false,
+    "masters": false
+  },
+  "raw_mutation": false
+}

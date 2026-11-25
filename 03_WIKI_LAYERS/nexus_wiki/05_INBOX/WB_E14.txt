@@ -1,0 +1,19 @@
+# WB_E14 — حزمة الاستخراج المعلّقة (E14)
+# المصدر الأصلي (plan): /root/r/NB2/.nexus_work/plan/bundle_E14.txt
+# جذر المسارات المحلية: /root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain
+# عدد ملفات هذا الملف: 11
+# عدد كلمات هذا الملف: 85,441
+# حجم هذا الملف من المصادر: 455,864 بايت
+# الصيغة: <الكلمات>	<مسارabsolut>
+##############################################################################
+8183	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/how to scale your info offer in 2026 (live training).txt
+8131	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/exposing TJR Trades $47,593day coaching business (lowkey genius).txt
+8124	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Copy This System, It’ll Blow Up Your Social Media.txt
+8062	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/exposing how Fxalexg makes $1,097,382month using instagram.txt
+7872	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Watch Me Write a VIRAL Tiktok Script (Full Breakdown).txt
+7652	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Hudson Cosper's $2.5M+ Funnel Breakdown (it's simple).txt
+7500	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/In 37 Minutes, I’ll Rewire How You Think About Brand.txt
+7351	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/6 Content Mistakes That Are KILLING Small Creators (Nobody Teaches This).txt
+8078	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How I Got 46 Million Views From ONE Short-Form Video (Copy Me).txt
+7303	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How Honia Kader Makes $137k Per Month From Instagram (SO SIMPLE).txt
+7185	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How to Script Viral Videos 10x Faster (Nobody Teaches This).txt

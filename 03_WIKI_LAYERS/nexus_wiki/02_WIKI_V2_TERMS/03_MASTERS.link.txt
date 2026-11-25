@@ -1,0 +1,4 @@
+POINTER (symlink)
+name: 03_MASTERS
+target: /root/r/NB2/03_MASTERS
+live_symlink: /root/r/nexus_wiki_links/02_WIKI_V2_TERMS/03_MASTERS

@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/mnt/sdcard/wikillm/argon_version/tools_subagent.py", line 35, in <module>
+    main()
+    ~~~~^^
+  File "/mnt/sdcard/wikillm/argon_version/tools_subagent.py", line 29, in main
+    d = json.loads(r.read())
+  File "/usr/lib/python3.13/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 348, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 807 (char 806)

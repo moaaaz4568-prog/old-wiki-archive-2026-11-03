@@ -1,0 +1,4 @@
+POINTER (symlink)
+name: nexus_vault
+target: /root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/nexus_vault
+live_symlink: /root/r/nexus_wiki_links/01_WIKI_V1_ARABIC/nexus_vault

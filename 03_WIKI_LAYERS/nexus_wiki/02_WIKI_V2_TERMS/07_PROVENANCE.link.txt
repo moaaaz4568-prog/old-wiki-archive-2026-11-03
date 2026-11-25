@@ -1,0 +1,4 @@
+POINTER (symlink)
+name: 07_PROVENANCE
+target: /root/r/NB2/07_PROVENANCE
+live_symlink: /root/r/nexus_wiki_links/02_WIKI_V2_TERMS/07_PROVENANCE

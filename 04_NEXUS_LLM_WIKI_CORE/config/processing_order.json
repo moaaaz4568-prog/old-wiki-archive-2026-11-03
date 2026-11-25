@@ -1,0 +1,225 @@
+{
+  "schema_version": "3.0",
+  "workflow_contract_version": "2026-10-10",
+  "processing_order_id": "first_wave_strict_serial",
+  "strict_order": true,
+  "parallel_domain_processing": false,
+  "order_scope": "knowledge_work_only_not_global_intake_or_business_execution",
+  "order": [
+    "sales",
+    "outreach",
+    "pricing_offers",
+    "content_strategy"
+  ],
+  "current_domain": "sales",
+  "current_domain_status": "in_progress",
+  "sales_completion_claim": false,
+  "state_authority": "Initial knowledge-state snapshot only. Synchronize catalog and indexes after an evidence-backed Commander transition; routing is independent.",
+  "governing_alignment": "/sdcard/NEXUS_LLM_WIKI/reports/sales-proof/MULTIDOMAIN_ALIGNMENT_2026-10-10.md",
+  "latest_user_locator": "current_conversation: expansion_request_after_EF22",
+  "route_path_template": "done/<domain>/<subdomain>/",
+  "source_copy_policy": {
+    "reference": "config/domain_catalog.json#source_copy_policy",
+    "mode": "independent_byte_exact",
+    "preserve_raw": true,
+    "symlinks_allowed": false,
+    "hardlinks_allowed": false
+  },
+  "global_intake_routing": {
+    "allowed": true,
+    "pending_domains_allowed": true,
+    "meaning": "Intake may semantically read, classify, copy and verify sources for any domain before sequential knowledge work. No intake or copying is performed by this configuration-only revision."
+  },
+  "domain_knowledge_lock": {
+    "max_active_domains": 1,
+    "current_domain": "sales",
+    "excludes_global_intake_routing": true,
+    "applies_to": ["terms_extraction", "claims_extraction", "concepts", "masters"],
+    "pending_means": "deferred_knowledge_work_not_quarantine",
+    "candidate_collection": "In the active domain, collect terms and candidate claims together during extraction. Candidate quotes need not wait for domain_terms_complete; collection is not acceptance."
+  },
+  "scaffolding_is_not_domain_opening": true,
+  "unknown_or_missing_evidence_blocks_transition": true,
+  "gate_definitions": {
+    "R": {"name": "routing", "scope": "global_intake", "pass_requires": "Semantic routing evidence, one resolved primary path, independent byte-exact copy with both hashes and reviewed route metadata. Not source extraction or knowledge authorization."},
+    "T": {"name": "domain_terms_complete", "scope": "all_domain_sources_and_subfolders_in_closed_snapshot", "pass_requires": "All candidates and justified exclusions are enumerated; every included source and subfolder has reviewed terms with traceable definitions. A sample or one subfolder is insufficient."},
+    "C": {"name": "claims_review", "scope": "active_domain", "pass_requires": "Atomic claims with exact raw locators, quotations, context, evidence type and review state; source-reported examples stay scoped and supported differences stay visible."},
+    "K": {"name": "concepts_review", "scope": "active_domain", "pass_requires": "Bounded concepts grounded in reviewed, traceable claims, not lexical term similarity alone; explicit competing views and constraints."},
+    "M": {"name": "masters_review", "scope": "active_domain_after_T_and_reviewed_dependencies", "pass_requires": "Reviewed required masters with explanations, types, methods, disagreements, evidence and limits; no master, including a small one, starts before domain_terms_complete."},
+    "QA": {"name": "domain_quality_and_retrieval", "scope": "snapshot_bound_domain_closure", "pass_requires": "Independent evidence review, complete indexes, working paths back to evidence, representative retrieval tests, recorded disagreements/dispositions and no unreviewed critical issue."}
+  },
+  "completion_states": {
+    "route_done": {
+      "requires": ["R"],
+      "permits_pending_domain": true,
+      "implies_source_done": false,
+      "implies_domain_done": false
+    },
+    "source_done": {
+      "requires": ["route_done", "complete_source_extraction", "reviewed_terms_and_claim_contributions", "traceable_reviewed_dispositions"],
+      "requires_master": false,
+      "scope": "one_source_contribution_to_the_active_domain_snapshot",
+      "note": "An empty contribution needs a justified reviewed disposition; linked contributions in other pending domains remain deferred, not silently marked complete."
+    },
+    "subdomain_extraction_done": {
+      "requires": ["all_snapshot_sources_source_done", "reviewed_subdomain_contributions_and_index"],
+      "permits_master_start_alone": false
+    },
+    "domain_terms_complete": {
+      "requires": ["closed_all_source_snapshot", "reviewed_terms_for_every_included_source", "reviewed_exclusions_and_uncertain_candidates", "current_nonstale_coverage"],
+      "all_subdomains_required": true,
+      "all_source_snapshot_required": true,
+      "unresolved_candidate_membership_blocks_completion": true,
+      "requires_master": false,
+      "gate": "T"
+    },
+    "domain_done": {
+      "requires": ["all_subdomain_extractions_done", "domain_terms_complete", "R", "C", "K", "M", "QA", "snapshot_bound_closure_record", "reviewed_delta_impact"],
+      "implies_next_knowledge_domain_may_open": true,
+      "requires_source_consensus": false,
+      "note": "Reviewed supported disagreements are preserved, not erased to force one opinion. Unassessed gaps or missing traceability cannot pass."
+    }
+  },
+  "master_start_condition": {
+    "requires_active_knowledge_domain": true,
+    "requires_domain_terms_complete": true,
+    "includes_small_masters": true,
+    "requires_reviewed_claims_and_concepts": true,
+    "requires_current_nonstale_all_source_snapshot": true,
+    "source_done_does_not_depend_on_master": true
+  },
+  "coverage_snapshot_contract": {
+    "required_fields": ["snapshot_id", "created_at", "domain_id", "scope_boundaries", "all_candidate_source_ids", "included_source_ids", "secondary_source_references", "reviewed_exclusions", "unresolved_candidates", "all_subdomain_ids", "source_hashes", "per_source_read_coverage", "per_source_extraction_review", "terms_review", "delta_refs", "reviewer", "closure_record"],
+    "denominator": "All candidate source identities within declared domain boundaries across every subfolder, including relevant secondary references. Deduplicate by source identity, keep justified exclusions and unresolved candidates visible, never shrink to a sample.",
+    "semantic_reading": "Existence, file counts, hash checks and machine parsing do not prove semantic reading. No semantic raw review occurred in this revision.",
+    "unresolved_candidates": "Unresolved domain membership or missing review that can alter coverage blocks domain_terms_complete. Do not omit uncertain sources from the denominator to claim completion; adjudicate or record a justified reviewed exclusion."
+  },
+  "next_domain_open_condition": {
+    "requires_state": "domain_done",
+    "routing_does_not_unlock_knowledge": true,
+    "required_gates": ["R", "T", "C", "K", "M", "QA"],
+    "requires_closed_current_snapshot": true,
+    "requires_all_subdomain_extractions_done": true,
+    "requires_independent_qa_and_retrieval": true,
+    "requires_current_indexes": true,
+    "requires_no_unreviewed_critical_issue": true,
+    "requires_delta_impact_review": true,
+    "actor": "Commander",
+    "transition": "Close the current knowledge domain, then open only the immediately next domain. Pending-domain intake may already be route_done without changing this lock."
+  },
+  "revision_policy": {
+    "on_new_relevant_source": "mark_coverage_stale_and_create_delta",
+    "preserve_historical_closure": true,
+    "block_next_transition_until_delta_review": true,
+    "invalidate_current_terms_complete_and_master_permission": true,
+    "delta_required_fields": ["source_ids", "previous_snapshot_id", "affected_domains", "affected_subdomains", "routing_review", "coverage_impact", "schedule_state", "reviewer"],
+    "handling": "Keep old closure evidence bound to its historical snapshot. Route new sources globally, mark affected current coverage stale and queue extraction in the sole active domain or for a later knowledge turn. Publish a reviewed new snapshot before claiming updated coverage.",
+    "completed_domain_revision": "If a closed domain gains relevant evidence while another domain is active, queue revision_pending; do not silently extend the old closure or open two knowledge domains. Commander must review delta impact and schedule a single-domain revision before any new transition."
+  },
+  "domain_states": [
+    {
+      "domain_id": "sales",
+      "position": 1,
+      "status": "in_progress",
+      "knowledge_locked": false,
+      "routing_allowed": true,
+      "domain_done": "not_closed",
+      "next_domain": "outreach",
+      "gate_snapshot": {
+        "snapshot_id": null,
+        "evaluated_at": null,
+        "reviewer": null,
+        "evidence_paths": [],
+        "closure_record_path": null,
+        "all_subdomain_extractions_done": null,
+        "open_source_count": null,
+        "unresolved_critical_count": null,
+        "indexes_verified": null,
+        "qa_decision": "not_evaluated",
+        "domain_terms_complete": "not_closed",
+        "coverage_freshness": null,
+        "gates": {"R": "not_closed", "T": "not_closed", "C": "not_closed", "K": "not_closed", "M": "not_closed", "QA": "not_closed"}
+      }
+    },
+    {
+      "domain_id": "outreach",
+      "position": 2,
+      "status": "pending",
+      "knowledge_locked": true,
+      "routing_allowed": true,
+      "domain_done": "not_closed",
+      "previous_domain": "sales",
+      "next_domain": "pricing_offers",
+      "gate_snapshot": {
+        "snapshot_id": null,
+        "evaluated_at": null,
+        "reviewer": null,
+        "evidence_paths": [],
+        "closure_record_path": null,
+        "all_subdomain_extractions_done": null,
+        "open_source_count": null,
+        "unresolved_critical_count": null,
+        "indexes_verified": null,
+        "qa_decision": "not_evaluated",
+        "domain_terms_complete": "not_closed",
+        "coverage_freshness": null,
+        "gates": {"R": "not_closed", "T": "not_closed", "C": "not_closed", "K": "not_closed", "M": "not_closed", "QA": "not_closed"}
+      }
+    },
+    {
+      "domain_id": "pricing_offers",
+      "position": 3,
+      "status": "pending",
+      "knowledge_locked": true,
+      "routing_allowed": true,
+      "domain_done": "not_closed",
+      "previous_domain": "outreach",
+      "next_domain": "content_strategy",
+      "gate_snapshot": {
+        "snapshot_id": null,
+        "evaluated_at": null,
+        "reviewer": null,
+        "evidence_paths": [],
+        "closure_record_path": null,
+        "all_subdomain_extractions_done": null,
+        "open_source_count": null,
+        "unresolved_critical_count": null,
+        "indexes_verified": null,
+        "qa_decision": "not_evaluated",
+        "domain_terms_complete": "not_closed",
+        "coverage_freshness": null,
+        "gates": {"R": "not_closed", "T": "not_closed", "C": "not_closed", "K": "not_closed", "M": "not_closed", "QA": "not_closed"}
+      }
+    },
+    {
+      "domain_id": "content_strategy",
+      "position": 4,
+      "status": "pending",
+      "knowledge_locked": true,
+      "routing_allowed": true,
+      "domain_done": "not_closed",
+      "previous_domain": "pricing_offers",
+      "next_domain": null,
+      "gate_snapshot": {
+        "snapshot_id": null,
+        "evaluated_at": null,
+        "reviewer": null,
+        "evidence_paths": [],
+        "closure_record_path": null,
+        "all_subdomain_extractions_done": null,
+        "open_source_count": null,
+        "unresolved_critical_count": null,
+        "indexes_verified": null,
+        "qa_decision": "not_evaluated",
+        "domain_terms_complete": "not_closed",
+        "coverage_freshness": null,
+        "gates": {"R": "not_closed", "T": "not_closed", "C": "not_closed", "K": "not_closed", "M": "not_closed", "QA": "not_closed"}
+      }
+    }
+  ],
+  "snapshot_metadata": {
+    "captured_on": "2026-10-10",
+    "scope": "catalog_and_state_tree_only",
+    "measurement_note": "Initial scaffold, not a fresh domain evaluation. All unknown measurements remain null and gates not_closed; no implicit success from directories, legacy records or old canonical knowledge."
+  }
+}

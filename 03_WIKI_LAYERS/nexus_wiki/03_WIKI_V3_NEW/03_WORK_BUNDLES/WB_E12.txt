@@ -1,0 +1,15 @@
+# WB_E12 — حزمة الاستخراج المعلّقة (E12)
+# المصدر الأصلي (plan): /root/r/NB2/.nexus_work/plan/bundle_E12.txt
+# جذر المسارات المحلية: /root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain
+# عدد ملفات هذا الملف: 7
+# عدد كلمات هذا الملف: 83,527
+# حجم هذا الملف من المصادر: 452,262 بايت
+# الصيغة: <الكلمات>	<مسارabsolut>
+##############################################################################
+14764	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/laziest way to MAKE MONEY with coaching in 2025 ($3,740day+).txt
+14271	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/[English (auto-generated)] How I started & sold my agency [DownSub.com].txt
+11620	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/[English (auto-generated)] Everything You Need to Know About Business in Under 1 Hour [DownSub.com].txt
+11707	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/How he built a profitable agency (with no experience).txt
+10955	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Your Personal Brand Changes Once You Know How to Stand Out.txt
+10149	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/My unfiltered advice to personal brands in 2026.txt
+10061	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/16 Years of Building Brands to 30M+ Followers.txt

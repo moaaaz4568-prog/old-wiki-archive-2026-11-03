@@ -1,0 +1,38 @@
+# WB_C22 — حزمة الاستخراج المعلّقة (C22)
+# المصدر الأصلي (plan): /root/r/NB2/.nexus_work/plan/bundle_C22.txt
+# جذر المسارات المحلية: /root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain
+# عدد ملفات هذا الملف: 30
+# عدد كلمات هذا الملف: 22,518
+# حجم هذا الملف من المصادر: 204,552 بايت
+# الصيغة: <الكلمات>	<مسارabsolut>
+##############################################################################
+1006	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/-Try to Get Sales to get Customers-.txt
+881	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/اعطني 5 دقائق و سوف اعلمك كيف تكتب اسكربت يحقق لك ملايين المشاهدات.txt
+942	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Copy of It's Not a F-CKEN HOUR.txt
+855	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/كشف سر الخطة التسويقة لي انجح اونلاين بزنس 2024.txt
+892	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/3) How to insert FOMO in Closing (1).txt
+867	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Ask WHY They Bought from you-.txt
+834	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Copy of Where to find Clients #1.txt
+866	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/إزاي تستخدم الـDiscounts وتجيب مبيعات أكتر ( بمكسب أكبر )..txt
+865	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/SALE Aint Real till they pay, DO THIS!.txt
+860	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Lesson 12- Life Time Value - EGO (1).txt
+841	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/6) Never Hard Closing - DO THIS (1).txt
+793	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Sell every step you do..txt
+802	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/لو العميل سألك سؤال.. أوعي ترد عليه (أعمل كده)..txt
+810	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/5) -Let me think.. - (1).txt
+810	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Lesson 7- -Let me think.. - (1).txt
+822	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Lesson 10- Ask your Mom (1).txt
+790	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/💎 Add Value to discounts.txt
+761	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/تبيع منتجك علي يوتيوب ولا تيك توك ؟ (زود مبيعاتك صح).txt
+734	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/PLEASE Message People who Bought from you..txt
+676	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/خطوات إحترافية للبيع عبر الإنترنت دليلك إلى مراحل عملية الشراء الخاصة بالعملاء.txt
+633	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/شغل اون لاين  نصائح ذهبية من خبير.txt
+598	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/تصميم هوية بصرية كاملة لشركة تقـنية.txt
+647	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Lesson 9- Follow up - Resell to existing customers. (1).txt
+593	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/تصميم شعار وهوية بصرية كاملة  شـركة تـقنية.txt
+622	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/9) Closing Methods Part Three #3 (1).txt
+556	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/💎.txt
+541	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Copy of Influencers Marketing.txt
+567	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/Clients WON'T Appreciate Your Job, DO THIS!.txt
+552	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/درس مبيعات تعلمته من تدريب بشركة بتدخل 250,000,000$ بالسنة.txt
+502	/root/r/NEXUS_GITHUB_PACKAGE/WIKI/01_ACTIVE_WIKI/brain/processed/كيف تختار إسم تجاري مميز لشركتك؟ 7 طرق يستخدمها الخبراء.txt
